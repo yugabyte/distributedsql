@@ -18,6 +18,7 @@
 		height: 100%;
 	}
 	#banner {
+		text-align: center;
 		@include vendor('align-items', 'center');
 		// @include vendor('background-image', 'url("../images/bengaluru-castle.png")');
 		@include vendor('display', 'flex');
@@ -180,6 +181,7 @@
 					li
 					{
 						position: relative;
+						margin-top: 20px;
 						.whiteCircle
 						{
 							width: 30px;
@@ -658,3 +660,14 @@
 			padding-top: 0px;
 	}
 }
+
+
+//
+// style={{
+// 	position: 'absolute',
+// 	top: '24px',
+// 	left: '210px',
+// 	display: 'block',
+// 	fontSize: '24px',
+// 	fontWeight: '300'
+// }}

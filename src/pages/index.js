@@ -3,9 +3,10 @@ import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import Banner from '../components/Banner'
 import LandingSpeaker from '../components/LandingSpeaker'
+import WhatIsDistributedSQL from '../components/WhatIsDistributedSQL'
+import Sponsors from '../components/Sponsors'
 
 import { graphql } from 'gatsby'
-import LogoSmall from '../assets/images/LogoSmall.png'
 
 class HomeIndex extends React.Component {
     render() {
@@ -24,6 +25,8 @@ class HomeIndex extends React.Component {
                 </Helmet>
                 <Banner data={this.props.data} />
                 <LandingSpeaker/>
+                <WhatIsDistributedSQL/>
+                <Sponsors />
             </Layout>
         )
     }
@@ -34,6 +37,13 @@ export default HomeIndex
 export const query = graphql`
   query {
     bannerImage: file(relativePath: { eq: "bannerImage.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 2000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    FooterImage: file(relativePath: { eq: "FooterImage.png" }) {
       childImageSharp {
         fluid(maxWidth: 2000) {
           ...GatsbyImageSharpFluid
