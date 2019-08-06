@@ -12,7 +12,7 @@
 	}
 	.active
 	{
-		color: #ff00a9 !important;
+		color: #FF6E42 !important;
 	}
 	.links {
 		text-transform: capitalize;
@@ -38,7 +38,7 @@
 			display: none;
 		}
 		@include vendor('display', 'flex');
-		background-color: gray;
+		background: #fff;
 		box-shadow: 0 0 0.25em 0 rgba(0,0,0,0.15);
 		cursor: default;
 		font-weight: _font(weight-bold);
@@ -64,7 +64,7 @@
 			height: inherit;
 			line-height: inherit;
 			padding: 7px 1.5em;
-			background: gray;
+			background: #fff;
 
 			span {
 				color: #e535ab;

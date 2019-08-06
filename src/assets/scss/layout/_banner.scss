@@ -104,27 +104,21 @@
 			width: 100%;
 			z-index: 1;
 		}
-		.whiteCircle
-		{
-			border-radius: _circle(border-radius);
-			background-color: _palette(bg);
-			position: absolute;
-		}
 		h1 {
 			// font-size: 3.25em;
-			font-size: 30px;
+			font-size: 60px;
 			font-family: _font(family);
 			font-weight: _font(weight-bold);
 			color: _palette(bg);
 			padding-left: 20px;
 			z-index: -1;
-			padding-top: 15px;
+			padding-top: 10px;
 		}
+
 		h2 {
 			font-size: 22px;
 			font-family: _font(family);
-			font-weight: _font(weight-semi-bold);
-			margin-bottom: 40px;
+			font-weight: _font(weight);
 			position: relative;
 			color: _palette(bg);
 			padding-left: 20px;
@@ -175,6 +169,7 @@
 				> * {
 					margin-left: 1.5em;
 					margin-bottom: 0;
+					margin-top: 1em;
 				}
 
 				> :first-child {
@@ -246,7 +241,6 @@
 			// min-height: 35em;
 			min-height: 44em;
 			max-height: 50em;
-
 			&.alt {
 				opacity: 0.75;
 			}
@@ -327,7 +321,7 @@
 	#banner {
 		.presents
 		{
-			padding-top: 50px;
+			padding-top: 30px;
 		}
 		> .inner {
 			margin: 0 auto!important;
