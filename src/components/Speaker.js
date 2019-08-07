@@ -62,24 +62,21 @@ class Speaker extends React.Component {
                 </div>
                     <header className="major">
                         <h5>
-                        {speakerProps.speakerName}
-                        {
-                            speakerProps.mergers ?
+                          { speakerProps.speakerName &&
+                            <span key={speakerProps.speakerId}><b>{speakerProps.speakerName}</b>, {speakerProps.speakerPosition}, {speakerProps.speakerCompany}</span>
+                          }
+                          {
                             speakerProps.mergers.map((speaker) => {
-                              return " / " + speaker.speakerName;
+                              return (<span key={speaker.speakerId}><br /><b>{speaker.speakerName}</b>, {speaker.speakerPosition}, {speaker.speakerCompany}</span>);
                             })
-                            :null
-                        }
+                          }
                         </h5>
                     </header>
-                    {this.props.isAgenda &&
+                    {speakerProps.isAgenda &&
                       <div>
                         <p className="talkAbstract" dangerouslySetInnerHTML={{__html: speakerProps.talkAbstract }} />
-
-                    </div>
+                      </div>
                     }
-                    <br/>
-
                 </div>
             </div>
         </section>

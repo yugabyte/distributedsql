@@ -293,7 +293,7 @@
           "sortOrder": 16,
           "timeSlot": 15,
           "meetupLink":"",
-          "talkAbstract":"<ul><li>PostgreSQL v12: Features and Migration Considerations</li><li> What’s New in YugaByte DB 2.0</li></ul><a href='https://www.meetup.com/Silicon-Valley-Postgres/events/263652612/'>Register Here</a>",
+          "talkAbstract":"<ul><li>PostgreSQL v12: Features and Migration Considerations</li><li> What’s New in YugaByte DB 2.0</li></ul><a class='btn-rounded' href='https://www.meetup.com/Silicon-Valley-Postgres/events/263652612/'>Join</a>",
           "twitter":"",
           "time":"18:00 - 19:30"
         }

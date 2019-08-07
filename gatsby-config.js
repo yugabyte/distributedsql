@@ -77,10 +77,10 @@ module.exports = {
         name: 'Distributed SQL',
         short_name: 'Distributed SQL',
         start_url: '/',
-        background_color: '#E535AB',
-        theme_color: '#E535AB',
-        display: 'minimal-ui',
-        icon: 'src/assets/images/LogoSmall.png', // This path is relative to the root of the site.
+        background_color: '#FF6E42',
+        theme_color: '#FF6E42',
+        display: 'standalone',
+        icon: 'static/LogoDark.png', // This path is relative to the root of the site.
       },
     },
     'gatsby-plugin-sass'

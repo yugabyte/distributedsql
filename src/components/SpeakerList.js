@@ -28,7 +28,7 @@ const SpeakerList = (props) => {
 
       speakers.push(
         <Speaker
-        key={speaker.speakerId}
+        key={speaker.speakerId + speaker.timeSlot}
         speaker={{
           ...speaker,
           isAgenda: props.isAgenda,

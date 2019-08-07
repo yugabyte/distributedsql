@@ -12,7 +12,6 @@ exports.onCreateWebpackConfig = async ({ actions }) => {
     })
 }
 exports.createPages = async ({ graphql, actions }) => {
-    console.log('actions', actions)
     const { createPage, createNode } = actions
     const speakers = JSON.parse( JSON.stringify(speakerData) )
     const speakerPageTemplate = path.resolve("src/page-templates/speaker.js")
