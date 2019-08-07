@@ -8,8 +8,8 @@ import SpeakerList from '../components/SpeakerList'
 const Schedules = (props) => (
   <Layout>
     <Helmet>
-      <title>Schedule - Distributed SQL Summit - 2019</title>
-      <meta name="description" content="Distributed SQL Summit - 2019" />
+      <title>Schedule - Distributed SQL Summit</title>
+      <meta name="description" content="Distributed SQL Summit" />
     </Helmet>
     <div id="main" className="alt">
         <section id="one">
@@ -106,7 +106,7 @@ export const agendaQuery = graphql`
         }
       }
     }
-    PeterZaitsev: file(relativePath: { eq: "PeterZaitsev.jpg" }) {
+    PeterZaitsev: file(relativePath: { eq: "PeterZaitsev.png" }) {
       childImageSharp {
         fluid(maxWidth: 200) {
           ...GatsbyImageSharpFluid

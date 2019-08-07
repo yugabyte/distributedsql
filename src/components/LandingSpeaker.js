@@ -64,7 +64,7 @@ const LandingSpeaker = ({data}) => {
       <div className="inner">
         <header className="major">
             <h2>
-              Speakers 2019
+              Speakers
             </h2>
         </header>
         <div className="speakerListWrppar">
@@ -125,7 +125,7 @@ const query = graphql`
         }
       }
     }
-    PeterZaitsev1: file(relativePath: { eq: "PeterZaitsev.jpg" }) {
+    PeterZaitsev1: file(relativePath: { eq: "PeterZaitsev.png" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid

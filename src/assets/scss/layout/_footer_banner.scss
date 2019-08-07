@@ -54,4 +54,13 @@
       }
     }
   }
+  
+  @media screen and (max-width: 980px) {
+    .actions {
+      li {
+        padding: 0;
+        margin-bottom: 10px;
+      }
+    }
+  }
 }

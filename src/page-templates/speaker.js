@@ -98,7 +98,7 @@ const SpeakerPage = (props) => {
                       }}>{props.pageContext.talkTitle}</h3>
                       <p>{props.pageContext.talkAbstract}</p>
                       <h5>Timings: {props.pageContext.time}</h5>
-                      <p>&lt; <Link to="/agenda">Back to Agenda page</Link></p>
+                      <p>&lt; <Link to="/schedule">Back to Schedule page</Link></p>
                     </div>
                     </header>
 
@@ -188,7 +188,7 @@ export const query1 = graphql`
         }
       }
     }
-    PeterZaitsev: file(relativePath: { eq: "PeterZaitsev.jpg" }) {
+    PeterZaitsev: file(relativePath: { eq: "PeterZaitsev.png" }) {
       childImageSharp {
         fluid(maxWidth: 200) {
           ...GatsbyImageSharpFluid

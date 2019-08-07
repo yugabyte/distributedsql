@@ -43,6 +43,7 @@
 			max-width: 100% !important;
 			width: 100% !important;
 		}
+
 		.presents
 		{
 			padding-top: 0px;
@@ -131,7 +132,6 @@
 				'filter 0.5s ease',
 				'-webkit-filter 0.5s ease'
 			));
-			padding: 0 !important;
 			position: relative;
 			z-index: 20000;
 			margin: 0 auto!important;
@@ -648,6 +648,32 @@
 	#landingSpeaker
 	{
 			padding-top: 0px;
+	}
+}
+
+
+#sponsors {
+	.inner {
+		list-style: none;
+	}
+	.content {
+		text-align: center;
+		padding: 0 5em;
+		display: inline-block;
+		.header {
+			text-align: center;
+			margin: '0 auto';
+		}
+		.actions {
+			text-align: center;
+		}
+	}
+
+	@media screen and (max-width: 736px)
+	{
+		.inner {
+			text-align: center;
+		}
 	}
 }
 
