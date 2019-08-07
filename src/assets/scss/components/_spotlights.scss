@@ -238,12 +238,24 @@
 
 				> .content {
 					width: 60%;
+
+					> .inner {
+						max-width: none;
+					}
 				}
 			}
 		}
 
 		@include breakpoint(large) {
+			> section {
+				> .content {
+					width: 90%;
 
+					> .inner {
+						max-width: 100%;
+					}
+				}
+			}
 		}
 
 		@include breakpoint(medium) {
@@ -317,6 +329,10 @@
 				> .content {
 					@include padding(4em, 3em);
 					width: 100%;
+
+					> .inner {
+						max-width: 100%;
+					}
 				}
 				header {
 					// margin: auto!important;

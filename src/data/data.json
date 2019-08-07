@@ -282,9 +282,9 @@
           "timeSlot": 14
         },
         {
-          "speakerPicture": "",
+          "speakerPicture": "meetup",
           "speakerName": "",
-          "speakerId": "",
+          "speakerId": "meetup",
           "speakerDescription":"",
           "speakerPosition":"",
           "speakerCompany":"",

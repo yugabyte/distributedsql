@@ -148,6 +148,13 @@ const Schedules = (props) => (
           }
         }
       }
+      meetup: file(relativePath: { eq: "meetup.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `}
   render={ data => {
