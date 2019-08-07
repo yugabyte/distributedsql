@@ -20,9 +20,8 @@ const SpeakerPage = (props) => {
 
     }
 
-    console.log(speakerData, props.pageContext.speakerPicture)
     const talks = speakerData.filter((speaker) => speaker.speakerPicture === props.pageContext.speakerPicture);
-    console.log(talks)
+    
     return(
     <Layout>
       <Helmet>

@@ -8,7 +8,6 @@ class Speaker extends React.Component {
     };
     render() {
         const speakerProps = this.props.speaker;
-        console.log(speakerProps)
         const speakerLink = ['Break', 'Lunch', 'Meetup'].includes(speakerProps.speakerName) ?
           null: `/speaker/${speakerProps.speakerId}`;
         return(

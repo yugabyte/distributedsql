@@ -8,7 +8,6 @@ const SpeakerList = (props) => {
     if (props.isAgenda) {
       speakerData.sort((a, b) => a.timeSlot - b.timeSlot);
     }
-
     speakerData.forEach(speaker => {
       // skip if has mergeWith attribute
       if(speaker.mergeWith) return
