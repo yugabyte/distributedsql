@@ -5,7 +5,7 @@ import Layout from '../components/layout'
 import SpeakerList from '../components/SpeakerList'
 
 
-const Speakers = (props) => (
+const Schedules = (props) => (
   <Layout>
     <Helmet>
       <title>Schedule - Distributed SQL Summit - 2019</title>
@@ -30,7 +30,7 @@ const Speakers = (props) => (
   </Layout >
 )
 
-export default Speakers
+export default Schedules
 
 
 

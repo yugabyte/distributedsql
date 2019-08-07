@@ -3,14 +3,14 @@ import YBLogo from "../assets/images/YBLogoDark.png"
 import PostgresConfLogo from '../assets/images/PostgresConfLogo.png'
 
 const Sponsors = (props) => (
-  <div id="sponsors" className="inner sponsors-inner" style={{}}>
-    <section style={{width: '50%', display: 'inline-block'}}>
+  <div id="sponsors" className="inner sponsors-inner">
+    <div className="organized-by">
       <header className="major" style={{margin: '0 auto'}}>
         <h2>
           Organized By
         </h2>
       </header>
-      <ul className="actions">
+      <ul className="actions" style={{textAlign: 'center'}}>
           <li>
               <a style={{
                   border:'none'
@@ -22,14 +22,14 @@ const Sponsors = (props) => (
               </a>
           </li>
       </ul>
-    </section>
-    <section style={{width: '50%', display: 'inline-block'}}>
+    </div>
+    <div className="hosted-by">
       <header className="major" style={{margin: '0 auto'}}>
         <h2>
           Hosted By
         </h2>
       </header>
-      <ul className="actions">
+      <ul className="actions" style={{textAlign: 'center'}}>
           <li>
               <a style={{
                   border:'none'
@@ -41,7 +41,7 @@ const Sponsors = (props) => (
               </a>
           </li>
       </ul>
-    </section>
+    </div>
   </div>
 )
 

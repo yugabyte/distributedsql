@@ -41,7 +41,13 @@ const Banner = (props) => (
    `}
     render={data => {
       return (
-         <BackgroundImage Tag="section" fluid={data.bannerImage.childImageSharp.fluid} id="banner" className="major">
+         <BackgroundImage Tag="section" fluid={data.bannerImage.childImageSharp.fluid}
+            id="banner" className="major"
+            style={{
+              width: '100%',
+              backgroundSize: 'bottom center',
+              backgroundRepeat: 'repeat-y',
+            }}>
            <div className="inner">
              <div className="presents">
                <a href="https://yugabyte.com/">

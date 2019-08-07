@@ -34,13 +34,12 @@ const Speaker = (props) => {
     </div>
   )
 };
+
 const LandingSpeaker = ({data}) => {
 
-  console.log(data);
   var landingSpeakerList = []
   const sortedSpeakers = [...speakerData].filter((v=>v.featured===true)).sort((a,b)=>a.sortOrder-b.sortOrder)
 
-  console.log(sortedSpeakers)
   sortedSpeakers.forEach(speaker => {
     const speakerData =  speaker
     try {
@@ -61,7 +60,7 @@ const LandingSpeaker = ({data}) => {
     }
   });
   return (
-    <section id="speakers" className="major">
+    <section id="landingSpeaker" className="major">
       <div className="inner">
         <header className="major">
             <h2>
