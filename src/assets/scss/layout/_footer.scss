@@ -41,15 +41,7 @@
 			}
 		}
 
-		@include breakpoint(xsmall) {
-			.copyright {
-				li {
-					display: block;
-					border-left: 0;
-					margin-left: 0;
-					padding-left: 0;
-					line-height: inherit;
-				}
-			}
+		@include breakpoint(small) {
+			margin-bottom: 40px;
 		}
 	}

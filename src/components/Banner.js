@@ -54,27 +54,32 @@ const Banner = (props) => (
              <header className="major">
                  <h1>Distributed SQL Summit</h1>
                  <h2>
-                   <Img style={{
+                   <span className="sub-text"><Img style={{
                        width: '20px',
                        height: '22px',
                        display: 'inline-block',
                        margin: '0 auto',
-                       verticalAlign: 'middle'
+                       verticalAlign: 'top',
+                       marginTop: '6px',
+                       marginRight: '10px'
                    }}
                    fluid={data.calendar.childImageSharp.fluid} backgroundColor={'#777777'} />
-                   <span style={{margin: '-10px 10px', fontSize: '20px'}}>September 20, 2019</span>
+                   September 20, 2019</span>
                    <a href="https://goo.gl/maps/bF9CU8Ccb8gG8z4s5"
                        target="_blank" rel="noopener noreferrer">
+                    <span className="sub-text">
                      <Img style={{
                          width: '15px',
                          height: '22px',
                          display: 'inline-block',
                          margin: '0 auto',
                          marginLeft: '10px',
-                         verticalAlign: 'middle'
+                         verticalAlign: 'top',
+                         marginTop: '6px',
+                         marginRight: '10px'
                      }}
                      fluid={data.location.childImageSharp.fluid} backgroundColor={'#777777'} />
-                   <span style={{ marginLeft: '10px', verticalAlign: 'middle' }}>Hilton, San Jose, CA</span></a>
+                   Hilton, San Jose, CA</span></a>
                  </h2>
              </header>
              <div className="content">
@@ -84,7 +89,7 @@ const Banner = (props) => (
                </h2>
                    <ul className="actions">
                        <li>
-                           <a className="button bannerButton next" href="https://postgresconf.org/accounts/sign_up"
+                           <a className="btn-rounded" href="https://postgresconf.org/conferences/SV2019/tickets"
                               target="_blank" rel="noopener noreferrer">Register</a>
                        </li>
                    </ul>

@@ -26,11 +26,11 @@ const WhatIsDistributedSQL = (props) => (
                  </h2>
                  <ul className="actions">
                      <li>
-                         <a className="button bannerButton next" href="https://postgresconf.org/accounts/sign_up"
+                         <a className="btn-rounded" href="https://postgresconf.org/conferences/SV2019/tickets"
                             target="_blank" rel="noopener noreferrer">Register</a>
                      </li>
                      <li>
-                     <a className="button bannerButton next" href="https://www.yugabyte.com/contact-us/"
+                     <a className="btn-rounded secondary" href="https://www.yugabyte.com/contact-us/"
                         target="_blank" rel="noopener noreferrer">Contact Us</a>
 
                      </li>

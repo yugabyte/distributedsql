@@ -21,17 +21,17 @@
 				font-family: _font(family-fixed);
 				flex: 1
 			}
-		}	
+		}
 		@include breakpoint(xsmall) {
 			ul,li{
 				padding-right: .15em;
 				padding-left: .15em;
 			}
-		}	
+		}
 		flex-direction: row-reverse;
 	}
-		
-		
+
+
 	#menu {
 		@include vendor('transition', (
 			'transform #{_duration(menu)} ease',

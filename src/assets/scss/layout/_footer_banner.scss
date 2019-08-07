@@ -23,42 +23,25 @@
       padding-top: 20px;
       .bannerButton
       {
-        background-color: #fff;
-        color: #34337f;
-        font-family: _font(family-fixed);
-        font-size: 24px;
-        font-weight: _font(weight-bold);
-        text-transform: capitalize;
-        letter-spacing: _font(letter-spacing-normal);
-        line-height: _font(line-height);
-        height: auto;
-        box-shadow: inset 0 0 0 2px _palette(bg);
-        padding: 14px 30px;
-        padding-right: 4.5em;
-        border-radius: 40px;
-        &:hover, &:active {
-          box-shadow: inset 0 0 0 2px _palette(highlight);
-          color: _palette(highlight);
-        }
-        &:before {
-          background-image: svg-url('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36px" height="24px" viewBox="0 0 36 24" zoomAndPan="disable"><style>line { stroke: #{_palette(fg-btn-bold)}; stroke-width: 2px; }</style><line x1="0" y1="12" x2="34" y2="12" /><line x1="25" y1="4" x2="34" y2="12.5" /><line x1="25" y1="20" x2="34" y2="11.5" /></svg>');
-        }
-        &.next {
-          padding-right: 4em;
-          position: relative;
-
-          &:before, &:after {
-            right: 30px;
-          }
-        }
+        border-radius: 8px;
+        background-color: #FF6E42;
+        border: 2px solid #FF6E42;
+        padding: 10px 40px;
+        color: #FFF;
+        font-size: 15px;
+        font-weight: 500;
+        transition: .2s ease all;
+        min-width: 185px;
+        display: inline-block;
+        text-align: center;
       }
     }
   }
-  
+
   @media screen and (max-width: 980px) {
     .actions {
       li {
-        padding: 0;
+        padding: 0 10px;
         margin-bottom: 10px;
       }
     }
