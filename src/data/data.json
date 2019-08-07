@@ -111,7 +111,7 @@
           "featured": true,
           "sortOrder": 7,
           "timeSlot": 9,
-          "talkAbstract":"Microservices and cloud-native deployments have ushered in an era of unparalleled developer agility. <br/>The portability offered by technologies such as Kubernetes and Cloud Foundry ensures that applications can be run anywhere and everywhere. But what about the data? <br/>In this talk we'll examine where a distributed SQL database fits into a modern hybrid/multi-cloud architecture, as well as possibilities/implications for the applications themselves.",
+          "talkAbstract":"Microservices and cloud-native deployments have ushered in an era of unparalleled developer agility. The portability offered by technologies such as Kubernetes and Cloud Foundry ensures that applications can be run anywhere and everywhere. But what about the data? In this talk we'll examine where a distributed SQL database fits into a modern hybrid/multi-cloud architecture, as well as possibilities/implications for the applications themselves.",
           "twitter":"",
           "linkedin": "",
           "time":"14:00 - 14:30"
@@ -283,7 +283,7 @@
         },
         {
           "speakerPicture": "meetup",
-          "speakerName": "",
+          "speakerName": "Meetup",
           "speakerId": "meetup",
           "speakerDescription":"",
           "speakerPosition":"",

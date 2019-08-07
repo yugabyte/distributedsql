@@ -9,7 +9,7 @@ class Speaker extends React.Component {
     render() {
         const speakerProps = this.props.speaker;
         console.log(speakerProps)
-        const speakerLink = ['Break', 'Lunch'].includes(speakerProps.speakerName) ?
+        const speakerLink = ['Break', 'Lunch', 'Meetup'].includes(speakerProps.speakerName) ?
           null: `/speaker/${speakerProps.speakerId}`;
         return(
             <section
@@ -63,12 +63,12 @@ class Speaker extends React.Component {
                 </div>
                     <header className="major">
                         <h5>
-                          { speakerProps.speakerName &&
-                            <span key={speakerProps.speakerId}><b>{speakerProps.speakerName}</b>, {speakerProps.speakerPosition}, {speakerProps.speakerCompany}</span>
+                          { speakerProps.speakerName && speakerLink &&
+                            <span key={speakerProps.speakerId}><b><a href={`/speaker/${speakerProps.speakerId}`}>{speakerProps.speakerName}</a></b>, {speakerProps.speakerPosition}, {speakerProps.speakerCompany}</span>
                           }
                           {
                             speakerProps.mergers.map((speaker) => {
-                              return (<span key={speaker.speakerId}><br /><b>{speaker.speakerName}</b>, {speaker.speakerPosition}, {speaker.speakerCompany}</span>);
+                              return (<span key={speaker.speakerId}><br /><b><a href={`/speaker/${speaker.speakerId}`}>{speaker.speakerName}</a></b>, {speaker.speakerPosition}, {speaker.speakerCompany}</span>);
                             })
                           }
                         </h5>
