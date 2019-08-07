@@ -107,7 +107,6 @@
 			font-weight: _font(weight-bold);
 			color: _palette(bg);
 			padding-left: 20px;
-			padding-top: 10px;
 		}
 
 		h2 {
@@ -163,7 +162,6 @@
 				> * {
 					margin-left: 1.5em;
 					margin-bottom: 2em;
-					margin-top: 2em;
 				}
 
 
@@ -312,7 +310,7 @@
 
 
 				h2.sub-text {
-					margin: 0 1em !important;
+					margin: 0 1em 2em !important;
 				}
 			}
 
