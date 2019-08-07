@@ -20,7 +20,6 @@
 	#banner {
 		text-align: center;
 		@include vendor('align-items', 'center');
-		// @include vendor('background-image', 'url("../images/bengaluru-castle.png")');
 		@include vendor('display', 'flex');
 		@include padding(0em, 0, (0em, 0, 0, 0));
 		background-attachment: fixed;
@@ -29,13 +28,15 @@
 		background-size: cover;
 		border-bottom: 0 !important;
 		cursor: default;
-		height: 70vh;
+		// height: 80vh;
 		// margin-bottom: -3.25em;
 		margin-bottom: -6.25em;
-		max-height: 35em;
-		min-height: 22em;
+		// max-height: 75em;
+		// min-height: 22em;
 		position: relative;
-		top: -3.25em;
+		// top: -3.25em;
+
+
 		.inner
 		{
 			margin: 0 0 !important;
@@ -161,12 +162,17 @@
 
 				> * {
 					margin-left: 1.5em;
-					margin-bottom: 0;
-					margin-top: 1em;
+					margin-bottom: 2em;
+					margin-top: 2em;
 				}
+
 
 				> :first-child {
 					margin-left: 0;
+				}
+
+				.sub-text {
+					margin: 0 10em;
 				}
 				.actions
 				{
@@ -327,16 +333,7 @@
 		}
 	}
 }
-@media screen and (max-width: 1280px) {
-	#banner {
-		> .inner {
-			.datedisplay {
-				top: -35px;
-    	right: -60px;
-			}
-		}
-	}
-}
+
 @media screen and (max-width: 1020px) {
 	#banner.major
 	{
@@ -361,7 +358,7 @@
 }
 @media screen and (max-width: 736px) {
 	#banner.major {
-		height: 30em;
+		// height: 30em;
     min-height: 30em;
     max-height: none;
 		padding: 5em 0 0em 0;
@@ -391,6 +388,10 @@
 			p
 			{
 				padding-bottom: 0;
+			}
+
+			h2.sub-text {
+				margin: 0 1em !important;
 			}
 		}
 		.datedisplay

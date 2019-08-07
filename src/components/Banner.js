@@ -1,7 +1,6 @@
 import React from 'react'
 import Img from "gatsby-image"
 import LogoSmall from "../assets/images/LogoSmall.png"
-
 import BackgroundImage from 'gatsby-background-image'
 import { graphql, StaticQuery } from 'gatsby'
 
@@ -40,14 +39,10 @@ const Banner = (props) => (
      }
    `}
     render={data => {
+      const imageData = data.bannerImage.childImageSharp.fluid
+
       return (
-         <BackgroundImage Tag="section" fluid={data.bannerImage.childImageSharp.fluid}
-            id="banner" className="major"
-            style={{
-              width: '100%',
-              backgroundSize: 'bottom center',
-              backgroundRepeat: 'repeat-y',
-            }}>
+         <BackgroundImage Tag="section" fluid={imageData} id="banner">
            <div className="inner">
              <div className="presents">
                <a href="https://yugabyte.com/">
@@ -83,7 +78,7 @@ const Banner = (props) => (
                  </h2>
              </header>
              <div className="content">
-               <h2>
+               <h2 className="sub-text">
                    A full day of talks from experts on what it takes to build, deploy
                    and scale distributed SQL databases in the cloud and on Kubernetes
                </h2>
