@@ -7,8 +7,7 @@ const Menu = ({props}) => (
         <div className="inner">
             <ul className="links">
                 <li><Link className={ typeof window !== 'undefined' && window && window.location.hash === '#speakers' ? 'active' : ''} to="#speakers">Speakers</Link></li>
-                <li><Link className={ typeof window !== 'undefined' && window && window.location.pathname === '/agenda' ? 'active' : ''} to="/agenda">Agenda</Link></li>
-                <li><Link className={ typeof window !== 'undefined' && window && window.location.pathname === '/venue' ? 'active' : ''} to="/venue">Venue</Link></li>
+                <li><Link className={ typeof window !== 'undefined' && window && window.location.pathname === '/schedule' ? 'active' : ''} to="/schedule">Schedule</Link></li>
             </ul>
         </div>
     </div>

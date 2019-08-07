@@ -8,7 +8,7 @@ import SpeakerList from '../components/SpeakerList'
 const Speakers = (props) => (
   <Layout>
     <Helmet>
-      <title>Agenda - Distributed SQL Summit - 2019</title>
+      <title>Schedule - Distributed SQL Summit - 2019</title>
       <meta name="description" content="Distributed SQL Summit - 2019" />
     </Helmet>
     <div id="main" className="alt">
@@ -16,7 +16,7 @@ const Speakers = (props) => (
             <div className="inner removePaddBottom">
                 <header className="major removeMarBottom">
                     <h1 className="removeMarBottom">
-                      Agenda
+                      Schedule
                     </h1>
                 </header>
             </div>
@@ -31,9 +31,6 @@ const Speakers = (props) => (
 )
 
 export default Speakers
-
-
-
 
 
 

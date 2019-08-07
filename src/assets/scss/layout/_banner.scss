@@ -52,14 +52,7 @@
 			font-weight: _font(weight-bold-semi);
 			z-index: 10000;
 			padding-top: 30px;
-			a
-			{
-				border-bottom: 1px dotted #fff;
-			}
-			a:hover
-			{
-				color: #fff !important;
-			}
+
 		}
 		.datedisplay
 		{
@@ -112,7 +105,6 @@
 			font-weight: _font(weight-bold);
 			color: _palette(bg);
 			padding-left: 20px;
-			z-index: -1;
 			padding-top: 10px;
 		}
 
@@ -140,7 +132,7 @@
 			));
 			padding: 0 !important;
 			position: relative;
-			z-index: 2;
+			z-index: 20000;
 			margin: 0 auto!important;
 			max-width: 70%!important;
 			.image {
@@ -394,8 +386,8 @@
 		.content
 		{
 			margin-bottom: 0 !important;
-			padding-top: 20px !important;
-			padding-left: 20px !important;
+			padding-top: 10px !important;
+			padding-left: 10px !important;
 			p
 			{
 				padding-bottom: 0;
@@ -430,23 +422,17 @@
 				p
 				{
 					font-size: 20px;
-					padding-bottom: 20px;
-					text-align: left;
+					padding-bottom: 10px;
+					text-align: center;
 					padding-top: 0;
 				}
 				.actions
 				{
-					text-align: left;
+					text-align: center;
 					li
 					{
 						position: relative;
-						.whiteCircle
-						{
-							width: 25px;
-					    height: 25px;
-					    right: -20px;
-					    bottom: -30px;
-						}
+						margin-top: -10px;
 					}
 					.bannerButton
 					{
@@ -510,6 +496,10 @@
 				}
 			}
 		}
+		.sponsors-inner {
+			padding: '4em 6em';
+			text-align: 'center';
+		}
 		> .inner {
 			.content
 			{
@@ -517,21 +507,15 @@
 				{
 					font-size: 16px;
 					padding-bottom: 20px;
-					text-align: left;
+					text-align: center;
 				}
 				.actions
 				{
-					text-align: left;
+					text-align: center;
 					li
 					{
 						position: relative;
-						.whiteCircle
-						{
-							width: 25px;
-					    height: 25px;
-					    right: -20px;
-					    bottom: -30px;
-						}
+
 					}
 					.bannerButton
 					{
@@ -640,8 +624,9 @@
 @media screen and (max-width: 1070px)
 {
 	.speakerList {
-			width: calc((100% - 40px) / 2);
-			margin-right: 20px;
+			width: calc((100% - 60px) / 2);
+			margin-right: 15px;
+			margin-left: 15px;
 			margin-bottom: 40px;
 			.profile
 			{

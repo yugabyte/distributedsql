@@ -5,8 +5,8 @@ const speakerData = require('../data/data.json')
 
 const Speaker = (props) => {
   return (
-    <div className="speakerList">
-      <div className="profile">
+    <div className="speakerList" >
+      <div className="profile" key={props.speakerId} id={props.speakerId}>
         <div className="speakerImage">
           <img src={props.speakerImage} alt="profile"/>
         </div>
@@ -39,6 +39,8 @@ const LandingSpeaker = ({data}) => {
   console.log(data);
   var landingSpeakerList = []
   const sortedSpeakers = [...speakerData].filter((v=>v.featured===true)).sort((a,b)=>a.sortOrder-b.sortOrder)
+
+  console.log(sortedSpeakers)
   sortedSpeakers.forEach(speaker => {
     const speakerData =  speaker
     try {

@@ -1,11 +1,11 @@
 import React from 'react'
 import YBLogo from "../assets/images/YBLogoDark.png"
-import PostgresConfLog from '../assets/images/LogoDark.png'
+import PostgresConfLogo from '../assets/images/PostgresConfLogo.png'
 
 const Sponsors = (props) => (
-  <div id="sponsors" className="inner" style={{padding: '4em 6em'}}>
+  <div id="sponsors" className="inner sponsors-inner" style={{}}>
     <section style={{width: '50%', display: 'inline-block'}}>
-      <header className="major" style={{marginBottom: '2em'}}>
+      <header className="major" style={{margin: '0 auto'}}>
         <h2>
           Organized By
         </h2>
@@ -24,7 +24,7 @@ const Sponsors = (props) => (
       </ul>
     </section>
     <section style={{width: '50%', display: 'inline-block'}}>
-      <header className="major" style={{marginBottom: '2em'}}>
+      <header className="major" style={{margin: '0 auto'}}>
         <h2>
           Hosted By
         </h2>
@@ -36,9 +36,8 @@ const Sponsors = (props) => (
               }} href="https://postgresconf.org/">
               <img style={{
                   width: '300px',
-                  objectFit: 'contain',
-                  // padding: '.5em'
-              }} src={PostgresConfLog} alt="Postgres Conf" />
+                  objectFit: 'contain'
+              }} src={PostgresConfLogo} alt="PostgresConf" />
               </a>
           </li>
       </ul>

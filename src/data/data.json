@@ -243,6 +243,22 @@
           "time":"10:00 - 10:30"
         },
         {
+          "speakerPicture": "RamRavichandran",
+          "speakerName": "Ram Ravichandran",
+          "speakerId": "ram-ravichandran",
+          "speakerDescription":"",
+          "speakerPosition":"CTO",
+          "speakerCompany":"Narvar",
+          "type":"talk",
+          "talkTitle":"Scaling Microservices and Distributed Databases in a Multi-Cloud World",
+          "featured": false,
+          "sortOrder": 4,
+          "timeSlot": 12,
+          "talkAbstract":"70% of U.S. adults have experienced better retail through Narvar's customer engagement platform. In this talk, Ram Ravichandran - CTO, walks us through some of the highlights on how Narvar scaled their microservices architecture and data-tier onto multiple clouds. He'll also discuss how they simplified their operations and maintained GDPR compliance through the entire process.",
+          "twitter":"",
+          "time":"16:00 - 16:30"
+        },
+        {
           "speakerPicture": "KarthikRanganathan",
           "speakerName": "Karthik Ranganathan",
           "speakerId": "karthik-ranganathan",
@@ -253,7 +269,7 @@
           "type":"talk",
           "talkTitle":"6 Technical Challenges Developing a Distributed SQL Database",
           "sortOrder": 15,
-          "timeSlot": 12,
+          "timeSlot": 13,
           "talkAbstract":"Developing YugaByte DB 2.0 was but not without its fair share of technical challenges. There were times when we had to go back to the drawing board and even sift through academic research to find a better solution than what we had at hand. In this talk we’ll outline some of the hardest architectural issues we have had to address in our journey of building an open source, cloud native, high-performance distributed SQL database. Topics include architecture, SQL compatibility, distributed transactions, consensus algorithms, atomic clocks and PostgreSQL code reuse.",
           "twitter":"",
           "time":"16:30 - 17:00"
@@ -263,7 +279,7 @@
           "speakerName": "Break",
           "speakerId": "break",
           "time":"17:00 - 18:00",
-          "timeSlot": 13
+          "timeSlot": 14
         },
         {
           "speakerPicture": "",
@@ -275,7 +291,7 @@
           "type":"meetup",
           "talkTitle":"PostgreSQL Silicon Valley Meetup",
           "sortOrder": 16,
-          "timeSlot": 14,
+          "timeSlot": 15,
           "meetupLink":"",
           "talkAbstract":"<ul><li>PostgreSQL v12: Features and Migration Considerations</li><li> What’s New in YugaByte DB 2.0</li></ul><a href='https://www.meetup.com/Silicon-Valley-Postgres/events/263652612/'>Register Here</a>",
           "twitter":"",

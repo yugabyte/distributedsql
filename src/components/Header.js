@@ -9,7 +9,7 @@ const Header = (props) => (
         <Link to="/" className="logo">
           <img src={LogoDark} alt="Distributed SQL Summit" />
         </Link>
-        <span><Link to="/agenda">Agenda</Link></span>
+        <span><Link to="/schedule">Schedule</Link></span>
         <nav>
           <Menu />
         </nav>
