@@ -177,8 +177,8 @@
         },
         {
           "speakerPicture": "GuillermoTantachuco",
-          "speakerName": "Guilermo Tantachuco",
-          "speakerId": "guilermo-tantachuco",
+          "speakerName": "Guillermo Tantachuco",
+          "speakerId": "guillermo-tantachuco",
           "speakerDescription":"",
           "speakerPosition":"Principal Platform Architect",
           "speakerCompany":"Pivotal",
@@ -204,7 +204,7 @@
           "featured": true,
           "sortOrder": 12,
           "timeSlot": 11,
-          "mergeWith": "guilermo-tantachuco",
+          "mergeWith": "guillermo-tantachuco",
           "talkAbstract":"Business critical applications of the past are monolithic in design and run on proprietary databases like Oracle. These are being transformed into microservice-based cloud-native applications using popular frameworks like Spring - while the database itself is moving to cloud-native PostgreSQL deployments and distributed SQL databases. This talk will cover how Spring is evolving to enable building microservices on distributed SQL databases using a real world example. We will look at cloud-native aspects such as how to eliminate the load balancer by using cluster-aware SQL drivers, making discovery of the underlying database topology possible in applications and using reactive programming against SQL using R2DBC in the context of the application. Finally, we will conclude with a summary of the work actively happening in this area and what the future holds.",
           "twitter":"",
           "time":"15:00 - 15:30"
