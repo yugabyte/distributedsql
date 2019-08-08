@@ -1,11 +1,11 @@
 const path = require(`path`)
 var productionPlugins = []
-if(process.env.GATSBY_STAGE && process.env.GATSBY_STAGE==='production'){
+if(process.env.GATSBY_STAGE && process.env.GATSBY_STAGE==='production') {
   productionPlugins.push(
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "",
+        trackingId: `${process.env.GA_TRACKING_ID}`,
         // Puts tracking script in the head instead of the body
         head: true,
         // Setting this parameter is optional

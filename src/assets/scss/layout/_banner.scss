@@ -53,7 +53,7 @@
 			font-family: _font(family);
 			font-weight: _font(weight-bold-semi);
 			z-index: 10000;
-			padding-top: 30px;
+			padding-top: 3em;
 
 		}
 		.datedisplay
@@ -288,7 +288,7 @@
 	#banner {
 		.presents
 		{
-			padding-top: 30px;
+			padding-top: 5em;
 		}
 		> .inner {
 			margin: 0 auto!important;
@@ -310,7 +310,7 @@
 
 
 				h2.sub-text {
-					margin: 0 1em 2em !important;
+					margin: 0 1em !important;
 				}
 			}
 
@@ -365,7 +365,10 @@
 		padding: 5em 0 0em 0;
 	}
 	#banner {
-
+		.presents
+		{
+			padding-top: 1em;
+		}
 		h1 {
 			padding-top: 5px;
 			line-height: normal;
@@ -373,64 +376,28 @@
 		}
 		h2 {
 			font-size: 1.5em;
-			.whiteCircle
-			{
-				width: 25px;
-		    height: 25px;
-		    left: 165px;
-		    top: 30px;
-			}
 
 			.sub-text {
 				display: block;
+				margin: 0.5em !important;
 			}
 		}
-		.content
-		{
-			margin-bottom: 0 !important;
-			padding-top: 10px !important;
-			padding-left: 10px !important;
-			p
-			{
-				padding-bottom: 0;
-			}
 
-			h2.sub-text {
-				margin: 0 1em !important;
-			}
-		}
-		.datedisplay
-		{
-			font-size: 12px;
-			right: 10px;
-    	top: 50px;
-			text-align: right;
-			.datetile
-			{
-				font-size: 20px;
-				line-height: normal;
-			}
-			.daysleft
-			{
-				.whiteCircle
-				{
-					width: 10px;
-			    height: 10px;
-			    right: 0;
-			    top: 20px;
-				}
-			}
-		}
 		> .inner {
 			max-width: 90%!important;
 			.content
 			{
+				padding: 0 !important;
 				p
 				{
 					font-size: 20px;
 					padding-bottom: 10px;
 					text-align: center;
 					padding-top: 0;
+				}
+
+				h2.sub-text {
+					margin: 1em !important;
 				}
 				.actions
 				{
@@ -521,6 +488,7 @@
 				}
 				.actions
 				{
+					padding-top: 1em;
 					text-align: center;
 					li
 					{
@@ -661,6 +629,7 @@
 #sponsors {
 	.inner {
 		list-style: none;
+		text-align: center;
 	}
 	.content {
 		text-align: center;

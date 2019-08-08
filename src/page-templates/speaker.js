@@ -21,7 +21,7 @@ const SpeakerPage = (props) => {
     }
 
     const talks = speakerData.filter((speaker) => speaker.speakerPicture === props.pageContext.speakerPicture);
-    
+
     return(
     <Layout>
       <Helmet>
@@ -224,7 +224,7 @@ export const query1 = graphql`
         }
       }
     }
-    GuilermoTantachuco: file(relativePath: { eq: "GuilermoTantachuco.jpg" }) {
+    GuillermoTantachuco: file(relativePath: { eq: "GuillermoTantachuco.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 200) {
           ...GatsbyImageSharpFluid

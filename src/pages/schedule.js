@@ -106,7 +106,7 @@ const Schedules = (props) => (
           }
         }
       }
-      GuilermoTantachuco: file(relativePath: { eq: "GuilermoTantachuco.jpg" }) {
+      GuillermoTantachuco: file(relativePath: { eq: "GuillermoTantachuco.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 200) {
             ...GatsbyImageSharpFluid

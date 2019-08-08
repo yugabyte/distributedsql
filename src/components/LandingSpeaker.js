@@ -108,7 +108,7 @@ const LandingSpeaker = (props) => (
           }
         }
       }
-      GuilermoTantachuco1: file(relativePath: { eq: "GuilermoTantachuco.jpg" }) {
+      GuillermoTantachuco1: file(relativePath: { eq: "GuillermoTantachuco.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid
