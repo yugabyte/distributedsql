@@ -272,28 +272,5 @@
           "talkAbstract":"Developing YugaByte DB 2.0 was but not without its fair share of technical challenges. There were times when we had to go back to the drawing board and even sift through academic research to find a better solution than what we had at hand. In this talk we’ll outline some of the hardest architectural issues we have had to address in our journey of building an open source, cloud native, high-performance distributed SQL database. Topics include architecture, SQL compatibility, distributed transactions, consensus algorithms, atomic clocks and PostgreSQL code reuse.",
           "twitter":"",
           "time":"16:30 - 17:00"
-        },
-        {
-          "speakerPicture": "Break",
-          "speakerName": "Break",
-          "speakerId": "break",
-          "time":"17:00 - 18:00",
-          "timeSlot": 15
-        },
-        {
-          "speakerPicture": "meetup",
-          "speakerName": "Meetup",
-          "speakerId": "meetup",
-          "speakerDescription":"",
-          "speakerPosition":"",
-          "speakerCompany":"",
-          "type":"meetup",
-          "talkTitle":"PostgreSQL Silicon Valley Meetup",
-          "sortOrder": 16,
-          "timeSlot": 16,
-          "meetupLink":"",
-          "talkAbstract":"<ul><li>PostgreSQL v12: Features and Migration Considerations</li><li> What’s New in YugaByte DB 2.0</li></ul><a class='btn-rounded' href='https://www.meetup.com/Silicon-Valley-Postgres/events/263652612/'>Join</a>",
-          "twitter":"",
-          "time":"18:00 - 19:30"
         }
 ]
