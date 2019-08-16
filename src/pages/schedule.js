@@ -71,6 +71,13 @@ const Schedules = (props) => (
           }
         }
       }
+      VishalKathuria: file(relativePath: { eq: "VishalKathuria.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 200) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
       RobertWinslow: file(relativePath: { eq: "RobertWinslow.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 200) {

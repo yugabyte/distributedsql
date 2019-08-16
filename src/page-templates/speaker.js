@@ -182,6 +182,13 @@ export const query1 = graphql`
         }
       }
     }
+    VishalKathuria: file(relativePath: { eq: "VishalKathuria.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 200) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
     RamRavichandran: file(relativePath: { eq: "RamRavichandran.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 200) {
