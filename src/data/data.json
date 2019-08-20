@@ -26,6 +26,7 @@
           "featured": true,
           "sortOrder": 8,
           "timeSlot": 2,
+          "talkAbstract":"Modern apps have users and data that are distributed all over the world. Cloud-native patterns allow developers to run their compute on infrastructure that is also spread globally. However, building these applications involves putting together a lot of different tools and patterns which makes it hard to move fast and slows down delivery. I will introduce GraphQL as a modern API layer that is helping developers accelerate product delivery and the patterns / challenges in making GraphQL work with distributed SQL. I’m going to discuss architectures, recipes and show you demos of a modern and seamless developer experience for application developers.",
           "twitter":"",
           "time":"9:30 - 10:00"
         },
