@@ -154,6 +154,13 @@ export const query1 = graphql`
         }
       }
     }
+    TanmaiGopal: file(relativePath: { eq: "TanmaiGopal.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 200) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
     CampbellFraser: file(relativePath: { eq: "CampbellFraser.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 200) {
