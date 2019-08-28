@@ -252,7 +252,7 @@ export const query1 = graphql`
         }
       }
     }
-    KarthikRanganathan: file(relativePath: { eq: "KarthikRanganathan.jpg" }) {
+    MuruGuruswamy: file(relativePath: { eq: "MuruGuruswamy.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 200) {
           ...GatsbyImageSharpFluid
