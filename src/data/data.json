@@ -43,7 +43,7 @@
           "featured": true,
           "sortOrder": 2,
           "timeSlot": 3,
-          "mergeWith": "kannan-muthukkaruppan",
+          "mergeWith": "karthik-ranganathan",
           "panelist": true,
           "twitter":"",
           "time":"10:00 - 10:30"
@@ -77,7 +77,7 @@
           "sortOrder": 4,
           "timeSlot": 3,
           "talkAbstract":"Building cloud-native applications that are high performance, fault tolerant and scalable is a core competency at Facebook. As more traditional enterprises begin to move their data tier to the cloud and containerized environments, they are encountering many of the challenges that Facebook has already solved. In this panel discussion we dive into Facebook's distributed database journey covering technologies like MySQL UDB, RocksDB and ZippyDB. Panelists include Jeff Rothschild, Dhruba Borthakur, Vishal Kathuria and more to be announced.",
-          "mergeWith": "kannan-muthukkaruppan",
+          "mergeWith": "karthik-ranganathan",
           "twitter":"",
           "time":"10:00 - 10:30"
         },
@@ -177,7 +177,7 @@
           "featured": true,
           "sortOrder": 10,
           "timeSlot": 3,
-          "mergeWith": "kannan-muthukkaruppan",
+          "mergeWith": "karthik-ranganathan",
           "panelist": true,
           "talkAbstract":"Building cloud-native applications that are high performance, fault tolerant and scalable is a core competency at Facebook. As more traditional enterprises begin to move their data tier to the cloud and containerized environments, they are encountering many of the challenges that Facebook has already solved. In this panel discussion we dive into Facebook's distributed database journey covering technologies like MySQL UDB, RocksDB and ZippyDB. Panelists include Jeff Rothschild, Dhruba Borthakur, Vishal Kathuria and more to be announced.",
           "twitter":"",
@@ -258,11 +258,11 @@
           "time":"14:30 - 15:00"
         },
         {
-          "speakerPicture": "KannanMuthukkaruppan",
-          "speakerName": "Kannan Muthukkaruppan",
-          "speakerId": "kannan-muthukkaruppan",
+          "speakerPicture": "KarthikRanganathan",
+          "speakerName": "Karthik Ranganathan",
+          "speakerId": "karthik-ranganathan",
           "speakerDescription":"",
-          "speakerPosition":"Co-Founder & CEO",
+          "speakerPosition":"Co-Founder & CTO",
           "speakerCompany":"YugaByte",
           "type":"panel",
           "talkTitle":"Panel: Facebook's Distributed Database Evolution",

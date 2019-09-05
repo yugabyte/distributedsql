@@ -143,7 +143,7 @@ const LandingSpeaker = (props) => (
           }
         }
       }
-      KannanMuthukkaruppan1: file(relativePath: { eq: "KannanMuthukkaruppan.jpg" }) {
+      KarthikRanganathan1: file(relativePath: { eq: "KarthikRanganathan.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid

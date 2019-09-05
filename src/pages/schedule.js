@@ -22,7 +22,7 @@ const Schedules = (props) => (
           }
         }
       }
-      KannanMuthukkaruppan: file(relativePath: { eq: "KannanMuthukkaruppan.jpg" }) {
+      KarthikRanganathan: file(relativePath: { eq: "KarthikRanganathan.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 200) {
             ...GatsbyImageSharpFluid
