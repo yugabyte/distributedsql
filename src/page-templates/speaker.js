@@ -196,6 +196,13 @@ export const query1 = graphql`
         }
       }
     }
+    KadirOzdemir: file(relativePath: { eq: "KadirOzdemir.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 200) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
     RamRavichandran: file(relativePath: { eq: "RamRavichandran.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 200) {
