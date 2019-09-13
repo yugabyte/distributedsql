@@ -7,12 +7,13 @@
           "speakerPosition":"SVP Products",
           "speakerCompany":"Pivotal",
           "type":"talk",
-          "talkTitle":"Keynote",
+          "talkTitle":"The Past, Present and Future of Enterprise IT in a Cloud-Native World",
           "featured": true,
           "sortOrder": 1,
           "timeSlot": 1,
           "twitter":"",
-          "time":"9:00 - 9:30"
+          "time":"9:00 - 9:30",
+          "talkAbstract": "Today's modern enterprise applications and services are being designed from the ground up to support multi-cloud, hybrid and cloud-native environments. This is primarily being done to accelerate software delivery, ensure application portability and/or to satisfy security or compliance requirements. These cloud-native requirements are being similarly extended to the underlying database infrastructure that applications rely on. In this keynote, Jame Watters, SVP of Strategy at Pivotal, will walk us through the evolution, benefits and challenges that enterprise IT faces in transforming how it delivers applications, security, automation and data in a cloud-native first world."
         },
         {
           "speakerPicture": "TanmaiGopal",
