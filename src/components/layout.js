@@ -35,8 +35,13 @@ class Layout extends React.Component {
                         { name: 'image', content: './assets/images/Icon.png' },
                         { name: 'og:url', content: 'https://distributedsql.org' },
                         { name: 'og:title', content: 'Distributed SQL Summit' },
+                        { name: 'og:description', content: 'Distributed SQL Summit' },
+                        { name: 'og:type', content: 'website' },
                         { name: 'og:image', content: 'https://distributedsql.org/OGImage.jpg' },
                         { name: 'twitter:image', content: 'https://distributedsql.org/OGImage.jpg' },
+                        { name: 'twitter:image', content: 'https://distributedsql.org/OGImage.jpg' },
+                        { name: 'og:image:secure_url', content: 'https://distributedsql.org/OGImage.jpg' },
+                        { name: 'twitter:image:secure_url', content: 'https://distributedsql.org/OGImage.jpg' },
                         { name: 'twitter:card', content: 'summary_large_image' },
                         { name: 'twitter:creator', content: 'yugabyte' },
                     ]}
