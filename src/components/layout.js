@@ -42,7 +42,7 @@ class Layout extends React.Component {
                         { name: 'twitter:image', content: 'https://distributedsql.org/OGImage.jpg' },
                         { name: 'og:image:secure_url', content: 'https://distributedsql.org/OGImage.jpg' },
                         { name: 'twitter:image:secure_url', content: 'https://distributedsql.org/OGImage.jpg' },
-                        { name: 'twitter:card', content: 'summary_large_image' },
+                        { name: 'twitter:card', content: 'summary' },
                         { name: 'twitter:creator', content: 'yugabyte' },
                     ]}
                 ></Helmet>
