@@ -72,11 +72,11 @@ const SpeakerPage = (props) => {
                             }} rel="noopener noreferrer" target="_blank" href={`https://twitter.com/${props.pageContext.twitter}`} className="fa-twitter icon">&nbsp;</a>
                             :null
                         }
-                        <h2 style={{
+                        {props.pageContext.speakerDescription && <h2 style={{
                             fontSize: '18px',
                             color: '#e535ab',
                             textTransform: 'uppercase',
-                        }}>About</h2>
+                        }}>About</h2>}
                         <p>
                         {props.pageContext.speakerDescription}
                         </p>
@@ -162,6 +162,13 @@ export const query1 = graphql`
       }
     }
     CampbellFraser: file(relativePath: { eq: "CampbellFraser.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 200) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    HarrisonFisk: file(relativePath: { eq: "HarrisonFisk.png" }) {
       childImageSharp {
         fluid(maxWidth: 200) {
           ...GatsbyImageSharpFluid

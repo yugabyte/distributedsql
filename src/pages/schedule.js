@@ -43,6 +43,13 @@ const Schedules = (props) => (
           }
         }
       }
+      HarrisonFisk: file(relativePath: { eq: "HarrisonFisk.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 200) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
       TanmaiGopal: file(relativePath: { eq: "TanmaiGopal.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 200) {
