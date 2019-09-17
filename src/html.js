@@ -8,6 +8,9 @@ export default class HTML extends React.Component {
         <head>
           <meta charSet="utf-8" />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
+          <meta prefix="og: http://ogp.me/ns#" property="og:type" content="website" />
+          <meta prefix="og: http://ogp.me/ns#" property="og:image" content="https://distributedsql.org/OGImage.jpg" />
+
           <meta
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"

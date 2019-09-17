@@ -32,7 +32,7 @@ class Layout extends React.Component {
                         { name: 'description', content: 'Distributed SQL Summit' },
                         { name: 'keywords', content: 'Distributed SQL, Postgres, YugaByte' },
                         { name: 'google-site-verification', content: 'IrJBdGcrNYjaVXTiMFpMckF5pC2MsY9x6nt8TgMtmGE' },
-                        { name: 'image', content: './assets/images/Icon.png' },
+                        { name: 'image', content: 'https://distributedsql.org/Icon.png' },
                         { name: 'og:url', content: 'https://distributedsql.org' },
                         { name: 'og:title', content: 'Distributed SQL Summit' },
                         { name: 'og:description', content: 'Distributed SQL Summit' },
