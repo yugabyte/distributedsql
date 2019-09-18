@@ -175,6 +175,13 @@ export const query1 = graphql`
         }
       }
     }
+    VictoriaDudin: file(relativePath: { eq: "VictoriaDudin.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 200) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
     MaheshTyagarajan: file(relativePath: { eq: "MaheshTyagarajan.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 200) {
