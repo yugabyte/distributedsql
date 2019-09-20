@@ -182,13 +182,6 @@ export const query1 = graphql`
         }
       }
     }
-    MaheshTyagarajan: file(relativePath: { eq: "MaheshTyagarajan.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 200) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
     KamalGupta: file(relativePath: { eq: "KamalGupta.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 200) {

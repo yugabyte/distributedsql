@@ -47,7 +47,7 @@
           "mergeWith": "karthik-ranganathan",
           "panelist": true,
           "twitter":"",
-          "time":"10:00 - 10:30"
+          "time":"10:00 - 11:00"
         },
         {
           "speakerPicture": "VictoriaDudin",
@@ -66,23 +66,7 @@
           "talkAbstract":"Building cloud-native applications that are high performance, fault tolerant and scalable is a core competency at Facebook. As more traditional enterprises begin to move their data tier to the cloud and containerized environments, they are encountering many of the challenges that Facebook has already solved. In this panel discussion we dive into Facebook's distributed database journey covering technologies like MySQL UDB, RocksDB and ZippyDB. Panelists include Jeff Rothschild, Victoria Dudin, Vishal Kathuria, Harrison Fisk and Dhruba Borthakur .",
           "twitter":"",
           "linkedin": "",
-          "time":"10:00 - 10:30"
-        },
-        {
-          "speakerPicture": "MaheshTyagarajan",
-          "speakerName": "Mahesh Tyagarajan",
-          "speakerId": "mahesh-tyagarajan",
-          "speakerDescription":"",
-          "speakerPosition":"VP Engineering",
-          "speakerCompany":"Kroger",
-          "type":"talk",
-          "talkTitle":"Transforming the Omni-Channel Experience at Kroger",
-          "featured": true,
-          "sortOrder": 3,
-          "timeSlot": 13,
-          "talkAbstract":"Evolving the technology stack at Kroger to meet the transformational needs of the business – to become a true omni-channel retailer in the food/grocery space. The technology stack evolves to a cloud-native micro-services platform which moves from an on-prem ecosystem to a hybrid of on-prem and public cloud infrastructure. Along this journey we are not lifting and shifting but rethinking the entirety of the stack to modern cloud-agnostic cloud-native architectures by using an abundance of open source (and COSS), highly scaled shared-nothing components, all based on the foundation of Kubernetes.",
-          "twitter":"",
-          "time":"15:30 - 16:00"
+          "time":"10:00 - 11:00"
         },
         {
           "speakerPicture": "VishalKathuria",
@@ -99,7 +83,7 @@
           "talkAbstract":"Building cloud-native applications that are high performance, fault tolerant and scalable is a core competency at Facebook. As more traditional enterprises begin to move their data tier to the cloud and containerized environments, they are encountering many of the challenges that Facebook has already solved. In this panel discussion we dive into Facebook's distributed database journey covering technologies like MySQL UDB, RocksDB and ZippyDB. Panelists include Jeff Rothschild, Victoria Dudin, Vishal Kathuria, Harrison Fisk and Dhruba Borthakur ",
           "mergeWith": "karthik-ranganathan",
           "twitter":"",
-          "time":"10:00 - 10:30"
+          "time":"10:00 - 11:00"
         },
         {
           "speakerPicture": "KadirOzdemir",
@@ -128,11 +112,11 @@
           "talkTitle":"An Introduction to Amazon Aurora",
           "featured": true,
           "sortOrder": 6,
-          "timeSlot": 4,
+          "timeSlot": 13,
           "talkAbstract":"Amazon Aurora is a relational database service for OLTP workloads offered as part of Amazon Web Services (AWS). In this talk, we describe how Aurora brings a novel architecture to the relational database by pushing redo processing to a multi-tenant scale-out storage service, purpose-built for Aurora. We describe how doing so not only reduces network traffic, but also allows for fast crash recovery, failovers to replicas without loss of data, and fault-tolerant, self-healing storage.",
           "twitter":"",
           "linkedin": "",
-          "time":"10:30 - 11:00"
+          "time":"15:30 - 16:00"
         },
         {
           "speakerPicture": "HarrisonFisk",
@@ -151,7 +135,7 @@
           "talkAbstract":"Building cloud-native applications that are high performance, fault tolerant and scalable is a core competency at Facebook. As more traditional enterprises begin to move their data tier to the cloud and containerized environments, they are encountering many of the challenges that Facebook has already solved. In this panel discussion we dive into Facebook's distributed database journey covering technologies like MySQL UDB, RocksDB and ZippyDB. Panelists include Jeff Rothschild, Victoria Dudin, Vishal Kathuria, Harrison Fisk and Dhruba Borthakur .",
           "twitter":"",
           "linkedin": "",
-          "time":"10:00 - 10:30"
+          "time":"10:00 - 11:00"
         },
         {
           "speakerPicture": "CampbellFraser",
@@ -221,7 +205,7 @@
           "talkAbstract":"Building cloud-native applications that are high performance, fault tolerant and scalable is a core competency at Facebook. As more traditional enterprises begin to move their data tier to the cloud and containerized environments, they are encountering many of the challenges that Facebook has already solved. In this panel discussion we dive into Facebook's distributed database journey covering technologies like MySQL UDB, RocksDB and ZippyDB. Panelists include Jeff Rothschild, Victoria Dudin, Vishal Kathuria, Harrison Fisk and Dhruba Borthakur ",
           "twitter":"",
           "linkedin": "",
-          "time":"10:00 - 10:30"
+          "time":"10:00 - 11:00"
         },
         {
           "speakerPicture": "RobertWinslow",
@@ -311,7 +295,7 @@
           "isModerator": true,
           "talkAbstract":"Building cloud-native applications that are high performance, fault tolerant and scalable is a core competency at Facebook. As more traditional enterprises begin to move their data tier to the cloud and containerized environments, they are encountering many of the challenges that Facebook has already solved. In this panel discussion we dive into Facebook's distributed database journey covering technologies like MySQL UDB, RocksDB and ZippyDB. Panelists include Jeff Rothschild, Victoria Dudin, Vishal Kathuria, Harrison Fisk and Dhruba Borthakur ",
           "twitter":"",
-          "time":"10:00 - 10:30"
+          "time":"10:00 - 11:00"
         },
         {
           "speakerPicture": "RamRavichandran",

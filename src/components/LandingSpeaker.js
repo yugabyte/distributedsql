@@ -59,13 +59,6 @@ const LandingSpeaker = (props) => (
           }
         }
       }
-      MaheshTyagarajan1: file(relativePath: { eq: "MaheshTyagarajan.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 500) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
       KadirOzdemir1: file(relativePath: { eq: "KadirOzdemir.png" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
