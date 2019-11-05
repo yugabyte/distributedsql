@@ -87,12 +87,12 @@ const Banner = (props) => (
                    A full day of talks from experts on what it takes to build, deploy
                    and scale distributed SQL databases in the cloud and on Kubernetes
                </h2>
-                   <ul className="actions">
-                       <li>
-                           <a className="btn-rounded" href="https://postgresconf.org/conferences/SV2019/tickets"
-                              target="_blank" rel="noopener noreferrer">Register</a>
-                       </li>
-                   </ul>
+               <div style={{padding:'56.25% 0 0 0', position:'relative'}}>
+                 <iframe src="https://player.vimeo.com/video/370182649?autoplay=1&title=0&byline=0&portrait=0"
+                        title="highlights"
+                        style={{position: 'absolute', top: 0, left: 0, width: '100%', height:'100%'}}
+                        frameborder="0" allow="autoplay; fullscreen" allowfullscreen />
+                </div>
              </div>
            </div>
          </BackgroundImage>
