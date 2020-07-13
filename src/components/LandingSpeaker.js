@@ -1,14 +1,62 @@
 import React from 'react'
+import Topics from './Topics'
 import { Link, StaticQuery, graphql } from 'gatsby'
 
 const speakerData = require('../data/data.json')
 
+const featuredSpeakers = [
+  {
+    "speakerPicture": "LianghongXu",
+    "speakerName": "Lianghong Xu",
+    "speakerId": "lianghong-xu",
+    "speakerPosition":["Engineering Manager", "Storage and Caching Team"],
+    "speakerCompany":"Pinterest",
+    "borderColor":"#D03A6C"
+  },
+  {
+    "speakerPicture": "KarthikRanganathan",
+    "speakerName": "Karthik Ranganathan",
+    "speakerId": "karthik-ranganathan",
+    "speakerPosition":"CTO and Co-Founder",
+    "speakerCompany":"Yugabyte",
+    "borderColor":"#885DD7"
+  },
+  {
+    "speakerPicture": "SidChoudhury",
+    "speakerName": "Sid Choudhury",
+    "speakerId": "sid-choudhury",
+    "speakerPosition":"SVP of Product",
+    "speakerCompany":"Yugabyte",
+    "borderColor":"#FF6E42"
+  },
+  {
+    "speakerPicture": "MehrdadNurolahzade",
+    "speakerName": "Mehrdad Nurolahzade",
+    "speakerId": "mehrdad-nurolahzade",
+    "speakerPosition":"Platform Engineer",
+    "speakerCompany":"Twitter",
+    "borderColor":"#1da4f2"
+  }
+];
+
 const Speaker = (props) => {
+  const borderColor = props.borderColor || '#000041';
+  let speakerPosition = props.speakerPosition;
+  if (typeof props.speakerPosition !== 'string') {
+    const arr = []
+    props.speakerPosition.forEach((x, index) => {
+      if (index !== 0) {
+        arr.push(<br />);
+      }
+      arr.push(x);
+    });
+    speakerPosition = arr;
+  }
   return (
     <div className="speakerList" >
       <div className="profile" key={props.speakerId} id={props.speakerId}>
         <div className="speakerImage">
-          <img src={props.speakerImage} alt="profile"/>
+          <img src={props.speakerImage} alt="profile" style={{border: `3px solid ${borderColor}`}}/>
         </div>
         <div className="speakerProfile">
           <div className="profileWrapper">
@@ -24,10 +72,9 @@ const Speaker = (props) => {
 
             </div>
           </div>
-          <div className="profielBio">
-            {props.speakerPosition}
-            <br />
-            {props.speakerCompany}
+          <div className="profileBio">
+            {speakerPosition},&nbsp;
+            <strong>{props.speakerCompany}</strong>
           </div>
         </div>
       </div>
@@ -157,7 +204,28 @@ const LandingSpeaker = (props) => (
           }
         }
       }
-      KarthikRanganathan1: file(relativePath: { eq: "KarthikRanganathan.jpg" }) {
+      LianghongXu1: file(relativePath: { eq: "LianghongXu.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      KarthikRanganathan1: file(relativePath: { eq: "KarthikRanganathan.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      SidChoudhury1: file(relativePath: { eq: "SidChoudhury.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      MehrdadNurolahzade1: file(relativePath: { eq: "MehrdadNurolahzade.jpeg" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid
@@ -173,43 +241,39 @@ const LandingSpeaker = (props) => (
       }
     }
   `}
-  render={data => {
-    var landingSpeakerList = []
-    const sortedSpeakers = [...speakerData].filter((v=>v.featured===true)).sort((a,b)=>a.sortOrder-b.sortOrder)
-    sortedSpeakers.forEach(speaker => {
-      const speakerData =  speaker
-      try {
-        const speakerPicture = data[speakerData.speakerPicture+'1'] ?
-          data[speakerData.speakerPicture+'1'].childImageSharp.fluid.src :
-          speakerData.speakerPicture.src;
-        if(speakerPicture) {
-          landingSpeakerList.push(
-            <Speaker
-              key={'s'+speakerData.speakerId}
-              speakerId={speakerData.speakerId}
-              speakerName={speakerData.speakerName}
-              speakerImage={speakerPicture}
-              speakerPosition={speakerData.speakerPosition}
-              speakerCompany={speakerData.speakerCompany}
-            />
-          )
-        }
-      } catch (error) {
-        console.error(error)
-      }
+  render={data => {    
+    let landingSpeakerList = [];
+    featuredSpeakers.forEach((speakerInfo) => {
+      const speakerPicture = data[speakerInfo.speakerPicture+'1'] ? data[speakerInfo.speakerPicture+ '1'].childImageSharp.fluid.src : speakerInfo.speakerPicture.src;
+      landingSpeakerList.push(<Speaker
+        key={'s'+speakerInfo.speakerId}
+        speakerId={speakerInfo.speakerId}
+        speakerName={speakerInfo.speakerName}
+        speakerImage={speakerPicture}
+        speakerPosition={speakerInfo.speakerPosition}
+        speakerCompany={speakerInfo.speakerCompany}
+        borderColor={speakerInfo.borderColor}
+      />);
     });
     return (
       <section id="landingSpeaker" className="major">
         <div className="inner">
+          <Topics />
+          <div className="description">
+            <p>
+            <strong>Join us</strong> for the second annual Distributed SQL Summit, the event that brings together thought leaders, database builders, and application developers to discuss how to leverage distributed SQL systems to build applications and services in the cloud.
+            </p>
+          </div>        
           <header className="major">
               <h2>
-                Speakers
+                Featured Speakers
               </h2>
+              <aside>Full schedule coming soon</aside>
           </header>
-          <div className="speakerListWrppar">
+          <div className="speakerListWrappar">
             {landingSpeakerList}
           </div>
-        </div>
+        </div>        
       </section>
     )
   }}

@@ -22,8 +22,8 @@ class Layout extends React.Component {
     }
 
     render() {
-        const { children } = this.props
-
+        const { children, footerSettings = {} } = this.props
+        const { darkTheme, showSocialIcons = true } = footerSettings;
         return (
             <div className={`body ${this.state.isMenuVisible ? 'is-menu-visible' : ''}`}>
                 <Helmet
@@ -43,11 +43,11 @@ class Layout extends React.Component {
                         { name: 'twitter:card', content: 'summary_large_image' },
                         { name: 'twitter:creator', content: 'yugabyte' },
                     ]}
-                ></Helmet>
+                />
                 <div id="wrapper">
                     <Header onToggleMenu={this.handleToggleMenu} />
                     {children}
-                    <Footer />
+                    <Footer dark={darkTheme} socialIcons={showSocialIcons} />
                 </div>
             </div>
         )

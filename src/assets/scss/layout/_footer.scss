@@ -6,42 +6,111 @@
 
 /* Footer */
 
-	#footer {
-		background-color: #322965;
-		color: _palette(bg);
-		@include breakpoint(small) {
-			.links{
-				display: none;
-			}
-		}
-		.copyright {
-			font-size: 0.8em;
-			list-style: none;
-			padding-left: 0;
-
-			li {
-				border-left: solid 1px _palette(border);
-				color: _palette(fg-light);
-				display: inline-block;
-				line-height: 1;
-				margin-left: 1em;
-				padding-left: 1em;
-
-				&:first-child {
-					border-left: 0;
-					margin-left: 0;
-					padding-left: 0;
-				}
-			}
-		}
-
-		.inner {
-			.icons {
-				margin-top: 0.8em;
-			}
-		}
-
-		@include breakpoint(small) {
-			margin-bottom: 40px;
+#footer {
+	background-color: #F9FAFC;
+	color: _palette(bg);
+	@include breakpoint(small) {
+		.links{
+			display: none;
 		}
 	}
+	.copyright {
+		font-size: 18px;
+		list-style: none;
+		padding-left: 0;
+
+		li {
+			border-left: solid 1px _palette(border);
+			color: _palette(fg-light);
+			display: inline-block;
+			line-height: 1;
+			margin-left: 1em;
+			padding-left: 1em;
+
+			&:first-child {
+				border-left: 0;
+				margin-left: 0;
+				padding-left: 0;
+			}
+		}
+	}
+
+	.inner {
+		.icons {
+			margin-top: 0.8em;
+		}
+	}
+
+	.container.inner {
+		padding: 64px 0;
+		display: flex;
+
+		> div {
+			padding: 0 45px;
+		}
+	}
+
+	@include breakpoint(small) {
+		margin-bottom: 40px;
+	}
+
+	.logo {
+		img {
+			vertical-align: middle;
+		}
+	}
+
+	.content {
+		border-left: 1px solid #000041;
+
+		.icon {
+			color: #342a66;
+			font-size: 24px;
+		}
+
+		align-items: center;
+		align-content: center;
+		display: flex;
+
+		.actions {
+			margin-bottom: 0;
+
+			li {
+				padding: 0 8px;
+			}
+		}
+	}
+
+	.legal {
+		color: #332A66;
+		display: inline-flex;
+		align-items: center;
+
+		.support-links {
+			list-style: none;
+			margin: 0 0 0 30px;
+			padding: 0;
+			display: flex;
+
+			> li {
+				padding: 0 10px;
+				font-size: 18px;
+			}			
+		}
+	}
+}
+
+#footer.dark {
+	background: #000041;
+	
+	.content {
+		border-left: 1px solid #FFF;
+		
+		.icon {
+			color: #FFFFFF;
+		}
+	}
+	.legal {
+		color: #FFFFFF;
+	}
+}

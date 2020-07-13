@@ -1,39 +1,85 @@
 #footer-banner {
   text-align: center;
+  background: #EEF1FA;
+  padding: 70px 0;
 
-  .inner {
-    min-height: 700px;
+  .container {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .distributedsql-text {
+    max-width: 686px;
+    padding: 0;
+    text-align: left;
+
     h1 {
-        font-size: 1.6875em;
-        font-family: "Rubik Medium", sans-serif;
+        font-size: 60px;
         font-weight: 500;
-        color: #fff;
+        color: #000041;
+        margin-bottom: 10px;
     }
 
+    .content {
+      color: #141920;
+      font-size: 22px;
+      font-weight: 400;
 
-    h2 {
-      font-size: 18px;
-      font-family: _font(family);
-      font-weight: _font(weight);
-      color: _palette(bg);
-      padding-left: 20px;
+      .learn-more {
+        padding-left: 4px;
+        font-weight: 600;
+        cursor: pointer;
+
+        &:after {
+          content: "\f0da";
+          font-family: 'FontAwesome';
+          font-weight: 900;
+          color: #FF6E42;
+          margin-left: 4px;
+        }
+      }
+
+      .learn-more:hover:after{
+        margin-left: 8px;
+      }
     }
 
     .actions {
       padding-top: 20px;
-      .bannerButton
-      {
-        border-radius: 8px;
-        background-color: #FF6E42;
-        border: 2px solid #FF6E42;
-        padding: 10px 40px;
-        color: #FFF;
-        font-size: 15px;
-        font-weight: 500;
-        transition: .2s ease all;
-        min-width: 185px;
-        display: inline-block;
-        text-align: center;
+
+      > h4 {
+        color: #141920;
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 23px;
+      }
+    }
+  }
+
+  .value-props {
+    display: flex;
+    flex: 0 1 500px;
+    flex-wrap: wrap;
+    height: 100%;
+    padding-top: 24px;
+
+    .value-props__item {
+      flex: 1 0 50%;
+      text-align: center;
+      margin-bottom: 30px;
+
+      .icon {
+        width: 102px;
+        height: 102px;
+        margin: 0 auto;
+      }
+
+      h4 {
+        color: #141920;
+        font-size: 16px;
+        font-weight: 600;
+        margin-top: 15px;
       }
     }
   }

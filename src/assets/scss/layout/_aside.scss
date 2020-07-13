@@ -1,0 +1,130 @@
+/* Topics */
+aside#topics {
+    float: right;
+    width: 430px;
+    text-align: left; 
+    margin-left: 30px;   
+
+    header {
+        background: #EEF1FA;
+        padding: 30px 40px 30px 50px;
+        border-radius: 7px 7px 0 0;
+        
+        h3 {
+            color: #141920;
+            font-size: 22px;
+            font-weight: 600;
+            margin: 0;
+        }
+    }
+
+    .topics__content {
+        padding: 30px 40px 30px 50px;
+        box-shadow: 0 9px 0px 0px #EEF1FA, 0 -9px 0px 0px #EEF1FA, 5px 0 15px -4px #eeeeee, -5px 0 15px -4px #eeeeee;
+
+        h3 {
+            color: #FF6E42;
+            font-size: 22px;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        li, p {
+            font-size: 20px;
+            font-weight: 400;
+            color: #141920;
+        }
+
+        .topics__caption strong {
+            color: #141920;
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }
+
+    .topics__archive {
+        background: #EEF1FA;
+        padding: 40px 40px 40px 50px;
+        border-radius: 0 0 7px 7px;
+    }
+}
+
+#register-form {
+    min-height: 500px;
+    position: relative;
+    background: #fff;
+    padding-bottom: 55px;
+
+    .register--aside {
+        background: transparent linear-gradient(129deg, #8766F0 0%, #1F1FDD 54%, #000041 100%) 0% 0% no-repeat padding-box;
+        margin-left: auto;
+        width: 700px;
+        margin-top: -250px;
+        padding: 90px 65px;
+        min-height: 600px;
+
+        input {
+            background: #bdb9f5;
+            border-radius: 7px;
+            color: #141920;
+            width: 100%;
+            margin-bottom: 46px;
+            border: none;
+            font-weight: 400;
+            font-size: 22px;
+            height: 70px;
+            padding: 20px 30px;
+            
+            &::-webkit-input-placeholder {
+                color: #141920;
+
+              }
+              &::-moz-placeholder {
+                color: #141920;
+              }
+              &:-ms-input-placeholder {
+                color: #141920;
+              }
+              &:-moz-placeholder {
+                color: #141920;
+              }
+        }
+
+        button[type="submit"] {
+            margin-top: 10px;
+        }
+
+        &.confirmation {
+            color: #FFF;
+
+            .thank-you-note {
+                color: inherit;
+                font-size: 30px;
+                font-weight: 500;
+            }
+
+            h2 {
+                color: inherit;
+                font-size: 70px;
+                font-weight: 500;
+                line-height: 1.1;
+            }
+
+            .reminder {
+                color: inherit;
+                font-size: 30px;
+                font-weight: 400;
+                margin-bottom: 15px;
+            }
+
+            .social-media {
+                justify-content: left;
+                display: flex;
+
+                li {
+                    padding: 0 0.5em 0 0;
+                }
+            }
+        }
+    }
+}

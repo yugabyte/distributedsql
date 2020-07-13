@@ -4,7 +4,7 @@ import Layout from '../components/layout'
 import Banner from '../components/Banner'
 import LandingSpeaker from '../components/LandingSpeaker'
 import WhatIsDistributedSQL from '../components/WhatIsDistributedSQL'
-import Sponsors from '../components/Sponsors'
+import ContactBanner from '../components/ContactBanner'
 
 class HomeIndex extends React.Component {
     render() {
@@ -21,7 +21,7 @@ class HomeIndex extends React.Component {
                 <Banner />
                 <LandingSpeaker/>
                 <WhatIsDistributedSQL/>
-                <Sponsors />
+                <ContactBanner />
             </Layout>
         )
     }
