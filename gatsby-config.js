@@ -33,6 +33,7 @@ if(process.env.GATSBY_STAGE && process.env.GATSBY_STAGE==='production') {
   )
 }
 module.exports = {
+  pathPrefix: `/2019`,
   assetPrefix: `https://archive.distributedsql.org`,
   siteMetadata: {
     title: "Distributed SQL",
