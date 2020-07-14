@@ -33,7 +33,7 @@ if(process.env.GATSBY_STAGE && process.env.GATSBY_STAGE==='production') {
   )
 }
 module.exports = {
-  assetPrefix: `archive.distributedsql.org`,
+  assetPrefix: `https://archive.distributedsql.org`,
   siteMetadata: {
     title: "Distributed SQL",
     author: "YugaByte Inc",
