@@ -1,5 +1,5 @@
 [[redirects]]
-  from = "/2019"
-  to = "https://distributedsql.org"
+  from = "/2019/*"
+  to = "https://distributedsql.org/:splat"
   status = 200
   force = true
