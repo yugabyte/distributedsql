@@ -39,6 +39,10 @@
 		&:hover {
 			border-bottom-color: transparent;
 			color: _palette(highlight) !important;
+
+			svg {
+				fill: _palette(highlight) !important;
+			}
 		}
 
 		&:active {

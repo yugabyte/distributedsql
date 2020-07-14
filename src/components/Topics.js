@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-const Topics = (props) => (
-    <aside id="topics">
+const Topics = ({mobile}) => (
+    <aside className={mobile ? "topics mobile" : "topics"}>
         <header>
             <h3>What will you learn?</h3>
         </header>
@@ -26,7 +26,7 @@ const Topics = (props) => (
             <p className="topics__caption"><strong>See what happened in 2019:</strong></p>
         </div>
         <div className="topics__archive">
-            <Link to="/" className="btn-rounded secondary">                
+            <Link to="/2019" className="btn-rounded secondary">                
                 View 2019 Content
             </Link>
         </div>

@@ -36,6 +36,7 @@
 		position: relative;
 		top: -3.25em;
 		margin-top: 5em;
+		z-index: 10;
 
 		.inner
 		{
@@ -161,8 +162,8 @@
 
 				li {
 					padding: 0 58px;
-					position: relative;
-				}
+					position: relative;					
+				}				
 
 				li:not(:last-child):after {
 					content: '';
@@ -185,6 +186,16 @@
 					color: #FF6E42;
 					font-size: 25px;
 					font-weight: 500;
+				}
+			}			
+
+			@include breakpoint(small) {
+				.details {
+					display: block;
+
+					li:not(:last-child):after {
+						display: none;
+					}
 				}
 			}
 		}
@@ -347,7 +358,52 @@
 				}				
 			}
 		}
+
+		.no-content {
+			width: 100%;
+			height: 667px;
+		}
 	}
+
+#contact-banner {
+	padding: 0 0 20px;
+	background: #322965;
+
+	.inner {
+		list-style: none;
+		text-align: center;
+	}
+	.content {
+		text-align: center;
+		padding: 0 5em;
+		color: #FFFFFF;
+
+		.header {
+			text-align: center;
+			font-size: 60px;
+			font-weight: 400;
+			margin-bottom: 5px;
+			color: inherit;
+		}
+
+		h4 {
+			font-size: 22px;
+			font-weight: 400;
+			margin-bottom: 30px;
+			color: inherit;
+		}
+	}
+
+	@media screen and (max-width: 736px)
+	{
+		.inner {
+			text-align: center;
+		}
+		.content {
+			padding: 0;
+		}
+	}
+}
 
 @media screen and (max-width: 1680px) {
 	#banner {
@@ -379,7 +435,7 @@
 	}
 }
 
-@media screen and (max-width: 1020px) {
+@include breakpoint(medium) {
 	#banner.major
 	{
 		min-height: 32em;
@@ -417,15 +473,28 @@
 		}
 
 		> .inner {
+			max-width: 90% !important;
+
+			header > h1 {
+				font-size: 58px;
+				width: 100%;
+			}
 			.details {
 				li {
-					padding: 0 30px;
+					padding: 0 20px;
+				}
+
+				h3 {
+					font-size: 26px;
 				}
 			}
 		}
 	}
+	#register-banner header .details {
+		margin: 50px 0 150px;
+	}
 }
-@media screen and (max-width: 736px) {
+@include breakpoint(small) {
 	#banner.major {
 		// height: 30em;
     min-height: 30em;
@@ -436,6 +505,7 @@
 		.presents
 		{
 			padding-top: 1em;
+			margin-bottom: 40px;
 		}
 		h1 {
 			padding-top: 5px;
@@ -487,8 +557,45 @@
 			}
 		}
 	}
-}
 
+	#landingSpeaker {
+		.description {
+			margin-top: 40px;
+		}
+	}
+
+	.speakerListWrappar {
+		margin: 0 0 50px 15px;
+	}
+
+	#contact-banner {
+		padding: 40px 0;
+		.content {			
+			.header {
+				font-size: 48px;
+			}
+			h4 {
+				font-size: 18px;
+			}
+		}
+	}
+	#register-banner {
+		.back-link {
+			margin: 40px 0 0;
+		}
+		header.major {
+			margin: 0 auto 50px;
+			padding: 0 40px;
+			> h1 {
+				font-size: 56px;
+			}
+		}
+
+		.no-content {
+			height: 250px;
+		}
+	}
+}
 
 @media screen and (max-width: 480px) {
 	#banner.major {
@@ -607,8 +714,8 @@
 
 				img
 				{
-					width: 100%;
-					height: 100%;
+					width: inherit;
+					height: inherit;
 					object-fit: cover;
 					object-position: top center;
 					border-radius: 50%;
@@ -703,43 +810,3 @@
 	}
 }
 
-
-#contact-banner {
-	padding: 0 0 20px;
-	background: #322965;
-
-	.inner {
-		list-style: none;
-		text-align: center;
-	}
-	.content {
-		text-align: center;
-		padding: 0 5em;
-		color: #FFFFFF;
-
-		.header {
-			text-align: center;
-			font-size: 60px;
-			font-weight: 400;
-			margin-bottom: 5px;
-			color: inherit;
-		}
-
-		h4 {
-			font-size: 22px;
-			font-weight: 400;
-			margin-bottom: 30px;
-			color: inherit;
-		}
-	}
-
-	@media screen and (max-width: 736px)
-	{
-		.inner {
-			text-align: center;
-		}
-		.content {
-			padding: 0;
-		}
-	}
-}

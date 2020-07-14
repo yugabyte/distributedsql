@@ -1,24 +1,128 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { graphql, StaticQuery } from 'gatsby'
+import BackgroundImage from 'gatsby-background-image'
+import SlackLogo from './Slack';
+
+const CLIENT_ID = '201773289674-7i9djb4f0n9i4mordfol8gjm01efgsul.apps.googleusercontent.com';
+const API_KEY = 'AIzaSyC7UmWjMil-0CWmEX8-43lruJsjjUc3clk';
+// Array of API discovery doc URLs for APIs used
+const DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"];
+// Authorization scopes required by the API; multiple scopes can be
+// included, separated by spaces.
+const SCOPES = "https://www.googleapis.com/auth/calendar.events";
+
+const EVENT_OBJ = {
+  'summary': 'Distributed SQL Virtual Summit 2020',
+  'location': 'Virtual Conference',
+  'description': 'Second annual Distributed SQL Summit, discussing how to build applications and services in the cloud.',
+  'start': {
+    'dateTime': '2020-09-16T10:00:00-07:00',
+    'timeZone': 'America/Los_Angeles'
+  },
+  'end': {
+    'dateTime': '2020-09-16T14:00:00-07:00',
+    'timeZone': 'America/Los_Angeles'
+  },
+  'reminders': {
+    'useDefault': false,
+    'overrides': [
+      {'method': 'email', 'minutes': 24 * 60},
+      {'method': 'popup', 'minutes': 10}
+    ]
+  }
+};
 
 const Confirmation = (props) => {
+
+  const handleCalendarClick = (event) => {
+    updateSigninStatus(window.gapi.auth2.getAuthInstance().isSignedIn.get());
+  }  
+
+  const addToCalendar = () => {
+    var request = window.gapi.client.calendar.events.insert({
+      'calendarId': 'primary',
+      'resource': EVENT_OBJ
+    });
+    request.execute((event) => {
+      console.log('Event created: ' + event.htmlLink);
+    });
+  }
+
+  const updateSigninStatus = (isSignedIn) => {
+    if (isSignedIn) {
+      addToCalendar();
+    }
+  }
+
+  const initClient = () => {
+    window.gapi.client.init({
+      apiKey: API_KEY,
+      clientId: CLIENT_ID,
+      discoveryDocs: DISCOVERY_DOCS,
+      scope: SCOPES
+    }).then(() => {
+      // Listen for sign-in state changes.
+      window.gapi.auth2.getAuthInstance().isSignedIn.listen(updateSigninStatus);      
+    }, function(error) {
+      console.error(JSON.stringify(error, null, 2));
+    });
+  }
+
+  useEffect(() => {
+    let script = document.createElement('script');
+    script.src = 'https://apis.google.com/js/api.js';
+
+    script.onload = () => {
+      window.gapi.load('client:auth2', initClient);
+    }
+    script.async = true;
+    document.body.appendChild(script);
+  }, [])
+
   return (
-    <div id="register-form">
-      <div className="inner">
-        <aside className="register--aside confirmation">
-            <div className="thank-you-note">Thank you for registering!</div>
-            <h2>Check your email for confirmation.</h2>
-            <div className="reminder">Time to mark your calendar and tell your friends about it!</div>
-            <div className="social-media">
-                <ul className="actions">
-                    <li><a rel="noopener noreferrer" href="https://github.com/yugabyte/yugabyte-db" className="icon alt"><i className="fa fa-github"></i></a></li>
-                    <li><a rel="noopener noreferrer" href="https://www.yugabyte.com/slack" className="icon alt"><i className="fa fa-slack"></i></a></li>
-                    <li><a rel="noopener noreferrer" href="https://twitter.com/yugabyte" className="icon alt"><i className="fa fa-twitter"></i></a></li>
-                    <li><a rel="noopener noreferrer" href="https://www.linkedin.com/company/yugabyte/" className="icon alt"><i className="fa fa-linkedin"></i></a></li>
-                </ul>
-            </div>
-        </aside>
-      </div>
-    </div>
+    <StaticQuery query={graphql`
+      query {
+        formPage: file(relativePath: { eq: "Node-Lines_Dist-Summit-Form.png" }) {
+          childImageSharp {
+            fluid(quality: 100, maxWidth: 700) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+      }
+    `}
+    render={(data) => {
+      const background = data.formPage.childImageSharp.fluid;
+      return (
+        <BackgroundImage Tag="div" fluid={background} id="register-form">
+          <div className="inner">
+            <aside className="register--aside confirmation">
+                <div className="thank-you-note">Thank you for registering!</div>
+                <h2>Check your email for confirmation.</h2>            
+                <div className="event" onClick={handleCalendarClick}>
+                  <div className="event-details">
+                    <small>Event - 16th Sept | 10am - 2pm PST</small>
+                    <div className="event-title">Distributed SQL Virtual Summit 2020</div>
+                  </div>
+                  <div className="calendar-icon">
+                    <i className="fa fa-calendar"></i>
+                  </div>
+                </div>
+                <div className="reminder">Time to mark your calendar and tell your friends about it!</div>
+                <div className="social-media">
+                    <ul className="actions">
+                        <li><a rel="noopener noreferrer" href="https://github.com/yugabyte/yugabyte-db" className="icon alt"><i className="fa fa-github"></i></a></li>
+                        <li><a rel="noopener noreferrer" href="https://www.yugabyte.com/slack" className="icon alt"><SlackLogo styles={{width: '27px', height: '27px', marginTop: '12px'}} /></a></li>
+                        <li><a rel="noopener noreferrer" href="https://twitter.com/yugabyte" className="icon alt"><i className="fa fa-twitter"></i></a></li>
+                        <li><a rel="noopener noreferrer" href="https://www.linkedin.com/company/yugabyte/" className="icon alt"><i className="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </aside>
+          </div>
+        </BackgroundImage>
+      );
+    }}
+  />
   );
 }
 

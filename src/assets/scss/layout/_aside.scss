@@ -1,9 +1,13 @@
 /* Topics */
-aside#topics {
+aside.topics {
     float: right;
     width: 430px;
     text-align: left; 
-    margin-left: 30px;   
+    margin-left: 30px;  
+    
+    &.mobile {
+        display: none;
+    }
 
     header {
         background: #EEF1FA;
@@ -20,6 +24,7 @@ aside#topics {
 
     .topics__content {
         padding: 30px 40px 30px 50px;
+        background: #FFFFFF;
         box-shadow: 0 9px 0px 0px #EEF1FA, 0 -9px 0px 0px #EEF1FA, 5px 0 15px -4px #eeeeee, -5px 0 15px -4px #eeeeee;
 
         h3 {
@@ -49,6 +54,27 @@ aside#topics {
     }
 }
 
+@include breakpoint(small) {
+    aside.topics {
+        display: none;
+    }
+
+    aside.topics.mobile {
+        display: block;
+        float: unset;
+        width: auto;
+        margin: 0 30px 50px;
+    }
+
+    header.major {
+        margin: 0 auto 30px;
+
+        h2 {
+            font-size: 48px;
+        }
+    }
+}
+
 #register-form {
     min-height: 500px;
     position: relative;
@@ -56,15 +82,15 @@ aside#topics {
     padding-bottom: 55px;
 
     .register--aside {
-        background: transparent linear-gradient(129deg, #8766F0 0%, #1F1FDD 54%, #000041 100%) 0% 0% no-repeat padding-box;
+        background: transparent linear-gradient(142deg, #AFBAF9 0%, #CA73FF 100%) 0% 0% no-repeat padding-box;
         margin-left: auto;
         width: 700px;
-        margin-top: -250px;
+        margin-top: -316px;
         padding: 90px 65px;
         min-height: 600px;
 
         input {
-            background: #bdb9f5;
+            background: #e8dafe;
             border-radius: 7px;
             color: #141920;
             width: 100%;
@@ -95,12 +121,18 @@ aside#topics {
         }
 
         &.confirmation {
-            color: #FFF;
+            color: #FFFFFF;
+            padding: 96px 93px 60px;
+
+            svg {
+                fill: #FFFFFF;
+            }
 
             .thank-you-note {
                 color: inherit;
                 font-size: 30px;
                 font-weight: 500;
+                margin-bottom: 10px;
             }
 
             h2 {
@@ -114,17 +146,67 @@ aside#topics {
                 color: inherit;
                 font-size: 30px;
                 font-weight: 400;
-                margin-bottom: 15px;
+                margin: 40px 0 15px;
+            }
+
+            .event {
+                border-radius: 7px;
+                background: #e8dafe;
+                padding: 21px 30px 24px;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                
+                .event-details {
+                    color: #141920;
+
+                    &:hover {
+                        color: #F75821;
+                    }
+                    small {
+                        font-weight: 700;
+                        font-size: 18px;
+                    }
+
+                    .event-title {
+                       font-size: 22px;
+                       font-weight: 400; 
+                    }   
+                }
+
+                .calendar-icon {
+                    color: #030443;
+                    margin-left: auto;
+                    background: #FFFFFF;
+                    border-radius: 50%;
+                    width: 50px;
+                    height: 50px;
+                    padding: 5px 14px;
+                }
             }
 
             .social-media {
                 justify-content: left;
                 display: flex;
+                font-size: 28px;
 
                 li {
                     padding: 0 0.5em 0 0;
                 }
             }
+        }
+    }
+
+    @include breakpoint(medium) {
+        .register--aside {
+            margin-top: -186px;
+        }
+    }
+
+    @include breakpoint(small) {
+        .register--aside {
+            margin-top: 50px;
+            width: 100%;
         }
     }
 }

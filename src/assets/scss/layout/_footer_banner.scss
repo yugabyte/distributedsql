@@ -92,4 +92,29 @@
       }
     }
   }
+
+  @include breakpoint(small) {
+    .container {
+      display: block;
+    }
+    .value-props {
+      justify-content: space-evenly;
+
+      .value-props__item {
+        flex: 1;
+      }
+    }
+    .distributedsql-text {
+      margin: 0 auto;
+      max-width: 80%;
+
+      h1 {
+        font-size: 48px;
+      }
+
+      .actions {
+        text-align: center;
+      }
+    }
+  }
 }

@@ -43,3 +43,9 @@
 	color: #FFF !important;
 	transition: .2s ease all;
 }
+
+@include breakpoint(small) {
+	.btn-rounded {
+		font-size: 24px;
+	}
+}

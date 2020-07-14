@@ -50,10 +50,6 @@
 		}
 	}
 
-	@include breakpoint(small) {
-		margin-bottom: 40px;
-	}
-
 	.logo {
 		img {
 			vertical-align: middle;
@@ -66,6 +62,10 @@
 		.icon {
 			color: #342a66;
 			font-size: 24px;
+
+			svg {
+				fill: #342a66;
+			}			
 		}
 
 		align-items: center;
@@ -93,7 +93,7 @@
 			display: flex;
 
 			> li {
-				padding: 0 10px;
+				padding: 6px 10px;
 				font-size: 18px;
 			}			
 		}
@@ -108,9 +108,36 @@
 		
 		.icon {
 			color: #FFFFFF;
-		}
+
+			svg {
+				fill: #FFFFFF;
+			}
+		}		
 	}
 	.legal {
 		color: #FFFFFF;
+	}
+}
+
+@include breakpoint(small) {
+	#footer, #footer.dark {
+		.container.inner {
+			display: block;
+			text-align: center;
+
+			.logo {
+				margin-bottom: 20px;
+			}
+
+			> .content {
+				padding: 10px 0 30px;
+			}
+		}
+
+		.content {
+			border-left: none;
+			margin: 0 auto;
+			width: fit-content;
+		}
 	}
 }

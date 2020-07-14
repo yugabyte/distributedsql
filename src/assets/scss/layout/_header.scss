@@ -241,9 +241,7 @@
 			}
 		}
 
-		@include breakpoint(small) {
-			height: 2.75em;
-			// line-height: 2.75em;
+		@include breakpoint(small) {			
 			#newmenu
 			{
 				background-color: _palette(fg);

@@ -19,7 +19,7 @@ class RegisterCompleted extends React.Component {
                         { name: 'google-site-verification', content: 'IrJBdGcrNYjaVXTiMFpMckF5pC2MsY9x6nt8TgMtmGE' },
                     ]}>
                 </Helmet>
-                <RegisterBanner />
+                <RegisterBanner noText />
                 <Confirmation/>                
             </Layout>
         )

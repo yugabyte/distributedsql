@@ -1,8 +1,9 @@
 import React from 'react'
 import Topics from './Topics'
 import { Link, StaticQuery, graphql } from 'gatsby'
+import BackgroundImage from 'gatsby-background-image'
 
-const speakerData = require('../data/data.json')
+// const speakerData = require('../data/data.json')
 
 const featuredSpeakers = [
   {
@@ -52,8 +53,9 @@ const Speaker = (props) => {
     });
     speakerPosition = arr;
   }
-  return (
-    <div className="speakerList" >
+
+  return (    
+    <div className="speakerList">
       <div className="profile" key={props.speakerId} id={props.speakerId}>
         <div className="speakerImage">
           <img src={props.speakerImage} alt="profile" style={{border: `3px solid ${borderColor}`}}/>
@@ -79,7 +81,7 @@ const Speaker = (props) => {
         </div>
       </div>
     </div>
-  )
+  );
 };
 
 const LandingSpeaker = (props) => (
@@ -239,6 +241,13 @@ const LandingSpeaker = (props) => (
           }
         }
       }
+      landingPage: file(relativePath: { eq: "Node-Lines_Dist-Summit-LP.png" }) {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 700) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
     }
   `}
   render={data => {    
@@ -255,15 +264,17 @@ const LandingSpeaker = (props) => (
         borderColor={speakerInfo.borderColor}
       />);
     });
+    const background = data.landingPage.childImageSharp.fluid;
     return (
-      <section id="landingSpeaker" className="major">
+      <BackgroundImage Tag="section" fluid={background} id="landingSpeaker" className="major">
         <div className="inner">
           <Topics />
-          <div className="description">
+          <div className="description">          
             <p>
             <strong>Join us</strong> for the second annual Distributed SQL Summit, the event that brings together thought leaders, database builders, and application developers to discuss how to leverage distributed SQL systems to build applications and services in the cloud.
             </p>
-          </div>        
+          </div> 
+          <Topics mobile />      
           <header className="major">
               <h2>
                 Featured Speakers
@@ -274,7 +285,7 @@ const LandingSpeaker = (props) => (
             {landingSpeakerList}
           </div>
         </div>        
-      </section>
+      </BackgroundImage>
     )
   }}
 />
