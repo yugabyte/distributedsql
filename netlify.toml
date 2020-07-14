@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/2019"
+  to = "https://distributedsql.org"
+  status = 301
