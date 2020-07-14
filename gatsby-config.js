@@ -33,7 +33,7 @@ if(process.env.GATSBY_STAGE && process.env.GATSBY_STAGE==='production') {
   )
 }
 module.exports = {
-  pathPrefix: `/2019`,
+  assetPrefix: `https://wonderful-bell-083eb2.netlify.app/2019`,
   siteMetadata: {
     title: "Distributed SQL",
     author: "YugaByte Inc",
