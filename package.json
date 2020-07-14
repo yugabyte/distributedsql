@@ -31,7 +31,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "serve": "gatsby build && gatsby serve --prefix-paths",
+    "serve": "gatsby build --prefix-paths && gatsby serve --prefix-paths",
     "build": "gatsby build --prefix-paths",
     "start": "gatsby develop -p 8020",
     "publish": "npm run build && aws s3 rm s3://distributedsql.org --recursive && aws s3 sync public/ s3://distributedsql.org",
