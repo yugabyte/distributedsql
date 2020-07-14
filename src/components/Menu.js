@@ -5,7 +5,7 @@ const Menu = ({props}) => (
     <div id="newmenu">
         <div className="inner">
             <ul className="links">
-                <li><Link className={ typeof window !== 'undefined' && window && window.location.pathname === '/schedule' ? 'active' : ''} to="/schedule">Schedule</Link></li>
+                <li><Link className={ typeof window !== 'undefined' && window && window.location.pathname === '/2019/schedule' ? 'active' : ''} to="/schedule">Schedule</Link></li>
             </ul>
         </div>
     </div>

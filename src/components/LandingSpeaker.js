@@ -15,7 +15,7 @@ const Speaker = (props) => {
             <div className="profileName">
               {
                 props.speakerId?
-              <Link to={`/speaker/${props.speakerId}`}>
+              <Link to={`/2019/speaker/${props.speakerId}`}>
               {props.speakerName}
               </Link>
               :

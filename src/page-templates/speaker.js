@@ -111,7 +111,7 @@ const SpeakerPage = (props) => {
 
                       </div>
                       </header>
-                        <p>&lt; <Link to="/schedule">Back to Schedule page</Link></p>
+                        <p>&lt; <Link to="/2019/schedule">Back to Schedule page</Link></p>
 
                         <div style={{clear:'both'}} />
 
