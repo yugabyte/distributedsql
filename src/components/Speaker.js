@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby';
 import Img from "gatsby-image"
 
 class Speaker extends React.Component {
@@ -31,11 +32,11 @@ class Speaker extends React.Component {
                 }}>
                     {
                         speakerProps.speakerPicture ?
-                          <a href={speakerLink}>
+                          <Link to={speakerLink}>
                             <Img fluid={speakerProps.speakerPicture}
                             key={speakerProps.speakerId}
                             alt={speakerProps.speakerName} />
-                          </a>
+                          </Link>
                         :
                         <span className="placeholder"/>
                     }
