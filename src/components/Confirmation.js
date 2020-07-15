@@ -35,8 +35,10 @@ const EVENT_OBJ = {
 const Confirmation = (props) => {
   const [eventAdded, setEventAdded] = useState(false);
   const handleCalendarClick = (event) => {
-    updateSigninStatus(window.gapi.auth2.getAuthInstance().isSignedIn.get());
-    setEventAdded(true);
+    const result = window.gapi.auth2.getAuthInstance().signIn();
+    result.then(() => {
+      updateSigninStatus(window.gapi.auth2.getAuthInstance().isSignedIn.get());
+    });
   }  
 
   const addToCalendar = () => {
@@ -52,6 +54,7 @@ const Confirmation = (props) => {
   const updateSigninStatus = (isSignedIn) => {
     if (isSignedIn) {
       addToCalendar();
+      setEventAdded(true);
     }
   }
 
@@ -63,7 +66,9 @@ const Confirmation = (props) => {
       scope: SCOPES
     }).then(() => {
       // Listen for sign-in state changes.
-      window.gapi.auth2.getAuthInstance().isSignedIn.listen(updateSigninStatus);      
+      window.gapi.auth2.getAuthInstance().isSignedIn.listen(updateSigninStatus);
+
+      // updateSigninStatus(window.gapi.auth2.getAuthInstance().isSignedIn.get());
     }, function(error) {
       console.error(JSON.stringify(error, null, 2));
     });

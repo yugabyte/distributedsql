@@ -1,7 +1,6 @@
 import React from 'react';
 
 export default ({ styles, ...props}) => {
-  console.log(styles, props);
   return (
   <svg style={styles} {...props} version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
 	 viewBox="60 60 150 150">
