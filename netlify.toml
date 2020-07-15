@@ -1,5 +1,5 @@
 [[redirects]]
   from = "/2019/*"
-  to = "https://priceless-leakey-f10e53.netlify.app/:splat"
+  to = "https://archive.distributedsql.org/2019/:splat"
   status = 200
   force = true
