@@ -7,7 +7,7 @@ const RegisterForm = (props) => {
   const handleSubmit = (ev) => {
     var urlencoded = new URLSearchParams();
     Object.values(ev.target.elements).forEach(input => {
-      if (input.required && input.value) {
+      if (input.value) {
         urlencoded.append(input.name, input.value);
       }
     });
