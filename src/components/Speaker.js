@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import Img from "gatsby-image"
 
 class Speaker extends React.Component {
@@ -43,7 +44,7 @@ class Speaker extends React.Component {
                         speakerProps.mergers ?
                         speakerProps.mergers.map((speaker, idx) => {
                           return (
-                            <a key={`link-${speaker.speakerId}`}
+                            <Link key={`link-${speaker.speakerId}`}
                                href={`/speaker/${speaker.speakerId}`}>
                               <Img style={{
                                   top:'0',
@@ -52,7 +53,7 @@ class Speaker extends React.Component {
                               }} fluid={speaker.speakerPicture}
                                 key={speaker.speakerId}
                                 alt={speaker.speakerName} />
-                            </a>)
+                            </Link>)
                         })
 
                         :
