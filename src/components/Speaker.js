@@ -44,8 +44,8 @@ class Speaker extends React.Component {
                         speakerProps.mergers ?
                         speakerProps.mergers.map((speaker, idx) => {
                           return (
-                            <a key={`link-${speaker.speakerId}`}
-                               href={`/speaker/${speaker.speakerId}`}>
+                            <Link key={`link-${speaker.speakerId}`}
+                               to={`/speaker/${speaker.speakerId}`}>
                               <Img style={{
                                   top:'0',
                                   left: (65 * (idx + 1)) + 'px',
@@ -53,7 +53,7 @@ class Speaker extends React.Component {
                               }} fluid={speaker.speakerPicture}
                                 key={speaker.speakerId}
                                 alt={speaker.speakerName} />
-                            </a>)
+                            </Link>)
                         })
 
                         :
@@ -64,11 +64,11 @@ class Speaker extends React.Component {
                     <header className="major">
                         <h5>
                           { speakerProps.speakerName && speakerLink &&
-                            <span key={speakerProps.speakerId}><b><a href={`/speaker/${speakerProps.speakerId}`}>{speakerProps.speakerName}</a></b>, {speakerProps.speakerPosition}, {speakerProps.speakerCompany}</span>
+                            <span key={speakerProps.speakerId}><b><Link to={`/speaker/${speakerProps.speakerId}`}>{speakerProps.speakerName}</Link></b>, {speakerProps.speakerPosition}, {speakerProps.speakerCompany}</span>
                           }
                           {
                             speakerProps.mergers.map((speaker) => {
-                              return (<span key={speaker.speakerId}><br /><b><a href={`/speaker/${speaker.speakerId}`}>{speaker.speakerName}</a></b>, {speaker.speakerPosition}, {speaker.speakerCompany}</span>);
+                              return (<span key={speaker.speakerId}><br /><b><Link to={`/speaker/${speaker.speakerId}`}>{speaker.speakerName}</Link></b>, {speaker.speakerPosition}, {speaker.speakerCompany}</span>);
                             })
                           }
                         </h5>
