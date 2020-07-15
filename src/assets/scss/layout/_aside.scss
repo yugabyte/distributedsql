@@ -75,6 +75,33 @@ aside.topics {
     }
 }
 
+@include breakpoint(xsmall) {    
+    aside.topics.mobile {
+        width: 100%;
+        margin: 0 0 50px;
+    }
+    
+    aside.topics {
+        header, .topics__content {
+            padding: 30px 20px 30px 40px;
+
+            li, p {
+                font-size: 16px;
+            }
+        }
+
+        .topics__archive {
+            padding: 40px 0 40px;        
+            text-align: center;
+        }
+    }
+    header.major {
+        h2 {
+            font-size: 36px;
+        }
+    }
+}
+
 #register-form {
     min-height: 500px;
     position: relative;
@@ -174,6 +201,16 @@ aside.topics {
                     }   
                 }
 
+                @keyframes fadeIntoView {
+                    0% {
+                      opacity: 0;
+                    }
+                    100% {
+                      opacity: 1;
+                    }
+                }
+                  
+                  
                 .calendar-icon {
                     color: #030443;
                     margin-left: auto;
@@ -183,6 +220,10 @@ aside.topics {
                     height: 50px;
                     padding: 5px 14px;
                     font-size: 23px;
+                    
+                    > * {
+                        transition: opacity 2s ease-in-out all;
+                    }
                 }
             }
 
@@ -208,6 +249,46 @@ aside.topics {
         .register--aside {
             margin-top: 50px;
             width: 100%;
+        }
+    }
+
+    @include breakpoint(xsmall) {
+        .register--aside {
+            padding: 50px 36px;
+
+            input {
+                height: 46px;
+                padding: 10px 22px;
+                margin-bottom: 30px;
+                font-size: 14px;
+            }
+        }
+
+        .register--aside.confirmation {
+            padding: 60px 45px 60px;
+
+            .thank-you-note {
+                font-size: 23px;
+            }
+
+            h2 {
+                font-size: 42px;
+                line-height: 1.4;
+            }
+
+            .reminder {
+                font-size: 21px;
+                margin: 30px 0 15px;
+            }
+
+            .event .event-details {                
+                small {
+                    font-size: 14px;
+                }
+                .event-title {
+                    font-size: 16px;
+                }
+            }
         }
     }
 }

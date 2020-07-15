@@ -101,7 +101,7 @@
       justify-content: space-evenly;
 
       .value-props__item {
-        flex: 1;
+        flex: 1 1 150px;
       }
     }
     .distributedsql-text {
@@ -113,6 +113,15 @@
       }
 
       .actions {
+        text-align: center;
+      }
+    }
+  }
+
+  @include breakpoint(xsmall) {
+    .distributedsql-text {
+      h1 {
+        font-size: 36px;
         text-align: center;
       }
     }

@@ -49,3 +49,10 @@
 		font-size: 24px;
 	}
 }
+
+@include breakpoint(xsmall) {
+	.btn-rounded {
+		font-size: 20px;
+		padding: 8px 30px;
+	}
+}

@@ -145,3 +145,22 @@
 		}
 	}
 }
+
+@include breakpoint(xsmall) {
+	#footer {
+		.container.inner {
+			.logo {
+				margin-right: 0;
+			}
+		}
+
+		.legal {
+			display: block;
+
+			.support-links {
+				justify-content: center;
+				margin: 15px 0 0;
+			}
+		}
+	}
+}

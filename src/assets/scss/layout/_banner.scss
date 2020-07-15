@@ -814,3 +814,48 @@
 	}
 }
 
+@include breakpoint(xsmall) {
+	#register-banner {
+		.back-link {
+			.link-text {
+				font-size: 16px;
+			}
+			.chevron-left {
+				width: 18px;
+				height: 34px;
+			}
+		}
+
+		header.major {
+			> h1 {
+				font-size: 42px;
+			}
+			.details > li {
+				h3 {
+					font-size: 24px;
+				}
+				small {
+					font-size: 20px;
+				}
+			}
+		}
+
+        .no-content {
+            height: 140px;
+        }
+	}
+	.speakerListWrapper {
+		margin: 0 0 50px;
+		
+		.speakerList {
+			.profile .speakerProfile {
+				margin-left: 20px;
+
+				.profileWrapper, .profileBio {
+					font-size: 18px;
+				}
+			}
+		}
+	}
+}
+

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { graphql, StaticQuery } from 'gatsby'
 import BackgroundImage from 'gatsby-background-image'
 import SlackLogo from './Slack';
@@ -33,9 +33,10 @@ const EVENT_OBJ = {
 };
 
 const Confirmation = (props) => {
-
+  const [eventAdded, setEventAdded] = useState(false);
   const handleCalendarClick = (event) => {
     updateSigninStatus(window.gapi.auth2.getAuthInstance().isSignedIn.get());
+    setEventAdded(true);
   }  
 
   const addToCalendar = () => {
@@ -101,11 +102,19 @@ const Confirmation = (props) => {
                 <h2>Check your email for confirmation.</h2>            
                 <div className="event" onClick={handleCalendarClick}>
                   <div className="event-details">
-                    <small>Event - 16th Sept | 10am - 2pm PST</small>
-                    <div className="event-title">Distributed SQL Virtual Summit 2020</div>
+                    {!eventAdded &&
+                      <small>Event - 16th Sept | 10am - 2pm PST</small>
+                    }
+                    <div className="event-title">{eventAdded ?
+                      'Event has been added to your calendar!' :
+                      'Distributed SQL Virtual Summit 2020'
+                    }</div>
                   </div>
                   <div className="calendar-icon">
-                    <i className="fa fa-calendar"></i>
+                    {eventAdded ?
+                      <i className="fa fa-check"></i> :
+                      <i className="fa fa-calendar"></i>
+                    }
                   </div>
                 </div>
                 <div className="reminder">Time to mark your calendar and tell your friends about it!</div>
