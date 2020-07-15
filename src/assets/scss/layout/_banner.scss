@@ -490,8 +490,12 @@
 			}
 		}
 	}
-	#register-banner header .details {
-		margin: 50px 0 150px;
+	#register-banner {
+		header {
+			.details {
+				margin: 50px 0 150px;
+			}
+		}
 	}
 }
 @include breakpoint(small) {
