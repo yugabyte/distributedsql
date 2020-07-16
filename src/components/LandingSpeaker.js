@@ -15,6 +15,14 @@ const featuredSpeakers = [
     "borderColor":"#D03A6C"
   },
   {
+    "speakerPicture": "MehrdadNurolahzade",
+    "speakerName": "Mehrdad Nurolahzade",
+    "speakerId": "mehrdad-nurolahzade",
+    "speakerPosition":"Platform Engineer",
+    "speakerCompany":"Twitter",
+    "borderColor":"#1da4f2"
+  },
+  {
     "speakerPicture": "KarthikRanganathan",
     "speakerName": "Karthik Ranganathan",
     "speakerId": "karthik-ranganathan",
@@ -30,14 +38,6 @@ const featuredSpeakers = [
     "speakerCompany":"Yugabyte",
     "borderColor":"#FF6E42"
   },
-  {
-    "speakerPicture": "MehrdadNurolahzade",
-    "speakerName": "Mehrdad Nurolahzade",
-    "speakerId": "mehrdad-nurolahzade",
-    "speakerPosition":"Platform Engineer",
-    "speakerCompany":"Twitter",
-    "borderColor":"#1da4f2"
-  }
 ];
 
 const Speaker = (props) => {
