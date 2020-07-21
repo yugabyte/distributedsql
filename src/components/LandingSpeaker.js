@@ -7,6 +7,14 @@ import BackgroundImage from 'gatsby-background-image'
 
 const featuredSpeakers = [
   {
+    "speakerPicture": "JoeBeda",
+    "speakerName": "Joe Beda",
+    "speakerId": "joe-beda",
+    "speakerPosition":"Principal Engineer",
+    "speakerCompany":"VMware",
+    "borderColor":"#FF6E42"
+  },
+  {
     "speakerPicture": "LianghongXu",
     "speakerName": "Lianghong Xu",
     "speakerId": "lianghong-xu",
@@ -158,6 +166,13 @@ const LandingSpeaker = (props) => (
         }
       }
       RyanScheidter1: file(relativePath: { eq: "RyanScheidter.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      JoeBeda1: file(relativePath: { eq: "JoeBeda.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid
