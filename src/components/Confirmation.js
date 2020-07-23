@@ -24,7 +24,7 @@ const EVENT_OBJ = {
     'timeZone': 'America/Los_Angeles'
   },
   'recurrence': [
-    "RRULE:FREQ=DAILY;UNTIL=20200916T170000Z",
+    "RRULE:FREQ=DAILY;UNTIL=20200917T170000Z",
   ],
   'reminders': {
     'useDefault': false,
