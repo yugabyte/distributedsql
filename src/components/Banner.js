@@ -56,7 +56,7 @@ const Banner = (props) => (
                 <ul className="details">
                   <li>
                     <div>
-                      <h3>September 16</h3>
+                      <h3>September 16 - 17</h3>
                       <small>2020</small>
                     </div>
                   </li>

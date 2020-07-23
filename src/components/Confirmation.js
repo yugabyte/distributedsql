@@ -23,6 +23,9 @@ const EVENT_OBJ = {
     'dateTime': '2020-09-16T14:00:00-07:00',
     'timeZone': 'America/Los_Angeles'
   },
+  'recurrence': [
+    "RRULE:FREQ=DAILY;UNTIL=20200916T170000Z",
+  ],
   'reminders': {
     'useDefault': false,
     'overrides': [
@@ -108,7 +111,7 @@ const Confirmation = (props) => {
                 <div className="event" onClick={handleCalendarClick}>
                   <div className="event-details">
                     {!eventAdded &&
-                      <small>Event - 16th Sept | 10am - 2pm PST</small>
+                      <small>Event - 16th to 17th Sept | 10am - 2pm PST</small>
                     }
                     <div className="event-title">{eventAdded ?
                       'Event has been added to your calendar!' :

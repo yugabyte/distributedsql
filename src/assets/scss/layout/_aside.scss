@@ -111,7 +111,7 @@ aside.topics {
     .register--aside {
         background: transparent linear-gradient(142deg, #AFBAF9 0%, #CA73FF 100%) 0% 0% no-repeat padding-box;
         margin-left: auto;
-        width: 700px;
+        width: 600px;
         margin-top: -316px;
         padding: 90px 65px;
         min-height: 600px;
@@ -126,7 +126,9 @@ aside.topics {
             font-weight: 400;
             font-size: 22px;
             height: 70px;
-            padding: 20px 30px;
+            // padding: 20px 30px;
+            font-size: 18px;
+            padding: 10px 30px;
             
             &::-webkit-input-placeholder {
                 color: #141920;
@@ -150,6 +152,7 @@ aside.topics {
         &.confirmation {
             color: #FFFFFF;
             padding: 96px 93px 60px;
+            width: 700px;
 
             svg {
                 fill: #FFFFFF;
