@@ -1,52 +1,7 @@
 import React from 'react'
-import Topics from './Topics'
 import { Link, StaticQuery, graphql } from 'gatsby'
-import BackgroundImage from 'gatsby-background-image'
 
-// const speakerData = require('../data/data.json')
-
-const featuredSpeakers = [
-  {
-    "speakerPicture": "JoeBeda",
-    "speakerName": "Joe Beda",
-    "speakerId": "joe-beda",
-    "speakerPosition":"Principal Engineer",
-    "speakerCompany":"VMware",
-    "borderColor":"#FF6E42"
-  },
-  {
-    "speakerPicture": "LianghongXu",
-    "speakerName": "Lianghong Xu",
-    "speakerId": "lianghong-xu",
-    "speakerPosition":["Engineering Manager", "Storage and Caching Team"],
-    "speakerCompany":"Pinterest",
-    "borderColor":"#D03A6C"
-  },
-  {
-    "speakerPicture": "MehrdadNurolahzade",
-    "speakerName": "Mehrdad Nurolahzade",
-    "speakerId": "mehrdad-nurolahzade",
-    "speakerPosition":"Platform Engineer",
-    "speakerCompany":"Twitter",
-    "borderColor":"#1da4f2"
-  },
-  {
-    "speakerPicture": "KarthikRanganathan",
-    "speakerName": "Karthik Ranganathan",
-    "speakerId": "karthik-ranganathan",
-    "speakerPosition":"CTO and Co-Founder",
-    "speakerCompany":"Yugabyte",
-    "borderColor":"#885DD7"
-  },
-  {
-    "speakerPicture": "SidChoudhury",
-    "speakerName": "Sid Choudhury",
-    "speakerId": "sid-choudhury",
-    "speakerPosition":"SVP of Product",
-    "speakerCompany":"Yugabyte",
-    "borderColor":"#FF6E42"
-  },
-];
+const featuredSpeakers = require('../data/data.json')
 
 const Speaker = (props) => {
   const borderColor = props.borderColor || '#000041';
@@ -63,7 +18,7 @@ const Speaker = (props) => {
   }
 
   return (    
-    <div className="speakerList">
+    <div className="speaker">
       <div className="profile" key={props.speakerId} id={props.speakerId}>
         <div className="speakerImage">
           <img src={props.speakerImage} alt="profile" style={{border: `3px solid ${borderColor}`}}/>
@@ -83,7 +38,7 @@ const Speaker = (props) => {
             </div>
           </div>
           <div className="profileBio">
-            {speakerPosition},&nbsp;
+            {speakerPosition},<br />
             <strong>{props.speakerCompany}</strong>
           </div>
         </div>
@@ -95,126 +50,21 @@ const Speaker = (props) => {
 const LandingSpeaker = (props) => (
   <StaticQuery query={graphql`
     query {
-      JamesWatters1: file(relativePath: { eq: "JamesWatters.jpg" }) {
+      AllisonKunz1: file(relativePath: { eq: "AllisonKunz.png" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid
           }
         }
-      }
-      JeffRothschild1: file(relativePath: { eq: "JeffRothschild.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 500) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      VictoriaDudin1: file(relativePath: { eq: "VictoriaDudin.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 500) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      KadirOzdemir1: file(relativePath: { eq: "KadirOzdemir.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 500) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      RamRavichandran1: file(relativePath: { eq: "RamRavichandran.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 500) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      TanmaiGopal1: file(relativePath: { eq: "TanmaiGopal.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 500) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      VishalKathuria1: file(relativePath: { eq: "VishalKathuria.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 500) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      KamalGupta1: file(relativePath: { eq: "KamalGupta.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 500) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      CampbellFraser1: file(relativePath: { eq: "CampbellFraser.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 500) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      HarrisonFisk1: file(relativePath: { eq: "HarrisonFisk.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 500) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      RyanScheidter1: file(relativePath: { eq: "RyanScheidter.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 500) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
+      } 
       JoeBeda1: file(relativePath: { eq: "JoeBeda.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid
           }
         }
-      }
-      PeterZaitsev1: file(relativePath: { eq: "PeterZaitsev.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 500) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      DhrubaBorthakur1: file(relativePath: { eq: "DhrubaBorthakur.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 500) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      RobertWinslow1: file(relativePath: { eq: "RobertWinslow.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 500) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      GuillermoTantachuco1: file(relativePath: { eq: "GuillermoTantachuco.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 500) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      NikhilChandrappa1: file(relativePath: { eq: "NikhilChandrappa.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 500) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      RajkumarSen1: file(relativePath: { eq: "RajkumarSen.jpg" }) {
+      }            
+      KarthikRanganathan1: file(relativePath: { eq: "KarthikRanganathan.png" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid
@@ -228,44 +78,23 @@ const LandingSpeaker = (props) => (
           }
         }
       }
-      KarthikRanganathan1: file(relativePath: { eq: "KarthikRanganathan.png" }) {
+      MehrdadNurolahzade1: file(relativePath: { eq: "MehrdadNurolahzade.png" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid
           }
         }
-      }
+      }    
       SidChoudhury1: file(relativePath: { eq: "SidChoudhury.png" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid
           }
         }
-      }
-      MehrdadNurolahzade1: file(relativePath: { eq: "MehrdadNurolahzade.jpeg" }) {
-        childImageSharp {
-          fluid(maxWidth: 500) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      MuruGuruswamy1: file(relativePath: { eq: "MuruGuruswamy.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 500) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      landingPage: file(relativePath: { eq: "Node-Lines_Dist-Summit-LP.png" }) {
-        childImageSharp {
-          fluid(quality: 100, maxWidth: 700) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
+      }        
     }
   `}
-  render={data => {    
+  render={data => {
     let landingSpeakerList = [];
     featuredSpeakers.forEach((speakerInfo) => {
       const speakerPicture = data[speakerInfo.speakerPicture+'1'] ? data[speakerInfo.speakerPicture+ '1'].childImageSharp.fluid.src : speakerInfo.speakerPicture.src;
@@ -279,28 +108,17 @@ const LandingSpeaker = (props) => (
         borderColor={speakerInfo.borderColor}
       />);
     });
-    const background = data.landingPage.childImageSharp.fluid;
     return (
-      <BackgroundImage Tag="section" fluid={background} id="landingSpeaker" className="major">
-        <div className="inner">
-          <Topics />
-          <div className="description">          
-            <p>
-            <strong>Join us</strong> for the second annual Distributed SQL Summit, the event that brings together thought leaders, database builders, and application developers to discuss how to leverage distributed SQL systems to build applications and services in the cloud.
-            </p>
-          </div> 
-          <Topics mobile />      
+      <section id="landingSpeaker" className="major">
+        <div className="inner">                    
           <header className="major">
-              <h2>
-                Featured Speakers
-              </h2>
-              <aside>Full schedule coming soon</aside>
+            <h2>Meet the Speakers</h2>
           </header>
-          <div className="speakerListWrappar">
+          <div className="speakerList">
             {landingSpeakerList}
-          </div>
+          </div>          
         </div>        
-      </BackgroundImage>
+      </section>
     )
   }}
 />

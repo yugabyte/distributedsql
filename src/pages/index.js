@@ -2,7 +2,9 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import Banner from '../components/Banner'
+import Description from '../components/Description'
 import LandingSpeaker from '../components/LandingSpeaker'
+import Topics from '../components/Topics'
 import WhatIsDistributedSQL from '../components/WhatIsDistributedSQL'
 import ContactBanner from '../components/ContactBanner'
 
@@ -19,7 +21,9 @@ class HomeIndex extends React.Component {
                     ]}>
                 </Helmet>
                 <Banner />
+                <Description />
                 <LandingSpeaker/>
+                <Topics />
                 <WhatIsDistributedSQL/>
                 <ContactBanner />
             </Layout>

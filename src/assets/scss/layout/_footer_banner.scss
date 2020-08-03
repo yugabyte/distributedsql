@@ -102,6 +102,11 @@
 
       .value-props__item {
         flex: 1 1 150px;
+
+        .icon {
+          width: 72px;
+          height: 72px;
+        }
       }
     }
     .distributedsql-text {
@@ -114,6 +119,10 @@
 
       .actions {
         text-align: center;
+      }
+
+      .content {
+        font-size: 18px;
       }
     }
   }

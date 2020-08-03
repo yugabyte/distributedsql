@@ -1,98 +1,140 @@
 /* Topics */
-aside.topics {
-    float: right;
-    width: 430px;
-    text-align: left; 
-    margin-left: 30px;  
-    
-    &.mobile {
-        display: none;
-    }
+#topics {
+    background: #FFFFFF;
+    text-align: center;
+    padding: 100px 0;
+    margin: 0;
 
     header {
-        background: #EEF1FA;
-        padding: 30px 40px 30px 50px;
-        border-radius: 7px 7px 0 0;
+        margin: 0 auto 40px;
         
-        h3 {
-            color: #141920;
-            font-size: 22px;
-            font-weight: 600;
+        h2 {
+            color: #000041;
+            font-size: 60px;
+            font-weight: 400;
             margin: 0;
         }
     }
 
-    .topics__content {
-        padding: 30px 40px 30px 50px;
-        background: #FFFFFF;
-        box-shadow: 0 9px 0px 0px #EEF1FA, 0 -9px 0px 0px #EEF1FA, 5px 0 15px -4px #eeeeee, -5px 0 15px -4px #eeeeee;
+    .topics__content { 
+        display: flex;
+        text-align: left;
+        max-width: 1024px;
+        margin: 0 auto;
+        justify-content: space-between;
+
+        > div {
+            margin: 0 30px;
+            flex: 1 0 48%;
+            max-width: 450px;
+        }
+
+        ul {
+            padding-left: 0;
+            list-style: none;
+        }
 
         h3 {
             color: #FF6E42;
-            font-size: 22px;
+            font-size: 24px;
             font-weight: 600;
             margin: 0;
         }
 
         li, p {
-            font-size: 20px;
+            font-size: 22px;
             font-weight: 400;
             color: #141920;
+            padding: 0;
+            position: relative;
         }
 
-        .topics__caption strong {
-            color: #141920;
-            font-size: 20px;
+        li::before {
+            content: '·';
+            position: absolute;
+            left: -15px;
+            font-weight: 700;
+            font-size: 24px;
+        }
+    }
+
+    .topics__caption {
+        max-width: 680px;
+        margin: 0 auto 50px;
+        font-size: 22px;
+
+        strong {
+            color: #000041;
             font-weight: 600;
         }
     }
 
+    .topics__separator {
+        width: 119px;
+        height: 4px;
+        background: transparent linear-gradient(266deg, #9C7BDE 0%, #4BB4F3 100%) 0% 0% no-repeat padding-box;
+        margin: 42px auto;
+    }
+
     .topics__archive {
-        background: #EEF1FA;
-        padding: 40px 40px 40px 50px;
-        border-radius: 0 0 7px 7px;
+        margin-bottom: 48px;
+    }
+}
+
+@include breakpoint(large) {
+    #topics .topics__content { 
+        max-width: 980px;
+    }
+}
+
+@include breakpoint(medium) {
+    #topics .topics__content { 
+        max-width: 780px;
+        width: 100%;
+
+        > div {
+            flex: unset;
+        }
     }
 }
 
 @include breakpoint(small) {
-    aside.topics {
-        display: none;
-    }
-
-    aside.topics.mobile {
-        display: block;
-        float: unset;
-        width: auto;
-        margin: 0 30px 50px;
-    }
-
     header.major {
-        margin: 0 auto 30px;
+        margin: 30px auto;
 
         h2 {
             font-size: 48px;
         }
     }
+    #topics {
+        padding: 50px 0;
+
+        header {
+            margin: 0 auto 15px;
+
+            h2 {
+                font-size: 36px;
+            }
+        }
+        .topics__content { 
+            flex-direction: column;
+        }
+
+        .topics__caption {
+            max-width: unset;
+            width: 100%;
+            padding: 0 30px;
+            font-size: 18px;
+        }
+    }
 }
 
-@include breakpoint(xsmall) {    
-    aside.topics.mobile {
-        width: 100%;
-        margin: 0 0 50px;
-    }
-    
-    aside.topics {
+@include breakpoint(xsmall) {
+    #topics {
         header, .topics__content {
-            padding: 30px 20px 30px 40px;
-
             li, p {
                 font-size: 16px;
             }
-        }
-
-        .topics__archive {
-            padding: 40px 0 40px;        
-            text-align: center;
         }
     }
     header.major {
@@ -249,10 +291,14 @@ aside.topics {
     }
 
     @include breakpoint(small) {
-        .register--aside {
+        .register--aside, .register--aside.confirmation {
             margin-top: 50px;
             width: 100%;
-        }
+
+            h2 {
+                font-size: 48px;
+            }
+        }        
     }
 
     @include breakpoint(xsmall) {
@@ -268,14 +314,15 @@ aside.topics {
         }
 
         .register--aside.confirmation {
-            padding: 60px 45px 60px;
+            padding: 60px 30px 60px;
+            width: 100%;
 
             .thank-you-note {
                 font-size: 23px;
             }
 
             h2 {
-                font-size: 42px;
+                font-size: 32px;
                 line-height: 1.4;
             }
 
@@ -284,12 +331,16 @@ aside.topics {
                 margin: 30px 0 15px;
             }
 
-            .event .event-details {                
-                small {
-                    font-size: 14px;
-                }
-                .event-title {
-                    font-size: 16px;
+            .event {
+                padding: 21px 24px 24px;
+
+                .event-details {                
+                    small {
+                        font-size: 14px;
+                    }
+                    .event-title {
+                        font-size: 16px;
+                    }
                 }
             }
         }

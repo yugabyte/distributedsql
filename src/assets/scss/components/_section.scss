@@ -91,3 +91,68 @@ header {
 		}
 	}
 }
+
+#conf-description {
+	padding: 6px 0 24px;
+	margin-top: 56px;
+
+	.description {
+		color: #141920;
+		font-size: 22px;
+		font-weight: 400;
+		display: flex;
+
+		> div {
+			max-width: 630px;
+			margin-right: auto;
+		}
+		strong {
+			color: #141920;
+		}
+
+		.learn-btn {
+			width: 301px;
+			height: 83px;
+			text-align: center;
+			padding: 20px 0;
+			border-radius: 7px;
+			border: 2px solid #010441;
+			color: #010441;
+			font-weight: 500;
+			font-size: 24px;
+			background: #FFF;
+			display: inline-block;
+			font-family: Source Sans Pro, sans-serif;
+			cursor: pointer;			
+    		background-size: 200% 100%;
+			// background-image: linear-gradient(to right, #ffffff, #333 50%, #01054a 75%, #07159f 75%);
+			background-image: linear-gradient(to left, #07159f, #01054a 50%, #fff 50%);
+			-webkit-transition: all 0.5s ease;
+			-webkit-transition-property: background-position, color;
+			-moz-transition: all 0.5s ease;
+			-moz-transition-property: background-position, color;
+			transition: all 0.5s ease;
+			transition-property: background-position, color;
+			margin-left: 30px;
+
+			&:hover {				
+				background-position: -100% 0;
+				color: #FFF !important;
+			}
+		}
+	}
+
+	@media screen and (max-width: 780px) {
+		.description {
+			flex-direction: column;	
+			
+			.learn-btn {
+				width: 250px;
+				height: 68px;
+				font-size: 20px;
+				margin: 40px auto 20px;
+				padding: 16px 0;
+			}
+		}
+	}
+}

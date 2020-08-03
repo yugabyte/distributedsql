@@ -56,22 +56,18 @@ const Banner = (props) => (
                 <ul className="details">
                   <li>
                     <div>
-                      <h3>September 16 - 17</h3>
-                      <small>2020</small>
+                      <h3>Sept 16 - 17 <span className="accent">2020</span></h3>
                     </div>
                   </li>
                   <li>
                     <div>
-                      <h3>10am – 2pm <span><small>Pacific</small></span></h3>
-                      <h3>1pm – 5pm <span><small>Eastern</small></span></h3>
+                      <h3>10am – 2pm PT<span className="accent">(1pm - 5pm ET)</span></h3>
                     </div>
-                  </li>
-                  <li>
-                    <Link to="/register" className="btn-rounded" style={{marginTop: '15px'}}>
-                      Register
-                    </Link>
-                  </li>
-                </ul>
+                  </li>                  
+                </ul>                
+                <Link to="/register" className="btn-rounded" style={{marginTop: '20px'}}>
+                  Register
+                </Link>                
               </div>
             </header>
           </div>
