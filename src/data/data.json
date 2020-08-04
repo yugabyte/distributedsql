@@ -54,5 +54,29 @@
     "speakerPosition": "VP Engineering",
     "speakerCompany":"Kroger",
     "borderColor":"#9C7BDE"
+  },
+  {
+    "speakerPicture": "TobiasMeixner",
+    "speakerName": "Tobias Meixner",
+    "speakerId": "tobias-meixner",
+    "speakerPosition": "CTO and Co-Founder",
+    "speakerCompany":"BrikL",
+    "borderColor":"#D03A6C"
+  },
+  {
+    "speakerPicture": "JamesHartig",
+    "speakerName": "James Hartig",
+    "speakerId": "james-hartig",
+    "speakerPosition": "Co-Founder",
+    "speakerCompany":"Admiral",
+    "borderColor":"#4BB4F3"
+  },
+  {
+    "speakerPicture": "PrasadRadhakrishnan",
+    "speakerName": "Prasad Radhakrishnan",
+    "speakerId": "prasad-radhakrishnan",
+    "speakerPosition": "VP Data Engineering",
+    "speakerCompany":"Yugabyte",
+    "borderColor":"#FF6E42"
   }
 ]

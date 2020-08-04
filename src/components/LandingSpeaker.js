@@ -57,6 +57,13 @@ const LandingSpeaker = (props) => (
           }
         }
       } 
+      JamesHartig1: file(relativePath: { eq: "JamesHartig.jpeg" }) {
+        childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
       JoeBeda1: file(relativePath: { eq: "JoeBeda.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
@@ -91,14 +98,28 @@ const LandingSpeaker = (props) => (
             ...GatsbyImageSharpFluid
           }
         }
-      }    
+      }
+      PrasadRadhakrishnan1: file(relativePath: { eq: "PrasadRadhakrishnan.jpeg" }) {
+        childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
       SidChoudhury1: file(relativePath: { eq: "SidChoudhury.png" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid
           }
         }
-      }      
+      }
+      TobiasMeixner1: file(relativePath: { eq: "TobiasMeixner.jpeg" }) {
+        childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `}
   render={data => {

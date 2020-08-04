@@ -14,7 +14,7 @@ const SCOPES = "https://www.googleapis.com/auth/calendar.events";
 const EVENT_OBJ = {
   'summary': 'Distributed SQL Virtual Summit 2020',
   'location': 'Virtual Conference',
-  'description': 'Second annual Distributed SQL Summit, discussing how to build applications and services in the cloud.',
+  'description': 'Join us for the second annual Distributed SQL Summit, the event that brings together thought leaders, database builders, and application developers to discuss how to leverage distributed SQL systems to build applications and services in the cloud. https://distributedsql.org/',
   'start': {
     'dateTime': '2020-09-15T10:00:00-07:00',
     'timeZone': 'America/Los_Angeles'
