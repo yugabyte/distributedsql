@@ -43,8 +43,16 @@
     "speakerPicture": "AllisonKunz",
     "speakerName": "Allison Kunz",
     "speakerId": "allison-kunz",
-    "speakerPosition":" Solutions Engineer",
+    "speakerPosition": "Solutions Engineer",
     "speakerCompany":"Hasura",
     "borderColor":"#FF6E42"
+  },
+  {
+    "speakerPicture": "MaheshTyagarajan",
+    "speakerName": "Mahesh Tyagarajan",
+    "speakerId": "mahesh-tyagarajan",
+    "speakerPosition": "VP Engineering",
+    "speakerCompany":"Kroger",
+    "borderColor":"#9C7BDE"
   }
 ]

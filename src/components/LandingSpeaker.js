@@ -78,6 +78,13 @@ const LandingSpeaker = (props) => (
           }
         }
       }
+      MaheshTyagarajan1: file(relativePath: { eq: "MaheshTyagarajan.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
       MehrdadNurolahzade1: file(relativePath: { eq: "MehrdadNurolahzade.png" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
@@ -91,7 +98,7 @@ const LandingSpeaker = (props) => (
             ...GatsbyImageSharpFluid
           }
         }
-      }        
+      }      
     }
   `}
   render={data => {

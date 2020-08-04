@@ -16,11 +16,11 @@ const EVENT_OBJ = {
   'location': 'Virtual Conference',
   'description': 'Second annual Distributed SQL Summit, discussing how to build applications and services in the cloud.',
   'start': {
-    'dateTime': '2020-09-16T10:00:00-07:00',
+    'dateTime': '2020-09-15T10:00:00-07:00',
     'timeZone': 'America/Los_Angeles'
   },
   'end': {
-    'dateTime': '2020-09-16T14:00:00-07:00',
+    'dateTime': '2020-09-15T14:00:00-07:00',
     'timeZone': 'America/Los_Angeles'
   },
   'recurrence': [
@@ -111,7 +111,7 @@ const Confirmation = (props) => {
                 <div className="event" onClick={handleCalendarClick}>
                   <div className="event-details">
                     {!eventAdded &&
-                      <small>Event - 16th to 17th Sept | 10am - 2pm PST</small>
+                      <small>Event - 15th to 17th Sept | 10am - 2pm PST</small>
                     }
                     <div className="event-title">{eventAdded ?
                       'Event has been added to your calendar!' :

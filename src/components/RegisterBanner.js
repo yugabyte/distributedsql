@@ -44,7 +44,7 @@ const RegisterBanner = ({ noText }) => (
                 <div className="container">
                   <ul className="details">
                     <li>
-                      <h3>September 16 - 17 <span className="accent">2020</span></h3>                    
+                      <h3>September 15 - 17 <span className="accent">2020</span></h3>                    
                     </li>
                     <li>
                         <h3>10am – 2pm PT</h3>
