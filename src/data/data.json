@@ -60,7 +60,7 @@
     "speakerName": "Tobias Meixner",
     "speakerId": "tobias-meixner",
     "speakerPosition": "CTO and Co-Founder",
-    "speakerCompany":"BrikL",
+    "speakerCompany":"BRIKL",
     "borderColor":"#D03A6C"
   },
   {
@@ -77,6 +77,14 @@
     "speakerId": "prasad-radhakrishnan",
     "speakerPosition": "VP Data Engineering",
     "speakerCompany":"Yugabyte",
+    "borderColor":"#FF6E42"
+  },
+  {
+    "speakerPicture": "ChristophPakulski",
+    "speakerName": "Christoph Pakulski",
+    "speakerId": "christoph-pakulski",
+    "speakerPosition": "Senior Software Engineer",
+    "speakerCompany":"Tetrate",
     "borderColor":"#FF6E42"
   }
 ]
