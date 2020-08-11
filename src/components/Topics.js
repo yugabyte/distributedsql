@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 const Topics = () => (
     <section id="topics">
         <header>
-            <h2>What will you learn?</h2>
+            <h2>Why Attend?</h2>
         </header>
         <div className="topics__content">
             <div>

@@ -1,0 +1,150 @@
+/* Workshop */
+#workshop-details {
+    background: #EEF1FA;
+    text-align: left;
+    padding: 100px 0;
+    margin: 0;
+
+    .container {
+        max-width: 1024px;
+        margin: 0 auto;
+
+        .event-date {
+            font-size: 22px;
+            font-weight: 700;
+            color: #FFFFFF;
+            background: #FF6E42;
+            width: fit-content;
+            padding: 4px 28px;
+        }
+
+        .workshop__content {
+            display: flex;
+            position: relative;
+            padding: 30px 0;
+            color: #000041;
+
+            .title {
+                flex: 1 0 50%;
+
+                h2 {
+                    font-size: 60px;
+                    font-weight: 400;
+                    line-height: 1.2;
+                }
+                img {
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+            .talks-card {
+                background: #FFFFFF;
+                padding: 40px 50px 20px;
+                max-width: 434px;
+
+                ul {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                    color: #141920;
+                    position: relative;
+
+                    h5 {
+                        font-size: 25px;
+                        font-weight: 500;                        
+                    }
+
+                    p {
+                        font-size: 22px;
+                        font-weight: 400;
+                        margin-bottom: 30px;
+                    }
+                    
+                    li:not(:last-child) {
+                        padding: 0 0 30px;
+                     
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            width: 100%;
+                            height: 4px;
+                            background: linear-gradient(268deg, #9C7BDE 0%, #4BB4F3 100%) 0% 0% no-repeat padding-box;
+                        }
+                    }                    
+                }
+            }
+            
+        }
+    }
+
+        
+    @include breakpoint(large) {
+        .container { 
+            max-width: 980px;
+        }
+    }
+
+    @include breakpoint(medium) {
+        .container { 
+            max-width: 640px;
+            width: 100%;
+
+            .workshop__content {
+                .title {
+                    text-align: center;
+                    margin-bottom: 50px;
+
+                    h2 {
+                        font-size: 36px;
+                    }
+                    img {
+                        margin: 0 auto;
+                    }                    
+                }
+
+                .talks-card {
+                    max-width: 540px;
+                    margin: 0 auto;
+                    
+                }
+            }
+
+            > div {
+                flex-direction: column;
+            }
+        }
+    }
+
+    @include breakpoint(small) {
+        .container {
+            max-width: unset;
+            width: 100%;
+            padding: 0 30px;
+            font-size: 18px;            
+        }
+    }
+
+    @include breakpoint(xsmall) {
+        padding: 60px 0;
+
+        .container {
+            max-width: unset;
+            width: 100%;
+            padding: 0 30px;
+            font-size: 18px;            
+
+            .event-date {
+                font-size: 18px;
+            }
+
+            .workshop__content .talks-card ul {
+                h5 {
+                    font-size: 23px;
+                }
+                p {
+                    font-size: 19px;
+                }
+            }
+        }
+    }
+}

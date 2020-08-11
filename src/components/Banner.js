@@ -1,6 +1,7 @@
 import React from 'react'
 import LogoSmall from "../assets/images/LogoSmall.png"
 import BackgroundImage from 'gatsby-background-image'
+import  ConferenceIcon from '../assets/images/conference-icon.svg'
 import { graphql, Link, StaticQuery } from 'gatsby'
 
 
@@ -56,21 +57,24 @@ const Banner = (props) => (
                 <ul className="details">
                   <li>
                     <div>
-                      <h3>Sept 15 - 17 <span className="accent">2020</span></h3>
+                      <h3>Sept 15, 2020 <span className="accent">Workshop Day</span></h3>
+                      <h3>Sept 16 - 17, 2020 <span className="accent">Conference Days</span></h3>
                     </div>
                   </li>
                   <li>
                     <div>
-                      <h3>10am – 2pm PT<span className="accent">(1pm - 5pm ET)</span></h3>
+                      <h3>10am – 2pm PT<span className="accent">Pacific</span></h3>
+                      <small>(1pm - 5pm <span className="accent">Eastern)</span></small>
                     </div>
                   </li>                  
                 </ul>                
-                <Link to="/register" className="btn-rounded" style={{marginTop: '20px'}}>
+                <Link to="/register" className="btn-rounded" style={{margin: '30px 0'}}>
                   Register
                 </Link>                
               </div>
             </header>
-          </div>
+            <div className="banner-caption-bar"><img src={ConferenceIcon} /> A free online conference to push the boundaries of cloud native RDBMS forward.</div>
+          </div>          
         </BackgroundImage>
       )
     }

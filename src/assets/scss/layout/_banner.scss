@@ -45,6 +45,66 @@
 			width: 100% !important;
 		}
 
+		.banner-caption-bar {
+			background: transparent linear-gradient(259deg, #9C7BDE 0%, #4BB4F3 100%) 0% 0% no-repeat padding-box;
+			border-radius: 60px;
+			margin: 0 auto -112px;
+			color: #FFFFFF;
+			font-size: 22px;
+			font-weight: 500;
+			padding: 26px 75px;
+			display: flex;
+			width: fit-content;
+			justify-content: center;
+			align-items: center;
+
+			img {
+				width: 54px;
+				height: 42px;
+				margin-right: 26px;
+			}
+		}
+
+		@media screen and (max-width: 1400px) {
+			.banner-caption-bar {
+				padding: 26px 50px;
+
+				img {
+					margin-right: 18px;
+				}
+			}
+		}
+
+		@media screen and (max-width: 850px) {
+			.banner-caption-bar {
+				padding: 18px 40px;
+				font-size: 18px;
+				margin: 0 auto -94px;
+
+				img {
+					margin-right: 14px;
+				}
+			}
+		}
+
+		@media screen and (max-width: 737px) {
+			.banner-caption-bar {
+				margin: 0 auto -82px;
+			}
+		}
+
+		@media screen and (max-width: 544px) {
+			.banner-caption-bar {
+				margin: 0 auto -78px;
+				font-size: 16px;
+
+				img {
+					margin-right: 8px;
+					width: 36px;
+				}
+			}
+		}
+
 		.presents {
 			color: _palette(bg);
 			font-size: 16px;
@@ -143,6 +203,7 @@
 			}
 			header {
 				width: auto;
+				margin-bottom: 54px;
 
 				> h1 {
 					width: 800px;
@@ -169,10 +230,10 @@
 					content: '';
 					background: #FFF;
 					position: absolute;
-					height: 32px;    
+					height: 75px;    
 					width: 1px;
 					display: block;
-					top: 8px;
+					top: 10px;
 					right: 0;
 				}			
 			}			
@@ -219,7 +280,7 @@
 
 		@include breakpoint(large) {
 			background-attachment: scroll;
-		}
+		}		
 
 		@include breakpoint(small) {
 			@include padding(3em, 0, (2em, 0, 0, 0));
@@ -345,16 +406,22 @@
 	}
 
 	#banner, #register-banner {
-		.details > li h3 {
-			color: #FFF;
-			font-weight: 500;
-			font-size: 28px;
-			margin: 0;
+		.details > li {
+			 h3, small {
+				color: #FFF;
+				font-weight: 500;
+				font-size: 28px;
+				margin: 0;
 
-			.accent {
-				color: #FF6E42;
+				.accent {
+					color: #FF6E42;
+					font-size: 25px;
+					margin-left: 6px;
+				}
+			}
+
+			small {
 				font-size: 25px;
-				margin-left: 6px;
 			}
 		}
 	}

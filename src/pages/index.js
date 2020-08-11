@@ -5,6 +5,7 @@ import Banner from '../components/Banner'
 import Description from '../components/Description'
 import LandingSpeaker from '../components/LandingSpeaker'
 import Topics from '../components/Topics'
+import Workshop from '../components/Workshop'
 import WhatIsDistributedSQL from '../components/WhatIsDistributedSQL'
 import ContactBanner from '../components/ContactBanner'
 
@@ -24,6 +25,7 @@ class HomeIndex extends React.Component {
                 <Description />
                 <LandingSpeaker/>
                 <Topics />
+                <Workshop />
                 <WhatIsDistributedSQL/>
                 <ContactBanner />
             </Layout>

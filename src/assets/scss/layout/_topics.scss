@@ -31,7 +31,7 @@
 
         ul {
             padding-left: 0;
-            list-style: none;
+            list-style: disc;
         }
 
         h3 {
@@ -49,13 +49,20 @@
             position: relative;
         }
 
-        li::before {
-            content: '·';
-            position: absolute;
-            left: -15px;
-            font-weight: 700;
-            font-size: 24px;
+        @media screen and (min-width: 850px) {
+            ul {
+                list-style: none;
+            }
+
+            li::before {
+                content: '·';
+                position: absolute;
+                left: -15px;
+                font-weight: 700;
+                font-size: 24px;
+            }
         }
+        
     }
 
     .topics__caption {
@@ -94,6 +101,7 @@
 
         > div {
             flex: unset;
+            margin: 0 0 0 60px;
         }
     }
 }

@@ -1,6 +1,7 @@
 #footer-banner {
   text-align: center;
   background: #EEF1FA;
+  background: #FFFFFF;
   padding: 70px 0;
 
   .container {
@@ -10,7 +11,7 @@
   }
 
   .distributedsql-text {
-    max-width: 686px;
+    max-width: 633px;
     padding: 0;
     text-align: left;
 
@@ -59,10 +60,11 @@
 
   .value-props {
     display: flex;
-    flex: 0 1 500px;
+    flex: 0 1 360px;
     flex-wrap: wrap;
     height: 100%;
     padding-top: 24px;
+    margin-right: 64px;
 
     .value-props__item {
       flex: 1 0 50%;
@@ -99,6 +101,7 @@
     }
     .value-props {
       justify-content: space-evenly;
+      margin: 0 auto;
 
       .value-props__item {
         flex: 1 1 150px;

@@ -48,7 +48,7 @@ const WhatIsDistributedSQL = (props) => (
       const scalabilityImage = data.ScalabilityImage.childImageSharp.fluid;
       const geodistributeionImage = data.GeoDistributionImage.childImageSharp.fluid;
       return (
-        <section Tag="section" id="footer-banner">
+        <section id="footer-banner">
           <div className="container">
             <div className="value-props">
               <div className="value-props__item">

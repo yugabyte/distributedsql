@@ -24,22 +24,6 @@
     "borderColor":"#9C7BDE"
   },
   {
-    "speakerPicture": "KarthikRanganathan",
-    "speakerName": "Karthik Ranganathan",
-    "speakerId": "karthik-ranganathan",
-    "speakerPosition":"CTO and Co-Founder",
-    "speakerCompany":"Yugabyte",
-    "borderColor":"#D03A6C"
-  },
-  {
-    "speakerPicture": "SidChoudhury",
-    "speakerName": "Sid Choudhury",
-    "speakerId": "sid-choudhury",
-    "speakerPosition":"SVP of Product",
-    "speakerCompany":"Yugabyte",
-    "borderColor":"#4BB4F3"
-  },
-  {
     "speakerPicture": "AllisonKunz",
     "speakerName": "Allison Kunz",
     "speakerId": "allison-kunz",
@@ -72,6 +56,14 @@
     "borderColor":"#4BB4F3"
   },
   {
+    "speakerPicture": "ChristophPakulski",
+    "speakerName": "Christoph Pakulski",
+    "speakerId": "christoph-pakulski",
+    "speakerPosition": "Senior Software Engineer",
+    "speakerCompany":"Tetrate",
+    "borderColor":"#FF6E42"
+  },
+  {
     "speakerPicture": "PrasadRadhakrishnan",
     "speakerName": "Prasad Radhakrishnan",
     "speakerId": "prasad-radhakrishnan",
@@ -80,11 +72,19 @@
     "borderColor":"#FF6E42"
   },
   {
-    "speakerPicture": "ChristophPakulski",
-    "speakerName": "Christoph Pakulski",
-    "speakerId": "christoph-pakulski",
-    "speakerPosition": "Senior Software Engineer",
-    "speakerCompany":"Tetrate",
-    "borderColor":"#FF6E42"
+    "speakerPicture": "KarthikRanganathan",
+    "speakerName": "Karthik Ranganathan",
+    "speakerId": "karthik-ranganathan",
+    "speakerPosition":"CTO and Co-Founder",
+    "speakerCompany":"Yugabyte",
+    "borderColor":"#D03A6C"
+  },
+  {
+    "speakerPicture": "SidChoudhury",
+    "speakerName": "Sid Choudhury",
+    "speakerId": "sid-choudhury",
+    "speakerPosition":"SVP of Product",
+    "speakerCompany":"Yugabyte",
+    "borderColor":"#4BB4F3"
   }
 ]
