@@ -29,7 +29,7 @@
     "speakerId": "allison-kunz",
     "speakerPosition": "Solutions Engineer",
     "speakerCompany":"Hasura",
-    "borderColor":"#FF6E42"
+    "borderColor":"#D03A6C"
   },
   {
     "speakerPicture": "MaheshTyagarajan",
@@ -37,7 +37,7 @@
     "speakerId": "mahesh-tyagarajan",
     "speakerPosition": "VP Engineering",
     "speakerCompany":"Kroger",
-    "borderColor":"#9C7BDE"
+    "borderColor":"#4BB4F3"
   },
   {
     "speakerPicture": "TobiasMeixner",
@@ -45,7 +45,7 @@
     "speakerId": "tobias-meixner",
     "speakerPosition": "CTO and Co-Founder",
     "speakerCompany":"BRIKL",
-    "borderColor":"#D03A6C"
+    "borderColor":"#FF6E42"
   },
   {
     "speakerPicture": "JamesHartig",
@@ -53,7 +53,7 @@
     "speakerId": "james-hartig",
     "speakerPosition": "Co-Founder",
     "speakerCompany":"Admiral",
-    "borderColor":"#4BB4F3"
+    "borderColor":"#9C7BDE"
   },
   {
     "speakerPicture": "ChristophPakulski",
@@ -61,7 +61,15 @@
     "speakerId": "christoph-pakulski",
     "speakerPosition": "Senior Software Engineer",
     "speakerCompany":"Tetrate",
-    "borderColor":"#FF6E42"
+    "borderColor":"#D03A6C"
+  },
+  {
+    "speakerPicture": "JamesTaylor",
+    "speakerName": "James Taylor",
+    "speakerId": "james-taylor",
+    "speakerPosition":"Principal Engineer",
+    "speakerCompany":"Comcast",
+    "borderColor":"#4BB4F3"
   },
   {
     "speakerPicture": "PrasadRadhakrishnan",
@@ -77,7 +85,7 @@
     "speakerId": "karthik-ranganathan",
     "speakerPosition":"CTO and Co-Founder",
     "speakerCompany":"Yugabyte",
-    "borderColor":"#D03A6C"
+    "borderColor":"#9C7BDE"
   },
   {
     "speakerPicture": "SidChoudhury",
@@ -85,6 +93,6 @@
     "speakerId": "sid-choudhury",
     "speakerPosition":"SVP of Product",
     "speakerCompany":"Yugabyte",
-    "borderColor":"#4BB4F3"
+    "borderColor":"#D03A6C"
   }
 ]

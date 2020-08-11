@@ -99,7 +99,14 @@ const LandingSpeaker = (props) => (
           }
         }
       }
-      MehrdadNurolahzade1: file(relativePath: { eq: "MehrdadNurolahzade.png" }) {
+      MehrdadNurolahzade1: file(relativePath: { eq: "MehrdadNurolahzade.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      JamesTaylor1: file(relativePath: { eq: "JamesTaylor.png" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid
@@ -120,7 +127,7 @@ const LandingSpeaker = (props) => (
           }
         }
       }
-      TobiasMeixner1: file(relativePath: { eq: "TobiasMeixner.jpeg" }) {
+      TobiasMeixner1: file(relativePath: { eq: "TobiasMeixner.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid
