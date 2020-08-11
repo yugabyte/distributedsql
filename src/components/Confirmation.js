@@ -111,7 +111,7 @@ const Confirmation = (props) => {
                 <div className="event" onClick={handleCalendarClick}>
                   <div className="event-details">
                     {!eventAdded &&
-                      <small>Event - Sept 15 - 17 | 10am - 2pm PST</small>
+                      <small>Event - Sept 15 - 17 | 10am - 2pm PT</small>
                     }
                     <div className="event-title">{eventAdded ?
                       'Event has been added to your calendar!' :
