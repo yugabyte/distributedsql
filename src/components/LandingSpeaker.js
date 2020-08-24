@@ -57,7 +57,21 @@ const LandingSpeaker = (props) => (
           }
         }
       }
-      ChristophPakulski1: file(relativePath: { eq: "ChristophPakulski.jpeg" }) {
+      BreneshStanslasFlowerMary1: file(relativePath: { eq: "BreneshStanslasFlowerMary.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      ChristophPakulski1: file(relativePath: { eq: "ChristophPakulski.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      HaleDonertasli1: file(relativePath: { eq: "HaleDonertasli.jpeg" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid
@@ -77,7 +91,14 @@ const LandingSpeaker = (props) => (
             ...GatsbyImageSharpFluid
           }
         }
-      }            
+      }
+      KartikRallapalli1: file(relativePath: { eq: "KartikRallapalli.jpeg" }) {
+        childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }   
       KarthikRanganathan1: file(relativePath: { eq: "KarthikRanganathan.png" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
@@ -114,6 +135,13 @@ const LandingSpeaker = (props) => (
         }
       }
       PrasadRadhakrishnan1: file(relativePath: { eq: "PrasadRadhakrishnan.jpeg" }) {
+        childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      PuneetDevadiga1: file(relativePath: { eq: "PuneetDevadiga.jpeg" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid

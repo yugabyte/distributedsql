@@ -72,6 +72,38 @@
     "borderColor":"#4BB4F3"
   },
   {
+    "speakerPicture": "BreneshStanslasFlowerMary",
+    "speakerName": "Brenesh Stanslas Flower Mary",
+    "speakerId": "brenesh-stanslas-flower-mary",
+    "speakerPosition":"Senior Architect",
+    "speakerCompany":"Wipro Digital",
+    "borderColor":"#FF6E42"
+  },
+  {
+    "speakerPicture": "HaleDonertasli",
+    "speakerName": "Hale Donertasli",
+    "speakerId": "hale-donertasli",
+    "speakerPosition":"Cloud Architect",
+    "speakerCompany":"Rakuten Mobile",
+    "borderColor":"#9C7BDE"
+  },
+  {
+    "speakerPicture": "KartikRallapalli",
+    "speakerName": "Kartik Rallapalli",
+    "speakerId": "kartik-rallapalli",
+    "speakerPosition":"Architect",
+    "speakerCompany":"TracFone Wireless",
+    "borderColor":"#D03A6C"
+  },
+  {
+    "speakerPicture": "PuneetDevadiga",
+    "speakerName": "Puneet Devadiga",
+    "speakerId": "puneet-devadiga",
+    "speakerPosition":"Platform Architect",
+    "speakerCompany":"Rakuten Mobile",
+    "borderColor":"#4BB4F3"
+  },  
+  {
     "speakerPicture": "PrasadRadhakrishnan",
     "speakerName": "Prasad Radhakrishnan",
     "speakerId": "prasad-radhakrishnan",
