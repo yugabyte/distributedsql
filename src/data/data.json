@@ -102,14 +102,30 @@
     "speakerPosition":"Platform Architect",
     "speakerCompany":"Rakuten Mobile",
     "borderColor":"#4BB4F3"
-  },  
+  },
+  {
+    "speakerPicture": "EthanUberseder",
+    "speakerName": "Ethan Uberseder",
+    "speakerId": "ethan-uberseder",
+    "speakerPosition":"Infrastructure Engineer",
+    "speakerCompany":"Censys",
+    "borderColor":"#FF6E42"
+  },
+  {
+    "speakerPicture": "HudsonClark",
+    "speakerName": "Hudson Clark",
+    "speakerId": "hudson-clark",
+    "speakerPosition":"Software Engineer",
+    "speakerCompany":"Censys",
+    "borderColor":"#9C7BDE"
+  },
   {
     "speakerPicture": "PrasadRadhakrishnan",
     "speakerName": "Prasad Radhakrishnan",
     "speakerId": "prasad-radhakrishnan",
     "speakerPosition": "VP Data Engineering",
     "speakerCompany":"Yugabyte",
-    "borderColor":"#FF6E42"
+    "borderColor":"#D03A6C"
   },
   {
     "speakerPicture": "KarthikRanganathan",
@@ -117,14 +133,6 @@
     "speakerId": "karthik-ranganathan",
     "speakerPosition":"CTO and Co-Founder",
     "speakerCompany":"Yugabyte",
-    "borderColor":"#9C7BDE"
-  },
-  {
-    "speakerPicture": "SidChoudhury",
-    "speakerName": "Sid Choudhury",
-    "speakerId": "sid-choudhury",
-    "speakerPosition":"SVP of Product",
-    "speakerCompany":"Yugabyte",
-    "borderColor":"#D03A6C"
+    "borderColor":"#4BB4F3"
   }
 ]

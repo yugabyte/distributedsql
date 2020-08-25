@@ -71,7 +71,21 @@ const LandingSpeaker = (props) => (
           }
         }
       }
+      EthanUberseder1: file(relativePath: { eq: "EthanUberseder.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
       HaleDonertasli1: file(relativePath: { eq: "HaleDonertasli.jpeg" }) {
+        childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      HudsonClark1: file(relativePath: { eq: "HudsonClark.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid
@@ -142,13 +156,6 @@ const LandingSpeaker = (props) => (
         }
       }
       PuneetDevadiga1: file(relativePath: { eq: "PuneetDevadiga.jpeg" }) {
-        childImageSharp {
-          fluid(maxWidth: 500) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      SidChoudhury1: file(relativePath: { eq: "SidChoudhury.png" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid
