@@ -78,7 +78,7 @@ const LandingSpeaker = (props) => (
           }
         }
       }
-      HaleDonertasli1: file(relativePath: { eq: "HaleDonertasli.jpeg" }) {
+      HaleDonertasli1: file(relativePath: { eq: "HaleDonertasli.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid
@@ -155,7 +155,7 @@ const LandingSpeaker = (props) => (
           }
         }
       }
-      PuneetDevadiga1: file(relativePath: { eq: "PuneetDevadiga.jpeg" }) {
+      PuneetDevadiga1: file(relativePath: { eq: "PuneetDevadiga.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid
