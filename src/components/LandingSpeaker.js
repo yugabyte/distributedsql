@@ -120,6 +120,13 @@ const LandingSpeaker = (props) => (
           }
         }
       }
+      KenOwens1: file(relativePath: { eq: "KenOwens.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
       LianghongXu1: file(relativePath: { eq: "LianghongXu.png" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
@@ -156,6 +163,13 @@ const LandingSpeaker = (props) => (
         }
       }
       PuneetDevadiga1: file(relativePath: { eq: "PuneetDevadiga.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      TravisLogan1: file(relativePath: { eq: "TravisLogan.jpeg" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid

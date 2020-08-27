@@ -63,8 +63,7 @@ const Banner = (props) => (
                   </li>
                   <li>
                     <div>
-                      <h3>10am – 2pm PT<span className="accent">Pacific</span></h3>
-                      <small>(1pm - 5pm <span className="accent">Eastern)</span></small>
+                      <h3>10am – 3pm <span className="accent">Pacific</span></h3>
                     </div>
                   </li>                  
                 </ul>                

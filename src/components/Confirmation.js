@@ -20,7 +20,7 @@ const EVENT_OBJ = {
     'timeZone': 'America/Los_Angeles'
   },
   'end': {
-    'dateTime': '2020-09-15T14:00:00-07:00',
+    'dateTime': '2020-09-15T15:00:00-07:00',
     'timeZone': 'America/Los_Angeles'
   },
   'recurrence': [
@@ -35,7 +35,7 @@ const EVENT_OBJ = {
   }
 };
 
-const Confirmation = (props) => {
+const Confirmation = () => {
   const [eventAdded, setEventAdded] = useState(false);
   const handleCalendarClick = (event) => {
     const result = window.gapi.auth2.getAuthInstance().signIn();
@@ -111,7 +111,7 @@ const Confirmation = (props) => {
                 <div className="event" onClick={handleCalendarClick}>
                   <div className="event-details">
                     {!eventAdded &&
-                      <small>Event - Sept 15 - 17 | 10am - 2pm PT</small>
+                      <small>Event - Sept 15 - 17 | 10am - 3pm PT</small>
                     }
                     <div className="event-title">{eventAdded ?
                       'Event has been added to your calendar!' :

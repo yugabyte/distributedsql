@@ -120,12 +120,28 @@
     "borderColor":"#9C7BDE"
   },
   {
+    "speakerPicture": "TravisLogan",
+    "speakerName": "Travis Logan",
+    "speakerId": "travis-logan",
+    "speakerPosition":"CTO & Co-Founder",
+    "speakerCompany":"Justuno",
+    "borderColor":"#D03A6C"
+  },
+  {
+    "speakerPicture": "KenOwens",
+    "speakerName": "Ken Owens",
+    "speakerId": "ken-owens",
+    "speakerPosition":"Vice President, Cloud Native Engineering",
+    "speakerCompany":"Mastercard",
+    "borderColor":"#4BB4F3"
+  },
+  {
     "speakerPicture": "PrasadRadhakrishnan",
     "speakerName": "Prasad Radhakrishnan",
     "speakerId": "prasad-radhakrishnan",
     "speakerPosition": "VP Data Engineering",
     "speakerCompany":"Yugabyte",
-    "borderColor":"#D03A6C"
+    "borderColor":"#FF6E42"
   },
   {
     "speakerPicture": "KarthikRanganathan",
@@ -133,6 +149,6 @@
     "speakerId": "karthik-ranganathan",
     "speakerPosition":"CTO and Co-Founder",
     "speakerCompany":"Yugabyte",
-    "borderColor":"#4BB4F3"
+    "borderColor":"#9C7BDE"
   }
 ]

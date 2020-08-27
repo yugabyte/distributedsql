@@ -52,8 +52,7 @@ const RegisterBanner = ({ noText }) => (
                       <h3><span className="accent">Conference Days</span></h3>
                     </li>
                     <li>
-                        <h3>10am – 2pm Pacific</h3>
-                        <h3><span className="accent">(1pm - 5pm ET)</span></h3>
+                        <h3>10am – 3pm <span className="accent">Pacific</span></h3>
                     </li>                  
                   </ul>
                 </div>
