@@ -13,7 +13,7 @@ class RegisterIndex extends React.Component {
                 <Helmet
                     title="Register - Distributed SQL Summit"
                     meta={[
-                        { name: 'description', content: 'Register for Distributed SQL Summit' },
+                        { name: 'description', content: 'Register for Distributed SQL Summit, a free online conference to push the boundaries of cloud native RDBMS forward.' },
                         { name: 'keywords', content: 'Register, Registration, Distributed SQL, Postgres, YugaByte' },
                         { name: 'google-site-verification', content: 'IrJBdGcrNYjaVXTiMFpMckF5pC2MsY9x6nt8TgMtmGE' },
                     ]}>

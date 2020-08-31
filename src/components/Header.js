@@ -10,8 +10,10 @@ const Header = (props) => (
           </div>
           <div className="logo-text">Distributed SQL<br />Summit <strong>2020</strong></div>
         </Link>
-        {/* <span><Link to="/schedule">Schedule</Link></span>
         <nav>
+          <Link to="/schedule">Schedule</Link>
+        </nav>
+        {/* <nav>
           <Menu />
         </nav> */}
     </header>

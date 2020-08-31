@@ -1,5 +1,5 @@
-[
-  {
+{
+  "JoeBeda": {
     "speakerPicture": "JoeBeda",
     "speakerName": "Joe Beda",
     "speakerId": "joe-beda",
@@ -7,15 +7,15 @@
     "speakerCompany":"VMware",
     "borderColor":"#4BB4F3"
   },
-  {
+  "LianghongXu": {
     "speakerPicture": "LianghongXu",
     "speakerName": "Lianghong Xu",
     "speakerId": "lianghong-xu",
-    "speakerPosition":["Engineering Manager", "Storage and Caching Team"],
+    "speakerPosition":"Engineering Manager Storage and Caching Team",
     "speakerCompany":"Pinterest",
     "borderColor":"#FF6E42"
   },
-  {
+  "MehrdadNurolahzade": {
     "speakerPicture": "MehrdadNurolahzade",
     "speakerName": "Mehrdad Nurolahzade",
     "speakerId": "mehrdad-nurolahzade",
@@ -23,7 +23,7 @@
     "speakerCompany":"Twitter",
     "borderColor":"#9C7BDE"
   },
-  {
+  "AllisonKunz": {
     "speakerPicture": "AllisonKunz",
     "speakerName": "Allison Kunz",
     "speakerId": "allison-kunz",
@@ -31,7 +31,7 @@
     "speakerCompany":"Hasura",
     "borderColor":"#D03A6C"
   },
-  {
+  "MaheshTyagarajan": {
     "speakerPicture": "MaheshTyagarajan",
     "speakerName": "Mahesh Tyagarajan",
     "speakerId": "mahesh-tyagarajan",
@@ -39,7 +39,7 @@
     "speakerCompany":"Kroger",
     "borderColor":"#4BB4F3"
   },
-  {
+  "TobiasMeixner": {
     "speakerPicture": "TobiasMeixner",
     "speakerName": "Tobias Meixner",
     "speakerId": "tobias-meixner",
@@ -47,7 +47,7 @@
     "speakerCompany":"BRIKL",
     "borderColor":"#FF6E42"
   },
-  {
+  "JamesHartig": {
     "speakerPicture": "JamesHartig",
     "speakerName": "James Hartig",
     "speakerId": "james-hartig",
@@ -55,7 +55,7 @@
     "speakerCompany":"Admiral",
     "borderColor":"#9C7BDE"
   },
-  {
+  "ChristophPakulski": {
     "speakerPicture": "ChristophPakulski",
     "speakerName": "Christoph Pakulski",
     "speakerId": "christoph-pakulski",
@@ -63,7 +63,7 @@
     "speakerCompany":"Tetrate",
     "borderColor":"#D03A6C"
   },
-  {
+  "JamesTaylor": {
     "speakerPicture": "JamesTaylor",
     "speakerName": "James Taylor",
     "speakerId": "james-taylor",
@@ -71,7 +71,7 @@
     "speakerCompany":"Comcast",
     "borderColor":"#4BB4F3"
   },
-  {
+  "BreneshStanslasFlowerMary": {
     "speakerPicture": "BreneshStanslasFlowerMary",
     "speakerName": "Brenesh Stanslas Flower Mary",
     "speakerId": "brenesh-stanslas-flower-mary",
@@ -79,7 +79,7 @@
     "speakerCompany":"Wipro Digital",
     "borderColor":"#FF6E42"
   },
-  {
+  "HaleDonertasli": {
     "speakerPicture": "HaleDonertasli",
     "speakerName": "Hale Donertasli",
     "speakerId": "hale-donertasli",
@@ -87,7 +87,7 @@
     "speakerCompany":"Rakuten Mobile",
     "borderColor":"#9C7BDE"
   },
-  {
+  "KartikRallapalli": {
     "speakerPicture": "KartikRallapalli",
     "speakerName": "Kartik Rallapalli",
     "speakerId": "kartik-rallapalli",
@@ -95,7 +95,7 @@
     "speakerCompany":"TracFone Wireless",
     "borderColor":"#D03A6C"
   },
-  {
+  "PuneetDevadiga": {
     "speakerPicture": "PuneetDevadiga",
     "speakerName": "Puneet Devadiga",
     "speakerId": "puneet-devadiga",
@@ -103,7 +103,7 @@
     "speakerCompany":"Rakuten Mobile",
     "borderColor":"#4BB4F3"
   },
-  {
+  "EthanUberseder": {
     "speakerPicture": "EthanUberseder",
     "speakerName": "Ethan Uberseder",
     "speakerId": "ethan-uberseder",
@@ -111,7 +111,7 @@
     "speakerCompany":"Censys",
     "borderColor":"#FF6E42"
   },
-  {
+  "HudsonClark": {
     "speakerPicture": "HudsonClark",
     "speakerName": "Hudson Clark",
     "speakerId": "hudson-clark",
@@ -119,7 +119,7 @@
     "speakerCompany":"Censys",
     "borderColor":"#9C7BDE"
   },
-  {
+  "TravisLogan": {
     "speakerPicture": "TravisLogan",
     "speakerName": "Travis Logan",
     "speakerId": "travis-logan",
@@ -127,7 +127,7 @@
     "speakerCompany":"Justuno",
     "borderColor":"#D03A6C"
   },
-  {
+  "KenOwens": {
     "speakerPicture": "KenOwens",
     "speakerName": "Ken Owens",
     "speakerId": "ken-owens",
@@ -135,7 +135,39 @@
     "speakerCompany":"Mastercard",
     "borderColor":"#4BB4F3"
   },
-  {
+  "NikhilChandrappa": {
+    "speakerPicture": "NikhilChandrappa",
+    "speakerName": "Nikhil Chandrappa",
+    "speakerId": "nikhil-chandrappa",
+    "speakerPosition": "Ecosystem Engineering",
+    "speakerCompany":"Yugabyte",
+    "borderColor":"#FF6E42"
+  },
+  "AlanCaldera": {
+    "speakerPicture": "AlanCaldera",
+    "speakerName": "Alan Caldera",
+    "speakerId": "alan-caldera",
+    "speakerPosition":"Principal Solution Architect",
+    "speakerCompany":"Yugabyte",
+    "borderColor":"#9C7BDE"
+  },
+  "AmeyBanarse": {
+    "speakerPicture": "AmeyBanarse",
+    "speakerName": "Amey Banarse",
+    "speakerId": "amey-banarse",
+    "speakerPosition":"Principal Data Architect",
+    "speakerCompany":"Yugabyte",
+    "borderColor":"#D03A6C"
+  },
+  "MikeDenman": {
+    "speakerPicture": "MikeDenman",
+    "speakerName": "Mike Denman",
+    "speakerId": "mike-denman",
+    "speakerPosition":"Sr. Sales Engineer",
+    "speakerCompany":"Yugabyte",
+    "borderColor":"#4BB4F3"
+  },
+  "PrasadRadhakrishnan": {
     "speakerPicture": "PrasadRadhakrishnan",
     "speakerName": "Prasad Radhakrishnan",
     "speakerId": "prasad-radhakrishnan",
@@ -143,7 +175,7 @@
     "speakerCompany":"Yugabyte",
     "borderColor":"#FF6E42"
   },
-  {
+  "KarthikRanganathan": {
     "speakerPicture": "KarthikRanganathan",
     "speakerName": "Karthik Ranganathan",
     "speakerId": "karthik-ranganathan",
@@ -151,4 +183,4 @@
     "speakerCompany":"Yugabyte",
     "borderColor":"#9C7BDE"
   }
-]
+}

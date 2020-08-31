@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import { graphql, StaticQuery } from 'gatsby'
 import BackgroundImage from 'gatsby-background-image'
-import SlackLogo from './Slack';
+import SlackLogo from '../assets/images/svg/slack.svg'
 
-const CLIENT_ID = '201773289674-7i9djb4f0n9i4mordfol8gjm01efgsul.apps.googleusercontent.com';
-const API_KEY = 'AIzaSyC7UmWjMil-0CWmEX8-43lruJsjjUc3clk';
+export const CLIENT_ID = '201773289674-7i9djb4f0n9i4mordfol8gjm01efgsul.apps.googleusercontent.com';
+export const API_KEY = 'AIzaSyC7UmWjMil-0CWmEX8-43lruJsjjUc3clk';
 // Array of API discovery doc URLs for APIs used
-const DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"];
+export const DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"];
 // Authorization scopes required by the API; multiple scopes can be
 // included, separated by spaces.
-const SCOPES = "https://www.googleapis.com/auth/calendar.events";
+export const SCOPES = "https://www.googleapis.com/auth/calendar.events";
 
 const EVENT_OBJ = {
   'summary': 'Distributed SQL Virtual Summit 2020',
@@ -78,14 +78,16 @@ const Confirmation = () => {
   }
 
   useEffect(() => {
-    let script = document.createElement('script');
-    script.src = 'https://apis.google.com/js/api.js';
+    if (!window.gapi) {
+      let script = document.createElement('script');
+      script.src = 'https://apis.google.com/js/api.js';
 
-    script.onload = () => {
-      window.gapi.load('client:auth2', initClient);
+      script.onload = () => {
+        window.gapi.load('client:auth2', initClient);
+      }
+      script.async = true;
+      document.body.appendChild(script);
     }
-    script.async = true;
-    document.body.appendChild(script);
   }, [])
 
   return (
@@ -129,7 +131,7 @@ const Confirmation = () => {
                 <div className="social-media">
                     <ul className="actions">
                         <li><a rel="noopener noreferrer" href="https://github.com/yugabyte/yugabyte-db" className="icon alt"><i className="fa fa-github"></i></a></li>
-                        <li><a rel="noopener noreferrer" href="https://www.yugabyte.com/slack" className="icon alt"><SlackLogo styles={{width: '27px', height: '27px', marginTop: '12px'}} /></a></li>
+                        <li><a rel="noopener noreferrer" href="https://www.yugabyte.com/slack" className="icon alt"><SlackLogo styles={{width: '27px', height: '27px', marginTop: '12px', fill: '#342a66'}} /></a></li>
                         <li><a rel="noopener noreferrer" href="https://twitter.com/yugabyte" className="icon alt"><i className="fa fa-twitter"></i></a></li>
                         <li><a rel="noopener noreferrer" href="https://www.linkedin.com/company/yugabyte/" className="icon alt"><i className="fa fa-linkedin"></i></a></li>
                     </ul>

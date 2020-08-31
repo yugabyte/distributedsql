@@ -6,22 +6,22 @@
 
 /* Main */
 
-	#main {
-		// background-color: _palette(bg-alt);
-		flex: 1;
-		
-		> * {
-			border-top: solid 1px _palette(border);
+#main {
+	// background-color: _palette(bg-alt);
+	flex: 1;
+	
+	> * {
+		border-top: solid 1px _palette(border);
 
-			&:first-child {
-				border-top: 0;
-			}
-
-			@include inner;
+		&:first-child {
+			border-top: 0;
 		}
 
-		&.alt {
-			background-color: transparent;
-			border-bottom: solid 1px _palette(border);
-		}
+		@include inner;
 	}
+
+	&.alt {
+		background-color: transparent;
+		border-bottom: solid 1px _palette(border);
+	}
+}

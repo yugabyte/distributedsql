@@ -14,7 +14,7 @@ class RegisterCompleted extends React.Component {
                 <Helmet
                     title="Completed Registration - Distributed SQL Summit"
                     meta={[
-                        { name: 'description', content: 'Completed Registration for Distributed SQL Summit' },
+                        { name: 'description', content: 'Completed Registration for Distributed SQL Summit, a free online conference to push the boundaries of cloud native RDBMS forward.' },
                         { name: 'keywords', content: 'Register, Registration, Distributed SQL, Postgres, YugaByte' },
                         { name: 'google-site-verification', content: 'IrJBdGcrNYjaVXTiMFpMckF5pC2MsY9x6nt8TgMtmGE' },
                     ]}>

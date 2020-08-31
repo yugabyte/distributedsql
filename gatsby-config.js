@@ -79,6 +79,14 @@ module.exports = {
         icon: 'static/Icon.png', // This path is relative to the root of the site.
       },
     },
-    'gatsby-plugin-sass'
+    'gatsby-plugin-sass',
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /assets\/images\/svg/
+        }
+      }
+    }
   ],
 }

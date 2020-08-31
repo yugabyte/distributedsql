@@ -1,8 +1,8 @@
 import React from 'react'
 import BackgroundImage from 'gatsby-background-image';
-import { graphql, StaticQuery } from 'gatsby'
+import { graphql, StaticQuery, Link } from 'gatsby'
 
-const ContactBanner = (props) => (
+const ContactBanner = ({ title, description, btnText, btnLink }) => (
   <StaticQuery query={graphql`
      query {
       desktopFooterImage: file(relativePath: { eq: "Dist-SQL-Desktop-Footer.png" }) {
@@ -33,12 +33,14 @@ const ContactBanner = (props) => (
       <BackgroundImage Tag="section" fluid={sources} id="contact-banner">
         <div className="inner">
           <div className="content organized-by">
-            <h2 className="header">
-              Have a talk to propose?
-            </h2>
-            <h4>Or questions about the Distributed SQL Virtual Summit?</h4>
+            <h2 className="header">{title}</h2>
+            {description && <h4>{description}</h4>}
           </div>
-          <a href="https://yugabyte.com/contact-us" className="btn-rounded">Contact Us</a>
+          {btnLink && btnLink[0] === '/' ? (
+            <Link to={btnLink} className="btn-rounded">{btnText}</Link>
+            ) : (
+            <a href={btnLink} className="btn-rounded">{btnText}</a>
+          )}
         </div>
       </BackgroundImage>
       );

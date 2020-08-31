@@ -157,3 +157,137 @@ header {
 		}
 	}
 }
+
+/* Landing page speaker section */
+#schedule {
+	background-color: #ffffff;
+	text-align: center;
+
+	header.major {
+		margin: 50px auto;
+
+		h4 {
+			color: #000041;
+			font-size: 30px;
+			font-weight: 600;
+
+			span {
+				margin: 0 20px;
+			}
+		}
+	}
+
+	> .inner {
+		max-width: 1440px !important;
+	}
+
+	input[type="text"]:focus {
+		border-color: unset;
+		box-shadow: unset;
+	}
+
+	.date-filter {
+		max-width: 290px;
+		margin: 0 auto 30px;
+		display: none;
+	}
+
+	.day-agenda {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		list-style: none;
+		padding: 0;
+		  
+		.column-header {
+			display: flex;
+			align-items: flex-end;
+			margin: 15px 0 30px;
+
+			.calendar-date {
+				color: #FF6E42;
+				font-size: 28px;
+				font-weight: 400;
+				line-height: 1;
+				opacity: 0.75;
+				scroll-margin-top: 80px;
+
+				strong {
+					font-size: 70px;
+					font-weight: 600;
+					color: #FF6E42;
+				}
+			}
+			
+			.event-name {
+				color: #000041;
+				font-size: 25px;
+				font-weight: 400;
+				text-align: left;
+				margin-left: 30px;
+				margin-bottom: 2px;
+			}
+		}
+		
+		.event-card {
+			background: #F2F3F8;
+			border-radius: 20px;
+			padding: 35px 30px;
+			margin-bottom: 20px;
+			font-size: 25px;
+			font-weight: 600;
+			color: #141920;
+			text-align: left;
+			width: 415px;
+
+			.event-time {
+				border-left: 2px solid #FF6E42;
+				padding: 0 0 0 15px;
+				line-height: 1;
+				margin-bottom: 20px;
+			}
+
+			.talk-title {
+				color: #141920;
+				font-size: inherit;
+				font-weight: 600;
+			}
+
+			.actions {
+				width: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: flex-end;
+
+				.info-btn {
+					text-align: center;
+					font: italic normal bold 25px/32px Times New Roman;
+					letter-spacing: 0px;
+					color: #2B59C3;
+					border: 1px solid #bcbcbe;
+					border-radius: 50%;
+					height: 34px;
+    				width: 36px;
+					background: #FFFFFF;
+					display: inline-block;
+					cursor: pointer;
+				}
+
+				svg {
+					width: 35px;
+					height: 35px;
+					cursor: pointer;
+					margin-left: 15px;
+				}
+			}
+		}
+	}
+}
+
+@include breakpoint(medium) {
+	#schedule {
+		.date-filter {
+			display: block;
+		}
+	}
+}

@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import '../assets/scss/main.scss'
 import Header from './Header'
+import ScrollTopButton from './ScrollTopButton'
 import Footer from './Footer'
 
 class Layout extends React.Component {
@@ -47,6 +48,7 @@ class Layout extends React.Component {
                 <div id="wrapper">
                     <Header onToggleMenu={this.handleToggleMenu} />
                     {children}
+                    <ScrollTopButton />
                     <Footer dark={darkTheme} socialIcons={showSocialIcons} />
                 </div>
             </div>

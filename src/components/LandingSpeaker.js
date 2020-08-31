@@ -1,56 +1,27 @@
 import React from 'react'
 import { Link, StaticQuery, graphql } from 'gatsby'
+import Speaker from './Speaker'
 
 const featuredSpeakers = require('../data/data.json')
-
-const Speaker = (props) => {
-  const borderColor = props.borderColor || '#000041';
-  let speakerPosition = props.speakerPosition;
-  if (typeof props.speakerPosition !== 'string') {
-    const arr = []
-    props.speakerPosition.forEach((x, index) => {
-      if (index !== 0) {
-        arr.push(<br />);
-      }
-      arr.push(x);
-    });
-    speakerPosition = arr;
-  }
-
-  return (    
-    <div className="speaker">
-      <div className="profile" key={props.speakerId} id={props.speakerId}>
-        <div className="speakerImage">
-          <img src={props.speakerImage} alt="profile" style={{border: `3px solid ${borderColor}`}}/>
-        </div>
-        <div className="speakerProfile">
-          <div className="profileWrapper">
-            <div className="profileName">
-              {
-                props.speakerId?
-              <Link to={`/speaker/${props.speakerId}`}>
-              {props.speakerName}
-              </Link>
-              :
-              props.speakerName
-              }
-
-            </div>
-          </div>
-          <div className="profileBio">
-            {speakerPosition},<br />
-            <strong>{props.speakerCompany}</strong>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
 
 const LandingSpeaker = (props) => (
   <StaticQuery query={graphql`
     query {
+      AlanCaldera1: file(relativePath: { eq: "AlanCaldera.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
       AllisonKunz1: file(relativePath: { eq: "AllisonKunz.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      AmeyBanarse1: file(relativePath: { eq: "AmeyBanarse.png" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid
@@ -93,6 +64,13 @@ const LandingSpeaker = (props) => (
         }
       }
       JamesHartig1: file(relativePath: { eq: "JamesHartig.jpeg" }) {
+        childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      JamesTaylor1: file(relativePath: { eq: "JamesTaylor.png" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid
@@ -148,7 +126,14 @@ const LandingSpeaker = (props) => (
           }
         }
       }
-      JamesTaylor1: file(relativePath: { eq: "JamesTaylor.png" }) {
+      MikeDenman1: file(relativePath: { eq: "MikeDenman.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      NikhilChandrappa1: file(relativePath: { eq: "NikhilChandrappa.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid
@@ -187,7 +172,7 @@ const LandingSpeaker = (props) => (
   `}
   render={data => {
     let landingSpeakerList = [];
-    featuredSpeakers.forEach((speakerInfo) => {
+    Object.values(featuredSpeakers).forEach((speakerInfo) => {
       const speakerPicture = data[speakerInfo.speakerPicture+'1'] ? data[speakerInfo.speakerPicture+ '1'].childImageSharp.fluid.src : speakerInfo.speakerPicture.src;
       landingSpeakerList.push(<Speaker
         key={'s'+speakerInfo.speakerId}
@@ -208,7 +193,7 @@ const LandingSpeaker = (props) => (
           <div className="speakerList">
             {landingSpeakerList}
           </div>          
-        </div>        
+        </div>
       </section>
     )
   }}

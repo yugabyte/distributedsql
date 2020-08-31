@@ -5,7 +5,7 @@ import  ConferenceIcon from '../assets/images/conference-icon.svg'
 import { graphql, Link, StaticQuery } from 'gatsby'
 
 
-const Banner = (props) => (
+const Banner = ({ title, showPresents, showCaptionBar }) => (
   <StaticQuery query={graphql`
     query {
       desktopBannerImage: file(relativePath: { eq: "Dist-SQL-Desktop-Header.png" }) {
@@ -42,17 +42,19 @@ const Banner = (props) => (
       return (
         <BackgroundImage Tag="section" fluid={sources} id="banner">
           <div className="inner">            
-            <header className="major">
-              <h1>Distributed SQL Virtual Summit 2020</h1>
-              <div className="presents">
-                <span className="text">PRESENTED BY</span>
-                <a href="https://yugabyte.com/">
-                  <img style={{
-                    width: '150px',
-                    objectFit: 'contain'
-                  }} src={LogoSmall} alt="YugaByte" />
-                </a>
-              </div>
+            <header className="major" style={showCaptionBar ? {marginBottom: '54px'} : null}>
+              <h1>{title}</h1>
+              {showPresents && 
+                <div className="presents">
+                  <span className="text">PRESENTED BY</span>
+                  <a href="https://yugabyte.com/">
+                    <img style={{
+                      width: '150px',
+                      objectFit: 'contain'
+                    }} src={LogoSmall} alt="YugaByte" />
+                  </a>
+                </div>
+              }
               <div className="container">
                 <ul className="details">
                   <li>
@@ -67,12 +69,16 @@ const Banner = (props) => (
                     </div>
                   </li>                  
                 </ul>                
-                <Link to="/register" className="btn-rounded" style={{margin: '30px 0'}}>
+                <Link to="/register" className="btn-rounded">
                   Register
                 </Link>                
               </div>
             </header>
-            <div className="banner-caption-bar"><img src={ConferenceIcon} /> A free online conference to push the boundaries of cloud native RDBMS forward.</div>
+            {showCaptionBar && 
+              <div className="banner-caption-bar">
+                <img src={ConferenceIcon} /> A free online conference to push the boundaries of cloud native RDBMS forward.
+              </div>
+            }
           </div>          
         </BackgroundImage>
       )

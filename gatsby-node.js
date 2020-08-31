@@ -11,23 +11,24 @@ exports.onCreateWebpackConfig = async ({ actions }) => {
       ...webpackCustomConfig,
     })
 }
+
+/*
 exports.createPages = async ({ graphql, actions }) => {
     const { createPage, createNode } = actions
     const speakers = JSON.parse( JSON.stringify(speakerData) )
     const speakerPageTemplate = path.resolve("src/page-templates/speaker.js")
-    speakerData.forEach(speaker => {
+    Object.values(speakers).forEach(speaker => {
         try {
-            if(speaker.type==='talk' || speaker.type==='panel'){
-                createPage({
-                    path: `/speaker/${speaker.speakerId}`,
-                    component: speakerPageTemplate,
-                    context: {
-                        ...speaker
-                    },
-                })
-            }
+            createPage({
+                path: `/speaker/${speaker.speakerId}`,
+                component: speakerPageTemplate,
+                context: {
+                    ...speaker
+                },
+            })
         } catch (error) {
 
         }
     });
 }
+*/
