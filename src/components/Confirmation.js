@@ -131,7 +131,7 @@ const Confirmation = () => {
                 <div className="social-media">
                     <ul className="actions">
                         <li><a rel="noopener noreferrer" href="https://github.com/yugabyte/yugabyte-db" className="icon alt"><i className="fa fa-github"></i></a></li>
-                        <li><a rel="noopener noreferrer" href="https://www.yugabyte.com/slack" className="icon alt"><SlackLogo styles={{width: '27px', height: '27px', marginTop: '12px', fill: '#342a66'}} /></a></li>
+                        <li><a rel="noopener noreferrer" href="https://www.yugabyte.com/slack" className="icon alt"><SlackLogo style={{width: '27px', height: '27px', marginTop: '12px', fill: '#FFFFFF'}} /></a></li>
                         <li><a rel="noopener noreferrer" href="https://twitter.com/yugabyte" className="icon alt"><i className="fa fa-twitter"></i></a></li>
                         <li><a rel="noopener noreferrer" href="https://www.linkedin.com/company/yugabyte/" className="icon alt"><i className="fa fa-linkedin"></i></a></li>
                     </ul>
