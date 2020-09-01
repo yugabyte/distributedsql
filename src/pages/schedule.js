@@ -17,7 +17,7 @@ class Schedule extends React.Component {
                         { name: 'google-site-verification', content: 'IrJBdGcrNYjaVXTiMFpMckF5pC2MsY9x6nt8TgMtmGE' },
                     ]}>
                 </Helmet>
-                <Banner title="Schedule"/>
+                <Banner title="Schedule" hideSecondary/>
                 <EventSchedule />
                 <ContactBanner
                     title="Join Us!"

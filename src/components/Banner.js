@@ -5,7 +5,7 @@ import  ConferenceIcon from '../assets/images/conference-icon.svg'
 import { graphql, Link, StaticQuery } from 'gatsby'
 
 
-const Banner = ({ title, showPresents, showCaptionBar }) => (
+const Banner = ({ title, showPresents, showCaptionBar, hideSecondary }) => (
   <StaticQuery query={graphql`
     query {
       desktopBannerImage: file(relativePath: { eq: "Dist-SQL-Desktop-Header.png" }) {
@@ -70,9 +70,9 @@ const Banner = ({ title, showPresents, showCaptionBar }) => (
                   </li>
                 </ul>
                 <div className="cta-bar">
-                  <Link to="/schedule" className="btn-rounded secondary">
+                  {!hideSecondary && <Link to="/schedule" className="btn-rounded secondary">
                       View Schedule
-                  </Link>
+                  </Link>}
                   <Link to="/register" className="btn-rounded">
                     Register
                   </Link>
