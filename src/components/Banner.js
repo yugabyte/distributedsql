@@ -67,11 +67,16 @@ const Banner = ({ title, showPresents, showCaptionBar }) => (
                     <div>
                       <h3>10am – 3pm <span className="accent">Pacific</span></h3>
                     </div>
-                  </li>                  
-                </ul>                
-                <Link to="/register" className="btn-rounded">
-                  Register
-                </Link>                
+                  </li>
+                </ul>
+                <div className="cta-bar">
+                  <Link to="/schedule" className="btn-rounded secondary">
+                      View Schedule
+                  </Link>
+                  <Link to="/register" className="btn-rounded">
+                    Register
+                  </Link>
+                </div>
               </div>
             </header>
             {showCaptionBar && 

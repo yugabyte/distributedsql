@@ -19,7 +19,7 @@ const dateOptions = [
 const getEventObject = (talk, start, end, description = '') => ({
   'summary': talk,
   'location': 'Distributed SQL Virtual Summit 2020',
-  'description': description,
+  'description': description ? `${description} More info at https://distributedsql.org/`: 'More info at https://distributedsql.org/',
   'start': {
     'dateTime': start,
     'timeZone': 'America/Los_Angeles'
@@ -165,6 +165,13 @@ const EventSchedule = (props) => {
           }
         }
         JoeBeda1: file(relativePath: { eq: "JoeBeda.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 500) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        JoeHellerstein1: file(relativePath: { eq: "JoeHellerstein.jpeg" }) {
           childImageSharp {
             fluid(maxWidth: 500) {
               ...GatsbyImageSharpFluid
@@ -342,7 +349,7 @@ const EventSchedule = (props) => {
                       ))}
                       <div className="actions">
                         {event.description && <span className="info-btn" onClick={() => handleShowInfo(event)}>i</span>}
-                        <CalendarIcon onClick={() => handleCalendarClick(event)} />
+                        <CalendarIcon onClick={() => handleCalendarClick(event)} className="icon" />
                       </div>
                     </div>
                   ))}
@@ -376,7 +383,7 @@ const EventSchedule = (props) => {
                       ))}
                       <div className="actions">
                         {event.description && <span className="info-btn" onClick={() => handleShowInfo(event)}>i</span>}
-                        <CalendarIcon onClick={() => handleCalendarClick(event)} />
+                        <CalendarIcon onClick={() => handleCalendarClick(event)} className="icon"  />
                       </div>
                     </div>
                   ))}
@@ -410,7 +417,7 @@ const EventSchedule = (props) => {
                       ))}
                       <div className="actions">
                         {event.description && <span className="info-btn" onClick={() => handleShowInfo(event)}>i</span>}
-                        <CalendarIcon onClick={() => handleCalendarClick(event)} />
+                        <CalendarIcon onClick={() => handleCalendarClick(event)} className="icon"  />
                       </div>
                     </div>
                   ))}

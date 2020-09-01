@@ -82,24 +82,21 @@
 }
 
 
-@media (min-width: 1070px)
-{
+@media (min-width: 1070px) {
 	.speaker {
 	    margin-right: 10px;
-	    margin-bottom: 40px;
-			.profile
-			{
-				.speakerImage
-				{
-					width: 168px;
-			    	height: 168px;
-				}
-			}
+        margin-bottom: 15px;
+        
+        .profile {
+            .speakerImage {
+                width: 168px;
+                height: 168px;
+            }
+        }
 	}
 }
 
-@media screen and (max-width: 1070px)
-{
+@media screen and (max-width: 1070px) {
 	.speaker {
 		margin-right: 15px;
 		margin-left: 15px;

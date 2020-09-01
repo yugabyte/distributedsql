@@ -104,10 +104,11 @@ export const conferenceSchedule = [
       },
       {
         speakers: ['HaleDonertasli'],
-        talk: 'Coming Soon',
+        talk: '5G and Data Challenges',      
         time: '11.30 am - 12 pm',
         start: '2020-09-16T11:30:00-07:00',
         end: '2020-09-16T12:00:00-07:00',
+        description: '5G demands full capacity and availability of data delivery while living in a decade that all layers of connectivity are going through the massive partitioning. In this session, we are going to discuss the strategies to deal with data challenges for 5G.'
       },
       {
         speakers: ['LianghongXu'],
@@ -152,10 +153,12 @@ export const conferenceSchedule = [
     ],
     [
       {
-        talk: 'Day 3 Opening Keynote',
+        speakers: ['JoeHellerstein'],
+        talk: 'The Art of the State: Serverless Computing and Distributed Data',
         time: '10 - 10.30 am',
         start: '2020-09-17T10:00:00-07:00',
         end: '2020-09-17T10:30:00-07:00',
+        description: `Serverless computing is a first step to opening up the cloud as a programmable platform for developers. As always, the hardest and most interesting part is the data, a topic that is poorly served by first-generation serverless platforms. In this talk I’ll go over the challenges of data management in serverless computing, and promising new results from the Anna KVS and Cloudburst “stateful” serverless computing efforts in Berkeley’s RISELab.`
       },
       {
         speakers: ['PuneetDevadiga', 'HaleDonertasli', 'PrasadRadhakrishnan', 'KartikRallapalli', 'JamesTaylor'],
@@ -163,7 +166,7 @@ export const conferenceSchedule = [
         time: '10.30 - 11.30 am',
         start: '2020-09-17T10:30:00-07:00',
         end: '2020-09-17T11:30:00-07:00',
-        description: `Join this roundtable with technology leaders and innovators from some of the world's most loved enterprises in the telco industry, and explore the future of data infrastructure.`
+        description: `Join this roundtable with technology leaders and innovators from some of the world's most loved enterprises in the telco industry, and explore the future of data infrastructure. A panel of architects will get together to discuss cloud native trends and challenges in the context of Digital, IoT, 5G, Edge, Data and how it fuels their need to innovate.`
       },
       {
         speakers: ['MaheshTyagarajan'],
@@ -189,10 +192,11 @@ export const conferenceSchedule = [
       },
       {
         speakers: ['TravisLogan'],
-        talk: 'Coming Soon',
+        talk: 'Evolve: A Database Journey from Ground to Cloud',
         time: '1 - 1.30 pm',
         start: '2020-09-17T13:00:00-07:00',
         end: '2020-09-17T13:30:00-07:00',
+        description: `With over 14 years of experience with MS SQL Server, Travis is well-versed in database evolution. This talk will start with traditional RDBMS experiences and will lead us through redundancy, scaling, performance and many other trials and tribulations along the way. By the end of the talk, you’ll have explored Travis’ complete evolution from traditional database systems of the past and important milestones that led him to the distributed SQL systems of today.`
       },
       {
         speakers: ['KenOwens'],

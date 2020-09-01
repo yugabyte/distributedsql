@@ -248,6 +248,12 @@
 				margin: 30px 0;
 			}
 
+			.cta-bar {
+				.btn-rounded:first-child {
+					margin-right: 30px;
+				}
+			}
+
 			@include breakpoint(small) {
 				.details {
 					display: block;
@@ -269,9 +275,14 @@
 					}
 				}
 
-				.btn-rounded {
-					margin: 0 0 50px;
-				}
+				.cta-bar {
+					display: flex;
+					flex-direction: column;
+
+					.btn-rounded, .btn-rounded:first-child {
+						margin: 0 auto 50px;
+					}
+				}				
 			}
 		}
 

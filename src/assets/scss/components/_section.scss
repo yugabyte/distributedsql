@@ -244,13 +244,15 @@ header {
 				border-left: 2px solid #FF6E42;
 				padding: 0 0 0 15px;
 				line-height: 1;
-				margin-bottom: 20px;
+				margin-bottom: 30px;
 			}
 
 			.talk-title {
 				color: #141920;
 				font-size: inherit;
 				font-weight: 600;
+				margin-bottom: 30px;
+				line-height: 1.3;
 			}
 
 			.actions {
@@ -271,13 +273,22 @@ header {
 					background: #FFFFFF;
 					display: inline-block;
 					cursor: pointer;
+
+					&:hover {
+						border: 1px solid #2B59C3;
+					}
 				}
 
-				svg {
+				svg.icon {
 					width: 35px;
 					height: 35px;
 					cursor: pointer;
 					margin-left: 15px;
+					fill: #555b5b;
+
+					&:hover {
+						fill: #2B59C3;
+					}
 				}
 			}
 		}
