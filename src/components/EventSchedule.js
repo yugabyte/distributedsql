@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import { StaticQuery, graphql } from 'gatsby'
+import { Link, StaticQuery, graphql } from 'gatsby'
+import { navigate } from '@reach/router'
+import { useQueryParam } from "gatsby-query-params";
 import Select from 'react-select'
 
 import Speaker from './Speaker'
@@ -90,13 +92,27 @@ const EventSchedule = (props) => {
       }
       script.async = true;
       document.body.appendChild(script);
-    }
+    }   
   }, [])
 
-  const handleShowInfo = (event) => {
+  const handleShowInfo = (e, event) => {
     setEventInfo(event);
     setShowModal(true);
+    navigate(`/schedule?event=${event.id}`)
+    if (e) {
+      e.preventDefault()
+    }
   }
+
+  const eventId = useQueryParam("event", null);
+  if (eventInfo.id !== eventId) {
+    const selectedEvent = conferenceSchedule.flat().find(x => x.id === eventId);
+    if (selectedEvent) {
+      handleShowInfo(null, selectedEvent);
+    }
+  }
+
+  const registerButton = <Link to={'/register'} className="btn-rounded">Register</Link>
 
   return (
     <StaticQuery query={graphql`
@@ -303,7 +319,7 @@ const EventSchedule = (props) => {
             }
           }
         }
-
+        
         return (
           <section id="schedule" className="major">
             <div className="inner">
@@ -349,7 +365,7 @@ const EventSchedule = (props) => {
                           />
                         ))}
                         <div className="actions">
-                          {event.description && <span className="info-btn" onClick={() => handleShowInfo(event)}>i</span>}
+                          {event.description && <span className="info-btn" onClick={(e) => handleShowInfo(e, event)}>i</span>}
                           <CalendarIcon onClick={() => handleCalendarClick(event)} className="icon" />
                         </div>
                       </div>
@@ -385,7 +401,7 @@ const EventSchedule = (props) => {
                           />
                         ))}
                         <div className="actions">
-                          {event.description && <span className="info-btn" onClick={() => handleShowInfo(event)}>i</span>}
+                          {event.description && <span className="info-btn" onClick={(e) => handleShowInfo(e, event)}>i</span>}
                           <CalendarIcon onClick={() => handleCalendarClick(event)} className="icon"  />
                         </div>
                       </div>
@@ -421,7 +437,7 @@ const EventSchedule = (props) => {
                           />
                         ))}
                         <div className="actions">
-                          {event.description && <span className="info-btn" onClick={() => handleShowInfo(event)}>i</span>}
+                          {event.description && <span className="info-btn" onClick={(e) => handleShowInfo(e, event)}>i</span>}
                           <CalendarIcon onClick={() => handleCalendarClick(event)} className="icon"  />
                         </div>
                       </div>
@@ -434,7 +450,21 @@ const EventSchedule = (props) => {
               <Modal title={eventInfo.talk}
                 description={eventInfo.description}
                 speakers={eventInfo.speakers}
-                onHide={() => setShowModal(false)}              
+                speakerPictures={eventInfo.speakers.map(s => data[s + '1'])}
+                time={eventInfo.start}
+                onHide={() => {
+                  setShowModal(false)
+                  navigate('/schedule')
+                }}
+                footer={[
+                  registerButton,
+                  <div className="add-calendar" onClick={() => handleCalendarClick(eventInfo)}>
+                    <CalendarIcon className="icon" />
+                    <span>
+                      Add to Calendar
+                    </span>
+                  </div>
+                ]}
               />
             }
           </section>

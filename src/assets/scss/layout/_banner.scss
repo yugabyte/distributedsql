@@ -249,6 +249,8 @@
 			}
 
 			.cta-bar {
+				font-size: 18px;
+				
 				.btn-rounded:first-child {
 					margin-right: 30px;
 				}
@@ -277,7 +279,7 @@
 
 				.cta-bar {
 					display: flex;
-					flex-direction: column;
+					flex-direction: column;					
 
 					.btn-rounded, .btn-rounded:first-child {
 						margin: 0 auto 50px;
@@ -789,10 +791,11 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-evenly;
+		font-size: 21px;
 		  
 		> div {
 			flex: 1 0 33%;
-			max-width: 330px;
+			max-width: 300px;
 		}		
 	}
 }
