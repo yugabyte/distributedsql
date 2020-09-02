@@ -195,14 +195,51 @@ header {
 	.day-agenda {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-evenly;
+		justify-content: center;
 		list-style: none;
 		padding: 0;
+
+		> li {
+			padding: 0;
+			
+			.card-list {			
+				padding: 0 25px;
+				height: calc(100% - 165px);
+			}
+		}
+
+		> li:not(:last-child) {
+			.card-list {
+				border-right: 2px solid #595959;
+			}    		
+		}
+
+		@media screen and (max-width: 1380px) {
+			> li:not(:last-child) {
+				.card-list {
+					border-right: unset;
+				}    		
+			}
+			> li:first-child {
+				.card-list {
+					border-right: 2px solid #595959;
+				}
+			}
+		}
+
+		@media screen and (max-width: 1040px) {
+			> li:first-child {
+				.card-list {
+					border-right: unset
+				}
+			}
+		}
 		  
 		.column-header {
 			display: flex;
 			align-items: flex-end;
 			margin: 15px 0 30px;
+			justify-content: center;
 
 			.calendar-date {
 				color: #FF6E42;

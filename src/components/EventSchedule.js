@@ -330,29 +330,31 @@ const EventSchedule = (props) => {
                       10 am to 3 pm PT
                     </div>
                   </div>
-                  {conferenceSchedule[0].map(event => (
-                    <div className="event-card">
-                      <div className="event-time">{event.time}</div>
-                      <h4 className="talk-title">{event.talk}</h4>
-                      {event.speakers && event.speakers.map(speakerKey => (
-                        <Speaker
-                          speakerKey={featuredSpeakers[speakerKey].speakerId}
-                          speakerId={featuredSpeakers[speakerKey].speakerId}
-                          speakerName={featuredSpeakers[speakerKey].speakerName}
-                          speakerImage={data[featuredSpeakers[speakerKey].speakerPicture + '1'] ? data[featuredSpeakers[speakerKey].speakerPicture + '1'].childImageSharp.fluid.src : null}
-                          speakerPosition={featuredSpeakers[speakerKey].speakerPosition}
-                          speakerCompany={featuredSpeakers[speakerKey].speakerCompany}
-                          borderColor={featuredSpeakers[speakerKey].borderColor}
-                          orientation="landscape"
-                          size="small"
-                        />
-                      ))}
-                      <div className="actions">
-                        {event.description && <span className="info-btn" onClick={() => handleShowInfo(event)}>i</span>}
-                        <CalendarIcon onClick={() => handleCalendarClick(event)} className="icon" />
+                  <div className="card-list">
+                    {conferenceSchedule[0].map(event => (
+                      <div className="event-card">
+                        <div className="event-time">{event.time}</div>
+                        <h4 className="talk-title">{event.talk}</h4>
+                        {event.speakers && event.speakers.map(speakerKey => (
+                          <Speaker
+                            speakerKey={featuredSpeakers[speakerKey].speakerId}
+                            speakerId={featuredSpeakers[speakerKey].speakerId}
+                            speakerName={featuredSpeakers[speakerKey].speakerName}
+                            speakerImage={data[featuredSpeakers[speakerKey].speakerPicture + '1'] ? data[featuredSpeakers[speakerKey].speakerPicture + '1'].childImageSharp.fluid.src : null}
+                            speakerPosition={featuredSpeakers[speakerKey].speakerPosition}
+                            speakerCompany={featuredSpeakers[speakerKey].speakerCompany}
+                            borderColor={featuredSpeakers[speakerKey].borderColor}
+                            orientation="landscape"
+                            size="small"
+                          />
+                        ))}
+                        <div className="actions">
+                          {event.description && <span className="info-btn" onClick={() => handleShowInfo(event)}>i</span>}
+                          <CalendarIcon onClick={() => handleCalendarClick(event)} className="icon" />
+                        </div>
                       </div>
-                    </div>
-                  ))}
+                    ))}
+                  </div>
                 </li>
                 <li>
                   <div className="column-header">
@@ -365,28 +367,30 @@ const EventSchedule = (props) => {
                       10 am to 3 pm PT
                     </div>
                   </div>
-                  {conferenceSchedule[1].map(event => (
-                    <div className="event-card">
-                      <div className="event-time">{event.time}</div>
-                      <h4 className="talk-title">{event.talk}</h4>
-                      {event.speakers && event.speakers.map(speakerKey => (
-                        <Speaker
-                          speakerId={featuredSpeakers[speakerKey].speakerId}
-                          speakerName={featuredSpeakers[speakerKey].speakerName}
-                          speakerImage={data[featuredSpeakers[speakerKey].speakerPicture + '1'] ? data[featuredSpeakers[speakerKey].speakerPicture + '1'].childImageSharp.fluid.src : null}
-                          speakerPosition={featuredSpeakers[speakerKey].speakerPosition}
-                          speakerCompany={featuredSpeakers[speakerKey].speakerCompany}
-                          borderColor={featuredSpeakers[speakerKey].borderColor}
-                          orientation="landscape"
-                          size="small"
-                        />
-                      ))}
-                      <div className="actions">
-                        {event.description && <span className="info-btn" onClick={() => handleShowInfo(event)}>i</span>}
-                        <CalendarIcon onClick={() => handleCalendarClick(event)} className="icon"  />
+                  <div className="card-list">
+                    {conferenceSchedule[1].map(event => (
+                      <div className="event-card">
+                        <div className="event-time">{event.time}</div>
+                        <h4 className="talk-title">{event.talk}</h4>
+                        {event.speakers && event.speakers.map(speakerKey => (
+                          <Speaker
+                            speakerId={featuredSpeakers[speakerKey].speakerId}
+                            speakerName={featuredSpeakers[speakerKey].speakerName}
+                            speakerImage={data[featuredSpeakers[speakerKey].speakerPicture + '1'] ? data[featuredSpeakers[speakerKey].speakerPicture + '1'].childImageSharp.fluid.src : null}
+                            speakerPosition={featuredSpeakers[speakerKey].speakerPosition}
+                            speakerCompany={featuredSpeakers[speakerKey].speakerCompany}
+                            borderColor={featuredSpeakers[speakerKey].borderColor}
+                            orientation="landscape"
+                            size="small"
+                          />
+                        ))}
+                        <div className="actions">
+                          {event.description && <span className="info-btn" onClick={() => handleShowInfo(event)}>i</span>}
+                          <CalendarIcon onClick={() => handleCalendarClick(event)} className="icon"  />
+                        </div>
                       </div>
-                    </div>
-                  ))}
+                    ))}
+                  </div>
                 </li>
                 <li>
                   <div className="column-header">
@@ -399,28 +403,30 @@ const EventSchedule = (props) => {
                       10 am to 3 pm PT
                     </div>
                   </div>
-                  {conferenceSchedule[2].map(event => (
-                    <div className="event-card">
-                      <div className="event-time">{event.time}</div>
-                      <h4 className="talk-title">{event.talk}</h4>
-                      {event.speakers && event.speakers.map(speakerKey => (
-                        <Speaker
-                          speakerId={featuredSpeakers[speakerKey].speakerId}
-                          speakerName={featuredSpeakers[speakerKey].speakerName}
-                          speakerImage={data[featuredSpeakers[speakerKey].speakerPicture + '1'] ? data[featuredSpeakers[speakerKey].speakerPicture + '1'].childImageSharp.fluid.src : null}
-                          speakerPosition={featuredSpeakers[speakerKey].speakerPosition}
-                          speakerCompany={featuredSpeakers[speakerKey].speakerCompany}
-                          borderColor={featuredSpeakers[speakerKey].borderColor}
-                          orientation="landscape"
-                          size="small"
-                        />
-                      ))}
-                      <div className="actions">
-                        {event.description && <span className="info-btn" onClick={() => handleShowInfo(event)}>i</span>}
-                        <CalendarIcon onClick={() => handleCalendarClick(event)} className="icon"  />
+                  <div className="card-list">
+                    {conferenceSchedule[2].map(event => (
+                      <div className="event-card">
+                        <div className="event-time">{event.time}</div>
+                        <h4 className="talk-title">{event.talk}</h4>
+                        {event.speakers && event.speakers.map(speakerKey => (
+                          <Speaker
+                            speakerId={featuredSpeakers[speakerKey].speakerId}
+                            speakerName={featuredSpeakers[speakerKey].speakerName}
+                            speakerImage={data[featuredSpeakers[speakerKey].speakerPicture + '1'] ? data[featuredSpeakers[speakerKey].speakerPicture + '1'].childImageSharp.fluid.src : null}
+                            speakerPosition={featuredSpeakers[speakerKey].speakerPosition}
+                            speakerCompany={featuredSpeakers[speakerKey].speakerCompany}
+                            borderColor={featuredSpeakers[speakerKey].borderColor}
+                            orientation="landscape"
+                            size="small"
+                          />
+                        ))}
+                        <div className="actions">
+                          {event.description && <span className="info-btn" onClick={() => handleShowInfo(event)}>i</span>}
+                          <CalendarIcon onClick={() => handleCalendarClick(event)} className="icon"  />
+                        </div>
                       </div>
-                    </div>
-                  ))}
+                    ))}
+                  </div>
                 </li>
               </ul>
             </div>

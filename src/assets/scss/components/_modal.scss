@@ -19,9 +19,17 @@
         opacity: 1;
         position: relative;
         transition: min-height 0.3s ease-out, height 0.3s, width 0.3s;
+        overflow-y: initial !important;
 
         > * {
             display: none;
+        }
+    
+
+        .modal-body {
+            max-height: 80vh;
+            height: 600px;
+            overflow-y: auto;
         }
 
         .speaker-list {
@@ -54,9 +62,10 @@
     }
 
     .modal.expand {
-        min-height: 500px;
+        min-height: 300px;
         width: 550px;
         height: auto;
+        max-height: 100%;
     }
 
     .modal.expand.visible {

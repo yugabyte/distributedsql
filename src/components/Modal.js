@@ -25,15 +25,17 @@ const Modal = ({ title, speakers, description, onHide }) => {
     }
     return (
         <div className="modal-background" onClick={handleClick}>
-            <div id="modal-content" className={showContent ? "modal expand" : "modal"}>
+            <div id="modal-content" className={showContent ? "modal expand" : "modal"}>                
                 <div className="modal-close" onClick={handleClick}></div>
-                <h3>{title}</h3>
-                {speakers && speakers.length &&
-                    <div className="speaker-list">
-                        Talk given by: {speakers.map(s => featuredSpeakers[s].speakerName).join(', ')}
-                    </div>
-                }
-                <p className="text" dangerouslySetInnerHTML={{__html: description}}></p>
+                <div className="modal-body">
+                    <h3>{title}</h3>
+                    {speakers && speakers.length &&
+                        <div className="speaker-list">
+                            Talk given by: {speakers.map(s => featuredSpeakers[s].speakerName).join(', ')}
+                        </div>
+                    }
+                    <p className="text" dangerouslySetInnerHTML={{__html: description}}></p>
+                </div>
             </div>
         </div>
     );
