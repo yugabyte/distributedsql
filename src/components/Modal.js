@@ -25,7 +25,7 @@ const Modal = ({ title, time, speakers, speakerPictures, description, onHide, fo
     }
 
     const d = new Date(time)
-    const dateTime = `${d.toLocaleString('en-us', { weekday: 'short' })}, ${d.toLocaleString('en-us', { month: 'short' })} ${d.getDay()} at ${d.toLocaleTimeString('en-us', { hour12: true, hour: '2-digit', minute: '2-digit', timeZoneName: 'short' })}`
+    const dateTime = `${d.toLocaleString('en-us', { weekday: 'short' })}, ${d.toLocaleString('en-us', { month: 'short' })} ${d.getDate()} at ${d.toLocaleTimeString('en-us', { hour12: true, hour: '2-digit', minute: '2-digit', timeZoneName: 'short' })}`
     return (
         <div className="modal-background" onClick={handleClick}>
             <div id="modal-content" className={showContent ? "modal expand" : "modal"}>                
