@@ -12,11 +12,18 @@ class RegisterCompleted extends React.Component {
                 showSocialIcons: false
             }}>
                 <Helmet
-                    title="Completed Registration - Distributed SQL Summit"
+                    title="Completed Registration | Distributed SQL Summit"
                     meta={[
                         { name: 'description', content: 'Completed Registration for Distributed SQL Summit, a free online conference to push the boundaries of cloud native RDBMS forward.' },
                         { name: 'keywords', content: 'Register, Registration, Distributed SQL, Postgres, YugaByte' },
                         { name: 'google-site-verification', content: 'IrJBdGcrNYjaVXTiMFpMckF5pC2MsY9x6nt8TgMtmGE' },
+                        { name: 'og:locale', content: 'en_US' },
+                        { name: 'og:title', content: 'Completed Registration | Distributed SQL Summit 2020' },
+                        { name: 'og:description', content: 'Completed Registration for Distributed SQL Summit, a free online conference to push the boundaries of cloud native RDBMS forward.' },
+                        { name: 'twitter:card', content: 'summary_large_image' },
+                        { name: 'twitter:description', content: 'Completed Registration for Distributed SQL Summit, a free online conference to push the boundaries of cloud native RDBMS forward.' },
+                        { name: 'twitter:site', content: '@yugabyte' },
+                        { name: 'twitter:creator', content: '@yugabyte' }
                     ]}>
                 </Helmet>
                 <RegisterBanner noText />

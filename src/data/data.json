@@ -7,134 +7,6 @@
     "speakerCompany":"VMware",
     "borderColor":"#4BB4F3"
   },
-  "LianghongXu": {
-    "speakerPicture": "LianghongXu",
-    "speakerName": "Lianghong Xu",
-    "speakerId": "lianghong-xu",
-    "speakerPosition":"Engineering Manager Storage and Caching Team",
-    "speakerCompany":"Pinterest",
-    "borderColor":"#FF6E42"
-  },
-  "MehrdadNurolahzade": {
-    "speakerPicture": "MehrdadNurolahzade",
-    "speakerName": "Mehrdad Nurolahzade",
-    "speakerId": "mehrdad-nurolahzade",
-    "speakerPosition":"Platform Engineer",
-    "speakerCompany":"Twitter",
-    "borderColor":"#9C7BDE"
-  },
-  "AllisonKunz": {
-    "speakerPicture": "AllisonKunz",
-    "speakerName": "Allison Kunz",
-    "speakerId": "allison-kunz",
-    "speakerPosition": "Solutions Engineer",
-    "speakerCompany":"Hasura",
-    "borderColor":"#D03A6C"
-  },
-  "MaheshTyagarajan": {
-    "speakerPicture": "MaheshTyagarajan",
-    "speakerName": "Mahesh Tyagarajan",
-    "speakerId": "mahesh-tyagarajan",
-    "speakerPosition": "VP Engineering",
-    "speakerCompany":"Kroger",
-    "borderColor":"#4BB4F3"
-  },
-  "TobiasMeixner": {
-    "speakerPicture": "TobiasMeixner",
-    "speakerName": "Tobias Meixner",
-    "speakerId": "tobias-meixner",
-    "speakerPosition": "CTO and Co-Founder",
-    "speakerCompany":"BRIKL",
-    "borderColor":"#FF6E42"
-  },
-  "JamesHartig": {
-    "speakerPicture": "JamesHartig",
-    "speakerName": "James Hartig",
-    "speakerId": "james-hartig",
-    "speakerPosition": "Co-Founder",
-    "speakerCompany":"Admiral",
-    "borderColor":"#9C7BDE"
-  },
-  "ChristophPakulski": {
-    "speakerPicture": "ChristophPakulski",
-    "speakerName": "Christoph Pakulski",
-    "speakerId": "christoph-pakulski",
-    "speakerPosition": "Senior Software Engineer",
-    "speakerCompany":"Tetrate",
-    "borderColor":"#D03A6C"
-  },
-  "JamesTaylor": {
-    "speakerPicture": "JamesTaylor",
-    "speakerName": "James Taylor",
-    "speakerId": "james-taylor",
-    "speakerPosition":"Principal Engineer",
-    "speakerCompany":"Comcast",
-    "borderColor":"#4BB4F3"
-  },
-  "BreneshStanslasFlowerMary": {
-    "speakerPicture": "BreneshStanslasFlowerMary",
-    "speakerName": "Brenesh Stanslas Flower Mary",
-    "speakerId": "brenesh-stanslas-flower-mary",
-    "speakerPosition":"Senior Architect",
-    "speakerCompany":"Wipro Digital",
-    "borderColor":"#FF6E42"
-  },
-  "HaleDonertasli": {
-    "speakerPicture": "HaleDonertasli",
-    "speakerName": "Hale Donertasli",
-    "speakerId": "hale-donertasli",
-    "speakerPosition":"Cloud Architect",
-    "speakerCompany":"Rakuten Mobile",
-    "borderColor":"#9C7BDE"
-  },
-  "KartikRallapalli": {
-    "speakerPicture": "KartikRallapalli",
-    "speakerName": "Kartik Rallapalli",
-    "speakerId": "kartik-rallapalli",
-    "speakerPosition":"Architect",
-    "speakerCompany":"TracFone Wireless",
-    "borderColor":"#D03A6C"
-  },
-  "PuneetDevadiga": {
-    "speakerPicture": "PuneetDevadiga",
-    "speakerName": "Puneet Devadiga",
-    "speakerId": "puneet-devadiga",
-    "speakerPosition":"Platform Architect",
-    "speakerCompany":"Rakuten Mobile",
-    "borderColor":"#4BB4F3"
-  },
-  "EthanUberseder": {
-    "speakerPicture": "EthanUberseder",
-    "speakerName": "Ethan Uberseder",
-    "speakerId": "ethan-uberseder",
-    "speakerPosition":"Infrastructure Engineer",
-    "speakerCompany":"Censys",
-    "borderColor":"#FF6E42"
-  },
-  "HudsonClark": {
-    "speakerPicture": "HudsonClark",
-    "speakerName": "Hudson Clark",
-    "speakerId": "hudson-clark",
-    "speakerPosition":"Software Engineer",
-    "speakerCompany":"Censys",
-    "borderColor":"#9C7BDE"
-  },
-  "TravisLogan": {
-    "speakerPicture": "TravisLogan",
-    "speakerName": "Travis Logan",
-    "speakerId": "travis-logan",
-    "speakerPosition":"CTO & Co-Founder",
-    "speakerCompany":"Justuno",
-    "borderColor":"#D03A6C"
-  },
-  "KenOwens": {
-    "speakerPicture": "KenOwens",
-    "speakerName": "Ken Owens",
-    "speakerId": "ken-owens",
-    "speakerPosition":"Vice President, Cloud Native Engineering",
-    "speakerCompany":"Mastercard",
-    "borderColor":"#4BB4F3"
-  },
   "JoeHellerstein": {
     "speakerPicture": "JoeHellerstein",
     "speakerName": "Joe Hellerstein",
@@ -143,13 +15,141 @@
     "speakerCompany": "Trifacta",
     "borderColor":"#FF6E42"
   },
+  "LianghongXu": {
+    "speakerPicture": "LianghongXu",
+    "speakerName": "Lianghong Xu",
+    "speakerId": "lianghong-xu",
+    "speakerPosition":"Engineering Manager Storage and Caching Team",
+    "speakerCompany":"Pinterest",
+    "borderColor":"#9C7BDE"
+  },
+  "MehrdadNurolahzade": {
+    "speakerPicture": "MehrdadNurolahzade",
+    "speakerName": "Mehrdad Nurolahzade",
+    "speakerId": "mehrdad-nurolahzade",
+    "speakerPosition":"Platform Engineer",
+    "speakerCompany":"Twitter",
+    "borderColor":"#D03A6C"
+  },
+  "AllisonKunz": {
+    "speakerPicture": "AllisonKunz",
+    "speakerName": "Allison Kunz",
+    "speakerId": "allison-kunz",
+    "speakerPosition": "Solutions Engineer",
+    "speakerCompany":"Hasura",
+    "borderColor":"#4BB4F3"
+  },
+  "MaheshTyagarajan": {
+    "speakerPicture": "MaheshTyagarajan",
+    "speakerName": "Mahesh Tyagarajan",
+    "speakerId": "mahesh-tyagarajan",
+    "speakerPosition": "VP Engineering",
+    "speakerCompany":"Kroger",
+    "borderColor":"#FF6E42"
+  },
+  "TobiasMeixner": {
+    "speakerPicture": "TobiasMeixner",
+    "speakerName": "Tobias Meixner",
+    "speakerId": "tobias-meixner",
+    "speakerPosition": "CTO and Co-Founder",
+    "speakerCompany":"BRIKL",
+    "borderColor":"#9C7BDE"
+  },
+  "JamesHartig": {
+    "speakerPicture": "JamesHartig",
+    "speakerName": "James Hartig",
+    "speakerId": "james-hartig",
+    "speakerPosition": "Co-Founder",
+    "speakerCompany":"Admiral",
+    "borderColor":"#D03A6C"
+  },
+  "ChristophPakulski": {
+    "speakerPicture": "ChristophPakulski",
+    "speakerName": "Christoph Pakulski",
+    "speakerId": "christoph-pakulski",
+    "speakerPosition": "Senior Software Engineer",
+    "speakerCompany":"Tetrate",
+    "borderColor":"#4BB4F3"
+  },
+  "JamesTaylor": {
+    "speakerPicture": "JamesTaylor",
+    "speakerName": "James Taylor",
+    "speakerId": "james-taylor",
+    "speakerPosition":"Principal Engineer",
+    "speakerCompany":"Comcast",
+    "borderColor":"#FF6E42"
+  },
+  "BreneshStanslasFlowerMary": {
+    "speakerPicture": "BreneshStanslasFlowerMary",
+    "speakerName": "Brenesh Stanslas Flower Mary",
+    "speakerId": "brenesh-stanslas-flower-mary",
+    "speakerPosition":"Senior Architect",
+    "speakerCompany":"Wipro Digital",
+    "borderColor":"#9C7BDE"
+  },
+  "HaleDonertasli": {
+    "speakerPicture": "HaleDonertasli",
+    "speakerName": "Hale Donertasli",
+    "speakerId": "hale-donertasli",
+    "speakerPosition":"Cloud Architect",
+    "speakerCompany":"Rakuten Mobile",
+    "borderColor":"#D03A6C"
+  },
+  "KartikRallapalli": {
+    "speakerPicture": "KartikRallapalli",
+    "speakerName": "Kartik Rallapalli",
+    "speakerId": "kartik-rallapalli",
+    "speakerPosition":"Architect",
+    "speakerCompany":"TracFone Wireless",
+    "borderColor":"#4BB4F3"
+  },
+  "PuneetDevadiga": {
+    "speakerPicture": "PuneetDevadiga",
+    "speakerName": "Puneet Devadiga",
+    "speakerId": "puneet-devadiga",
+    "speakerPosition":"Platform Architect",
+    "speakerCompany":"Rakuten Mobile",
+    "borderColor":"#FF6E42"
+  },
+  "EthanUberseder": {
+    "speakerPicture": "EthanUberseder",
+    "speakerName": "Ethan Uberseder",
+    "speakerId": "ethan-uberseder",
+    "speakerPosition":"Infrastructure Engineer",
+    "speakerCompany":"Censys",
+    "borderColor":"#9C7BDE"
+  },
+  "HudsonClark": {
+    "speakerPicture": "HudsonClark",
+    "speakerName": "Hudson Clark",
+    "speakerId": "hudson-clark",
+    "speakerPosition":"Software Engineer",
+    "speakerCompany":"Censys",
+    "borderColor":"#D03A6C"
+  },
+  "TravisLogan": {
+    "speakerPicture": "TravisLogan",
+    "speakerName": "Travis Logan",
+    "speakerId": "travis-logan",
+    "speakerPosition":"CTO & Co-Founder",
+    "speakerCompany":"Justuno",
+    "borderColor":"#4BB4F3"
+  },
+  "KenOwens": {
+    "speakerPicture": "KenOwens",
+    "speakerName": "Ken Owens",
+    "speakerId": "ken-owens",
+    "speakerPosition":"Vice President, Cloud Native Engineering",
+    "speakerCompany":"Mastercard",
+    "borderColor":"#9C7BDE"
+  },  
   "NikhilChandrappa": {
     "speakerPicture": "NikhilChandrappa",
     "speakerName": "Nikhil Chandrappa",
     "speakerId": "nikhil-chandrappa",
     "speakerPosition": "Ecosystem Engineering",
     "speakerCompany":"Yugabyte",
-    "borderColor":"#9C7BDE"
+    "borderColor":"#D03A6C"
   },
   "AlanCaldera": {
     "speakerPicture": "AlanCaldera",
@@ -157,7 +157,7 @@
     "speakerId": "alan-caldera",
     "speakerPosition":"Principal Solution Architect",
     "speakerCompany":"Yugabyte",
-    "borderColor":"#D03A6C"
+    "borderColor":"#4BB4F3"
   },
   "AmeyBanarse": {
     "speakerPicture": "AmeyBanarse",
@@ -165,7 +165,7 @@
     "speakerId": "amey-banarse",
     "speakerPosition":"Principal Data Architect",
     "speakerCompany":"Yugabyte",
-    "borderColor":"#4BB4F3"
+    "borderColor":"#FF6E42"
   },
   "MikeDenman": {
     "speakerPicture": "MikeDenman",
@@ -173,7 +173,7 @@
     "speakerId": "mike-denman",
     "speakerPosition":"Sr. Sales Engineer",
     "speakerCompany":"Yugabyte",
-    "borderColor":"#FF6E42"
+    "borderColor":"#9C7BDE"
   },
   "PrasadRadhakrishnan": {
     "speakerPicture": "PrasadRadhakrishnan",
@@ -181,7 +181,7 @@
     "speakerId": "prasad-radhakrishnan",
     "speakerPosition": "VP Data Engineering",
     "speakerCompany":"Yugabyte",
-    "borderColor":"#9C7BDE"
+    "borderColor":"#D03A6C"
   },
   "KarthikRanganathan": {
     "speakerPicture": "KarthikRanganathan",
@@ -189,6 +189,6 @@
     "speakerId": "karthik-ranganathan",
     "speakerPosition":"CTO and Co-Founder",
     "speakerCompany":"Yugabyte",
-    "borderColor":"#D03A6C"
+    "borderColor":"#4BB4F3"
   }
 }

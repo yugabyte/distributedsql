@@ -10,11 +10,18 @@ class Schedule extends React.Component {
         return (
             <Layout>
                 <Helmet
-                    title="Distributed SQL Summit"
+                    title="Schedule | Distributed SQL Summit"
                     meta={[
-                        { name: 'description', content: 'Join us for the 2nd annual Distributed SQL Summit, a free online conference to push the boundaries of cloud native RDBMS forward.' },
-                        { name: 'keywords', content: 'Distributed SQL, Postgres, YugaByte' },
+                        { name: 'description', content: 'See the schedule for the list of speakers giving talks at the 2nd annual Distributed SQL Summit, a free online conference to push the boundaries of cloud native RDBMS forward.' },
+                        { name: 'keywords', content: 'Distributed SQL, Postgres, YugaByte, schedule, speakers, talks' },
                         { name: 'google-site-verification', content: 'IrJBdGcrNYjaVXTiMFpMckF5pC2MsY9x6nt8TgMtmGE' },
+                        { name: 'og:locale', content: 'en_US' },
+                        { name: 'og:title', content: 'Schedule | Distributed SQL Summit 2020' },
+                        { name: 'og:description', content: 'See the schedule for the list of speakers giving talks at the 2nd annual Distributed SQL Summit, a free online conference to push the boundaries of cloud native RDBMS forward.' },
+                        { name: 'twitter:card', content: 'summary_large_image' },
+                        { name: 'twitter:description', content: 'See the schedule for the list of speakers giving talks at the 2nd annual Distributed SQL Summit, a free online conference to push the boundaries of cloud native RDBMS forward.' },
+                        { name: 'twitter:site', content: '@yugabyte' },
+                        { name: 'twitter:creator', content: '@yugabyte' }
                     ]}>
                 </Helmet>
                 <Banner title="Schedule" hideSecondary/>
