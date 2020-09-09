@@ -3,10 +3,11 @@ export const conferenceSchedule = [
       {
         id: 'm0wo0x',
         speakers: ['KarthikRanganathan'],        
-        talk: 'Introduction to YugabyteDB and Its Architecture',
+        talk: 'Introduction to YugabyteDB - Design and Architecture',
         time: '10 - 10.30 am',        
         start: '2020-09-15T10:00:00-07:00',
         end: '2020-09-15T10:30:00-07:00',
+        description: 'This workshop will introduce the architecture along with the basic concepts of YugabyteDB, a distributed SQL database. Learn about how data is distributed and replicated across a cluster of nodes to ensure high availability even on failures, how to scale out the cluster by simply adding nodes - without compromising ACID semantics and data integrity.'
       },
       {
         id: 'to8g75',
@@ -19,10 +20,12 @@ export const conferenceSchedule = [
       },
       {
         id: 'i8r8vw',
+        speakers: ['AllisonKunz'],
         talk: 'For Developers | 301: Advanced GraphQL + Distributed SQL Topics',
         time: '11 - 11.30 am',
         start: '2020-09-15T11:00:00-07:00',
         end: '2020-09-15T11:30:00-07:00',
+        description: `This workshop looks at the combination of Hasura Cloud and Yugabyte for production-ready enterprise GraphQL services. We'll dive into the details of how Hasura works under the hood to provide blazing fast real-time APIs at scale plus cell-level role-based security. Then, we'll look at our options for bringing in additional data sources and business logic for a complete enterprise-grade data service.`
       },
       {
         id: 'u9wkps',
