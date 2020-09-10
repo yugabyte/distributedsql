@@ -210,6 +210,7 @@ export const conferenceSchedule = [
         description: `A cohesive and queryable model of every device on the Internet lies at the heart of Censys’ products. In order to improve the security of individuals, companies, and government organizations with this data, Censys ingests and processes billions of network handshakes daily. To support the growth of the company, the datastore that backs this model must be resilient to failure and horizontally scalable, while still supporting the more traditional RDBS features demanded by the API. This talk will discuss the unique business and engineering requirements of this particular database system, and how Censys deployed YugabyteDB successfully to meet these demands.`
       },
       {
+        id: 'ct3gwj',
         talk: 'Cloud Native Spring for Relational Databases',
         speakers: ['DaShaunCarter', 'NikhilChandrappa'],
         time: '12.30 - 1 pm',
