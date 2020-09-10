@@ -46,12 +46,12 @@ export const conferenceSchedule = [
       },
       {
         id: '5uoky0',
-        speakers: ['AmeyBanarse'],
+        speakers: ['NikhilChandrappa'],
         talk: 'For DBAs and Operators | Yugabyte DB Operator Best Practices',
         time: '12.30 - 1.30 pm',
         start: '2020-09-15T12:30:00-07:00',
         end: '2020-09-15T13:30:00-07:00',
-        description: `In this session, Amey Banarse, Principal Data Architect at YugabyteDB walked through an overview of YugabyteDB's architecture and how to apply operational best practices to its administrations. Topics covered included:
+        description: `In this session, Nikhil Chandrappa, Ecosystem Engineer at YugabyteDB, walks through an overview of YugabyteDB's architecture and how to apply operational best practices to its administrations. Topics covered included:
         <ul>
             <li>Self-service deployments</li>
             <li>Deployment topologies</li>
@@ -210,10 +210,12 @@ export const conferenceSchedule = [
         description: `A cohesive and queryable model of every device on the Internet lies at the heart of Censys’ products. In order to improve the security of individuals, companies, and government organizations with this data, Censys ingests and processes billions of network handshakes daily. To support the growth of the company, the datastore that backs this model must be resilient to failure and horizontally scalable, while still supporting the more traditional RDBS features demanded by the API. This talk will discuss the unique business and engineering requirements of this particular database system, and how Censys deployed YugabyteDB successfully to meet these demands.`
       },
       {
-        talk: 'Coming Soon',
+        talk: 'Cloud Native Spring for Relational Databases',
+        speakers: ['DaShaunCarter', 'NikhilChandrappa'],
         time: '12.30 - 1 pm',
         start: '2020-09-17T12:30:00-07:00',
         end: '2020-09-17T13:00:00-07:00',
+        description: `Traditionally spring framework has been popular with accessing RDBMS databases for its compressive transaction support and declarative way of executing transactions compared to EJBs. As enterprises embrace cloud-native architecture, Spring Data projects have been very popular for implementing data access APIs in spring microservices, partly due to the consistent abstractions provided by spring data irrespective of SQL dialects. In this talk, DaShaun will walk you through current state of Spring Data support for building scalable and resilient cloud native microservices using modern relational databases.`
       },
       {
         id: '9c23yp',

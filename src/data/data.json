@@ -99,7 +99,7 @@
     "speakerPicture": "KartikRallapalli",
     "speakerName": "Kartik Rallapalli",
     "speakerId": "kartik-rallapalli",
-    "speakerPosition":"Architect",
+    "speakerPosition":"Principal Enterprise Architect",
     "speakerCompany":"TracFone Wireless",
     "borderColor":"#4BB4F3"
   },
@@ -141,8 +141,16 @@
     "speakerId": "ken-owens",
     "speakerPosition":"Vice President, Cloud Native Engineering",
     "speakerCompany":"Mastercard",
-    "borderColor":"#9C7BDE"
-  },  
+    "borderColor":"#FF6E42"
+  },
+  "DaShaunCarter": {
+    "speakerPicture": "DaShaunCarter",
+    "speakerName": "DaShaun Carter",
+    "speakerId": "dashaun-carter",
+    "speakerPosition": "Tanzu Solution Engineer",
+    "speakerCompany": "VMware",
+    "borderColor": "#9C7BDE"
+  },
   "NikhilChandrappa": {
     "speakerPicture": "NikhilChandrappa",
     "speakerName": "Nikhil Chandrappa",
@@ -159,21 +167,13 @@
     "speakerCompany":"Yugabyte",
     "borderColor":"#4BB4F3"
   },
-  "AmeyBanarse": {
-    "speakerPicture": "AmeyBanarse",
-    "speakerName": "Amey Banarse",
-    "speakerId": "amey-banarse",
-    "speakerPosition":"Principal Data Architect",
-    "speakerCompany":"Yugabyte",
-    "borderColor":"#FF6E42"
-  },
   "MikeDenman": {
     "speakerPicture": "MikeDenman",
     "speakerName": "Mike Denman",
     "speakerId": "mike-denman",
     "speakerPosition":"Sr. Sales Engineer",
     "speakerCompany":"Yugabyte",
-    "borderColor":"#9C7BDE"
+    "borderColor":"#FF6E42"
   },
   "PrasadRadhakrishnan": {
     "speakerPicture": "PrasadRadhakrishnan",
@@ -181,7 +181,7 @@
     "speakerId": "prasad-radhakrishnan",
     "speakerPosition": "VP Data Engineering",
     "speakerCompany":"Yugabyte",
-    "borderColor":"#D03A6C"
+    "borderColor":"#9C7BDE"
   },
   "KarthikRanganathan": {
     "speakerPicture": "KarthikRanganathan",
@@ -189,6 +189,6 @@
     "speakerId": "karthik-ranganathan",
     "speakerPosition":"CTO and Co-Founder",
     "speakerCompany":"Yugabyte",
-    "borderColor":"#4BB4F3"
+    "borderColor":"#D03A6C"
   }
 }
