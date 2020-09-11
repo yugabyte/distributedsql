@@ -5,10 +5,10 @@ import BackgroundImage from 'gatsby-background-image'
 const RegisterForm = (props) => {
 
   const handleSubmit = (ev) => {
-    var urlencoded = new URLSearchParams();
+    let urlencoded = new URLSearchParams();
     Object.values(ev.target.elements).forEach(input => {
       if (input.value) {
-        urlencoded.append(input.name, input.value);
+        urlencoded.set(input.name, input.value);
       }
     });
 
