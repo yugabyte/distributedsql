@@ -13,7 +13,8 @@ const RegisterForm = (props) => {
     });
 
     fetch('https://yugabyte-form-submission.herokuapp.com/distributedsql/registration', {
-				method: 'POST', 
+        method: 'POST',
+        mode: 'cors',
 				headers: {
 					'Content-Type': 'application/x-www-form-urlencoded',
 					'X-AUTH-TOKEN': '84c2c09d-2f20-48a5-b5e9-0068a95e97de'
