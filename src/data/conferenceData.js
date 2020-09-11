@@ -43,6 +43,12 @@ export const conferenceSchedule = [
         time: '12 - 12.30 pm',
         start: '2020-09-15T12:00:00-07:00',
         end: '2020-09-15T12:30:00-07:00',
+        description: `In this workshop, we will walk DBAs and operators through security features of YugabyteDB. Topics covered include:
+        <ul>
+          <li>Authentication methods</li>
+          <li>Encryption at rest</li>
+          <li>Encryption on the wire (SSL/TLS)</li>
+        </ul>`
       },
       {
         id: '5uoky0',
@@ -237,10 +243,13 @@ export const conferenceSchedule = [
         description: `The modern cloud native developer is torn today when it comes to managing distributed databases in the platforms or cloud services due to complexity, technology gaps, and data aspects impacted but cloud native principles. This talk will describe the journey Mastercard has undergone, the successes and lessons learned. The attendee will obtain a better understanding about the ever changing opensource and enterprise vendors adoption of cloud native principles and this impact on the strategy and direction to achieve the business objectives.`
       },
       {
-        talk: 'Coming Soon',
+        id: 'pldncj',
+        speakers: ['EvanPowell'],
+        talk: 'Container Attached Storage: Open Source Extensions to Kubernetes for Data',
         time: '2 - 2.30 pm',
         start: '2020-09-17T14:00:00-07:00',
         end: '2020-09-17T14:30:00-07:00',
+        description: `OpenEBS is an active CNCF project that helps in the use of Kubernetes for running databases and other stateful workloads. How? What is next?`
       },
       {
         id: 'y3hijh',

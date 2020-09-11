@@ -151,13 +151,21 @@
     "speakerCompany": "VMware",
     "borderColor": "#9C7BDE"
   },
+  "EvanPowell": {
+    "speakerPicture": "EvanPowell",
+    "speakerName": "Evan Powell",
+    "speakerId": "evan-powell",
+    "speakerPosition": "CEO",
+    "speakerCompany":"MayaData",
+    "borderColor":"#D03A6C"
+  },
   "NikhilChandrappa": {
     "speakerPicture": "NikhilChandrappa",
     "speakerName": "Nikhil Chandrappa",
     "speakerId": "nikhil-chandrappa",
     "speakerPosition": "Ecosystem Engineering",
     "speakerCompany":"Yugabyte",
-    "borderColor":"#D03A6C"
+    "borderColor":"#4BB4F3"
   },
   "AlanCaldera": {
     "speakerPicture": "AlanCaldera",
@@ -165,7 +173,7 @@
     "speakerId": "alan-caldera",
     "speakerPosition":"Principal Solution Architect",
     "speakerCompany":"Yugabyte",
-    "borderColor":"#4BB4F3"
+    "borderColor":"#FF6E42"
   },
   "MikeDenman": {
     "speakerPicture": "MikeDenman",
@@ -173,7 +181,7 @@
     "speakerId": "mike-denman",
     "speakerPosition":"Sr. Sales Engineer",
     "speakerCompany":"Yugabyte",
-    "borderColor":"#FF6E42"
+    "borderColor":"#9C7BDE"
   },
   "PrasadRadhakrishnan": {
     "speakerPicture": "PrasadRadhakrishnan",
@@ -181,7 +189,7 @@
     "speakerId": "prasad-radhakrishnan",
     "speakerPosition": "VP Data Engineering",
     "speakerCompany":"Yugabyte",
-    "borderColor":"#9C7BDE"
+    "borderColor":"#D03A6C"
   },
   "KarthikRanganathan": {
     "speakerPicture": "KarthikRanganathan",
@@ -189,6 +197,6 @@
     "speakerId": "karthik-ranganathan",
     "speakerPosition":"CTO and Co-Founder",
     "speakerCompany":"Yugabyte",
-    "borderColor":"#D03A6C"
+    "borderColor":"#4BB4F3"
   }
 }
