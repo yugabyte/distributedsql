@@ -52,12 +52,12 @@ export const conferenceSchedule = [
       },
       {
         id: '5uoky0',
-        speakers: ['NikhilChandrappa'],
+        speakers: ['NikhilChandrappa', 'TylerRamer'],
         talk: 'For DBAs and Operators | Yugabyte DB Operator Best Practices',
         time: '12.30 - 1.30 pm',
         start: '2020-09-15T12:30:00-07:00',
         end: '2020-09-15T13:30:00-07:00',
-        description: `In this session, Nikhil Chandrappa, Ecosystem Engineer at YugabyteDB, walks through an overview of YugabyteDB's architecture and how to apply operational best practices to its administrations. Topics covered included:
+        description: `In this session, Nikhil Chandrappa and Tyler Ramer from Yugabyte, walks through an overview of YugabyteDB's architecture and how to apply operational best practices to its administrations. Topics covered included:
         <ul>
             <li>Self-service deployments</li>
             <li>Deployment topologies</li>
@@ -84,6 +84,7 @@ export const conferenceSchedule = [
         time: '2 - 2.30 pm',
         start: '2020-09-15T14:00:00-07:00',
         end: '2020-09-15T14:30:00-07:00',
+        description: 'In this session, we will cover some tricks and tools to migrate Oracle to YugabyteDB. Topics covered will include schema migration, data type mapping, migration tools, and other scenarios.'
       },
       {
         id: 'uf8d9d',
@@ -148,7 +149,7 @@ export const conferenceSchedule = [
         time: '12.30 - 1 pm',
         start: '2020-09-16T12:30:00-07:00',
         end: '2020-09-16T13:00:00-07:00',
-        description: 'Cloud native patterns allow developers to store data and run their compute on global infrastructure, distributed just like their customers. We’ll demonstrate an architecture that combines 2 cutting-edge open source tools - Hasura GraphQL Engine and YugabyteDB distributed resources - to provide a robust, performant, and cost-effective modern API layer with a seamless developer experience.'
+        description: `Cloud native patterns allow developers to store data and run their compute on global infrastructure, distributed just like their customers. But once you've solved the distributed data problem, how do you serve that data scalably, reliably, and with cell-level security? How do you bring in the many other data sources your applications require, both internal (another division) and external (a third-party REST API, for example)? We'll look at how Hasura provides a robust, performant, and cost-effective modern API layer with a seamless developer experience.`
       },
       {
         id: 'fuqmyr',

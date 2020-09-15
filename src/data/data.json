@@ -167,13 +167,21 @@
     "speakerCompany":"Yugabyte",
     "borderColor":"#4BB4F3"
   },
+  "TylerRamer": {
+    "speakerPicture": "TylerRamer",
+    "speakerName": "Tyler Ramer",
+    "speakerId": "tyler-ramer",
+    "speakerPosition": "Advanced Technology Engineer",
+    "speakerCompany": "Yugabyte",
+    "borderColor":"#FF6E42"
+  },
   "AlanCaldera": {
     "speakerPicture": "AlanCaldera",
     "speakerName": "Alan Caldera",
     "speakerId": "alan-caldera",
     "speakerPosition":"Principal Solution Architect",
     "speakerCompany":"Yugabyte",
-    "borderColor":"#FF6E42"
+    "borderColor":"#9C7BDE"
   },
   "MikeDenman": {
     "speakerPicture": "MikeDenman",
@@ -181,7 +189,7 @@
     "speakerId": "mike-denman",
     "speakerPosition":"Sr. Sales Engineer",
     "speakerCompany":"Yugabyte",
-    "borderColor":"#9C7BDE"
+    "borderColor":"#D03A6C"
   },
   "PrasadRadhakrishnan": {
     "speakerPicture": "PrasadRadhakrishnan",
@@ -189,7 +197,7 @@
     "speakerId": "prasad-radhakrishnan",
     "speakerPosition": "VP Data Engineering",
     "speakerCompany":"Yugabyte",
-    "borderColor":"#D03A6C"
+    "borderColor":"#4BB4F3"
   },
   "KarthikRanganathan": {
     "speakerPicture": "KarthikRanganathan",
@@ -197,6 +205,6 @@
     "speakerId": "karthik-ranganathan",
     "speakerPosition":"CTO and Co-Founder",
     "speakerCompany":"Yugabyte",
-    "borderColor":"#4BB4F3"
+    "borderColor":"#FF6E42"
   }
 }

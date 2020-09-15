@@ -45,6 +45,7 @@ const RegisterForm = (props) => {
           <div className="inner">
             <aside className="register--aside">
               <form onSubmit={handleSubmit} id="form">
+                <a href="https://konf.co/event/cxCdB2WE/distributed-sql-summit" className="external-link">Already have a ticket? Enter here</a>
                 <input name="firstName" required placeholder="First Name*" type="text" />
                 <input name="lastName" required placeholder="Last Name*" type="text" />
                 <input name="email" required placeholder="Work Email*" type="text" />

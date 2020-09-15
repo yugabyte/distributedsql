@@ -189,6 +189,13 @@ const LandingSpeaker = (props) => (
           }
         }
       }
+      TylerRamer1: file(relativePath: { eq: "TylerRamer.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `}
   render={data => {
