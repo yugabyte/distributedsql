@@ -77,6 +77,7 @@ const Banner = ({ title, showPresents, showCaptionBar, hideSecondary }) => (
                     Register
                   </Link>
                 </div>
+                <a href="https://konf.co/event/cxCdB2WE/distributed-sql-summit" className="external-link">Already have a ticket? Enter here</a>
               </div>
             </header>
             {showCaptionBar && 

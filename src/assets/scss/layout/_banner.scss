@@ -256,6 +256,13 @@
 				}
 			}
 
+			.external-link {
+				color: #FFFFFF;
+				font-weight: 500;
+				font-size: 21px;
+				text-decoration: underline;
+			}
+
 			@include breakpoint(small) {
 				.details {
 					display: block;

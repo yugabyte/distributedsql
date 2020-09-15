@@ -168,12 +168,9 @@
 
         .external-link {
             color: #FFFFFF;
-            font-weight: 700;
+            font-weight: 500;
             font-size: 21px;
-            
-            &:hover {
-                text-decoration: underline;
-            }
+            text-decoration: underline;
         }
         input {
             background: #e8dafe;
