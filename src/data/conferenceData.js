@@ -219,7 +219,7 @@ export const conferenceSchedule = [
       {
         id: 'ct3gwj',
         talk: 'Cloud Native Spring for Relational Databases',
-        speakers: ['DaShaunCarter', 'NikhilChandrappa'],
+        speakers: ['DaShaunCarter'],
         time: '12.30 - 1 pm',
         start: '2020-09-17T12:30:00-07:00',
         end: '2020-09-17T13:00:00-07:00',
