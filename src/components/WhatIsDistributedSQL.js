@@ -75,12 +75,6 @@ const WhatIsDistributedSQL = (props) => (
                     Distributed SQL databases (sometimes called NewSQL) are relational databases that elastically scale horizontally, while distributing data over multiple datacenters — even globally. Distributed SQL databases deliver strong consistency and ACID transactions with single-digit millisecond latency. These databases are increasingly powering a new generation of always-on, multicloud, resilient microservices.
                     <a className="learn-more" href="https://blog.yugabyte.com/what-is-distributed-sql/">Learn more about Distributed SQL</a>
                   </p>
-                  <div className="actions">
-                    <h4>Ready to join us?</h4>
-                    <Link to="/register" className="btn-rounded">
-                      Register
-                    </Link>                    
-                  </div>
                 </div>
             </div>
           </div>
