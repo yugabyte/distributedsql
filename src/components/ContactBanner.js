@@ -36,10 +36,12 @@ const ContactBanner = ({ title, description, btnText, btnLink }) => (
             <h2 className="header">{title}</h2>
             {description && <h4>{description}</h4>}
           </div>
-          {btnLink && btnLink[0] === '/' ? (
-            <Link to={btnLink} className="btn-rounded">{btnText}</Link>
-            ) : (
-            <a href={btnLink} className="btn-rounded">{btnText}</a>
+          {btnText && (
+            btnLink && btnLink[0] === '/' ? (
+              <Link to={btnLink} className="btn-rounded">{btnText}</Link>
+              ) : (
+              <a href={btnLink} className="btn-rounded">{btnText}</a>
+            )
           )}
         </div>
       </BackgroundImage>

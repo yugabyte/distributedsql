@@ -36,6 +36,7 @@
   "scripts": {
     "serve": "gatsby build && gatsby serve",
     "build": "gatsby build",
+    "clean": "gatsby clean",
     "start": "gatsby develop -p 8020",
     "publish": "npm run build && aws s3 rm s3://distributedsql.org --recursive && aws s3 sync public/ s3://distributedsql.org",
     "format": "prettier --write '**/*.js'",

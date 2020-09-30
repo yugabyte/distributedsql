@@ -25,3 +25,66 @@
 		border-bottom: solid 1px _palette(border);
 	}
 }
+
+#session {
+
+	> section {
+		max-width: 1080px;
+		margin: 0 auto;
+		padding: 60px 0;
+	}
+
+	.session-info {
+		flex: 0 0 350px;
+		max-width: 400px;
+		color: #141920;
+
+		.column-header {
+			border-top: 2px solid #FF6E42;
+			border-bottom: 2px solid #FF6E42;
+			padding: 10px 0;
+			color: inherit;
+			font-weight: 600;
+			font-size: 25px;
+		}
+
+		h3 {
+			margin: 35px 0;
+			font-size: 25px;
+			font-weight: 600;
+			color: #141920;
+			line-height: 1.4;
+		}
+
+		p {
+			font-size: 20px;
+			font-weight: 400;
+		}
+	}
+
+	.workshopDetails {
+		display: flex;
+
+		.video-container {
+			padding-right: 60px;
+
+			section.transcript {
+				background: #F2F3F8;
+				padding: 40px 35px;
+				margin-top: -9px;
+				max-height: 500px;
+				overflow: auto;
+
+				h3 {
+					color: #FF6E42
+				}
+
+				> div {
+					font-size: 18px;
+					color: #141920;
+					font-weight: 400;
+				}
+			}
+		}
+	}
+}

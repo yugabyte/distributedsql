@@ -9,7 +9,7 @@ import Modal from './Modal'
 
 import { CLIENT_ID, API_KEY, DISCOVERY_DOCS, SCOPES } from './Confirmation'
 import CalendarIcon from '../assets/images/svg/calendar-icon.svg'
-import { conferenceSchedule } from '../data/conferenceData';
+const conferenceSchedule = require('../data/conferenceData')
 const featuredSpeakers = require('../data/data.json')
 
 const dateOptions = [
@@ -18,82 +18,9 @@ const dateOptions = [
   { value: 'sept-17', label: 'Sept 17' }
 ];
 
-const getEventObject = (talk, start, end, description = '') => ({
-  'summary': talk,
-  'location': 'Distributed SQL Virtual Summit 2020',
-  'description': description ? `${description} More info at https://distributedsql.org/`: 'More info at https://distributedsql.org/',
-  'start': {
-    'dateTime': start,
-    'timeZone': 'America/Los_Angeles'
-  },
-  'end': {
-    'dateTime': end,
-    'timeZone': 'America/Los_Angeles'
-  },  
-  'reminders': {
-    'useDefault': false,
-    'overrides': [      
-      {'method': 'popup', 'minutes': 10}
-    ]
-  }
-});
-
 const EventSchedule = (props) => {
   const [showModal, setShowModal] = useState(false)
   const [eventInfo, setEventInfo] = useState({})
-
-  const handleCalendarClick = (data) => {
-    const result = window.gapi.auth2.getAuthInstance().signIn();
-    result.then(() => {
-      updateSigninStatus(window.gapi.auth2.getAuthInstance().isSignedIn.get(), data);
-    });
-  }  
-
-  const addToCalendar = (data) => {
-    const { talk, start, end, description } = data;
-    var request = window.gapi.client.calendar.events.insert({
-      'calendarId': 'primary',
-      'resource': getEventObject(talk, start, end, description)
-    });
-    request.execute((event) => {
-      console.log('Event created: ' + event.htmlLink);
-    });
-  }
-
-  const updateSigninStatus = (isSignedIn, data) => {
-    if (isSignedIn) {
-      addToCalendar(data);
-    }
-  }
-
-  const initClient = () => {
-    window.gapi.client.init({
-      apiKey: API_KEY,
-      clientId: CLIENT_ID,
-      discoveryDocs: DISCOVERY_DOCS,
-      scope: SCOPES
-    }).then(() => {
-      // Listen for sign-in state changes.
-      window.gapi.auth2.getAuthInstance().isSignedIn.listen(updateSigninStatus);
-
-      // updateSigninStatus(window.gapi.auth2.getAuthInstance().isSignedIn.get());
-    }, function(error) {
-      console.error(JSON.stringify(error, null, 2));
-    });
-  }
-
-  useEffect(() => {
-    if (!window.gapi) {
-      let script = document.createElement('script');
-      script.src = 'https://apis.google.com/js/api.js';
-
-      script.onload = () => {
-        window.gapi.load('client:auth2', initClient);
-      }
-      script.async = true;
-      document.body.appendChild(script);
-    }   
-  }, [])
 
   const handleShowInfo = (e, event) => {
     setEventInfo(event);
@@ -371,7 +298,9 @@ const EventSchedule = (props) => {
                     {conferenceSchedule[0].map(event => (
                       <div className="event-card">
                         <div className="event-time">{event.time}</div>
-                        <h4 className="talk-title">{event.talk}</h4>
+                        <Link to={`/session/${event.id}`}>
+                          <h4 className="talk-title">{event.talk}</h4>
+                        </Link>
                         {event.speakers && event.speakers.map(speakerKey => (
                           <Speaker
                             speakerKey={featuredSpeakers[speakerKey].speakerId}
@@ -387,7 +316,6 @@ const EventSchedule = (props) => {
                         ))}
                         <div className="actions">
                           {event.description && <span className="info-btn" onClick={(e) => handleShowInfo(e, event)}>i</span>}
-                          <CalendarIcon onClick={() => handleCalendarClick(event)} className="icon" />
                         </div>
                       </div>
                     ))}
@@ -408,7 +336,9 @@ const EventSchedule = (props) => {
                     {conferenceSchedule[1].map(event => (
                       <div className="event-card">
                         <div className="event-time">{event.time}</div>
-                        <h4 className="talk-title">{event.talk}</h4>
+                        <Link to={`/session/${event.id}`}>
+                          <h4 className="talk-title">{event.talk}</h4>
+                        </Link>
                         {event.speakers && event.speakers.map(speakerKey => (
                           <Speaker
                             speakerId={featuredSpeakers[speakerKey].speakerId}
@@ -423,7 +353,6 @@ const EventSchedule = (props) => {
                         ))}
                         <div className="actions">
                           {event.description && <span className="info-btn" onClick={(e) => handleShowInfo(e, event)}>i</span>}
-                          <CalendarIcon onClick={() => handleCalendarClick(event)} className="icon"  />
                         </div>
                       </div>
                     ))}
@@ -444,7 +373,9 @@ const EventSchedule = (props) => {
                     {conferenceSchedule[2].map(event => (
                       <div className="event-card">
                         <div className="event-time">{event.time}</div>
-                        <h4 className="talk-title">{event.talk}</h4>
+                        <Link to={`/session/${event.id}`}>
+                          <h4 className="talk-title">{event.talk}</h4>
+                        </Link>
                         {event.speakers && event.speakers.map(speakerKey => (
                           <Speaker
                             speakerId={featuredSpeakers[speakerKey].speakerId}
@@ -459,7 +390,6 @@ const EventSchedule = (props) => {
                         ))}
                         <div className="actions">
                           {event.description && <span className="info-btn" onClick={(e) => handleShowInfo(e, event)}>i</span>}
-                          <CalendarIcon onClick={() => handleCalendarClick(event)} className="icon"  />
                         </div>
                       </div>
                     ))}
@@ -478,13 +408,7 @@ const EventSchedule = (props) => {
                   navigate('/schedule')
                 }}
                 footer={[
-                  registerButton,
-                  <div className="add-calendar" onClick={() => handleCalendarClick(eventInfo)}>
-                    <CalendarIcon className="icon" />
-                    <span>
-                      Add to Calendar
-                    </span>
-                  </div>
+                  registerButton,                  
                 ]}
               />
             }

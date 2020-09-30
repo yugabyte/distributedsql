@@ -7,22 +7,22 @@ import { Link, graphql } from 'gatsby'
 const speakerData = require('../data/data.json')
 
 const SpeakerPage = (props) => {
-    var speakerName = ''
-    var speakerPicture = null
-    try {
-    speakerPicture = props.data[props.pageContext.speakerPicture].childImageSharp.fluid
-    } catch (error) {
+  var speakerName = ''
+  var speakerPicture = null
+  try {
+  speakerPicture = props.data[props.pageContext.speakerPicture].childImageSharp.fluid
+  } catch (error) {
 
-    }
-    try {
-        speakerName = props.pageContext.speakerName
-    } catch (error) {
+  }
+  try {
+      speakerName = props.pageContext.speakerName
+  } catch (error) {
 
-    }
+  }
 
-    const talks = speakerData[props.pageContext.speakerPicture].talks || [];
+  const talks = speakerData[props.pageContext.speakerPicture].talks || [];
 
-    return(
+  return(
     <Layout>
       <Helmet>
         <title>{speakerName} - Distributed SQL Summit</title>
