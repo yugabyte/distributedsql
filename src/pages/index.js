@@ -16,8 +16,8 @@ class HomeIndex extends React.Component {
                 <Helmet
                     title="Distributed SQL Summit"
                     meta={[
-                        { name: 'description', content: 'Join us for the 2nd annual Distributed SQL Summit, a free online conference to push the boundaries of cloud native RDBMS forward.' },
-                        { name: 'keywords', content: 'Distributed SQL, Postgres, YugaByte' },
+                        { name: 'description', content: 'Join us for Distributed SQL Summit Asia, a free online conference to push the boundaries of cloud native RDBMS forward.' },
+                        { name: 'keywords', content: 'Distributed SQL, Postgres, YugaByte, database, asia' },
                         { name: 'google-site-verification', content: 'IrJBdGcrNYjaVXTiMFpMckF5pC2MsY9x6nt8TgMtmGE' },
                         { name: 'og:locale', content: 'en_US' },
                         { name: 'og:title', content: 'Distributed SQL Summit 2020' },
@@ -29,7 +29,7 @@ class HomeIndex extends React.Component {
                     ]}>
                 </Helmet>
                 <Banner
-                    title="Distributed SQL Virtual Summit 2020"
+                    title="Distributed SQL Asia Summit 2020"
                     showPresents
                     showCaptionBar
                 />
