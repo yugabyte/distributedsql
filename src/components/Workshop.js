@@ -5,7 +5,7 @@ const Workshop = (props) => (
   <section id="workshop-details">
     <div className="container">
       <div className="event-date">
-        Sept 15 — Workshop Details
+        Jan 20 — Workshop Details
       </div>
       <div className="workshop__content">
         <div className="title">

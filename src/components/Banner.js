@@ -8,7 +8,7 @@ import { graphql, Link, StaticQuery } from 'gatsby'
 const Banner = ({ title, showPresents, showCaptionBar, hideSecondary }) => (
   <StaticQuery query={graphql`
     query {
-      desktopBannerImage: file(relativePath: { eq: "Dist-SQL-Desktop-Header.png" }) {
+      desktopBannerImage: file(relativePath: { eq: "DSS-Asia-Desktop-Header-5.png" }) {
         childImageSharp {
           fluid(quality: 100, maxWidth: 4160) {
             ...GatsbyImageSharpFluid_withWebp
@@ -40,49 +40,55 @@ const Banner = ({ title, showPresents, showCaptionBar, hideSecondary }) => (
         },        
       ];
       return (
-        <BackgroundImage Tag="section" fluid={sources} id="banner">
-          <div className="inner">            
-            <header className="major" style={showCaptionBar ? {marginBottom: '54px'} : null}>
-              <h1>{title}</h1>
-              {showPresents && 
-                <div className="presents">
-                  <span className="text">PRESENTED BY</span>
-                  <a href="https://yugabyte.com/">
-                    <img style={{
-                      width: '150px',
-                      objectFit: 'contain'
-                    }} src={LogoSmall} alt="YugaByte" />
-                  </a>
+        <section>
+          <BackgroundImage Tag="div" fluid={sources} id="banner">
+            <div className="inner">            
+              <header className="major">
+                <h1>Distributed SQL<br />Virtual Summit <span className="accent">Asia</span></h1>
+                {showPresents && 
+                  <div className="presents">
+                    <span className="text">PRESENTED BY</span>
+                    <a href="https://yugabyte.com/">
+                      <img style={{
+                        width: '150px',
+                        objectFit: 'contain'
+                      }} src={LogoSmall} alt="YugaByte" />
+                    </a>
+                  </div>
+                }
+                <div className="container">
+                  <ul className="details">
+                    <li>
+                      <div>
+                        <h3>Jan 20, 2021 <span className="accent">Workshop Day</span></h3>
+                        <h3>Jan 21 - 22, 2021 <span className="accent">Conference Days</span></h3>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <h3>10am – 3pm <span className="accent">IST</span></h3>
+                      </div>
+                    </li>
+                  </ul>
+                  <div className="cta-bar">                    
+                    <Link to="/register" className="btn-rounded">
+                      Register
+                    </Link>
+                    {!hideSecondary && <Link to="/schedule" className="btn-rounded secondary">
+                        Schedule
+                    </Link>}
+                  </div>
+                  {/* <a href="https://konf.co/event/cxCdB2WE/distributed-sql-summit" className="external-link">Already have a ticket? Enter here</a> */}
                 </div>
-              }
-              <div className="container">
-                <ul className="details">
-                  <li>
-                    <div>
-                      <h3>Sept 15, 2020 <span className="accent">Workshop Day</span></h3>
-                      <h3>Sept 16 - 17, 2020 <span className="accent">Conference Days</span></h3>
-                    </div>
-                  </li>
-                  <li>
-                    <div>
-                      <h3>10am – 3pm <span className="accent">Pacific</span></h3>
-                    </div>
-                  </li>
-                </ul>
-                <div className="cta-bar">
-                  {!hideSecondary && <Link to="/schedule" className="btn-rounded secondary">
-                      View Schedule
-                  </Link>}
-                </div>
-              </div>
-            </header>
-            {showCaptionBar && 
-              <div className="banner-caption-bar">
-                <img src={ConferenceIcon} /> A free online conference to push the boundaries of cloud native RDBMS forward.
-              </div>
-            }
-          </div>          
-        </BackgroundImage>
+              </header>              
+            </div>          
+          </BackgroundImage>
+          {showCaptionBar && 
+            <div className="banner-caption-bar">
+              <img src={ConferenceIcon} /> A free online conference to push the boundaries of cloud native RDBMS forward.
+            </div>
+          }
+        </section>
       )
     }
     }

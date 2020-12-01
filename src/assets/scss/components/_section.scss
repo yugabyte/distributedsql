@@ -93,8 +93,7 @@ header {
 }
 
 #conf-description {
-	padding: 36px 0 24px;
-	margin-top: 56px;
+	padding: 0 0 1em;
 
 	.description {
 		color: #141920;
@@ -112,10 +111,10 @@ header {
 		}
 
 		.learn-btn {
-			width: 301px;
-			height: 83px;
+			width: 235px;
+			height: 75px;
 			text-align: center;
-			padding: 20px 0;
+			padding: 15px 0;
 			border-radius: 7px;
 			border: 2px solid #010441;
 			color: #010441;
@@ -126,8 +125,7 @@ header {
 			font-family: Source Sans Pro, sans-serif;
 			cursor: pointer;			
     		background-size: 200% 100%;
-			// background-image: linear-gradient(to right, #ffffff, #333 50%, #01054a 75%, #07159f 75%);
-			background-image: linear-gradient(to left, #07159f, #01054a 50%, #fff 50%);
+			background-image: linear-gradient(to left, $BUTTON_PRIMARY_ACCENT, $BUTTON_SECONDARY_ACCENT 50%, #fff 50%);
 			-webkit-transition: all 0.5s ease;
 			-webkit-transition-property: background-position, color;
 			-moz-transition: all 0.5s ease;

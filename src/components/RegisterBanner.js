@@ -2,10 +2,10 @@ import React from 'react'
 import BackgroundImage from 'gatsby-background-image'
 import { graphql, Link, StaticQuery } from 'gatsby'
 
-const RegisterBanner = ({ noText }) => (
+const RegisterBanner = ({ confirmed }) => (
   <StaticQuery query={graphql`
     query {
-      desktopBannerImage: file(relativePath: { eq: "Dist-SQL-Form-Header.png" }) {
+      desktopBannerImage: file(relativePath: { eq: "DSS-Asia-Desktop-Header-5.png" }) {
         childImageSharp {
           fluid(quality: 100, maxWidth: 4160) {
             ...GatsbyImageSharpFluid_withWebp
@@ -31,8 +31,12 @@ const RegisterBanner = ({ noText }) => (
       ];
       return (
         <BackgroundImage Tag="section" fluid={sources} id="register-banner">
-          {noText ? (
-            <div className="no-content"></div>
+          {confirmed ? (
+            <div className="confirmation">
+              <div className="inner">
+                <h1>You're going to Distributed SQL Virtual Summit <span className="accent">Asia</span></h1>
+              </div>
+            </div>
            ) : (
             <div className="inner">
               <Link to="/" className="back-link">
@@ -40,20 +44,20 @@ const RegisterBanner = ({ noText }) => (
                   <div className="link-text">Summit Page</div>
               </Link>
               <header className="major">
-                <h1>Register for Distributed SQL Virtual Summit 2020</h1>              
+                <h1>Register for Distributed SQL Virtual Summit <span className="accent">Asia</span></h1>              
                 <div className="container">
                   <ul className="details">
                     <li>
-                      <h3>September 15 <span className="accent">2020</span></h3>
-                      <h3><span className="accent">Workshop Day</span></h3>
+                      <div>
+                        <h3>Jan 20, 2021 <span className="accent">Workshop Day</span></h3>
+                        <h3>Jan 21 - 22, 2021 <span className="accent">Conference Days</span></h3>
+                      </div>
                     </li>
                     <li>
-                      <h3>September 16 - 17 <span className="accent">2020</span></h3>
-                      <h3><span className="accent">Conference Days</span></h3>
+                      <div>
+                        <h3>10am – 3pm <span className="accent">IST</span></h3>
+                      </div>
                     </li>
-                    <li>
-                        <h3>10am – 3pm <span className="accent">Pacific</span></h3>
-                    </li>                  
                   </ul>
                 </div>
               </header>

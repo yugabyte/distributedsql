@@ -26,6 +26,13 @@
 	}
 }
 
+.separator {
+	width: 119px;
+	height: 4px;
+	background: transparent linear-gradient(266deg, $SECONDARY_ACCENT 0%, $PRIMARY_ACCENT 100%) 0% 0% no-repeat padding-box;
+	margin: 30px auto;
+}
+
 #session {
 
 	> section {

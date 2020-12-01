@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 const Topics = () => (
-    <section id="topics">
+    <section className="topics">
         <header>
             <h2>Why Attend?</h2>
         </header>
@@ -24,14 +24,14 @@ const Topics = () => (
             </ul>
             </div>
         </div>
-        <hr className="topics__separator" />
+        <hr className="separator" />
         <p className="topics__caption">
             <strong>And everyone will benefit from learning from industry leaders and experts in internet-scale, serverless, and distributed SQL.</strong>
         </p>
         <div className="topics__archive">
-            <Link to="/2019" className="btn-rounded secondary">
-                View 2019 Content
-            </Link>
+            <a href="https://distributedsql.org" className="btn-rounded secondary">
+                View 2020 Content
+            </a>
         </div>
     </section>
 )

@@ -36,7 +36,7 @@ module.exports = {
   siteMetadata: {
     title: "Distributed SQL",
     author: "YugaByte Inc",
-    description: "Distributed SQL Summit"
+    description: "Distributed SQL Virtual Summit Asia"
   },
   plugins: [
     ...productionPlugins,

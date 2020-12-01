@@ -68,7 +68,7 @@
                             position: absolute;
                             width: 100%;
                             height: 4px;
-                            background: linear-gradient(268deg, #9C7BDE 0%, #4BB4F3 100%) 0% 0% no-repeat padding-box;
+                            background: linear-gradient(268deg, $SECONDARY_ACCENT 0%, $PRIMARY_ACCENT 100%) 0% 0% no-repeat padding-box;
                         }
                     }                    
                 }

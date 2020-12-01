@@ -220,10 +220,12 @@ const LandingSpeaker = (props) => (
           </header>
           <div className="speakerList">
             {landingSpeakerList}
-          </div>          
+          </div>
+          <hr className="separator" />
+          <div className="stay-tuned">Stay tuned for more speaker announcements!</div>
         </div>
       </section>
-    )
+    );
   }}
 />
 )
