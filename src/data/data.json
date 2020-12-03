@@ -16,8 +16,8 @@
     "borderColor":"#FF6E42"
   },
   "PeteDejoy": {
-    "speakerPicture": "PeteDejoy",
-    "speakerName": "Pete Dejoy",
+    "speakerPicture": "PeteDeJoy",
+    "speakerName": "Pete DeJoy",
     "speakerId": "pete-dejoy",
     "speakerPosition":"Product Manager",
     "speakerCompany":"Astronomer",
@@ -39,19 +39,51 @@
     "speakerCompany":"Wipro Digital",
     "borderColor":"#FB9216"
   },
+  "AnjulSahu": {
+    "speakerPicture": "AnjulSahu",
+    "speakerName": "Anjul Sahu",
+    "speakerId": "anjul-sahu",
+    "speakerPosition":"Solution Architect",
+    "speakerCompany":"InfraCloud",
+    "borderColor":"#FF6E42"
+  },
+  "BhavinGandhi": {
+    "speakerPicture": "BhavinGandhi",
+    "speakerName": "Bhavin Gandhi",
+    "speakerId": "bhavin-gandhi",
+    "speakerPosition":"Software Engineer",
+    "speakerCompany":"InfraCloud",
+    "borderColor":"#DF0012"
+  },
+  "JohnForrest": {
+    "speakerPicture": "JohnForrest",
+    "speakerName": "John Forrest",
+    "speakerId": "john-forrest",
+    "speakerPosition":"Director",
+    "speakerCompany":"Advanced Technology Services",
+    "borderColor":"#781A80"
+  },
+  "PraveenKumarPurushothaman": {
+    "speakerPicture": "PraveenKumarPurushothaman",
+    "speakerName": "Praveen Kumar Purushothaman",
+    "speakerId": "praveen-kumar-purushothaman",
+    "speakerPosition":"Full Stack Javascript Developer",
+    "speakerCompany":"Virtusa",
+    "borderColor":"#FB9216"
+  },
+  "TaylorMull": {
+    "speakerPicture": "TaylorMull",
+    "speakerName": "Taylor Mull",
+    "speakerId": "taylor-mull",
+    "speakerPosition":"Data Engineer",
+    "speakerCompany":"Yugabyte",
+    "borderColor":"#FF6E42"
+  },
   "ChiragNarang": {
     "speakerPicture": "ChiragNarang",
     "speakerName": "Chirag Narang",
     "speakerId": "chirag-narang",
     "speakerPosition":"Product Management - Platform/Cloud",
-    "speakerCompany":"Yugabyte",
-    "borderColor":"#FF6E42"
-  },
-  "KarthikRanganathan": {
-    "speakerPicture": "KarthikRanganathan",
-    "speakerName": "Karthik Ranganathan",
-    "speakerId": "karthik-ranganathan",
-    "speakerPosition":"CTO and Co-Founder",
     "speakerCompany":"Yugabyte",
     "borderColor":"#DF0012"
   },
@@ -62,5 +94,13 @@
     "speakerPosition":"Principal Solution Architect",
     "speakerCompany":"Yugabyte",
     "borderColor":"#781A80"
+  },
+  "KarthikRanganathan": {
+    "speakerPicture": "KarthikRanganathan",
+    "speakerName": "Karthik Ranganathan",
+    "speakerId": "karthik-ranganathan",
+    "speakerPosition":"CTO and Co-Founder",
+    "speakerCompany":"Yugabyte",
+    "borderColor":"#FB9216"
   }
 }
