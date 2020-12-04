@@ -22,7 +22,7 @@ const EVENT_OBJ = {
     'timeZone': 'Asia/Kolkata'
   },
   'recurrence': [
-    "RRULE:FREQ=DAILY;UNTIL=20210122",
+    "RRULE:FREQ=DAILY;UNTIL=20210122T15:00:00+5:30",
   ],
   'reminders': {
     'useDefault': false,
