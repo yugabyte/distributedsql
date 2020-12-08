@@ -20,7 +20,7 @@ class HomeIndex extends React.Component {
                         { name: 'keywords', content: 'Distributed SQL, Postgres, YugaByte, database, asia' },
                         { name: 'google-site-verification', content: 'IrJBdGcrNYjaVXTiMFpMckF5pC2MsY9x6nt8TgMtmGE' },
                         { name: 'og:locale', content: 'en_US' },
-                        { name: 'og:title', content: 'Distributed SQL Summit Asia 2020' },
+                        { name: 'og:title', content: 'Distributed SQL Summit Asia' },
                         { name: 'og:description', content: 'Join us for Distributed SQL Summit Asia, a free online conference to push the boundaries of cloud native RDBMS forward.' },
                         { name: 'twitter:card', content: 'summary_large_image' },
                         { name: 'twitter:description', content: 'Join us for Distributed SQL Summit Asia, a free online conference to push the boundaries of cloud native RDBMS forward.' },

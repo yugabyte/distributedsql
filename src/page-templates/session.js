@@ -20,7 +20,7 @@ const SessionPage = (props) => {
     <Layout>
       <Helmet>
         <title>{talk} - Distributed SQL Summit</title>
-        <meta name="description" content={`${talk} - Hosted by Distributed SQL Summit 2020`} />
+        <meta name="description" content={`${talk} - Hosted by Distributed SQL Summit Asia`} />
       </Helmet>
       <ContactBanner title="Virtual Experience" />
       <div id="session" className="alt">
