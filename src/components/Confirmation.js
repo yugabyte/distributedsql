@@ -10,7 +10,7 @@ export const DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/cal
 export const SCOPES = "https://www.googleapis.com/auth/calendar.events";
 
 const EVENT_OBJ = {
-  'summary': 'Distributed SQL Virtual Summit 2020',
+  'summary': 'Distributed SQL Summit Asia',
   'location': 'Virtual Conference',
   'description': 'Join us for Distributed SQL Summit Asia, the event that brings together thought leaders, database builders, and application developers to discuss how to leverage distributed SQL systems to build applications and services in the cloud. https://asia.distributedsql.org/',
   'start': {
