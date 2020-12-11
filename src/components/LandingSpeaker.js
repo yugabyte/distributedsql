@@ -4,6 +4,25 @@ import Speaker from './Speaker'
 
 const featuredSpeakers = require('../data/data.json')
 
+const mcListData = [
+  {
+    speakerPicture: 'GrishmaMehta',
+    speakerName: 'Grishma Mehta',
+    speakerId: 'grishma-mehta',
+    speakerPosition: 'Visual Design',
+    speakerCompany: 'Yugabyte',
+    borderColor: '#FB9216'
+  },
+  {
+    speakerPicture: 'MichelleBrinich',
+    speakerName: 'Michelle Brinich',
+    speakerId: 'michelle-brinich',
+    speakerPosition: 'Sr. Director, Marketing',
+    speakerCompany: 'Yugabyte',
+    borderColor: '#FF6E42'
+  },
+];
+
 const LandingSpeaker = (props) => (
   <StaticQuery query={graphql`
     query {
@@ -98,22 +117,49 @@ const LandingSpeaker = (props) => (
           }
         }
       }
+      CharlotteHamilton1: file(relativePath: { eq: "CharlotteHamilton.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      GrishmaMehta1: file(relativePath: { eq: "GrishmaMehta.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      MichelleBrinich1: file(relativePath: { eq: "MichelleBrinich.jpeg" }) {
+        childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `}
+
   render={data => {
-    let landingSpeakerList = [];
-    Object.values(featuredSpeakers).forEach((speakerInfo) => {
+    const generateList = config => config.map(speakerInfo => {
       const speakerPicture = data[speakerInfo.speakerPicture+'1'] ? data[speakerInfo.speakerPicture+ '1'].childImageSharp.fluid.src : speakerInfo.speakerPicture.src;
-      landingSpeakerList.push(<Speaker
-        key={'s'+speakerInfo.speakerId}
-        speakerId={speakerInfo.speakerId}
-        speakerName={speakerInfo.speakerName}
-        speakerImage={speakerPicture}
-        speakerPosition={speakerInfo.speakerPosition}
-        speakerCompany={speakerInfo.speakerCompany}
-        borderColor={speakerInfo.borderColor}
-      />);
+      return (
+        <Speaker
+          key={'s'+speakerInfo.speakerId}
+          speakerId={speakerInfo.speakerId}
+          speakerName={speakerInfo.speakerName}
+          speakerImage={speakerPicture}
+          speakerPosition={speakerInfo.speakerPosition}
+          speakerCompany={speakerInfo.speakerCompany}
+          borderColor={speakerInfo.borderColor}
+        />
+      );
     });
+
+    const landingSpeakerList = generateList(Object.values(featuredSpeakers));
+    const mcList = generateList(mcListData);
+
     return (
       <section id="landingSpeaker" className="major">
         <div className="inner">                    
@@ -123,6 +169,14 @@ const LandingSpeaker = (props) => (
           <div className="speakerList">
             {landingSpeakerList}
           </div>
+
+          <header className="major">
+            <h2>Meet the MCs</h2>
+          </header>
+          <div className="speakerList">
+            {mcList}
+          </div>
+
           <hr className="separator" />
           <div className="stay-tuned">Stay tuned for more speaker announcements!</div>
         </div>

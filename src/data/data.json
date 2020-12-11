@@ -67,9 +67,17 @@
     "speakerPicture": "PraveenKumarPurushothaman",
     "speakerName": "Praveen Kumar Purushothaman",
     "speakerId": "praveen-kumar-purushothaman",
-    "speakerPosition":"Full Stack Javascript Developer",
+    "speakerPosition":"Full Stack JavaScript Specialist",
     "speakerCompany":"Virtusa",
     "borderColor":"#FB9216"
+  },
+  "CharlotteHamilton": {
+    "speakerPicture": "CharlotteHamilton",
+    "speakerName": "Charlotte Hamilton",
+    "speakerId": "charlotte-hamilton",
+    "speakerPosition": "Advanced Technology Services Engineer",
+    "speakerCompany": "Yugabyte",
+    "borderColor": "#FB9216"
   },
   "TaylorMull": {
     "speakerPicture": "TaylorMull",
