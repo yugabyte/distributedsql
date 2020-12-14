@@ -21,6 +21,7 @@ class RegisterIndex extends React.Component {
                         { name: 'og:description', content: 'Register for Distributed SQL Summit Asia, a free online conference to push the boundaries of cloud native RDBMS forward.' },
                         { name: 'twitter:card', content: 'summary_large_image' },
                         { name: 'twitter:description', content: 'Register for Distributed SQL Summit Asia, a free online conference to push the boundaries of cloud native RDBMS forward.' },
+                        { name: 'twitter:image', content: 'https://asia.distributedsql.org/OGImage.png' },
                         { name: 'twitter:site', content: '@yugabyte' },
                         { name: 'twitter:creator', content: '@yugabyte' }
                     ]}>
