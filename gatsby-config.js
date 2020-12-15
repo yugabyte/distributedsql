@@ -3,23 +3,21 @@ var productionPlugins = []
 if(process.env.GATSBY_STAGE && process.env.GATSBY_STAGE==='production') {
   productionPlugins.push(
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingId: `${process.env.GATSBY_GA_TRACKING_ID}`,
-        // Puts tracking script in the head instead of the body
-        head: true,
-        // Setting this parameter is optional
-        anonymize: true,
-        // Setting this parameter is also optional
-        respectDNT: true,
-        // Avoids sending pageview hits from custom paths
-        // exclude: [],
-        // Enables Google Optimize using your container Id
-        // optimizeId: "YOUR_GOOGLE_OPTIMIZE_TRACKING_ID",
-        // Any additional create only fields (optional)
-        // sampleRate: 5,
-        // siteSpeedSampleRate: 10,
-        // cookieDomain: "example.com",
+        trackingIds: [
+          `${process.env.GATSBY_GA_TRACKING_ID}`
+        ],
+        gtagConfig: {
+          anonymize_ip: true
+        },
+        // This object is used for configuration specific to this plugin
+        pluginConfig: {
+          // Puts tracking script in the head instead of the body
+          head: true,
+          // Setting this parameter is also optional
+          respectDNT: true
+        }
       },
     },
   )
