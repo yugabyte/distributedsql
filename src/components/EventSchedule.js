@@ -39,8 +39,6 @@ const EventSchedule = (props) => {
     }
   }
 
-  const registerButton = <Link to={'/register'} className="btn-rounded">Register</Link>
-
   return (
     <StaticQuery query={graphql`
       query {
@@ -407,9 +405,6 @@ const EventSchedule = (props) => {
                   setShowModal(false)
                   navigate('/schedule')
                 }}
-                footer={[
-                  registerButton,                  
-                ]}
               />
             }
           </section>
