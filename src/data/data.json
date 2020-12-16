@@ -51,8 +51,8 @@
     "speakerPicture": "JohnForrest",
     "speakerName": "John Forrest",
     "speakerId": "john-forrest",
-    "speakerPosition":"Director",
-    "speakerCompany":"Advanced Technology Services",
+    "speakerPosition":"Director, Advanced Technology Services",
+    "speakerCompany":"Yugabyte",
     "borderColor":"#DF0012"
   },
   "PraveenKumarPurushothaman": {
