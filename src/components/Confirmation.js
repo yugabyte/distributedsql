@@ -86,7 +86,7 @@ const Confirmation = () => {
       script.async = true;
       document.body.appendChild(script);
     }
-  }, [])
+  }, [initClient])
 
   return (
     <div id="register-form">

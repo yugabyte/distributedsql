@@ -10,7 +10,7 @@ const Workshop = (props) => (
       <div className="workshop__content">
         <div className="title">
           <h2>Live hands-on workshops by the Yugabyte team</h2>
-          <img src={ServerStackIcon} />
+          <img src={ServerStackIcon} alt="Server stack"/>
         </div>
         <div className="talks-card">
           <ul>

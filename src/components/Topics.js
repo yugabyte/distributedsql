@@ -28,7 +28,7 @@ const Topics = () => (
             <strong>And everyone will benefit from learning from industry leaders and experts in internet-scale, serverless, and distributed SQL.</strong>
         </p>
         <div className="topics__archive">
-            <a href="https://distributedsql.org" className="btn-rounded secondary">
+            <a href="https://vimeo.com/showcase/7581911" className="btn-rounded secondary" target="_blank" rel="noopener noreferrer">
                 View 2020 Content
             </a>
         </div>

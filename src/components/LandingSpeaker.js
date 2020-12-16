@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, StaticQuery, graphql } from 'gatsby'
+import { StaticQuery, graphql } from 'gatsby'
 import Speaker from './Speaker'
 
 const featuredSpeakers = require('../data/data.json')
@@ -139,6 +139,13 @@ const LandingSpeaker = (props) => (
         }
       }
       PraveenKumarPurushothaman1: file(relativePath: { eq: "PraveenKumarPurushothaman.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      ShraddhaAgrawal1: file(relativePath: { eq: "ShraddhaAgrawal.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid
