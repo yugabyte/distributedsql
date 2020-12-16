@@ -63,12 +63,12 @@
     "speakerCompany":"Virtusa",
     "borderColor":"#781A80"
   },
-  "CharlesPretzer": {    
-    "speakerPicture": "CharlesPretzer",
-    "speakerName": "Charles Pretzer",
-    "speakerId": "charles-pretzer",
-    "speakerPosition": "Field Engineer",
-    "speakerCompany": "Buoyant, Inc.",
+  "ShraddhaAgrawal": {
+    "speakerPicture": "ShraddhaAgrawal",
+    "speakerName": "Shraddha Agrawal",
+    "speakerId": "shraddha-agrawal",
+    "speakerCompany": "Hasura",
+    "speakerPosition": "Engineer, Cloud Infrastructure",
     "borderColor": "#FB9216"
   },
   "DanZentgraf": {    
@@ -103,12 +103,12 @@
     "speakerCompany": "Xignite",
     "borderColor": "#FB9216"
   },
-  "ShraddhaAgrawal": {
-    "speakerPicture": "ShraddhaAgrawal",
-    "speakerName": "Shraddha Agrawal",
-    "speakerId": "shraddha-agrawal",
-    "speakerCompany": "Hasura",
-    "speakerPosition": "Engineer, Cloud Infrastructure",
+  "CharlesPretzer": {    
+    "speakerPicture": "CharlesPretzer",
+    "speakerName": "Charles Pretzer",
+    "speakerId": "charles-pretzer",
+    "speakerPosition": "Field Engineer",
+    "speakerCompany": "Buoyant, Inc.",
     "borderColor": "#FF6E42"
   },
   "NikhilChandrappa": {
