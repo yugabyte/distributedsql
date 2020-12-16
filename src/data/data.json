@@ -71,13 +71,61 @@
     "speakerCompany":"Virtusa",
     "borderColor":"#FB9216"
   },
+  "CharlesPretzer": {    
+    "speakerPicture": "CharlesPretzer",
+    "speakerName": "Charles Pretzer",
+    "speakerId": "charles-pretzer",
+    "speakerPosition": "Field Engineer",
+    "speakerCompany": "Buoyant, Inc.",
+    "borderColor": "#FF6E42"
+  },
+  "DanZentgraf": {    
+    "speakerPicture": "DanZentgraf",
+    "speakerName": "Dan Zentgraf",
+    "speakerId": "dan-zentgraf",
+    "speakerPosition": "Director of Solutions Architecture",
+    "speakerCompany": "Liquibase",
+    "borderColor": "#DF0012"
+  },
+  "MichaelJames": {    
+    "speakerPicture": "MichaelJames",
+    "speakerName": "Michael James",
+    "speakerId": "michael-james",
+    "speakerPosition": "Partner Solutions Architect",
+    "speakerCompany": "VMware",
+    "borderColor": "#781A80"
+  },
+  "PrasadBopardikar": {    
+    "speakerPicture": "PrasadBopardikar",
+    "speakerName": "Prasad Bopardikar",
+    "speakerId": "prasad-bopardikar",
+    "speakerPosition": "Manager, Partner Solutions Architecture",
+    "speakerCompany": "VMware",
+    "borderColor": "#FB9216"
+  },
+  "QinYu": {    
+    "speakerPicture": "QinYu",
+    "speakerName": "Qin Yu",
+    "speakerId": "qin-yu",
+    "speakerPosition": "VP, Engineering",
+    "speakerCompany": "Xignite",
+    "borderColor": "#FF6E42"
+  },
+  "AmeyBanarse": {    
+    "speakerPicture": "AmeyBanarse",
+    "speakerName": "Amey Banarse",
+    "speakerId": "amey-banarse",
+    "speakerPosition": "VP, Product",
+    "speakerCompany": "Yugabyte",
+    "borderColor": "#DF0012"
+  },
   "CharlotteHamilton": {
     "speakerPicture": "CharlotteHamilton",
     "speakerName": "Charlotte Hamilton",
     "speakerId": "charlotte-hamilton",
     "speakerPosition": "Advanced Technology Services Engineer",
     "speakerCompany": "Yugabyte",
-    "borderColor": "#FB9216"
+    "borderColor": "#781A80"
   },
   "TaylorMull": {
     "speakerPicture": "TaylorMull",
@@ -85,7 +133,7 @@
     "speakerId": "taylor-mull",
     "speakerPosition":"Data Engineer",
     "speakerCompany":"Yugabyte",
-    "borderColor":"#FF6E42"
+    "borderColor":"#FB9216"
   },
   "ChiragNarang": {
     "speakerPicture": "ChiragNarang",
@@ -93,7 +141,7 @@
     "speakerId": "chirag-narang",
     "speakerPosition":"Product Management - Platform/Cloud",
     "speakerCompany":"Yugabyte",
-    "borderColor":"#DF0012"
+    "borderColor":"#FF6E42"
   },
   "AlanCaldera": {
     "speakerPicture": "AlanCaldera",
@@ -101,7 +149,7 @@
     "speakerId": "alan-caldera",
     "speakerPosition":"Principal Solution Architect",
     "speakerCompany":"Yugabyte",
-    "borderColor":"#781A80"
+    "borderColor":"#DF0012"
   },
   "KarthikRanganathan": {
     "speakerPicture": "KarthikRanganathan",
@@ -109,6 +157,6 @@
     "speakerId": "karthik-ranganathan",
     "speakerPosition":"CTO and Co-Founder",
     "speakerCompany":"Yugabyte",
-    "borderColor":"#FB9216"
+    "borderColor":"#781A80"
   }
 }

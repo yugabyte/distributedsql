@@ -1,8 +1,7 @@
 import React from 'react'
-import { Link } from 'gatsby'
 
 const Topics = () => (
-    <section className="topics">
+    <section id="topics-section" className="topics">
         <header>
             <h2>Why Attend?</h2>
         </header>

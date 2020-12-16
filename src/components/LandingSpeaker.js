@@ -9,7 +9,7 @@ const mcListData = [
     speakerPicture: 'GrishmaMehta',
     speakerName: 'Grishma Mehta',
     speakerId: 'grishma-mehta',
-    speakerPosition: 'Visual Design',
+    speakerPosition: 'Visual Designer',
     speakerCompany: 'Yugabyte',
     borderColor: '#FB9216'
   },
@@ -27,6 +27,13 @@ const LandingSpeaker = (props) => (
   <StaticQuery query={graphql`
     query {
       AlanCaldera1: file(relativePath: { eq: "AlanCaldera.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      AmeyBanarse1: file(relativePath: { eq: "AmeyBanarse.png" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid
@@ -54,7 +61,21 @@ const LandingSpeaker = (props) => (
           }
         }
       }
+      CharlesPretzer1: file(relativePath: { eq: "CharlesPretzer.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
       ChiragNarang1: file(relativePath: { eq: "ChiragNarang.jpeg" }) {
+        childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      DanZentgraf1: file(relativePath: { eq: "DanZentgraf.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid
@@ -82,6 +103,13 @@ const LandingSpeaker = (props) => (
           }
         }
       }
+      MichaelJames1: file(relativePath: { eq: "MichaelJames.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
       NikhilChandrappa1: file(relativePath: { eq: "NikhilChandrappa.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
@@ -90,6 +118,20 @@ const LandingSpeaker = (props) => (
         }
       }
       PeteDeJoy1: file(relativePath: { eq: "PeteDeJoy.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      PrasadBopardikar1: file(relativePath: { eq: "PrasadBopardikar.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      QinYu1: file(relativePath: { eq: "QinYu.jpeg" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid
