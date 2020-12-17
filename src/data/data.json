@@ -111,6 +111,30 @@
     "speakerCompany": "Buoyant, Inc.",
     "borderColor": "#FF6E42"
   },
+  "NishantModak": {
+    "speakerPicture": "NishantModak",
+    "speakerName": "Nishant Modak",
+    "speakerId": "nishant-modak",
+    "speakerPosition": "Founder, CEO",
+    "speakerCompany":"Last9.io",
+    "borderColor":"#DF0012"
+  },
+  "DhavalJagani": {    
+    "speakerPicture": "DhavalJagani",
+    "speakerName": "Dhaval Jagani",
+    "speakerId": "dhaval-jagani",
+    "speakerPosition": "Principal Technology Architect",
+    "speakerCompany": "Infosys",
+    "borderColor": "#781A80"
+  },
+  "RajibDeb": {
+    "speakerPicture": "RajibDeb",
+    "speakerName": "Rajib Deb",
+    "speakerId": "rajib-deb",
+    "speakerPosition": "Associate Vice President and Head of Architecture",
+    "speakerCompany": "Infosys",
+    "borderColor": "#FB9216"
+  },
   "NikhilChandrappa": {
     "speakerPicture": "NikhilChandrappa",
     "speakerName": "Nikhil Chandrappa",
