@@ -135,6 +135,14 @@
     "speakerCompany": "Infosys",
     "borderColor": "#FB9216"
   },
+  "GregHaskins": {
+    "speakerPicture": "GregHaskins",
+    "speakerName": "Greg Haskins",
+    "speakerId": "greg-haskins",
+    "speakerPosition": "Co-Founder & CTO",
+    "speakerCompany": "Manetu",
+    "borderColor": "#FF6E42"
+  },
   "NikhilChandrappa": {
     "speakerPicture": "NikhilChandrappa",
     "speakerName": "Nikhil Chandrappa",

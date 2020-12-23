@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useCallback } from 'react'
 import SlackLogo from '../assets/images/svg/slack.svg'
 
 export const CLIENT_ID = '201773289674-7i9djb4f0n9i4mordfol8gjm01efgsul.apps.googleusercontent.com';
@@ -59,7 +59,7 @@ const Confirmation = () => {
     }
   }
 
-  const initClient = () => {
+  const initClient = useCallback(() => {
     window.gapi.client.init({
       apiKey: API_KEY,
       clientId: CLIENT_ID,
@@ -73,7 +73,7 @@ const Confirmation = () => {
     }, function(error) {
       console.error(JSON.stringify(error, null, 2));
     });
-  }
+  }, [updateSigninStatus]);
 
   useEffect(() => {
     if (!window.gapi) {

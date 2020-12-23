@@ -85,7 +85,7 @@ const Banner = ({ title, showPresents, showCaptionBar, hideSecondary }) => (
           </BackgroundImage>
           {showCaptionBar && 
             <div className="banner-caption-bar">
-              <img src={ConferenceIcon} /> A free online conference to push the boundaries of cloud native RDBMS forward.
+              <img src={ConferenceIcon} alt="Conference icon" /> A free online conference to push the boundaries of cloud native RDBMS forward.
             </div>
           }
         </section>

@@ -89,6 +89,13 @@ const LandingSpeaker = (props) => (
           }
         }
       }
+      GregHaskins1: file(relativePath: { eq: "GregHaskins.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
       JohnForrest1: file(relativePath: { eq: "JohnForrest.jpeg" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
