@@ -25,10 +25,7 @@ const EventSchedule = (props) => {
   const handleShowInfo = (e, event) => {
     setEventInfo(event);
     setShowModal(true);
-    navigate(`/schedule?event=${event.id}`)
-    if (e) {
-      e.preventDefault()
-    }
+    window.history.pushState(null, 'Event Info', `/schedule?event=${event.id}`);    
   }
 
   const eventId = useQueryParam("event", null);
@@ -51,14 +48,21 @@ const EventSchedule = (props) => {
             }
           }
         }
-        AllisonKunz1: file(relativePath: { eq: "AllisonKunz.png" }) {
+        AmeyBanarse1: file(relativePath: { eq: "AmeyBanarse.png" }) {
           childImageSharp {
             fluid(maxWidth: 500) {
               ...GatsbyImageSharpFluid
             }
           }
         }
-        AmeyBanarse1: file(relativePath: { eq: "AmeyBanarse.png" }) {
+        AnjulSahu1: file(relativePath: { eq: "AnjulSahu.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 500) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        BhavinGandhi1: file(relativePath: { eq: "BhavinGandhi.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 500) {
               ...GatsbyImageSharpFluid
@@ -72,76 +76,48 @@ const EventSchedule = (props) => {
             }
           }
         }
-        ChristophPakulski1: file(relativePath: { eq: "ChristophPakulski.jpg" }) {
+        CharlesPretzer1: file(relativePath: { eq: "CharlesPretzer.png" }) {
           childImageSharp {
             fluid(maxWidth: 500) {
               ...GatsbyImageSharpFluid
             }
           }
         }
-        DaShaunCarter1: file(relativePath: { eq: "DaShaunCarter.png" }) {
+        ChiragNarang1: file(relativePath: { eq: "ChiragNarang.jpeg" }) {
           childImageSharp {
             fluid(maxWidth: 500) {
               ...GatsbyImageSharpFluid
             }
           }
         }
-        EthanUberseder1: file(relativePath: { eq: "EthanUberseder.jpg" }) {
+        DanZentgraf1: file(relativePath: { eq: "DanZentgraf.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 500) {
               ...GatsbyImageSharpFluid
             }
           }
         }
-        EvanPowell1: file(relativePath: { eq: "EvanPowell.jpeg" }) {
+        DhavalJagani1: file(relativePath: { eq: "DhavalJagani.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 500) {
               ...GatsbyImageSharpFluid
             }
           }
         }
-        HaleDonertasli1: file(relativePath: { eq: "HaleDonertasli.jpg" }) {
+        GregHaskins1: file(relativePath: { eq: "GregHaskins.png" }) {
           childImageSharp {
             fluid(maxWidth: 500) {
               ...GatsbyImageSharpFluid
             }
           }
         }
-        HudsonClark1: file(relativePath: { eq: "HudsonClark.jpg" }) {
+        JohnForrest1: file(relativePath: { eq: "JohnForrest.jpeg" }) {
           childImageSharp {
             fluid(maxWidth: 500) {
               ...GatsbyImageSharpFluid
             }
           }
         }
-        JamesHartig1: file(relativePath: { eq: "JamesHartig.jpeg" }) {
-          childImageSharp {
-            fluid(maxWidth: 500) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-        JoeBeda1: file(relativePath: { eq: "JoeBeda.jpg" }) {
-          childImageSharp {
-            fluid(maxWidth: 500) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-        JoeHellerstein1: file(relativePath: { eq: "JoeHellerstein.jpeg" }) {
-          childImageSharp {
-            fluid(maxWidth: 500) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-        KartikRallapalli1: file(relativePath: { eq: "KartikRallapalli.jpeg" }) {
-          childImageSharp {
-            fluid(maxWidth: 500) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }   
         KarthikRanganathan1: file(relativePath: { eq: "KarthikRanganathan.png" }) {
           childImageSharp {
             fluid(maxWidth: 500) {
@@ -149,35 +125,14 @@ const EventSchedule = (props) => {
             }
           }
         }
-        KenOwens1: file(relativePath: { eq: "KenOwens.jpg" }) {
+        LaurentGil1: file(relativePath: { eq: "LaurentGil.jpeg" }) {
           childImageSharp {
             fluid(maxWidth: 500) {
               ...GatsbyImageSharpFluid
             }
           }
         }
-        LianghongXu1: file(relativePath: { eq: "LianghongXu.png" }) {
-          childImageSharp {
-            fluid(maxWidth: 500) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-        MaheshTyagarajan1: file(relativePath: { eq: "MaheshTyagarajan.jpg" }) {
-          childImageSharp {
-            fluid(maxWidth: 500) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-        MehrdadNurolahzade1: file(relativePath: { eq: "MehrdadNurolahzade.jpg" }) {
-          childImageSharp {
-            fluid(maxWidth: 500) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-        MikeDenman1: file(relativePath: { eq: "MikeDenman.png" }) {
+        MichaelJames1: file(relativePath: { eq: "MichaelJames.png" }) {
           childImageSharp {
             fluid(maxWidth: 500) {
               ...GatsbyImageSharpFluid
@@ -191,42 +146,84 @@ const EventSchedule = (props) => {
             }
           }
         }
-        JamesTaylor1: file(relativePath: { eq: "JamesTaylor.png" }) {
+        NishantModak1: file(relativePath: { eq: "NishantModak.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 500) {
               ...GatsbyImageSharpFluid
             }
           }
         }
-        PrasadRadhakrishnan1: file(relativePath: { eq: "PrasadRadhakrishnan.jpeg" }) {
+        PeteDeJoy1: file(relativePath: { eq: "PeteDeJoy.png" }) {
           childImageSharp {
             fluid(maxWidth: 500) {
               ...GatsbyImageSharpFluid
             }
           }
         }
-        PuneetDevadiga1: file(relativePath: { eq: "PuneetDevadiga.jpg" }) {
+        PrasadBopardikar1: file(relativePath: { eq: "PrasadBopardikar.png" }) {
           childImageSharp {
             fluid(maxWidth: 500) {
               ...GatsbyImageSharpFluid
             }
           }
         }
-        TravisLogan1: file(relativePath: { eq: "TravisLogan.jpeg" }) {
+        PraveenKumarPurushothaman1: file(relativePath: { eq: "PraveenKumarPurushothaman.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 500) {
               ...GatsbyImageSharpFluid
             }
           }
         }
-        TobiasMeixner1: file(relativePath: { eq: "TobiasMeixner.jpg" }) {
+        QinYu1: file(relativePath: { eq: "QinYu.jpeg" }) {
           childImageSharp {
             fluid(maxWidth: 500) {
               ...GatsbyImageSharpFluid
             }
           }
         }
-        TylerRamer1: file(relativePath: { eq: "TylerRamer.png" }) {
+        RajibDeb1: file(relativePath: { eq: "RajibDeb.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 500) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        ShraddhaAgrawal1: file(relativePath: { eq: "ShraddhaAgrawal.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 500) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        TaylorMull1: file(relativePath: { eq: "TaylorMull.jpeg" }) {
+          childImageSharp {
+            fluid(maxWidth: 500) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        VirajParekh1: file(relativePath: { eq: "VirajParekh.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 500) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        CharlotteHamilton1: file(relativePath: { eq: "CharlotteHamilton.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 500) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        GrishmaMehta1: file(relativePath: { eq: "GrishmaMehta.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 500) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        MichelleBrinich1: file(relativePath: { eq: "MichelleBrinich.jpeg" }) {
           childImageSharp {
             fluid(maxWidth: 500) {
               ...GatsbyImageSharpFluid
@@ -267,7 +264,6 @@ const EventSchedule = (props) => {
             }
           }
         }
-        
         return (
           <section id="schedule" className="major">
             <div className="inner">
@@ -285,24 +281,25 @@ const EventSchedule = (props) => {
               <ul className="day-agenda">
                 <li>
                   <div className="column-header">
-                    <div id="sept-15" className="calendar-date">
-                      <div>Sept</div>
-                      <strong>15</strong>                  
+                    <div id="jan-20" className="calendar-date">
+                      <div>Jan</div>
+                      <strong>20</strong>                  
                     </div>
                     <div className="event-name">
                       Workshop Day<br />
-                      10 am to 3 pm PT
+                      10 am to 3 pm IST
                     </div>
                   </div>
                   <div className="card-list">
                     {conferenceSchedule[0].map(event => (
                       <div className="event-card">
                         <div className="event-time">{event.time}</div>
-                        <Link to={`/session/${event.id}`}>
+                        {/* <Link to={`/session/${event.id}`}> */}
                           <h4 className="talk-title">{event.talk}</h4>
-                        </Link>
+                        {/* </Link> */}
                         {event.speakers && event.speakers.map(speakerKey => (
                           <Speaker
+                            key={featuredSpeakers[speakerKey].speakerId}
                             speakerKey={featuredSpeakers[speakerKey].speakerId}
                             speakerId={featuredSpeakers[speakerKey].speakerId}
                             speakerName={featuredSpeakers[speakerKey].speakerName}
@@ -324,17 +321,17 @@ const EventSchedule = (props) => {
                 <li>
                   <div className="column-header">
                     <div id="sept-16" className="calendar-date">
-                      <div>Sept</div>
-                      <strong>16</strong>                  
+                      <div>Jan</div>
+                      <strong>21</strong>                  
                     </div>
                     <div className="event-name">
                       Summit Day 1<br />
-                      10 am to 3 pm PT
+                      10 am to 3 pm IST
                     </div>
                   </div>
                   <div className="card-list">
                     {conferenceSchedule[1].map(event => (
-                      <div className="event-card">
+                      <div className="event-card">                        
                         <div className="event-time">{event.time}</div>
                         <Link to={`/session/${event.id}`}>
                           <h4 className="talk-title">{event.talk}</h4>
@@ -361,12 +358,12 @@ const EventSchedule = (props) => {
                 <li>
                   <div className="column-header">
                     <div id="sept-17" className="calendar-date">
-                      <div>Sept</div>
-                      <strong>17</strong>                  
+                      <div>Jan</div>
+                      <strong>22</strong>                  
                     </div>
                     <div className="event-name">
                       Summit Day 2<br />
-                      10 am to 3 pm PT
+                      10 am to 3 pm IST
                     </div>
                   </div>
                   <div className="card-list">
@@ -405,7 +402,7 @@ const EventSchedule = (props) => {
                 time={eventInfo.start}
                 onHide={() => {
                   setShowModal(false)
-                  navigate('/schedule')
+                  window.history.replaceState(null, 'Schedule', '/schedule');
                 }}
                 footer={[
                   registerButton,                  

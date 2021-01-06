@@ -5,250 +5,188 @@
       "speakers": ["KarthikRanganathan"],        
       "talk": "Introduction to YugabyteDB - Design and Architecture",
       "time": "10 - 10.30 am",        
-      "start": "2020-09-15T10:00:00-07:00",
-      "end": "2020-09-15T10:30:00-07:00",
+      "start": "2021-01-20T10:00:00+05:30",
+      "end": "2021-01-20T10:30:00+05:30",
       "description": "This workshop will introduce the architecture along with the basic concepts of YugabyteDB, a distributed SQL database. Learn about how data is distributed and replicated across a cluster of nodes to ensure high availability even on failures, how to scale out the cluster by simply adding nodes - without compromising ACID semantics and data integrity."
-    },
-    {
-      "id": "to8g75",
-      "speakers": ["NikhilChandrappa"],
-      "talk": "For Developers | 101: Getting started with GraphQL and Distributed SQL",
-      "time": "10.30 - 11 am",
-      "start": "2020-09-15T10:30:00-07:00",
-      "end": "2020-09-15T11:00:00-07:00",
-      "description": "This GraphQL workshop explores the use of Distributed SQL database for GraphQL workloads. In this workshop, We\"ll walk you the basics of running GraphQL queries and mutation using Hasura GraphQL engine with YugabyteDB. We will also demo a React application for simulating a realtime vehicle tracking backed by Hasura GraphQL engine and YugabyteDB deployed on Kubernetes."
-    },
-    {
-      "id": "i8r8vw",
-      "speakers": ["AllisonKunz"],
-      "talk": "For Developers | 301: Advanced GraphQL + Distributed SQL Topics",
-      "time": "11 - 11.30 am",
-      "start": "2020-09-15T11:00:00-07:00",
-      "end": "2020-09-15T11:30:00-07:00",
-      "description": "This workshop looks at the combination of Hasura Cloud and Yugabyte for production-ready enterprise GraphQL services. We'll dive into the details of how Hasura works under the hood to provide blazing fast real-time APIs at scale plus cell-level role-based security. Then, we'll look at our options for bringing in additional data sources and business logic for a complete enterprise-grade data service."
-    },
+    },   
     {
       "id": "u9wkps",
-      "speakers": ["NikhilChandrappa"],
-      "talk": "For Developers | Everything Spring Developers Need to Know about Working with Distributed SQL",
-      "time": "11.30 am - 12 pm",
-      "start": "2020-09-15T11:30:00-07:00",
-      "end": "2020-09-15T12:00:00-07:00",
-      "description": "In this workshop, we will walk developers through the fundamentals of getting started with Spring Data JPA for accessing relational data in the YugabyteDB cluster. We\"ll be developing a Spring Boot REST application using Spring Data JPA and hibernate ORM for creating Tables and accessing data from the YugabyteDB cluster. And with few configurations changes how developers can switch a Spring Boot application using PostgreSQL database to use YugabyteDB cluster."
-    },
-    {
-      "id": "p4s49m",
-      "speakers": ["AlanCaldera"],
-      "talk": "For DBAs and Operators | Distributed SQL Security, Encryption, and More",
-      "time": "12 - 12.30 pm",
-      "start": "2020-09-15T12:00:00-07:00",
-      "end": "2020-09-15T12:30:00-07:00",
-      "description": "In this workshop, we will walk DBAs and operators through security features of YugabyteDB. Topics covered include:\n<ul>\n<li>Authentication methods</li>\n<li>Encryption at rest</li>\n<li>Encryption on the wire (SSL/TLS)</li>\n</ul>"
-    },
-    {
-      "id": "5uoky0",
-      "speakers": ["NikhilChandrappa", "TylerRamer"],
-      "talk": "For DBAs and Operators | Yugabyte DB Operator Best Practices",
-      "time": "12.30 - 1.30 pm",
-      "start": "2020-09-15T12:30:00-07:00",
-      "end": "2020-09-15T13:30:00-07:00",
-      "description": "In this session, Nikhil Chandrappa and Tyler Ramer from Yugabyte, walks through an overview of YugabyteDB's architecture and how to apply operational best practices to its administrations. Topics covered included:\n<ul>\n<li>Self-service deployments</li>\n<li>Deployment topologies</li>\n<li>Automation</li>\n<li>Data recoverability</li>\n<li>Config management</li>\n<li>Monitoring & health checks</li>\n<li>Security integration</li>\n</ul>"
-    },
-    {
-      "id": "ydbl3r",
-      "speakers": ["AlanCaldera"],
-      "talk": "Migrating from PostgreSQL to YugabyteDB",
-      "time": "1.30 - 2 pm",
-      "start": "2020-09-15T13:30:00-07:00",
-      "end": "2020-09-15T14:00:00-07:00",
-      "description": "In this talk, developers will learn strategies for migrating PostgreSQL to YugabyteDB. We will cover datatype strategies, dealing with serial and sequence numbers, and when to use colocated versus distributed tables."
-    },
-    {
-      "id": "vc24dm",
       "speakers": ["AlanCaldera"],
       "talk": "Migrating from Oracle to YugabyteDB",
-      "time": "2 - 2.30 pm",
-      "start": "2020-09-15T14:00:00-07:00",
-      "end": "2020-09-15T14:30:00-07:00",
+      "time": "10.30 - 11 am",
+      "start": "2021-01-20T10:30:00+05:30",
+      "end": "2021-01-20T11:00:00+05:30",
       "description": "In this session, we will cover some tricks and tools to migrate Oracle to YugabyteDB. Topics covered will include schema migration, data type mapping, migration tools, and other scenarios."
     },
     {
-      "id": "uf8d9d",
-      "speakers": ["MikeDenman"],
-      "talk": "Migrating from NoSQL to YugabyteDB",
-      "time": "2.30 - 3 pm",
-      "start": "2020-09-15T14:30:00-07:00",
-      "end": "2020-09-15T15:00:00-07:00",
-      "description": "In this talk you will learn the various options for migrating NoSQL databases to YugabyteDB incuding lift and shift as well as live migrations with no downtime. Included will be a discussion of the various application design considerations when changing databases."
-    }
-  ],
-  [
-    {
-      "id": "zi5xav",
-      "speakers": ["JoeBeda"],
-      "talk": "Kubernetes as a Universal Control Plane",
-      "time": "10 - 10.30 am",
-      "start": "2020-09-16T10:00:00-07:00",
-      "end": "2020-09-16T10:30:00-07:00",
-      "description": "In this talk Joe will cover the origins of Kubernetes, its core architecture and how it has evolved beyond containers. Kubernetes is now a distributed systems kernel that is part API gateway, part database and part distributed systems tool kit. We’ll dig into how this applies to the similar evolution of databases into the distributed SQL world."
+      "id": "p4s49m",
+      "speakers": ["AmeyBanarse","NikhilChandrappa"],
+      "talk": "Yugabyte - Spring Developer Workshop",
+      "time": "11 am - 12.30 pm",
+      "start": "2021-01-20T11:00:00+05:30",
+      "end": "2021-01-20T12:30:00+05:30",
+      "description": "In this workshop, we'll look at how to build data-driven microservices apps using Spring Boot and the Yugabyte Distributed SQL database. This will be focused on building a Retail Catalog lookup application use case, which is a low-latency, resilient, and HA lookup web-service. This will be a hands-on session where developers will get started with implementation of the Product Catalog and Cart microservices using familiar Spring projects like Spring Web, Spring Data Cassandra, and Spring Data JPA."
     },
     {
+      "id": "5uoky0",
+      "speakers": ["ChiragNarang"],
+      "talk": "A  Winning Multi-Cloud Data Strategy",
+      "time": "12.30 - 1 pm",
+      "start": "2021-01-20T12:30:00+05:30",
+      "end": "2021-01-20T13:00:00+05:30",
+      "description": "In this session, we will cover how to build a multi cloud data strategy with Yugabyte Platform. The session will cover these topics:\n<ul>\n<li>What is multi-cloud?</li>\n<li>What are the benefits of adopting a multi-cloud strategy as it relates to data infrastructure?</li>\n<li>What challenges do database vendors need to overcome before claiming multi-cloud capabilities?</li>\n<li>How can adopting YugabyteDB enable your data infrastructure to support a multi-cloud strategy?</li>\n<li>Live demo of deploying a geo-distributed multi-cloud cluster with Yugabyte Platform</li></ul>"
+    },
+    {
+      "id": "ydbl3r",
+      "speakers": ["JohnForrest","TaylorMull"],
+      "talk": "Day 2 Operations Best Practices",
+      "time": "1 - 2 pm",
+      "start": "2021-01-20T13:00:00+05:30",
+      "end": "2021-01-20T14:00:00+05:30",
+      "description": "In this session, John and Taylor from Yugabyte, walks through an overview of YugabyteDB's architecture and how to apply operational best practices to its administrations. Topics covered included:\n<ul>\n<li>Self-service deployments</li>\n<li>Deployment topologies</li>\n<li>Automation</li>\n<li>Data recoverability</li>\n<li>Config management</li>\n<li>Monitoring & health checks</li>\n<li>Security integration</li>\n</ul>"
+    },
+    {
+      "id": "vc24dm",
+      "speakers": ["BhavinGandhi"],
+      "talk": "Getting started with Yugabyte Kubernetes Operator",
+      "time": "2 - 2.30 pm",
+      "start": "2021-01-20T14:00:00+05:30",
+      "end": "2021-01-20T14:30:00+05:30",
+      "description": "The operator pattern has become one of the preferred ways to run applications on Kubernetes. Operators make it possible to do the desired state management of applications like databases. In this workshop, we will briefly discuss operators. And then we will show a series of demos about using the Yugabyte Operator on GKE, including provisioning a YugabyteDB cluster, scaling out, scaling back, and more."
+    },
+    {
+      "id": "uf8d9d",
+      "speakers": ["BreneshStanslasFlowerMary"],
+      "talk": "Migrating from a Monolith to Microservices",
+      "time": "2.30 - 3 pm",
+      "start": "2021-01-20T14:30:00+05:30",
+      "end": "2021-01-20T15:00:00+05:30",
+      "description": "How a large intertwined Mainframe Monolith can be broken down into Microservices in a practical approach, using YugabyteDB as the distributed SQL database on the backend. The end-to-end approach covers Wipro’s proprietary \"moderniZ\" platform which addresses UI, Services and Data Transformation."
+    }
+  ],
+  [    
+    {
       "id": "djhitl",
-      "speakers": ["MehrdadNurolahzade"],
-      "talk": "The Distributed Database Behind Twitter",
+      "speakers": ["GregHaskins"],
+      "talk": "Architecting a Data Privacy Platform to Scale to Billions of Identities",
       "time": "10.30 - 11 am",
-      "start": "2020-09-16T10:30:00-07:00",
-      "end": "2020-09-16T11:00:00-07:00",
-      "description": "Twitter is giving hundreds of millions of people around the world the power to create and share ideas and information instantly without barriers. Operating such a service requires a global database system that can serve millions of queries per second, with extremely low latency in a real-time environment. In this talk we will look at Twitter's distributed database journey from MySQL to Cassandra to Manhattan; what led Twitter to build its own NoSQL database to meet the unique requirements of serving the public conversations; and what challenges are reshaping the future of distributed databases at Twitter."
+      "start": "2021-01-21T10:30:00+05:30",
+      "end": "2021-01-21T11:00:00+05:30",
+      "description": "We built the Manetu Consumer Privacy Management (CPM) platform to enable consumers to control their personal data and enterprises to comply with data privacy laws such as GDPR and CPRA. Architecting the system from the ground up for robust security and massive scale requires selecting the right mix of technologies to get the job done. In this talk, we show you how we built Manetu CPM using a microservices, CQRS architecture on Kubernetes backed by a distributed database, and the benefits this architecture provides."
     },
     {
       "id": "rgjt2s",
-      "speakers": ["BreneshStanslasFlowerMary"],
-      "talk": "Monolith to Microservices",
+      "speakers": ["VirajParekh", "PeteDeJoy"],
+      "talk": "Creating Standard Patterns to Load Data into Yugabyte with Apache Airflow",
       "time": "11 - 11.30 am",
-      "start": "2020-09-16T11:00:00-07:00",
-      "end": "2020-09-16T11:30:00-07:00",
-      "description": "How a large intertwined Mainframe Monolith can be broken down into Microservices in a practical approach. The end-to-end approach covers Wipro’s proprietary “moderniZ” platform which addresses UI, Services and Data Transformation."
+      "start": "2021-01-21T11:00:00+05:30",
+      "end": "2021-01-21T11:30:00+05:30",
+      "description": "Apache Airflow is an open source workflow orchestrator that is used by data teams of all sizes. Given its flexible nature, Airflow is used to interact with everything from legacy on-prem systems to distributed, Kubernetes-native applications. As organizations undergo digital transformations, users responsible for data workloads are often tasked with coordinating these legacy and cloud native systems concurrently. The growing number and complexity of these workloads causes teams to require standardization layer around for maintainability, reusability, and extendability.\n\nThis talk will showcase how data platform engineers can provide a standard template for users to perform business-specific actions with Apache Airflow to replicate Postgres data to a distributed Yugabyte instance. It will end with a brief overview of the Airflow Provider framework."
     },
     {
       "id": "p8mjfa",
-      "speakers": ["HaleDonertasli"],
-      "talk": "5G and Data Challenges",      
+      "speakers": ["DanZentgraf"],
+      "talk": "Lessons DevOps Can Teach Us About Managing Internet-Scale Schemas",      
       "time": "11.30 am - 12 pm",
-      "start": "2020-09-16T11:30:00-07:00",
-      "end": "2020-09-16T12:00:00-07:00",
-      "description": "5G demands full capacity and availability of data delivery while living in a decade that all layers of connectivity are going through the massive partitioning. In this session, we are going to discuss the strategies to deal with data challenges for 5G."
+      "start": "2021-01-21T11:30:00+05:30",
+      "end": "2021-01-21T12:00:00+05:30",
+      "description": "Massively scalable 'NewSQL' database management systems have enabled teams to aggressively pursue their digital transformation initiatives at a time when employees, partners, and customers are more distributed than ever.\n\nHowever, the combined push for speedy digital transformations and the increased scale of the databases also increases the importance of well thought out, disciplined, automated schema management. The consequences of applying changes too slowly or, worse, breaking something at internet-scale are just too high.\n\nFortunately, we can learn from lessons the DevOps movement have taught us. DevOps practitioners have been dealing with internet-scale applications for some time and we can apply what they've learned to the database to ultimately allow teams to operate safely at internet-scale while still meeting business expectations for internet speed when delivering new functionality.\n\nThis session will discuss:\n<ul>\n<li>The challenges of schema management in a distributed SQL database</li>\n<li>Balancing those challenges with delivery speed and safety</li>\n<li>Example workflows using Liquibase to perform schema updates on a distributed SQL database</li></ul>"
     },
     {
       "id": "s7zi2b",
-      "speakers": ["LianghongXu"],
-      "talk": "Pinterest’s Exploration of Distributed SQL",
+      "speakers": ["LaurentGil"],
+      "talk": "An Adventure in Multi-Cloud with Kubernetes and Distributed Data",
       "time": "12 - 12.30 pm",
-      "start": "2020-09-16T12:00:00-07:00",
-      "end": "2020-09-16T12:30:00-07:00",
-      "description": "Pinterest hosts one of the largest industry deployments of HBase. A number of important storage services were built on top of it, including the in-house key-value store and graph database, serving a huge amount of business critical data. Over the past few years, we have seen an increasing number of customer requests for distributed storage that offers SQL-like features such as distributed transactions and secondary indexing, while achieving scalability of a NoSQL database. To address these requirements, we built dedicated middleware on top of HBase that provide these additional functionalities. This talk presents the evolution of Pinterest’s online storage services (with a focus around HBase), the challenges we face today and our early exploration of a distributed SQL database."
+      "start": "2021-01-21T12:00:00+05:30",
+      "end": "2021-01-21T12:30:00+05:30",
+      "description": "In this session, we will discuss the challenges, the traps, and everything you need to know to deploy a distributed Yugabyte database over multiple clouds using Kubernetes. We will also demonstrate in real time the advantages of multi cloud, such as performance, resiliency of the application to a cloud failure, cost optimization across clouds, and vertical and horizontal autoscaling using effective cost/performance compute resources.\n\nDuring the session, we will deploy a Yugabyte database within minutes on a cluster that spans AWS, Azure, and Google Cloud, with Highly Available and Fault Resilient setup."
     },
     {
       "id": "0wayh3",
-      "speakers": ["AllisonKunz"],
-      "talk": "Modernizing Application Development with Planet-scale GraphQL & Distributed SQL",
+      "speakers": ["CharlesPretzer"],
+      "talk": "Linkerd/Buoyant - Untitled",
       "time": "12.30 - 1 pm",
-      "start": "2020-09-16T12:30:00-07:00",
-      "end": "2020-09-16T13:00:00-07:00",
-      "video": "https://player.vimeo.com/video/460327414",
-      "description": "Cloud native patterns allow developers to store data and run their compute on global infrastructure, distributed just like their customers. But once you've solved the distributed data problem, how do you serve that data scalably, reliably, and with cell-level security? How do you bring in the many other data sources your applications require, both internal (another division) and external (a third-party REST API, for example)? We'll look at how Hasura provides a robust, performant, and cost-effective modern API layer with a seamless developer experience."
+      "start": "2021-01-21T12:30:00+05:30",
+      "end": "2021-01-21T13:00:00+05:30"
     },
     {
       "id": "fuqmyr",
-      "speakers": ["JamesHartig"],
-      "talk": "How Admiral Scales Globally with YugabyteDB on Google Cloud While Maintaining Single-Digit Latency",
+      "speakers": ["NikhilChandrappa"],
+      "talk": "Scalable and Resilient GraphQL Subscriptions with Distributed SQL Databases",
       "time": "1 - 1.30 pm",
-      "start": "2020-09-16T13:00:00-07:00",
-      "end": "2020-09-16T13:30:00-07:00",
-      "description": "What if you’re a small company running a SaaS application in the cloud with millions of end users, and you need to scale globally at single-digit latency? Admiral helps online publishers engage with visitors through adblock recovery, paid subscriptions, privacy and consent management, and more. Our dataset is large and complex. The previous NoSQL database couldn’t scale, so we moved to distributed SQL. Our Go application runs in Google Cloud across 5 regions in 3 continents. This geo-distributed architecture is powered by a single YugabyteDB cluster that delivers an average global read latency of 3ms! In this talk, we’ll look at how distributed SQL can be deployed on modern cloud infrastructure to provide a scalable, resilient, low latency, fully consistent data service."
+      "start": "2021-01-21T13:00:00+05:30",
+      "end": "2021-01-21T13:30:00+05:30",
+      "description": "GraphQL subscriptions are seeing broader adoption in building event-driven microservices. Popular GraphQL servers achieve subscriptions through live queries. Live queries are nothing but querying the backing database at a fixed time interval. Obviously, as the number of subscriptions increases, it increases the query load on the database. Any other DML operations on a database will strain the resources of the monolithic single-node database.\n\nIn this talk, we will walk through steps for implementing resilient and scalable GraphQL subscriptions using Hasura Engine and YugabyteDB on Kubernetes. Components of the stack, including the database, can be linearly scaled independently of each other. In addition to linear scalability, GraphQL subscriptions will inherently become resilient against outages due to the fault tolerance and HA capabilities of distributed SQL databases."
     },
     {
       "id": "14mbp3",
-      "speakers": ["ChristophPakulski", "PrasadRadhakrishnan"],
-      "talk": "Envoy & Service Mesh for Databases: What the Future Holds",
-      "time": "1.30 - 2.30 pm",
-      "start": "2020-09-16T13:30:00-07:00",
-      "end": "2020-09-16T14:30:00-07:00",
-      "description": "Service Mesh is a concept and technology that helps with creating, managing, securing, monitoring the network of apps/microservices and the interactions between them. It's new but fairly understood and implemented in all modern cloud-native architectures, platforms and deployments. Is it applicable in the context of App to Database interactions? Postgres proxy filter in Envoy is a significant step in that direction. Prasad from Yugabyte and Christoph from Tetrate are co-presenting their views on this subject."
-    },
-    {
-      "id": "nn0u9p",
-      "speakers": ["TobiasMeixner"],
-      "talk": "A Migration Journey from Amazon DynamoDB to Yugabyte YSQL and Hasura",
+      "speakers": ["NishantModak"],
+      "talk": "Last9.io - Untitled",
       "time": "2.30 - 3 pm",
-      "start": "2020-09-16T14:30:00-07:00",
-      "end": "2020-09-16T15:00:00-07:00",
-      "description": "Switching databases is painful, even more so going from NoSQL to SQL. This talk will give insights into BRIKL's migration path from Apollo Server and Amazon DynamoDB over to Hasura and Yugabyte YSQL, going from a growing monolith to a scalable service-oriented architecture."
+      "start": "2021-01-21T14:30:00+05:30",
+      "end": "2021-01-21T15:00:00+05:30"
     }
   ],
   [
     {
-      "id": "hohbbp",
-      "speakers": ["JoeHellerstein"],
-      "talk": "The Art of the State: Serverless Computing and Distributed Data",
-      "video": "https://player.vimeo.com/video/459492516",
-      "time": "10 - 10.30 am",
-      "start": "2020-09-17T10:00:00-07:00",
-      "end": "2020-09-17T10:30:00-07:00",
-      "description": "Serverless computing is a first step to opening up the cloud as a programmable platform for developers. As always, the hardest and most interesting part is the data, a topic that is poorly served by first-generation serverless platforms. In this talk I’ll go over the challenges of data management in serverless computing, and promising new results from the Anna KVS and Cloudburst “stateful” serverless computing efforts in Berkeley’s RISELab."
-    },
-    {
       "id": "6x6zbe",
-      "speakers": ["PuneetDevadiga", "HaleDonertasli", "PrasadRadhakrishnan", "KartikRallapalli", "JamesTaylor"],
-      "talk": "The Future of Data Infrastructure, A Telco Roundtable",
-      "time": "10.30 - 11.30 am",
-      "start": "2020-09-17T10:30:00-07:00",
-      "end": "2020-09-17T11:30:00-07:00",
-      "description": "Join this roundtable with technology leaders and innovators from some of the world's most loved enterprises in the telco industry, and explore the future of data infrastructure. A panel of architects will get together to discuss cloud native trends and challenges in the context of Digital, IoT, 5G, Edge, Data and how it fuels their need to innovate."
+      "speakers": ["PrasadBopardikar","MichaelJames"],
+      "talk": "VMware - Untitled",
+      "time": "10.30 - 11 am",
+      "start": "2021-01-22T10:30:00+05:30",
+      "end": "2021-01-22T11:00:00+05:30"
     },
     {
       "id": "2i7n91",
-      "speakers": ["MaheshTyagarajan"],
-      "talk": "Transforming the Omni-Channel Experience at Kroger",
-      "time": "11.30 am - 12 pm",
-      "start": "2020-09-17T11:30:00-07:00",
-      "end": "2020-09-17T12:00:00-07:00",
-      "description": "We are evolving the technology stack at Kroger to meet the transformational needs of the business – to become a true omni-channel retailer in the food/grocery space. The technology stack evolves to a cloud native microservices platform which moves from an on-prem ecosystem to a hybrid of on-prem and public cloud infrastructure. Along this journey we are not lifting and shifting but rethinking the entirety of the stack to modern cloud agnostic, cloud native architectures by using an abundance of open source (and COSS), highly scaled shared-nothing components, all based on the foundation of Kubernetes."
+      "speakers": ["RajibDeb","DhavalJagani"],
+      "talk": "The Future of Databases",
+      "time": "11 - 11.30 am",
+      "start": "2021-01-22T11:00:00+05:30",
+      "end": "2021-01-22T11:30:00+05:30",
+      "description": "As organizations are rapidly moving their applications to the cloud, the need to scale the databases beyond zones, regions, and countries is also increasing. We have also seen the need to have data across cloud providers and data centers to be able to achieve a higher degree of resilience and availability. And all these needs should not sacrifice the transactional data consistency. In this talk, we will discuss how databases and supporting application architectures are evolving to meet the demands of distributed transactions."
     },
     {
       "id": "2nrj9y",
-      "speakers": ["HudsonClark", "EthanUberseder"],
-      "talk": "Scaling to Billions of Internet Observations per Day",
-      "time": "12 - 12.30 pm",
-      "start": "2020-09-17T12:00:00-07:00",
-      "end": "2020-09-17T12:30:00-07:00",
-      "description": "A cohesive and queryable model of every device on the Internet lies at the heart of Censys’ products. In order to improve the security of individuals, companies, and government organizations with this data, Censys ingests and processes billions of network handshakes daily. To support the growth of the company, the datastore that backs this model must be resilient to failure and horizontally scalable, while still supporting the more traditional RDBS features demanded by the API. This talk will discuss the unique business and engineering requirements of this particular database system, and how Censys deployed YugabyteDB successfully to meet these demands."
+      "speakers": ["QinYu"],
+      "talk": "How Xignite Delivers Real-Time Financial Data at Scale",
+      "time": "11.30 am - 12 pm",
+      "start": "2021-01-22T11:30:00+05:30",
+      "end": "2021-01-22T12:00:00+05:30",
+      "description": "Delivering real-time and reference market data at scale requires high scalability, high performance, and cost effectiveness. In this talk, Qin Yu, SVP of Engineering and Operations, will share Xignite’s cloud native database journey—from SQL Server on AWS with Amazon RDS to other database deployments to the current architecture powered by YugabyteDB. Along the way, Qin will share the strategy and key requirements behind the decisions to move a variety of enterprise workloads (time series and reference data, across lines of business) to distributed SQL."
     },
     {
       "id": "ct3gwj",
-      "talk": "Cloud Native Spring for Relational Databases",
-      "speakers": ["DaShaunCarter"],
-      "time": "12.30 - 1 pm",
-      "start": "2020-09-17T12:30:00-07:00",
-      "end": "2020-09-17T13:00:00-07:00",
-      "description": "Traditionally spring framework has been popular with accessing RDBMS databases for its compressive transaction support and declarative way of executing transactions compared to EJBs. As enterprises embrace cloud-native architecture, Spring Data projects have been very popular for implementing data access APIs in spring microservices, partly due to the consistent abstractions provided by spring data irrespective of SQL dialects. In this talk, DaShaun will walk you through current state of Spring Data support for building scalable and resilient cloud native microservices using modern relational databases."
+      "talk": "YugabyteDB Performance: History and Future",
+      "speakers": ["CharlotteHamilton"],
+      "time": "12 - 12.30 pm",
+      "start": "2021-01-22T12:00:00+05:30",
+      "end": "2021-01-22T12:30:00+05:30",
+      "description": "From its inception YugabyteDB was designed with performance in mind. With greater rates of adoption and increased usage in the commercial world, the need for adaptation and improvement has remained a constant design driver with each new release. This talk covers the evolution of YugabyteDB’s performance design concepts, as well as the potential that lies ahead for even more Yugabyte performance."
     },
     {
       "id": "9c23yp",
-      "speakers": ["TravisLogan"],
-      "talk": "Evolve: A Database Journey from Ground to Cloud",
-      "time": "1 - 1.30 pm",
-      "start": "2020-09-17T13:00:00-07:00",
-      "end": "2020-09-17T13:30:00-07:00",
-      "description": "With over 14 years of experience with MS SQL Server, Travis is well-versed in database evolution. This talk will start with traditional RDBMS experiences and will lead us through redundancy, scaling, performance and many other trials and tribulations along the way. By the end of the talk, you’ll have explored Travis’ complete evolution from traditional database systems of the past and important milestones that led him to the distributed SQL systems of today."
-    },
-    {
-      "id": "pxg2y3",
-      "speakers": ["KenOwens"],
-      "talk": "The Data Divide: An End User’s Cloud Native Journey to Distributed Databases",
-      "time": "1.30 - 2 pm",
-      "start": "2020-09-17T13:30:00-07:00",
-      "end": "2020-09-17T14:00:00-07:00",
-      "description": "The modern cloud native developer is torn today when it comes to managing distributed databases in the platforms or cloud services due to complexity, technology gaps, and data aspects impacted but cloud native principles. This talk will describe the journey Mastercard has undergone, the successes and lessons learned. The attendee will obtain a better understanding about the ever changing opensource and enterprise vendors adoption of cloud native principles and this impact on the strategy and direction to achieve the business objectives."
+      "speakers": ["AnjulSahu"],
+      "talk": "Infracloud - Untitled",
+      "time": "12.30 - 1 pm",
+      "start": "2021-01-22T12:30:00+05:30",
+      "end": "2021-01-22T13:00:00+05:30"
     },
     {
       "id": "pldncj",
-      "speakers": ["EvanPowell"],
-      "talk": "Container Attached Storage: Open Source Extensions to Kubernetes for Data",
+      "speakers": ["ShraddhaAgrawal"],
+      "talk": "Hasura Cloud + YugabyteDB: The Superpowers Developers Get with the Perfect Mix of GraphQL and Distributed SQL",
       "time": "2 - 2.30 pm",
-      "video": "https://player.vimeo.com/video/459492603",
-      "start": "2020-09-17T14:00:00-07:00",
-      "end": "2020-09-17T14:30:00-07:00",
-      "description": "OpenEBS is an active CNCF project that helps in the use of Kubernetes for running databases and other stateful workloads. How? What is next?"
+      "start": "2021-01-22T14:00:00+05:30",
+      "end": "2021-01-22T14:30:00+05:30"
     },
     {
       "id": "y3hijh",
-      "speakers": ["KarthikRanganathan"],
-      "talk": "Closing Keynote: Distributed SQL Virtual Summit 2020",
+      "speakers": ["PraveenKumarPurushothaman"],
+      "talk": "Introducing YERN and YEAN: Developing Scalable React and Node.js Apps with Distributed SQL",
       "time": "2.30 - 3 pm",
-      "start": "2020-09-17T14:30:00-07:00",
-      "end": "2020-09-17T15:00:00-07:00",
-      "description": "Closing remarks"
+      "start": "2021-01-22T14:30:00+05:30",
+      "end": "2021-01-22T15:00:00+05:30",
+      "description": "This talk is for developers interested in learning the fundamentals and best practices on how to develop React and Node.js apps on top of YugabyteDB. Topics covered include: the benefits of choosing YugabyteDB over MySQL or MongoDB, using CRA to build full stack React apps, connecting Express apps to YugabyteDB using the YSQL API, plus a walk through and demonstration of the sample applications we built during the talk."
     }
   ]
 ]
