@@ -93,8 +93,7 @@ header {
 }
 
 #conf-description {
-	padding: 36px 0 24px;
-	margin-top: 56px;
+	padding: 24px 0;
 
 	.description {
 		color: #141920;
@@ -137,7 +136,7 @@ header {
 			margin-left: 30px;
 
 			&:hover {				
-				background-position: -100% 0;
+				background-position: -99% 0;
 				color: #FFF !important;
 			}
 		}

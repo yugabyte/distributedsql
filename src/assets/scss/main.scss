@@ -24,6 +24,13 @@
 	src: url('../fonts/Futura-Medium.otf') format("opentype");
 }
 */
+
+html, body {
+	height: 100%;
+}
+body {
+	min-height: 100%;
+}
 	@include skel-breakpoints((
 		xlarge: '(max-width: 1680px)',
 		large: '(max-width: 1280px)',
