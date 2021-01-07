@@ -268,7 +268,7 @@ const EventSchedule = (props) => {
           <section id="schedule" className="major">
             <div className="inner">
               <header className="major">
-                <h4>Distributed SQL Summit Schedule <span>•</span> Virtual Event</h4>
+                <h4>Summit Schedule <span>•</span> Virtual Event</h4>
               </header>
               <Select
                 options={dateOptions}
@@ -333,9 +333,9 @@ const EventSchedule = (props) => {
                     {conferenceSchedule[1].map(event => (
                       <div className="event-card">                        
                         <div className="event-time">{event.time}</div>
-                        <Link to={`/session/${event.id}`}>
+                        {/* <Link to={`/session/${event.id}`}> */}
                           <h4 className="talk-title">{event.talk}</h4>
-                        </Link>
+                        {/* </Link> */}
                         {event.speakers && event.speakers.map(speakerKey => (
                           <Speaker
                             speakerId={featuredSpeakers[speakerKey].speakerId}
@@ -370,9 +370,9 @@ const EventSchedule = (props) => {
                     {conferenceSchedule[2].map(event => (
                       <div className="event-card">
                         <div className="event-time">{event.time}</div>
-                        <Link to={`/session/${event.id}`}>
+                        {/* <Link to={`/session/${event.id}`}> */}
                           <h4 className="talk-title">{event.talk}</h4>
-                        </Link>
+                        {/* </Link> */}
                         {event.speakers && event.speakers.map(speakerKey => (
                           <Speaker
                             speakerId={featuredSpeakers[speakerKey].speakerId}

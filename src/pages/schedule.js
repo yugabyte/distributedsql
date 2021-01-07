@@ -28,8 +28,8 @@ class Schedule extends React.Component {
                 <EventSchedule />
                 <ContactBanner
                     title="Join Us!"
-                    btnText="Learn More"
-                    btnLink="https://yugabyte.com"
+                    btnText="Register"
+                    btnLink="https://asia.distributedsql.org/register/"
                 />
             </Layout>
         )
