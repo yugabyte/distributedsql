@@ -75,7 +75,7 @@ const Banner = ({ title, showPresents, showCaptionBar, hideSecondary }) => (
                       Register
                     </Link>
                     {!hideSecondary && <Link to="/schedule" className="btn-rounded secondary">
-                        Schedule
+                        View Schedule
                     </Link>}
                   </div>
                   {/* <a href="https://konf.co/event/cxCdB2WE/distributed-sql-summit" className="external-link">Already have a ticket? Enter here</a> */}

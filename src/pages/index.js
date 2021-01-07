@@ -32,7 +32,6 @@ class HomeIndex extends React.Component {
                 <Banner
                     title="Distributed SQL Virtual Summit Asia"
                     showPresents
-                    hideSecondary
                     showCaptionBar
                 />
                 <Description />
