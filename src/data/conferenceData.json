@@ -167,10 +167,11 @@
     {
       "id": "9c23yp",
       "speakers": ["AnjulSahu"],
-      "talk": "Infracloud - Coming Soon",
+      "talk": "Improving Security and Observability of YugabyteDB on Kubernetes",
       "time": "12.30 - 1 pm",
       "start": "2021-01-22T12:30:00+05:30",
-      "end": "2021-01-22T13:00:00+05:30"
+      "end": "2021-01-22T13:00:00+05:30",
+      "description": "This talk is an introduction to service mesh features in the context of YugabyteDB. In this talk, we will explore how the security and observability of the database and applications hosted on the Kubernetes platform can be improved without changing the code."
     },
     {
       "id": "pldncj",
