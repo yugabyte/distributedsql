@@ -24,7 +24,7 @@ const Workshop = (props) => (
             </li>
             <li>
               <h5>Migrating to distributed SQL</h5>
-              <p>How to move from a traditional RDBMS to cloud native</p>
+              <p>How to move from a traditional RDBMS to a cloud native one</p>
             </li>
           </ul>
         </div>

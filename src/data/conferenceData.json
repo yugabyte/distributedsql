@@ -177,19 +177,27 @@
       "id": "pldncj",
       "speakers": ["ShraddhaAgrawal"],
       "talk": "Hasura Cloud + YugabyteDB: The Superpowers Developers Get with the Perfect Mix of GraphQL and Distributed SQL",
-      "time": "2 - 2.30 pm",
-      "start": "2021-01-22T14:00:00+05:30",
-      "end": "2021-01-22T14:30:00+05:30",
+      "time": "1.30 - 2 pm",
+      "start": "2021-01-22T13:30:00+05:30",
+      "end": "2021-01-22T14:00:00+05:30",
       "description": "When it comes to building great products two things are essential from a developer stand point, the rate at which new product features are released and to reliably serve the application as it scales. But ensuring scalability while rapidly solving complex business problems simultaneously is hard.<br /><br />The answer lies in the architecture and the choice of components. For any given stack, there are three components, the API layer, database, and the business logic. The magic sauce, which we’ll explore in this talk, is how to combine these three components into an architecture that scales easily and at the same time boosts developer productivity.<br /><br />Once we have the architecture that helps us developers build quickly, we’ll discuss how the choice of GraphQL/Hasura (API) & Distributed SQL/Yugabyte (Database) & serverless functions (business logic) can solve the scalability problem out-of-the-box.<br /><br />By the end of this talk, I hope to show you how you can have your cake and eat it too, aka build stuff fast and have it scale out automatically without any dev effort."
     },
     {
       "id": "y3hijh",
       "speakers": ["PraveenKumarPurushothaman"],
       "talk": "Introducing YERN and YEAN: Developing Scalable React and Node.js Apps with Distributed SQL",
+      "time": "2 - 2.30 pm",
+      "start": "2021-01-22T14:00:00+05:30",
+      "end": "2021-01-22T14:30:00+05:30",
+      "description": "This talk is for developers interested in learning the fundamentals and best practices on how to develop React and Node.js apps on top of YugabyteDB. Topics covered include: the benefits of choosing YugabyteDB over MySQL or MongoDB, using CRA to build full stack React apps, connecting Express apps to YugabyteDB using the YSQL API, plus a walk through and demonstration of the sample applications we built during the talk."
+    },
+    {
+      "id": "jdpi9f",
+      "speakers": ["MichelleBrinich"],
+      "talk": "Closing Keynote - Untitled",
       "time": "2.30 - 3 pm",
       "start": "2021-01-22T14:30:00+05:30",
-      "end": "2021-01-22T15:00:00+05:30",
-      "description": "This talk is for developers interested in learning the fundamentals and best practices on how to develop React and Node.js apps on top of YugabyteDB. Topics covered include: the benefits of choosing YugabyteDB over MySQL or MongoDB, using CRA to build full stack React apps, connecting Express apps to YugabyteDB using the YSQL API, plus a walk through and demonstration of the sample applications we built during the talk."
+      "end": "2021-01-22T15:00:00+05:30"
     }
   ]
 ]
