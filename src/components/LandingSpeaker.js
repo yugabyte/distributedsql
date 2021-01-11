@@ -11,6 +11,7 @@ const mcListData = [
     speakerId: 'grishma-mehta',
     speakerPosition: 'Visual Designer',
     speakerCompany: 'Yugabyte',
+    speakerType: 'emcee',
     borderColor: '#FB9216'
   },
   {
@@ -19,6 +20,7 @@ const mcListData = [
     speakerId: 'michelle-brinich',
     speakerPosition: 'Sr. Director, Marketing',
     speakerCompany: 'Yugabyte',
+    speakerType: 'emcee',
     borderColor: '#FF6E42'
   },
 ];
@@ -219,8 +221,8 @@ const LandingSpeaker = (props) => (
   `}
 
   render={data => {
-    const generateList = config => config.map(speakerInfo => {
-      if (speakerInfo.speakerType !== 'speaker') {
+    const generateList = (config, type) => config.map(speakerInfo => {
+      if (speakerInfo.speakerType !== type) {
         return null;
       }
       const speakerPicture = data[speakerInfo.speakerPicture+'1'] ? data[speakerInfo.speakerPicture+ '1'].childImageSharp.fluid.src : speakerInfo.speakerPicture.src;
@@ -237,8 +239,8 @@ const LandingSpeaker = (props) => (
       );
     });
 
-    const landingSpeakerList = generateList(Object.values(featuredSpeakers));
-    const mcList = generateList(mcListData);
+    const landingSpeakerList = generateList(Object.values(featuredSpeakers), 'speaker');
+    const mcList = generateList(mcListData, 'emcee');
 
     return (
       <section id="landingSpeaker" className="major">
