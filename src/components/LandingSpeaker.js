@@ -220,6 +220,9 @@ const LandingSpeaker = (props) => (
 
   render={data => {
     const generateList = config => config.map(speakerInfo => {
+      if (speakerInfo.speakerType !== 'speaker') {
+        return null;
+      }
       const speakerPicture = data[speakerInfo.speakerPicture+'1'] ? data[speakerInfo.speakerPicture+ '1'].childImageSharp.fluid.src : speakerInfo.speakerPicture.src;
       return (
         <Speaker

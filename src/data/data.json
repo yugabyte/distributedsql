@@ -5,6 +5,7 @@
     "speakerId": "laurent-gil",
     "speakerPosition":"Co-Founder, Chief Product Officer",
     "speakerCompany":"CAST AI",
+    "speakerType": "speaker",
     "borderColor":"#FB9216"
   },
   "VirajParekh": {
@@ -13,6 +14,7 @@
     "speakerId": "viraj-parekh",
     "speakerPosition":"Head of Field Engineering",
     "speakerCompany":"Astronomer",
+    "speakerType": "speaker",
     "borderColor":"#FF6E42"
   },
   "PeteDeJoy": {
@@ -21,6 +23,7 @@
     "speakerId": "pete-dejoy",
     "speakerPosition": "Product Manager",
     "speakerCompany": "Astronomer",
+    "speakerType": "speaker",
     "borderColor": "#DF0012"
   }, 
   "BreneshStanslasFlowerMary": {
@@ -29,6 +32,7 @@
     "speakerId": "brenesh-stanslas-flower-mary",
     "speakerPosition":"Senior Architect",
     "speakerCompany":"Wipro Digital",
+    "speakerType": "speaker",
     "borderColor":"#781A80"
   },
   "AnjulSahu": {
@@ -37,6 +41,7 @@
     "speakerId": "anjul-sahu",
     "speakerPosition":"Solution Architect",
     "speakerCompany":"InfraCloud",
+    "speakerType": "speaker",
     "borderColor":"#FB9216"
   },
   "BhavinGandhi": {
@@ -45,6 +50,7 @@
     "speakerId": "bhavin-gandhi",
     "speakerPosition":"Software Engineer",
     "speakerCompany":"InfraCloud",
+    "speakerType": "speaker",
     "borderColor":"#FF6E42"
   },
   "JohnForrest": {
@@ -53,6 +59,7 @@
     "speakerId": "john-forrest",
     "speakerPosition":"Director, Advanced Technology Services",
     "speakerCompany":"Yugabyte",
+    "speakerType": "speaker",
     "borderColor":"#DF0012"
   },
   "PraveenKumarPurushothaman": {
@@ -61,6 +68,7 @@
     "speakerId": "praveen-kumar-purushothaman",
     "speakerPosition":"Full Stack JavaScript Specialist",
     "speakerCompany":"Virtusa",
+    "speakerType": "speaker",
     "borderColor":"#781A80"
   },
   "ShraddhaAgrawal": {
@@ -69,6 +77,7 @@
     "speakerId": "shraddha-agrawal",
     "speakerCompany": "Hasura",
     "speakerPosition": "Engineer, Cloud Infrastructure",
+    "speakerType": "speaker",
     "borderColor": "#FB9216"
   },
   "DanZentgraf": {    
@@ -77,6 +86,7 @@
     "speakerId": "dan-zentgraf",
     "speakerPosition": "Director of Solutions Architecture",
     "speakerCompany": "Liquibase",
+    "speakerType": "speaker",
     "borderColor": "#FF6E42"
   },
   "MichaelJames": {    
@@ -85,6 +95,7 @@
     "speakerId": "michael-james",
     "speakerPosition": "Partner Solutions Architect",
     "speakerCompany": "VMware",
+    "speakerType": "speaker",
     "borderColor": "#DF0012"
   },
   "PrasadBopardikar": {    
@@ -93,6 +104,7 @@
     "speakerId": "prasad-bopardikar",
     "speakerPosition": "Manager, Partner Solutions Architecture",
     "speakerCompany": "VMware",
+    "speakerType": "speaker",
     "borderColor": "#781A80"
   },
   "QinYu": {    
@@ -101,6 +113,7 @@
     "speakerId": "qin-yu",
     "speakerPosition": "VP, Engineering",
     "speakerCompany": "Xignite",
+    "speakerType": "speaker",
     "borderColor": "#FB9216"
   },
   "CharlesPretzer": {    
@@ -109,6 +122,7 @@
     "speakerId": "charles-pretzer",
     "speakerPosition": "Field Engineer",
     "speakerCompany": "Buoyant, Inc.",
+    "speakerType": "speaker",
     "borderColor": "#FF6E42"
   },
   "NishantModak": {
@@ -117,6 +131,7 @@
     "speakerId": "nishant-modak",
     "speakerPosition": "Founder, CEO",
     "speakerCompany":"Last9.io",
+    "speakerType": "speaker",
     "borderColor":"#DF0012"
   },
   "DhavalJagani": {    
@@ -125,6 +140,7 @@
     "speakerId": "dhaval-jagani",
     "speakerPosition": "Principal Technology Architect",
     "speakerCompany": "Infosys",
+    "speakerType": "speaker",
     "borderColor": "#781A80"
   },
   "RajibDeb": {
@@ -133,6 +149,7 @@
     "speakerId": "rajib-deb",
     "speakerPosition": "Associate Vice President and Head of Architecture",
     "speakerCompany": "Infosys",
+    "speakerType": "speaker",
     "borderColor": "#FB9216"
   },
   "GregHaskins": {
@@ -141,6 +158,7 @@
     "speakerId": "greg-haskins",
     "speakerPosition": "Co-Founder & CTO",
     "speakerCompany": "Manetu",
+    "speakerType": "speaker",
     "borderColor": "#FF6E42"
   },
   "NikhilChandrappa": {
@@ -149,6 +167,7 @@
     "speakerId": "nikhil-chandrappa",
     "speakerPosition": "Ecosystem Engineering",
     "speakerCompany":"Yugabyte",
+    "speakerType": "speaker",
     "borderColor":"#DF0012"
   },
   "AmeyBanarse": {    
@@ -157,6 +176,7 @@
     "speakerId": "amey-banarse",
     "speakerPosition": "VP, Product",
     "speakerCompany": "Yugabyte",
+    "speakerType": "speaker",
     "borderColor": "#781A80"
   },
   "CharlotteHamilton": {
@@ -165,6 +185,7 @@
     "speakerId": "charlotte-hamilton",
     "speakerPosition": "Advanced Technology Services Engineer",
     "speakerCompany": "Yugabyte",
+    "speakerType": "speaker",
     "borderColor": "#FB9216"
   },
   "TaylorMull": {
@@ -173,6 +194,7 @@
     "speakerId": "taylor-mull",
     "speakerPosition":"Data Engineer",
     "speakerCompany":"Yugabyte",
+    "speakerType": "speaker",
     "borderColor":"#FF6E42"
   },
   "ChiragNarang": {
@@ -181,6 +203,7 @@
     "speakerId": "chirag-narang",
     "speakerPosition":"Product Management - Platform/Cloud",
     "speakerCompany":"Yugabyte",
+    "speakerType": "speaker",
     "borderColor":"#DF0012"
   },
   "AlanCaldera": {
@@ -189,6 +212,7 @@
     "speakerId": "alan-caldera",
     "speakerPosition":"Principal Solution Architect",
     "speakerCompany":"Yugabyte",
+    "speakerType": "speaker",
     "borderColor":"#781A80"
   },
   "KarthikRanganathan": {
@@ -197,6 +221,16 @@
     "speakerId": "karthik-ranganathan",
     "speakerPosition":"CTO and Co-Founder",
     "speakerCompany":"Yugabyte",
+    "speakerType": "speaker",
     "borderColor":"#FB9216"
+  },
+  "MichelleBrinich": {
+    "speakerPicture": "MichelleBrinich",
+    "speakerName": "Michelle Brinich",
+    "speakerId": "michelle-brinich",
+    "speakerPosition": "Sr. Director, Marketing",
+    "speakerCompany": "Yugabyte",
+    "speakerType": "emcee",
+    "borderColor": "#FF6E42"
   }
 }
