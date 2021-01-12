@@ -63,6 +63,20 @@ const LandingSpeaker = (props) => (
           }
         }
       }
+      CemAladogan1: file(relativePath: { eq: "CemAladogan.jpeg" }) {
+        childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      CetinYalcinGulec1: file(relativePath: { eq: "CetinYalcinGulec.jpeg" }) {
+        childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
       CharlesPretzer1: file(relativePath: { eq: "CharlesPretzer.png" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
@@ -71,6 +85,13 @@ const LandingSpeaker = (props) => (
         }
       }
       ChiragNarang1: file(relativePath: { eq: "ChiragNarang.jpeg" }) {
+        childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      CorneliaDavis1: file(relativePath: { eq: "CorneliaDavis.jpeg" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid
@@ -175,6 +196,13 @@ const LandingSpeaker = (props) => (
           }
         }
       }
+      ShivamArora1: file(relativePath: { eq: "ShivamArora.jpeg" }) {
+        childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
       ShraddhaAgrawal1: file(relativePath: { eq: "ShraddhaAgrawal.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
@@ -183,6 +211,13 @@ const LandingSpeaker = (props) => (
         }
       }
       TaylorMull1: file(relativePath: { eq: "TaylorMull.jpeg" }) {
+        childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      TobiasMeixner1: file(relativePath: { eq: "TobiasMeixner.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid

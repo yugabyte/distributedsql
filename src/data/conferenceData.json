@@ -119,6 +119,24 @@
       "description": "GraphQL subscriptions are seeing broader adoption in building event-driven microservices. Popular GraphQL servers achieve subscriptions through live queries. Live queries are nothing but querying the backing database at a fixed time interval. Obviously, as the number of subscriptions increases, it increases the query load on the database. Any other DML operations on a database will strain the resources of the monolithic single-node database.<br /><br />In this talk, we will walk through steps for implementing resilient and scalable GraphQL subscriptions using Hasura Engine and YugabyteDB on Kubernetes. Components of the stack, including the database, can be linearly scaled independently of each other. In addition to linear scalability, GraphQL subscriptions will inherently become resilient against outages due to the fault tolerance and HA capabilities of distributed SQL databases."
     },
     {
+      "id": "0d3qs3",
+      "speakers": ["CetinYalcinGulec","ShivamArora","CemAladogan"],
+      "talk": "Centralize Commercial Consent Database for 80M Citizens Across More Than 100K Companies",
+      "time": "1.30 - 2 pm",
+      "start": "2021-01-21T13:30:00+05:30",
+      "end": "2021-01-21T14:00:00+05:30",
+      "description": "It is important to provide speed, agility, consistency and redundancy while achieving scalability of a NoSQL database. There are challenges to store the data in high volume with high velocity and orchestrate separated data centers where STAs can query encrypted data less than 5 milliseconds. The system must replicate data in near real time between data centers that it is important to present the latest version of information to any requester. Using the distributed data management power of YugabyteDB, this talk will explain how distributed data can be served with Micro Services without compromising on performance or consistency"
+    },
+    {
+      "id": "2o120c",
+      "speakers": ["TobiasMeixner"],
+      "talk": "A Migration Journey from Amazon DynamoDB to Yugabyte YSQL and Hasura",
+      "time": "2 - 2.30 pm",
+      "start": "2021-01-21T14:00:00+05:30",
+      "end": "2021-01-21T14:30:00+05:30",
+      "description": "Switching databases is painful, even more so going from NoSQL to SQL. This talk will give insights into BRIKL's migration path from Apollo Server and Amazon DynamoDB over to Hasura and Yugabyte YSQL, going from a growing monolith to a scalable service-oriented architecture."
+    },
+    {
       "id": "14mbp3",
       "speakers": ["NishantModak"],
       "talk": "Last9.io - Coming Soon",
@@ -128,6 +146,14 @@
     }
   ],
   [
+    {
+      "id": "zdkqtc",
+      "speakers": ["CorneliaDavis"],
+      "talk": "Weaveworks - Coming Soon",
+      "time": "10 - 10.30 am",
+      "start": "2021-01-22T10:00:00+05:30",
+      "end": "2021-01-22T10:30:00+05:30"
+    },
     {
       "id": "6x6zbe",
       "speakers": ["PrasadBopardikar","MichaelJames"],
@@ -194,10 +220,11 @@
     {
       "id": "jdpi9f",
       "speakers": ["MichelleBrinich"],
-      "talk": "Closing Keynote - Coming Soon",
+      "talk": "Closing Keynote",
       "time": "2.30 - 3 pm",
       "start": "2021-01-22T14:30:00+05:30",
-      "end": "2021-01-22T15:00:00+05:30"
+      "end": "2021-01-22T15:00:00+05:30",
+      "description": "In this session, we’ll close out the Distributed SQL Summit Asia event with final remarks, including highlights from the week and more."
     }
   ]
 ]

@@ -161,6 +161,51 @@
     "speakerType": "speaker",
     "borderColor": "#FF6E42"
   },
+  "CemAladogan": {
+    "speakerPicture": "CemAladogan",
+    "speakerName": "Cem Aladogan",
+    "speakerId": "cem-aladogan",
+    "speakerPosition": "Product Manager of Data Plateau",
+    "speakerCompany": "Softtech",
+    "speakerType": "speaker",
+    "borderColor": "#DF0012"
+  },
+  "CetinYalcinGulec": {
+    "speakerPicture": "CetinYalcinGulec",
+    "speakerName": "Cetin Yalcin Gulec",
+    "speakerId": "cetin-yalcin-gulec",
+    "speakerPosition": "Head of Analytics",
+    "speakerCompany": "Softtech",
+    "speakerType": "speaker",
+    "borderColor": "#781A80"
+  },
+  "ShivamArora": {
+    "speakerPicture": "ShivamArora",
+    "speakerName": "Shivam Arora",
+    "speakerId": "shivam-arora",
+    "speakerPosition": "Product Architect of Data Plateau",
+    "speakerCompany": "Softtech",
+    "speakerType": "speaker",
+    "borderColor": "#FB9216"
+  },
+  "CorneliaDavis": {
+    "speakerPicture": "CorneliaDavis",
+    "speakerName": "Cornelia Davis",
+    "speakerId": "cornelia-davis",
+    "speakerPosition": "CTO",
+    "speakerCompany": "Weaveworks",
+    "speakerType": "speaker",
+    "borderColor": "#FF6E42"
+  },
+  "TobiasMeixner": {
+    "speakerPicture": "TobiasMeixner",
+    "speakerName": "Tobias Meixner",
+    "speakerId": "tobias-meixner",
+    "speakerPosition": "CTO and Co-Founder",
+    "speakerCompany": "BRIKL",
+    "speakerType": "speaker",
+    "borderColor": "#DF0012"
+  },
   "NikhilChandrappa": {
     "speakerPicture": "NikhilChandrappa",
     "speakerName": "Nikhil Chandrappa",
