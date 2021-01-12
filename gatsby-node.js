@@ -20,9 +20,6 @@ exports.createPages = async ({ graphql, actions }) => {
   const sessionPageTemplate = path.resolve("src/page-templates/session.js")
   conferenceData.forEach(confDaySessions => confDaySessions.forEach(talk => {
     try {
-      if (talk.transcription) {
-        console.log(talk)
-      }
       createPage({
         path: `/session/${talk.id}`,
         component: sessionPageTemplate,

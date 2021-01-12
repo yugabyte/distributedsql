@@ -10,7 +10,6 @@ const speakerData = require('../data/data.json')
 
 const SessionPage = (props) => {
   const { talk, description, speakers, video, transcription } = props.pageContext;
-  console.log(props.pageContext);
   const talkSpeakers = speakers.map(id => {
     return {
       ...speakerData[id],
