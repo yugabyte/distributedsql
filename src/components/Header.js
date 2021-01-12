@@ -11,6 +11,7 @@ const Header = (props) => (
           <div className="logo-text">Distributed SQL<br />Summit <strong>2020</strong></div>
         </Link>
         <nav>
+          <div id="dss-asia-toast">Interested in more? Check out <a href="https://asia.distributedsql.org">Distributed SQL Summit Asia</a>!</div>
           <Link to="/schedule">Schedule</Link>
         </nav>
         {/* <nav>

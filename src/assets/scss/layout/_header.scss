@@ -186,6 +186,41 @@
 					}
 				}
 			}
+
+			@keyframes slidedown {
+				from {
+				  margin-top: -100%;
+				}
+			  
+				to {
+				  margin-top: 15px;
+				}
+			  }
+
+			
+			#dss-asia-toast {
+				margin: -100% auto 0;
+				background: transparent linear-gradient(259deg,#fe9513,#741782) 0 0 no-repeat padding-box;
+				color: white;
+				padding: 0px 30px;
+    			height: 60px;
+				border-radius: 8px;
+				animation-duration: 1.4s;
+				animation-delay: 3s;
+				animation-name: slidedown;	
+        		animation-fill-mode: forwards;		  				  
+
+				> a {
+					padding: 0;
+					position: relative;
+					display: inline;
+					text-decoration: underline;
+
+					&:hover {
+						color: #0056b3 !important;
+					}
+				}
+			}
 		}
 
 		&.reveal {
