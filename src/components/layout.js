@@ -28,13 +28,13 @@ class Layout extends React.Component {
     return (
       <div className={`body ${this.state.isMenuVisible ? 'is-menu-visible' : ''}`}>
         <Helmet
-          title="Distributed SQL Summit"
+          title="Distributed SQL Summit Asia"
           meta={[
-            { name: 'description', content: 'Distributed SQL Summit' },
-            { name: 'keywords', content: 'Distributed SQL, Postgres, YugaByte' },
+            { name: 'description', content: 'Distributed SQL Summit Asia' },
+            { name: 'keywords', content: 'Distributed SQL, Postgres, YugaByte, Asia' },
             { name: 'google-site-verification', content: 'IrJBdGcrNYjaVXTiMFpMckF5pC2MsY9x6nt8TgMtmGE' },
-            { name: 'image', content: 'https://distributedsql.org/Icon.png' },
-            { name: 'og:url', content: 'https://distributedsql.org' },
+            { name: 'image', content: 'https://asia.distributedsql.org/Icon.png' },
+            { name: 'og:url', content: 'https://asia.distributedsql.org' },
             { name: 'og:title', content: 'Distributed SQL Summit' },
             { name: 'og:description', content: 'Distributed SQL Summit' },
             { name: 'twitter:image', content: 'https://asia.distributedsql.org/OGImage.png' },
