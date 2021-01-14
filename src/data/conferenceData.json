@@ -212,7 +212,7 @@
     {
       "id": "y3hijh",
       "speakers": ["PraveenKumarPurushothaman"],
-      "talk": "Introducing YERN and YEAN: Developing Scalable React and Node.js Apps with Distributed SQL",
+      "talk": "Introducing YERN: Developing Scalable React and Node.js Apps with Distributed SQL",
       "time": "2 - 2.30 pm",
       "start": "2021-01-22T14:00:00+05:30",
       "end": "2021-01-22T14:30:00+05:30",
