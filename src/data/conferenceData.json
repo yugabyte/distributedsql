@@ -104,10 +104,11 @@
     {
       "id": "0wayh3",
       "speakers": ["CharlesPretzer"],
-      "talk": "Linkerd/Buoyant - Coming Soon",
+      "talk": "Beyond Security: Using Linkerd to Get Metrics for YugabyteDB",
       "time": "12.30 - 1 pm",
       "start": "2021-01-21T12:30:00+05:30",
-      "end": "2021-01-21T13:00:00+05:30"
+      "end": "2021-01-21T13:00:00+05:30",
+      "description": "In a recent blog post, Bhavin Ghandi, wrote about using Linkerd with YugabyteDB to enforce mTLS for your YugabyteDB workloads. In this presentation, we'll use that same example and focus on the metrics that we can get from that same configuration, and we'll talk about why it's important to understand the performance characteristics of YugabyteDB's distributed workloads."
     },
     {
       "id": "fuqmyr",
