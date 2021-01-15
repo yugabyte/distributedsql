@@ -181,16 +181,7 @@
       "start": "2021-01-22T11:30:00+05:30",
       "end": "2021-01-22T12:00:00+05:30",
       "description": "Delivering real-time and reference market data at scale requires high scalability, high performance, and cost effectiveness. In this talk, Qin Yu, SVP of Engineering and Operations, will share Xignite’s cloud native database journey—from SQL Server on AWS with Amazon RDS to other database deployments to the current architecture powered by YugabyteDB. Along the way, Qin will share the strategy and key requirements behind the decisions to move a variety of enterprise workloads (time series and reference data, across lines of business) to distributed SQL."
-    },
-    {
-      "id": "ct3gwj",
-      "talk": "YugabyteDB Performance: History and Future",
-      "speakers": ["CharlotteHamilton"],
-      "time": "12 - 12.30 pm",
-      "start": "2021-01-22T12:00:00+05:30",
-      "end": "2021-01-22T12:30:00+05:30",
-      "description": "From its inception YugabyteDB was designed with performance in mind. With greater rates of adoption and increased usage in the commercial world, the need for adaptation and improvement has remained a constant design driver with each new release. This talk covers the evolution of YugabyteDB’s performance design concepts, as well as the potential that lies ahead for even more Yugabyte performance."
-    },
+    },   
     {
       "id": "9c23yp",
       "speakers": ["AnjulSahu"],
@@ -199,6 +190,15 @@
       "start": "2021-01-22T12:30:00+05:30",
       "end": "2021-01-22T13:00:00+05:30",
       "description": "This talk is an introduction to service mesh features in the context of YugabyteDB. In this talk, we will explore how the security and observability of the database and applications hosted on the Kubernetes platform can be improved without changing the code."
+    },
+    {
+      "id": "ct3gwj",
+      "talk": "YugabyteDB Performance: History and Future",
+      "speakers": ["CharlotteHamilton"],
+      "time": "1 - 1.30 pm",
+      "start": "2021-01-22T13:00:00+05:30",
+      "end": "2021-01-22T13:30:00+05:30",
+      "description": "From its inception YugabyteDB was designed with performance in mind. With greater rates of adoption and increased usage in the commercial world, the need for adaptation and improvement has remained a constant design driver with each new release. This talk covers the evolution of YugabyteDB’s performance design concepts, as well as the potential that lies ahead for even more Yugabyte performance."
     },
     {
       "id": "pldncj",
