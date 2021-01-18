@@ -12,7 +12,7 @@ const ContactBanner = ({ title, description, btnText, btnLink }) => (
           }
         }
       }
-      mobileFooterImage: file(relativePath: { eq: "Dist-SQL-Mobile-Footer.png" }) {
+      mobileFooterImage: file(relativePath: { eq: "DSS-Asia-Mob-Footer.png" }) {
         childImageSharp {
           fluid(quality: 100, maxWidth: 700) {
             ...GatsbyImageSharpFluid_withWebp

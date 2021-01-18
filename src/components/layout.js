@@ -38,7 +38,7 @@ class Layout extends React.Component {
             { name: 'og:title', content: 'Distributed SQL Summit' },
             { name: 'og:description', content: 'Distributed SQL Summit' },
             { name: 'twitter:image', content: 'https://asia.distributedsql.org/OGImage.png' },
-            { name: 'twitter:image', content: 'https://asia.distributedsql.org/OGImage.png' },
+            { name: 'twitter:image:src', content: 'https://asia.distributedsql.org/OGImage.png' },
             { name: 'og:image:secure_url', content: 'https://asia.distributedsql.org/OGImage.png' },
             { name: 'twitter:image:secure_url', content: 'https://asia.distributedsql.org/OGImage.png' },
             { name: 'twitter:card', content: 'summary_large_image' },

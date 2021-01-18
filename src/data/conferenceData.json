@@ -181,7 +181,16 @@
       "start": "2021-01-22T11:30:00+05:30",
       "end": "2021-01-22T12:00:00+05:30",
       "description": "Delivering real-time and reference market data at scale requires high scalability, high performance, and cost effectiveness. In this talk, Qin Yu, SVP of Engineering and Operations, will share Xignite’s cloud native database journey—from SQL Server on AWS with Amazon RDS to other database deployments to the current architecture powered by YugabyteDB. Along the way, Qin will share the strategy and key requirements behind the decisions to move a variety of enterprise workloads (time series and reference data, across lines of business) to distributed SQL."
-    },   
+    },
+    {
+      "id": "u7an19y",
+      "speakers": ["EricPratt"],
+      "talk": "Failure Is Not An Option: Highly Available Distributed SQL",
+      "time": "12 pm - 12.30 pm",
+      "start": "2021-01-22T12:00:00+05:30",
+      "end": "2021-01-22T12:30:00+05:30",
+      "description": "YugabyteDB is purpose built for geo-distributed applications that require high availability. In this talk we will discuss how Yugabyte survives failures at the node, availability zone, and region levels. We will go through what happens for each scenario and how Yugabyte DB handles each situation to ensure that your application is always available."
+    },
     {
       "id": "9c23yp",
       "speakers": ["AnjulSahu"],

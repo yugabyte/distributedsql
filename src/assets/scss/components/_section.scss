@@ -342,3 +342,10 @@ header {
 		}
 	}
 }
+
+@include breakpoint(small) {
+	#conf-description .description > div {
+		font-size: 16px;
+		padding-top: 20px;
+	}
+}

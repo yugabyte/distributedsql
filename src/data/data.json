@@ -260,6 +260,15 @@
     "speakerType": "speaker",
     "borderColor":"#781A80"
   },
+  "EricPratt": {
+    "speakerPicture": "EricPratt",
+    "speakerName": "Eric Pratt",
+    "speakerId": "eric-pratt",
+    "speakerPosition":"Solutions Engineer",
+    "speakerCompany":"Yugabyte",
+    "speakerType": "speaker",
+    "borderColor":"#FF6E42"
+  },
   "KarthikRanganathan": {
     "speakerPicture": "KarthikRanganathan",
     "speakerName": "Karthik Ranganathan",

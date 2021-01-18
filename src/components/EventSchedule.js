@@ -125,6 +125,13 @@ const EventSchedule = (props) => {
           }
         }
       }
+      EricPratt1: file(relativePath: { eq: "EricPratt.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
       GregHaskins1: file(relativePath: { eq: "GregHaskins.png" }) {
         childImageSharp {
           fluid(maxWidth: 500) {

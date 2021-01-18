@@ -348,7 +348,6 @@
     .banner-caption-bar {
       padding: 18px 40px;
       font-size: 18px;
-      margin: 0 auto -94px;
 
       img {
         margin-right: 14px;
@@ -356,19 +355,8 @@
     }
   }
 
-  @media screen and (max-width: 737px) {
-    .banner-caption-bar {
-      margin: 0 auto -82px;
-    }
-
-    .container {
-      margin-top: 50px;
-    }
-  }
-
   @media screen and (max-width: 544px) {
     .banner-caption-bar {
-      margin: 0 auto -78px;
       font-size: 16px;
 
       img {
@@ -648,11 +636,13 @@
 		{
 			padding-top: 1em;
 			margin-bottom: 40px;
+			text-align: center;
 		}
 		h1 {
 			padding-top: 5px;
 			line-height: normal;
 			font-size: 2.5em;
+			text-align: center;
 		}
 		h2 {
 			font-size: 1.5em;
