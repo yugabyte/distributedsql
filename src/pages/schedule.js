@@ -20,6 +20,8 @@ class Schedule extends React.Component {
                         { name: 'og:description', content: 'See the schedule for the list of speakers giving talks at the 2nd annual Distributed SQL Summit, a free online conference to push the boundaries of cloud native RDBMS forward.' },
                         { name: 'twitter:card', content: 'summary_large_image' },
                         { name: 'twitter:description', content: 'See the schedule for the list of speakers giving talks at the 2nd annual Distributed SQL Summit, a free online conference to push the boundaries of cloud native RDBMS forward.' },
+                        { name: 'twitter:image', content: 'https://asia.distributedsql.org/OGImage.png' },
+                        { name: 'twitter:image:src', content: 'https://asia.distributedsql.org/OGImage.png' },
                         { name: 'twitter:site', content: '@yugabyte' },
                         { name: 'twitter:creator', content: '@yugabyte' }
                     ]}>

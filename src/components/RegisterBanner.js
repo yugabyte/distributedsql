@@ -12,7 +12,7 @@ const RegisterBanner = ({ confirmed }) => (
           }
         }
       }
-      mobileBannerImage: file(relativePath: { eq: "Dist-SQL-Mobile-Header.png" }) {
+      mobileBannerImage: file(relativePath: { eq: "DSS-Asia-Mob-Header.png" }) {
         childImageSharp {
           fluid(quality: 100, maxWidth: 700) {
             ...GatsbyImageSharpFluid_withWebp
