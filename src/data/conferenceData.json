@@ -43,7 +43,7 @@
       "time": "1 - 2 pm",
       "start": "2021-01-20T13:00:00+05:30",
       "end": "2021-01-20T14:00:00+05:30",
-      "description": "In this session, John and Taylor from Yugabyte, walks through an overview of YugabyteDB's architecture and how to apply operational best practices to its administrations. Topics covered included:<br /><ul><br /><li>Self-service deployments</li><br /><li>Deployment topologies</li><br /><li>Automation</li><br /><li>Data recoverability</li><br /><li>Config management</li><br /><li>Monitoring & health checks</li><br /><li>Security integration</li><br /></ul>"
+      "description": "In this session, John and Taylor from Yugabyte walk through an overview of YugabyteDB's architecture and how to apply operational best practices to its administrations. Topics covered include:<br /><ul><br /><li>Self-service deployments</li><br /><li>Deployment topologies</li><br /><li>Automation</li><br /><li>Data recoverability</li><br /><li>Config management</li><br /><li>Monitoring & health checks</li><br /><li>Security integration</li><br /></ul>"
     },
     {
       "id": "vc24dm",
