@@ -13,9 +13,9 @@ const conferenceSchedule = require('../data/conferenceData')
 const featuredSpeakers = require('../data/data.json')
 
 const dateOptions = [
-  { value: 'sept-15', label: 'Sept 15' },
-  { value: 'sept-16', label: 'Sept 16' },
-  { value: 'sept-17', label: 'Sept 17' }
+  { value: 'jan-20', label: 'Jan 20' },
+  { value: 'jan-21', label: 'Jan 21' },
+  { value: 'jan-22', label: 'Jan 22' }
 ];
 
 const EventSchedule = (props) => {
@@ -362,7 +362,7 @@ const EventSchedule = (props) => {
                 </li>
                 <li>
                   <div className="column-header">
-                    <div id="sept-16" className="calendar-date">
+                    <div id="jan-21" className="calendar-date">
                       <div>Jan</div>
                       <strong>21</strong>                  
                     </div>
@@ -399,7 +399,7 @@ const EventSchedule = (props) => {
                 </li>
                 <li>
                   <div className="column-header">
-                    <div id="sept-17" className="calendar-date">
+                    <div id="jan-22" className="calendar-date">
                       <div>Jan</div>
                       <strong>22</strong>                  
                     </div>
