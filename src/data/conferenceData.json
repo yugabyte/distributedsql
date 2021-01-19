@@ -148,11 +148,12 @@
     },
     {
       "id": "14mbp3",
-      "speakers": ["NishantModak"],
-      "talk": "Last9.io - Coming Soon",
+      "speakers": ["MichelleBrinich"],
+      "talk": "Day 1 Wrap Up & Day 2 Look Ahead",
       "time": "2.30 - 3 pm",
       "start": "2021-01-21T14:30:00+05:30",
-      "end": "2021-01-21T15:00:00+05:30"
+      "end": "2021-01-21T15:00:00+05:30",
+      "description": "In this session, we’ll close out the first day of Distributed SQL Summit Asia with some informational (and fun!) highlights, and we’ll give you a glimpse into the exciting things ahead on Day 2."
     }
   ],
   [
