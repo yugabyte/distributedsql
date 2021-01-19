@@ -64,7 +64,16 @@
       "description": "How a large intertwined Mainframe Monolith can be broken down into Microservices in a practical approach, using YugabyteDB as the distributed SQL database on the backend. The end-to-end approach covers Wipro’s proprietary \"moderniZ\" platform which addresses UI, Services and Data Transformation."
     }
   ],
-  [    
+  [
+    {
+      "id": "1p1wbj",
+      "speakers": ["DivyaGoel","AashishKapoor"],
+      "talk": "Scalable Product Mappings with YugabyteDB",
+      "time": "10 - 10.30 am",
+      "start": "2021-01-21T10:00:00+05:30",
+      "end": "2021-01-21T10:30:00+05:30",
+      "description": "In this session, we will share our journey transforming the Product Identification Service at Walmart, and the role an open-sourced, transactional distributed database played. We will also discuss the multi-region deployment architecture of this new service, where we were able to leverage read-replica capabilities to separate write and read traffic to support very high ingestions rates, and serve data at single digit millisecond latency."
+    },    
     {
       "id": "djhitl",
       "speakers": ["GregHaskins"],
@@ -94,7 +103,7 @@
     },
     {
       "id": "s7zi2b",
-      "speakers": ["LaurentGil"],
+      "speakers": ["LeonKuperman"],
       "talk": "An Adventure in Multi-Cloud with Kubernetes and Distributed Data",
       "time": "12 - 12.30 pm",
       "start": "2021-01-21T12:00:00+05:30",
@@ -150,7 +159,7 @@
     {
       "id": "zdkqtc",
       "speakers": ["CorneliaDavis"],
-      "talk": "Weaveworks - Coming Soon",
+      "talk": "Cloud Native Patterns: Shifting Responsibilities",
       "time": "10 - 10.30 am",
       "start": "2021-01-22T10:00:00+05:30",
       "end": "2021-01-22T10:30:00+05:30"
@@ -229,12 +238,12 @@
     },
     {
       "id": "jdpi9f",
-      "speakers": ["MichelleBrinich"],
-      "talk": "Closing Keynote",
+      "speakers": ["AndyManoske"],
+      "talk": "Vault + Distributed SQL: Protecting Data Where it Lives",
       "time": "2.30 - 3 pm",
       "start": "2021-01-22T14:30:00+05:30",
       "end": "2021-01-22T15:00:00+05:30",
-      "description": "In this session, we’ll close out the Distributed SQL Summit Asia event with final remarks, including highlights from the week and more."
+      "description": "Vault Enterprise's Transform Secret Engine is a mechanism for protecting large quantities of sensitive data against theft or attack from advanced adversaries. In this talk, Andy Manoske from HashiCorp details how Transform protects data for some of the largest consumer brands in the world, and how Distributed SQL plays a key role in enabling Vault to render resilient, performant access to that protected data anywhere on the globe."
     }
   ]
 ]

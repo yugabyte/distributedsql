@@ -1,9 +1,9 @@
 {
-  "LaurentGil": {
-    "speakerPicture": "LaurentGil",
-    "speakerName": "Laurent Gil",
-    "speakerId": "laurent-gil",
-    "speakerPosition":"Co-Founder, Chief Product Officer",
+  "LeonKuperman": {
+    "speakerPicture": "LeonKuperman",
+    "speakerName": "Leon Kuperman",
+    "speakerId": "leon-kuperman",
+    "speakerPosition":"CTO",
     "speakerCompany":"CAST AI",
     "speakerType": "speaker",
     "borderColor":"#FB9216"
@@ -205,6 +205,33 @@
     "speakerCompany": "BRIKL",
     "speakerType": "speaker",
     "borderColor": "#DF0012"
+  },
+  "DivyaGoel": {
+    "speakerPicture": "DivyaGoel",
+    "speakerName": "Divya Goel",
+    "speakerId": "divya-goel",
+    "speakerPosition": "Staff Software Engineer",
+    "speakerCompany":"Walmart",
+    "speakerType": "speaker",
+    "borderColor":"#781A80"
+  },
+  "AashishKapoor": {
+    "speakerPicture": "AashishKapoor",
+    "speakerName": "Aashish Kapoor",
+    "speakerId": "aashish-kapoor",
+    "speakerPosition": "Staff Software Engineer",
+    "speakerCompany":"Walmart",
+    "speakerType": "speaker",
+    "borderColor":"#FB9216"
+  },
+  "AndyManoske": {
+    "speakerPicture": "AndyManoske",
+    "speakerName": "Andy Manoske",
+    "speakerId": "andy-manoske",
+    "speakerPosition": "Principal Product Manager - Cryptography and Security Products",
+    "speakerCompany":"HashiCorp",
+    "speakerType": "speaker",
+    "borderColor":"#FF6E42"
   },
   "NikhilChandrappa": {
     "speakerPicture": "NikhilChandrappa",

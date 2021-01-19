@@ -41,6 +41,13 @@ const EventSchedule = (props) => {
   return (
     <StaticQuery query={graphql`
     query {
+      AashishKapoor1: file(relativePath: { eq: "AashishKapoor.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
       AlanCaldera1: file(relativePath: { eq: "AlanCaldera.png" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
@@ -49,6 +56,13 @@ const EventSchedule = (props) => {
         }
       }
       AmeyBanarse1: file(relativePath: { eq: "AmeyBanarse.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      AndyManoske1: file(relativePath: { eq: "AndyManoske.jpeg" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid
@@ -125,6 +139,13 @@ const EventSchedule = (props) => {
           }
         }
       }
+      DivyaGoel1: file(relativePath: { eq: "DivyaGoel.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
       EricPratt1: file(relativePath: { eq: "EricPratt.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
@@ -153,7 +174,7 @@ const EventSchedule = (props) => {
           }
         }
       }
-      LaurentGil1: file(relativePath: { eq: "LaurentGil.jpeg" }) {
+      LeonKuperman1: file(relativePath: { eq: "LeonKuperman.jpeg" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid
