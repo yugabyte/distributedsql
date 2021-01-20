@@ -163,7 +163,8 @@
       "talk": "Cloud Native Patterns: Shifting Responsibilities",
       "time": "10 - 10.30 am",
       "start": "2021-01-22T10:00:00+05:30",
-      "end": "2021-01-22T10:30:00+05:30"
+      "end": "2021-01-22T10:30:00+05:30",
+      "description": "Applications running the cloud must be designed to handle extreme distribution and constant change. Until recently, design patterns that satisfy this need have predominantly been implemented in the application tier, but now cloud-native databases - distributed SQL databases - are helping to relieve the app developer of a great deal of burden. In this session we’ll have a look at key cloud-native patterns and study how they show up when the responsibility shifts from the app tier into the database."
     },
     {
       "id": "6x6zbe",
