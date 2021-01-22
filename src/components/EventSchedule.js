@@ -265,7 +265,7 @@ const EventSchedule = (props) => {
           }
         }
       }
-      CharlotteHamilton1: file(relativePath: { eq: "CharlotteHamilton.png" }) {
+      JimmyGuerrero1: file(relativePath: { eq: "JimmyGuerrero.jpeg" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid

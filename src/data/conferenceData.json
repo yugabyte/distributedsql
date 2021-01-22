@@ -213,12 +213,12 @@
     },
     {
       "id": "ct3gwj",
-      "talk": "YugabyteDB Performance: History and Future",
-      "speakers": ["CharlotteHamilton"],
+      "talk": "YugabyteDB In Action",
+      "speakers": ["JimmyGuerrero"],
       "time": "1 - 1.30 pm",
       "start": "2021-01-22T13:00:00+05:30",
       "end": "2021-01-22T13:30:00+05:30",
-      "description": "From its inception YugabyteDB was designed with performance in mind. With greater rates of adoption and increased usage in the commercial world, the need for adaptation and improvement has remained a constant design driver with each new release. This talk covers the evolution of YugabyteDB’s performance design concepts, as well as the potential that lies ahead for even more Yugabyte performance."
+      "description": "Learn how to perform dozens of useful tasks in YugabyteDB in 20 mins.<br /><ul><br /><li>Installing YugabyteDB locally and on GKE</li><br /><li>Setting up JDBC Connections for Admin Tools</li><br /><li>Install the Northwind Sample Database</li><br /><li>Exploring PostgreSQL Compatibility with Users, Schemas, Functions and Triggers</li><br /><li>Testing Fault Tolerance and Resizing Clusters</li></ul>"
     },
     {
       "id": "pldncj",

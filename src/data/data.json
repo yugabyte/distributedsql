@@ -242,11 +242,11 @@
     "speakerType": "speaker",
     "borderColor": "#DF0012"
   },
-  "CharlotteHamilton": {
-    "speakerPicture": "CharlotteHamilton",
-    "speakerName": "Charlotte Hamilton",
-    "speakerId": "charlotte-hamilton",
-    "speakerPosition": "Advanced Technology Services Engineer",
+  "JimmyGuerrero": {
+    "speakerPicture": "JimmyGuerrero",
+    "speakerName": "Jimmy Guerrero",
+    "speakerId": "jimmy-guerrero",
+    "speakerPosition": "VP Marketing and Community",
     "speakerCompany": "Yugabyte",
     "speakerType": "speaker",
     "borderColor": "#781A80"
