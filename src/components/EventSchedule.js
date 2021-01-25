@@ -460,9 +460,6 @@ const EventSchedule = (props) => {
                   setShowModal(false)
                   window.history.replaceState(null, 'Schedule', '/schedule');
                 }}
-                footer={[
-                  registerButton,                  
-                ]}
               />
             }
           </section>

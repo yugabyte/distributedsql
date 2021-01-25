@@ -71,9 +71,9 @@ const Banner = ({ title, showPresents, showCaptionBar, hideSecondary }) => (
                     </li>
                   </ul>
                   <div className="cta-bar">                    
-                    <Link to="/register" className="btn-rounded">
+                    {/* <Link to="/register" className="btn-rounded">
                       Register
-                    </Link>
+                    </Link> */}
                     {!hideSecondary && <Link to="/schedule" className="btn-rounded secondary">
                         View Schedule
                     </Link>}

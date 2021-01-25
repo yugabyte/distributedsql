@@ -29,9 +29,9 @@ class Schedule extends React.Component {
                 <Banner title="Schedule" hideSecondary/>
                 <EventSchedule />
                 <ContactBanner
-                    title="Join Us!"
-                    btnText="Register"
-                    btnLink="https://asia.distributedsql.org/register/"
+                    title="Questions?"
+                    btnText="Contact Us"
+                    btnLink="https://www.yugabyte.com/contact-us/"
                 />
             </Layout>
         )
