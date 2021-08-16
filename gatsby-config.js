@@ -42,17 +42,11 @@ module.exports = {
   plugins: [
     ...productionPlugins,
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          {
-            family: `Roboto`,
-
-          },
-          {
-            family: `Nunito`,
-            variants: [`400`,`800`,`800i`,`900`,`900i`]
-          }
+          'Roboto',
+          'Nunito'
         ],
       },
     },

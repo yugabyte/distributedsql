@@ -44,9 +44,7 @@ const SpeakerPage = (props) => {
                       }}>
                       {
                           speakerPicture ?
-                          <Img style={{
-
-                          }} fluid={speakerPicture} alt={speakerName} />
+                          <Img fluid={speakerPicture} alt={speakerName} />
                           :null
                       }
                       </div>
