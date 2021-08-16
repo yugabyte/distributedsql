@@ -37,7 +37,7 @@ class HomeIndex extends React.Component {
                 <ContactBanner
                     title="Have a talk to propose?"
                     description="Or questions about the Distributed SQL Summit?"
-                    btnText="Contact Us"
+                    btnText="Contact"
                     btnLink="https://yugabyte.com/contact-us"
                 />
             </Layout>
