@@ -274,7 +274,7 @@ module.exports = [
     {
       "id": "y3hijh",
       "speakers": ["KarthikRanganathan"],
-      "talk": "Closing Keynote: Distributed SQL Virtual Summit 2020",
+      "talk": "Closing Keynote: Distributed SQL Summit 2021",
       "time": "2.30 - 3 pm",
       "start": "2020-09-17T14:30:00-07:00",
       "end": "2020-09-17T15:00:00-07:00",

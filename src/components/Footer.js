@@ -20,7 +20,7 @@ const Footer = ({ dark, socialIcons }) => (
                 </div>
             }
             <div className="legal">
-                <div className="copyright">© Yugabyte, Inc. 2020</div>
+                <div className="copyright">© Yugabyte, Inc. 2021</div>
                 <ul className="support-links">
                     <li><a href="https://www.yugabyte.com/support-policy/">Terms</a></li>
                     <li>|</li>

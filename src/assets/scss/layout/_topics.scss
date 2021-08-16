@@ -1,6 +1,6 @@
 /* Topics */
 #topics {
-    background: #FFFFFF;
+    background: #EEF1FA;
     text-align: center;
     padding: 100px 0;
     margin: 0;
@@ -19,7 +19,7 @@
     .topics__content { 
         display: flex;
         text-align: left;
-        max-width: 1024px;
+        max-width: 1440px;
         margin: 0 auto;
         justify-content: space-between;
 
@@ -69,6 +69,7 @@
         max-width: 680px;
         margin: 0 auto 50px;
         font-size: 22px;
+        font-weight: 400;
 
         strong {
             color: #000041;

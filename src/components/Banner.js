@@ -8,14 +8,14 @@ import { graphql, Link, StaticQuery } from 'gatsby'
 const Banner = ({ title, showPresents, showCaptionBar, hideSecondary }) => (
   <StaticQuery query={graphql`
     query {
-      desktopBannerImage: file(relativePath: { eq: "Dist-SQL-Desktop-Header.png" }) {
+      desktopBannerImage: file(relativePath: { eq: "DSS-2021-Desktop-Header.png" }) {
         childImageSharp {
           fluid(quality: 100, maxWidth: 4160) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
-      mobileBannerImage: file(relativePath: { eq: "Dist-SQL-Mobile-Header.png" }) {
+      mobileBannerImage: file(relativePath: { eq: "DSS-2021-Mobile-Header.png" }) {
         childImageSharp {
           fluid(quality: 100, maxWidth: 700) {
             ...GatsbyImageSharpFluid_withWebp
@@ -58,27 +58,23 @@ const Banner = ({ title, showPresents, showCaptionBar, hideSecondary }) => (
               <div className="container">
                 <ul className="details">
                   <li>
-                    <div>
-                      <h3>Sept 15, 2020 <span className="accent">Workshop Day</span></h3>
-                      <h3>Sept 16 - 17, 2020 <span className="accent">Conference Days</span></h3>
+                    <div>                      
+                      <h3>Sept 21 - 23, <span className="accent">2021</span> ·  Virtual  ·  50+ Speakers</h3>
                     </div>
-                  </li>
-                  <li>
-                    <div>
-                      <h3>10am – 3pm <span className="accent">Pacific</span></h3>
-                    </div>
-                  </li>
+                  </li>                  
                 </ul>
                 <div className="cta-bar">
-                  {!hideSecondary && <Link to="/schedule" className="btn-rounded secondary">
-                      View Schedule
-                  </Link>}
+                  {!hideSecondary && (
+                    <a href="https://www.eventbrite.com/e/distributed-sql-summit-2021-tickets-167058688033" target="_blank" rel="noopener noreferrer" className="btn-rounded secondary">
+                        Register Now
+                    </a>
+                  )}
                 </div>
               </div>
             </header>
             {showCaptionBar && 
               <div className="banner-caption-bar">
-                <img src={ConferenceIcon} /> A free online conference to push the boundaries of cloud native RDBMS forward.
+                <img src={ConferenceIcon} /> Database Experts and Technology Leaders from GM, Kroger, Fiserv, Rakuten, Wipro, and More Coming Soon!
               </div>
             }
           </div>          

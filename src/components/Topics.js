@@ -8,29 +8,40 @@ const Topics = () => (
         </header>
         <div className="topics__content">
             <div>
-                <h3>Developers:</h3>
+                <h3>Developers:</h3>                 
                 <ul>
-                    <li>How to scale microservices globally while maintaining sub-second latency</li>
-                    <li>Scalability without sacrificing data integrity or transactional consistency</li>
-                    <li>How to migrate an existing relational application to a distributed SQL database</li>
+                    <li>Scale resilient microservices globally while maintaining sub-second latency</li>
+                    <li>Migrate a relational application to a distributed SQL database</li>
+                    <li>Start building applications with distributed SQL in minutes with no operational overhead</li>
+                    <li>Join hands-on labs and workshops to build awesome apps</li>
                 </ul>
             </div>
             <div>
-            <h3>DevOps engineers:</h3>
-            <ul>
-                <li>How to migrate while capturing data from an existing monolithic database</li>
-                <li>How leaders deploy and manage distributed SQL databases across multiple geographic zones</li>
-                <li>Managing complexity in a Kubernetes world</li>
-            </ul>
+                <h3>DevOps engineers:</h3>
+                <ul>
+                    <li>Learn how to keep the database up through snowstorms, datacenter fires, network failures, and other outages</li>
+                    <li>Be prepared for Black Friday, Cyber Monday, and new product launch days</li>
+                    <li>Hear how the largest enterprises are efficiently delivering a DBaaS to their developers</li>
+                    <li>Apply best practices to deploy distributed SQL in a Kubernetes world</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Architects:</h3>        
+                <ul>
+                    <li>Learn about emerging data architectures in different industries</li>
+                    <li>Find out How leaders of F500 companies are tackling database modernization</li>
+                    <li>Understand how you can future proof your data infrastructure with a 100% open source distributed SQL database</li>
+                    <li>Minimize risk during large-scale database modernization efforts</li>
+                </ul>
             </div>
         </div>
         <hr className="topics__separator" />
         <p className="topics__caption">
-            <strong>And everyone will benefit from learning from industry leaders and experts in internet-scale, serverless, and distributed SQL.</strong>
+            <strong>Who Attends:</strong> DBA’s, Developers, DevOps Engineers, Architects, Business Leaders
         </p>
         <div className="topics__archive">
-            <Link to="/2019" className="btn-rounded secondary">
-                View 2019 Content
+            <Link to="/2020" className="btn-rounded secondary">
+                View 2020 Content
             </Link>
         </div>
     </section>

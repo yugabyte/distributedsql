@@ -5,14 +5,14 @@ import { graphql, StaticQuery, Link } from 'gatsby'
 const ContactBanner = ({ title, description, btnText, btnLink }) => (
   <StaticQuery query={graphql`
      query {
-      desktopFooterImage: file(relativePath: { eq: "Dist-SQL-Desktop-Footer.png" }) {
+      desktopFooterImage: file(relativePath: { eq: "DSS-2021-Desktop-Footer.png" }) {
         childImageSharp {
           fluid(quality: 100, maxWidth: 4160) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
-      mobileFooterImage: file(relativePath: { eq: "Dist-SQL-Mobile-Footer.png" }) {
+      mobileFooterImage: file(relativePath: { eq: "DSS-2021-Mobile-Footer.png" }) {
         childImageSharp {
           fluid(quality: 100, maxWidth: 700) {
             ...GatsbyImageSharpFluid_withWebp

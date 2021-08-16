@@ -41,7 +41,7 @@
 		box-shadow: 0 0 0.25em 0 rgba(0,0,0,0.15);
 		cursor: default;
 		font-weight: _font(weight-bold);
-		height: 5em;
+		height: 74px;
 		left: 0;
 		// letter-spacing: _font(letter-spacing-alt);
 		line-height: 3.25em;
@@ -52,9 +52,8 @@
 		z-index: _misc(z-index-base);
 
 		.cropped {
-			width: 56px;
-			height: 56px;
-			overflow: hidden;
+			width: auto;
+			height: 34px;
 		}
 
 		@include vendor('align-items', 'center');

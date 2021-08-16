@@ -12,15 +12,15 @@ export const DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/cal
 export const SCOPES = "https://www.googleapis.com/auth/calendar.events";
 
 const EVENT_OBJ = {
-  'summary': 'Distributed SQL Virtual Summit 2020',
+  'summary': 'Distributed SQL Summit 2021',
   'location': 'Virtual Conference',
-  'description': 'Join us for the second annual Distributed SQL Summit, the event that brings together thought leaders, database builders, and application developers to discuss how to leverage distributed SQL systems to build applications and services in the cloud. https://distributedsql.org/',
+  'description': 'Join us for the third annual Distributed SQL Summit, the event that brings together thought leaders, database builders, and application developers to discuss how to leverage distributed SQL systems to build applications and services in the cloud. https://distributedsql.org/',
   'start': {
-    'dateTime': '2020-09-15T10:00:00-07:00',
+    'dateTime': '2021-09-15T10:00:00-07:00',
     'timeZone': 'America/Los_Angeles'
   },
   'end': {
-    'dateTime': '2020-09-15T15:00:00-07:00',
+    'dateTime': '2021-09-15T15:00:00-07:00',
     'timeZone': 'America/Los_Angeles'
   },
   'recurrence': [
@@ -117,7 +117,7 @@ const Confirmation = () => {
                     }
                     <div className="event-title">{eventAdded ?
                       'Event has been added to your calendar!' :
-                      'Distributed SQL Virtual Summit 2020'
+                      'Distributed SQL Summit 2021'
                     }</div>
                   </div>
                   <div className="calendar-icon">

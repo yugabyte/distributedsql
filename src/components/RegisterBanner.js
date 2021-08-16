@@ -12,7 +12,7 @@ const RegisterBanner = ({ noText }) => (
           }
         }
       }
-      mobileBannerImage: file(relativePath: { eq: "Dist-SQL-Mobile-Header.png" }) {
+      mobileBannerImage: file(relativePath: { eq: "DSS-2021-Mobile-Header.png" }) {
         childImageSharp {
           fluid(quality: 100, maxWidth: 700) {
             ...GatsbyImageSharpFluid_withWebp
@@ -40,7 +40,7 @@ const RegisterBanner = ({ noText }) => (
                   <div className="link-text">Summit Page</div>
               </Link>
               <header className="major">
-                <h1>Register for Distributed SQL Virtual Summit 2020</h1>              
+                <h1>Register for Distributed SQL Summit 2021</h1>              
                 <div className="container">
                   <ul className="details">
                     <li>
