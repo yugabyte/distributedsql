@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/2020/*"
+  to = "https://2020.archive.distributedsql.org/:splat"
+  status = 200
+  force = true
