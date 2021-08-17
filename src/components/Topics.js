@@ -10,9 +10,9 @@ const Topics = () => (
             <div>
                 <h3>Developers:</h3>                 
                 <ul>
-                    <li>Scale resilient microservices globally while maintaining sub-second latency</li>
-                    <li>Migrate a relational application to a distributed SQL database</li>
                     <li>Start building applications with distributed SQL in minutes with no operational overhead</li>
+                    <li>Learn best practices to migrate a relational application to a distributed SQL database</li>
+                    <li>Learn how you can scale resilient microservices globally while maintaining sub-second latency</li>
                     <li>Join hands-on labs and workshops to build awesome apps</li>
                 </ul>
             </div>
