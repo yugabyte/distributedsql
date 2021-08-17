@@ -72,7 +72,7 @@ const WhatIsDistributedSQL = (props) => (
                 <h1>What is Distributed SQL?</h1>
                 <div className="content">
                   <p>
-                  Distributed SQL databases are relational databases that distribute data over multiple compute instances – each instance a node in a database cluster – and offer a SQL-compatible distributed query layer.. They are highly resilient, massively scalable, and can be geo-distributed across availability zones, regions, and often cloud providers. Distributed SQL databases deliver strong consistency and ACID transactions with single-digit millisecond latency. These databases are increasingly powering a new generation of always-on, highly available, hyper-scalable applications and microservices.
+                  A distributed SQL database is a single logical relational database that distributes data over multiple compute instances – each instance a node in a database cluster – and offers a SQL-compatible distributed query layer. All the data and transactions are query execution is distributed across the nodes of the cluster. Distributed SQL databases are resilient, massively scalable, and can be geo-distributed across availability zones, regions, and often cloud providers while also delivering ACID transactions and RDBMS capabilities. These databases are increasingly powering a new generation of always-on, highly available, hyper-scalable applications and microservices.
                     <a className="learn-more" href="https://blog.yugabyte.com/what-is-distributed-sql/"> Learn more about Distributed SQL</a>
                   </p>
                   <div className="actions">
