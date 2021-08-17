@@ -3,3 +3,9 @@
   to = "https://archive.distributedsql.org/2019/:splat"
   status = 200
   force = true
+
+[[redirects]]
+  from = "/2020/*"
+  to = "https://sharp-almeida-1a5b40.netlify.app/2020/:splat"
+  status = 200
+  force = true
