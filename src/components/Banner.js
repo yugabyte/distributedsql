@@ -74,7 +74,7 @@ const Banner = ({ title, showPresents, showCaptionBar, hideSecondary }) => (
             </header>
             {showCaptionBar && 
               <div className="banner-caption-bar">
-                <img src={ConferenceIcon} /> Database Experts and Technology Leaders from GM, Kroger, Fiserv, Rakuten, Wipro, and More Coming Soon!
+                <img src={ConferenceIcon} /> Sessions by Fiserv, GM, Kroger, Rakuten, Wipro, and more. New sessions coming soon!
               </div>
             }
           </div>          
