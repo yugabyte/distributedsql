@@ -1,5 +1,5 @@
 [[redirects]]
   from = "/2020/*"
-  to = "https://2020.archive.distributedsql.org/:splat"
+  to = "https://sharp-almeida-1a5b40.netlify.app/2020/:splat"
   status = 200
   force = true
