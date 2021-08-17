@@ -31,6 +31,7 @@ if(process.env.GATSBY_STAGE && process.env.GATSBY_STAGE==='production') {
   )
 }
 module.exports = {
+  pathPrefix: `/2020`,
   siteMetadata: {
     title: "Distributed SQL",
     author: "YugaByte Inc",
