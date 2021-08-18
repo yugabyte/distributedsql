@@ -44,15 +44,15 @@ const RegisterBanner = ({ noText }) => (
                 <div className="container">
                   <ul className="details">
                     <li>
-                      <h3>September 15 <span className="accent">2020</span></h3>
+                      <h3>September 15 <span className="accent">2021</span></h3>
                       <h3><span className="accent">Workshop Day</span></h3>
                     </li>
                     <li>
-                      <h3>September 16 - 17 <span className="accent">2020</span></h3>
+                      <h3>September 16 - 17 <span className="accent">2021</span></h3>
                       <h3><span className="accent">Conference Days</span></h3>
                     </li>
                     <li>
-                        <h3>10am – 3pm <span className="accent">Pacific</span></h3>
+                        <h3>9am – 2pm <span className="accent">Pacific</span></h3>
                     </li>                  
                   </ul>
                 </div>
