@@ -2,10 +2,9 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import Banner from '../components/Banner'
-// import EventSchedule from '../components/EventSchedule'
 import ContactBanner from '../components/ContactBanner'
 
-class Schedule extends React.Component {
+class Speakers extends React.Component {
     componentDidMount() {
         const script = document.createElement("script");
         script.src = "https://distributedsqlsummit2021.sched.com/js/embed.js";
@@ -17,9 +16,9 @@ class Schedule extends React.Component {
         return (
             <Layout>
                 <Helmet
-                    title="Schedule | Distributed SQL Summit"
+                    title="Speakers | Distributed SQL Summit"
                     meta={[
-                        { name: 'description', content: 'See the schedule for the list of speakers giving talks at the 3rd annual Distributed SQL Summit, a free online conference to push the boundaries of cloud native RDBMS forward.' },
+                        { name: 'description', content: 'See who is speaking at the 3rd annual Distributed SQL Summit, a free online conference to push the boundaries of cloud native RDBMS forward.' },
                         { name: 'keywords', content: 'Distributed SQL, Postgres, YugaByte, schedule, speakers, talks' },
                         { name: 'google-site-verification', content: 'IrJBdGcrNYjaVXTiMFpMckF5pC2MsY9x6nt8TgMtmGE' },
                         { name: 'og:locale', content: 'en_US' },
@@ -31,10 +30,9 @@ class Schedule extends React.Component {
                         { name: 'twitter:creator', content: '@yugabyte' }
                     ]}>
                 </Helmet>
-                <Banner title="Schedule" hideSecondary/>
-                <div style={{padding: '30px 0px 15px'}}>
-                    <a id="sched-embed" href="//distributedsqlsummit2021.sched.com/grid/">View the Distributed SQL Summit 2021 schedule &amp; directory.</a>
-                    {/* <a id="sched-embed" href="https://distributedsqlsummit2021.sched.com/directory/speakers">View the Distributed SQL Summit 2021 schedule &amp; directory.</a> */}
+                <Banner title="Speakers" hideSecondary/>
+                <div style={{padding: '30px 0px 15px'}}>                  
+                    <a id="sched-embed" href="https://distributedsqlsummit2021.sched.com/directory/speakers">View the Distributed SQL Summit 2021 schedule &amp; directory.</a>
                 </div>
                 <ContactBanner
                     title="Join Us!"
@@ -47,4 +45,4 @@ class Schedule extends React.Component {
     }
 }
 
-export default Schedule
+export default Speakers

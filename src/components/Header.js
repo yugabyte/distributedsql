@@ -10,12 +10,9 @@ const Header = (props) => (
             <img src={DSSLogo} alt="Distributed SQL Summit logo" />            
           </div>          
         </Link>
-        <nav>          
-          {/* <Link to="/schedule">Schedule</Link> */}
-        </nav>
-        {/* <nav>
-          <Menu />
-        </nav> */}
+        <nav>
+          <Link to="/speakers">Speakers</Link>
+        </nav>        
     </header>
 )
 

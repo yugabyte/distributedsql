@@ -82,6 +82,7 @@ module.exports = {
           include: /assets\/images\/svg/
         }
       }
-    }
+    },
+    `@wardpeet/gatsby-plugin-static-site`
   ],
 }
