@@ -22,10 +22,10 @@ class Speakers extends React.Component {
                         { name: 'keywords', content: 'Distributed SQL, Postgres, YugaByte, schedule, speakers, talks' },
                         { name: 'google-site-verification', content: 'IrJBdGcrNYjaVXTiMFpMckF5pC2MsY9x6nt8TgMtmGE' },
                         { name: 'og:locale', content: 'en_US' },
-                        { name: 'og:title', content: 'Schedule | Distributed SQL Summit 2021' },
-                        { name: 'og:description', content: 'See the schedule for the list of speakers giving talks at the 3rd annual Distributed SQL Summit, a free online conference to push the boundaries of cloud native RDBMS forward.' },
+                        { name: 'og:title', content: 'Speakers | Distributed SQL Summit 2021' },
+                        { name: 'og:description', content: 'See who is speaking at the 3rd annual Distributed SQL Summit, a free online conference to push the boundaries of cloud native RDBMS forward.' },
                         { name: 'twitter:card', content: 'summary_large_image' },
-                        { name: 'twitter:description', content: 'See the schedule for the list of speakers giving talks at the 3rd annual Distributed SQL Summit, a free online conference to push the boundaries of cloud native RDBMS forward.' },
+                        { name: 'twitter:description', content: 'See who is speaking at the 3rd annual Distributed SQL Summit, a free online conference to push the boundaries of cloud native RDBMS forward.' },
                         { name: 'twitter:site', content: '@yugabyte' },
                         { name: 'twitter:creator', content: '@yugabyte' }
                     ]}>
