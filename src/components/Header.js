@@ -12,6 +12,7 @@ const Header = (props) => (
         </Link>
         <nav>
           <Link to="/speakers">Speakers</Link>
+          <Link to="/schedule">Schedule</Link>
         </nav>        
     </header>
 )
