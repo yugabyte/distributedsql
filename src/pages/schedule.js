@@ -33,7 +33,7 @@ class Schedule extends React.Component {
                 </Helmet>
                 <Banner title="Schedule" hideSecondary/>
                 <div style={{padding: '30px 0px 15px'}}>
-                    <a id="sched-embed" href="//distributedsqlsummit2021.sched.com/">View the Distributed SQL Summit 2021 schedule &amp; directory.</a><script type="text/javascript" src="//distributedsqlsummit2021.sched.com/js/embed.js"></script>                    
+                    <a id="sched-embed" href="https://distributedsqlsummit2021.sched.com/">View the Distributed SQL Summit 2021 schedule &amp; directory.</a>
                 </div>
                 <ContactBanner
                     title="Join Us!"
