@@ -27,6 +27,7 @@ export default class HTML extends React.Component {
             dangerouslySetInnerHTML={{ __html: this.props.body }}
           />
           {this.props.postBodyComponents}
+          <script type="text/javascript" id="hs-script-loader" async defer src="https://js.hs-scripts.com/19913802.js"></script>
         </body>
       </html>
     )
