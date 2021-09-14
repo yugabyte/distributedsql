@@ -6,6 +6,7 @@ import Description from '../components/Description'
 import Topics from '../components/Topics'
 import WhatIsDistributedSQL from '../components/WhatIsDistributedSQL'
 import ContactBanner from '../components/ContactBanner'
+import LandingSpeaker from '../components/LandingSpeaker'
 
 class HomeIndex extends React.Component {
     render() {
@@ -32,6 +33,7 @@ class HomeIndex extends React.Component {
                     showCaptionBar
                 />
                 <Description />
+                <LandingSpeaker />
                 <Topics />
                 <WhatIsDistributedSQL/>
                 <ContactBanner
