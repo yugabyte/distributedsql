@@ -14,21 +14,21 @@ exports.onCreateWebpackConfig = async ({ actions }) => {
   })
 }
 
-exports.createPages = async ({ graphql, actions }) => {
-  const { createPage, createNode } = actions
-  // const speakers = JSON.parse( JSON.stringify(speakerData) )
-  const sessionPageTemplate = path.resolve("src/page-templates/session.js")
-  conferenceData.forEach(confDaySessions => confDaySessions.forEach(talk => {
-    try {
-      createPage({
-        path: `/session/${talk.id}`,
-        component: sessionPageTemplate,
-        context: {
-          ...talk
-        },
-      })
-    } catch (error) {
+// exports.createPages = async ({ graphql, actions }) => {
+//   const { createPage, createNode } = actions
+//   // const speakers = JSON.parse( JSON.stringify(speakerData) )
+//   const sessionPageTemplate = path.resolve("src/page-templates/session.js")
+//   conferenceData.forEach(confDaySessions => confDaySessions.forEach(talk => {
+//     try {
+//       createPage({
+//         path: `/session/${talk.id}`,
+//         component: sessionPageTemplate,
+//         context: {
+//           ...talk
+//         },
+//       })
+//     } catch (error) {
 
-    }
-  }));
-}
+//     }
+//   }));
+// }
