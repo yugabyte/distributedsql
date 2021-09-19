@@ -1,5 +1,5 @@
 import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
+import { StaticQuery, graphql, Link } from 'gatsby'
 import Speaker from './Speaker'
 
 const featuredSpeakers = require('../data/data.json')
@@ -87,7 +87,10 @@ const LandingSpeaker = (props) => (
           </header>
           <div className="speakerList">
             {landingSpeakerList}
-          </div>          
+          </div>
+          <div style={{marginTop: '45px'}}>
+            <Link to="/speakers" className="btn-rounded secondary">View All Speakers</Link>
+          </div>
         </div>
       </section>
     )

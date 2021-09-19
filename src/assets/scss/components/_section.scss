@@ -111,7 +111,7 @@ header {
 		}
 
 		.learn-btn {
-			width: 301px;
+			width: 300px;
 			height: 83px;
 			text-align: center;
 			padding: 20px 0;
@@ -120,24 +120,44 @@ header {
 			color: #010441;
 			font-weight: 500;
 			font-size: 24px;
-			background: #FFF;
+			background: transparent;
 			display: inline-block;
-			font-family: Source Sans Pro, sans-serif;
-			cursor: pointer;			
-    		background-size: 200% 100%;
-			// background-image: linear-gradient(to right, #ffffff, #333 50%, #01054a 75%, #07159f 75%);
-			background-image: linear-gradient(to left, #07159f, #01054a 50%, #fff 50%);
-			-webkit-transition: all 0.5s ease;
-			-webkit-transition-property: background-position, color;
-			-moz-transition: all 0.5s ease;
-			-moz-transition-property: background-position, color;
-			transition: all 0.5s ease;
-			transition-property: background-position, color;
+			font-family: Source Sans Pro, sans-serif;		
+			cursor: pointer;
+			overflow: hidden;
 			margin-left: 30px;
 
-			&:hover {				
-				background-position: -99% 0;
-				color: #FFF !important;
+			&:hover {
+				.bg-scroll {
+					left: 0;
+				}
+				span {
+					color: #FFF;
+				}
+			}
+
+			.bg-scroll {
+				width: 300px;
+				height: 85px;
+				background: linear-gradient(to left, #07159f, #01054a);
+				position: relative;
+				top: -135%;
+				left: -305px;
+				-webkit-transition: all 0.5s ease;
+				-webkit-transition-property: all;
+				-moz-transition: all 0.5s ease;
+				-moz-transition-property: all;
+				transition: all 0.5s ease;
+				z-index: 0;
+			}
+			span {
+				position: relative;
+				z-index: 1000;
+				-webkit-transition: all 0.5s ease;
+				-webkit-transition-property: all;
+				-moz-transition: all 0.5s ease;
+				-moz-transition-property: all;
+				transition: all 0.5s ease;
 			}
 		}
 	}

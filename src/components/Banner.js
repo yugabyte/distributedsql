@@ -2,7 +2,7 @@ import React from 'react'
 import LogoSmall from "../assets/images/LogoSmall.png"
 import BackgroundImage from 'gatsby-background-image'
 import  ConferenceIcon from '../assets/images/conference-icon.svg'
-import { graphql, Link, StaticQuery } from 'gatsby'
+import { graphql, StaticQuery } from 'gatsby'
 
 
 const Banner = ({ title, showPresents, showCaptionBar, hideSecondary }) => (
@@ -48,10 +48,14 @@ const Banner = ({ title, showPresents, showCaptionBar, hideSecondary }) => (
                 <div className="presents">
                   <span className="text">PRESENTED BY</span>
                   <a href="https://yugabyte.com/">
-                    <img style={{
-                      width: '150px',
-                      objectFit: 'contain'
-                    }} src={LogoSmall} alt="YugaByte" />
+                    <img
+                      style={{
+                        width: '150px',
+                        objectFit: 'contain'
+                      }}                      
+                      src={LogoSmall}
+                      alt="YugaByte"
+                    />
                   </a>
                 </div>
               }
@@ -74,7 +78,7 @@ const Banner = ({ title, showPresents, showCaptionBar, hideSecondary }) => (
             </header>
             {showCaptionBar && 
               <div className="banner-caption-bar">
-                <img src={ConferenceIcon} /> Sessions by Fiserv, GM, Kroger, Rakuten, Wipro, and more. New sessions coming soon!
+                <img alt="conference-icon" src={ConferenceIcon} /> Sessions by Fiserv, GM, Kroger, Rakuten, Wipro, and more. New sessions coming soon!
               </div>
             }
           </div>          

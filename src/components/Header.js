@@ -1,8 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import DSSLogo from '../assets/images/DSS-2021-Logo-Small.svg';
-import LogoDark from '../assets/images/LogoDark.svg'
-// import Menu from './Menu'
+
 const Header = (props) => (
     <header id="header" className="">
         <Link to="/" className="logo">

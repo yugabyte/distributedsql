@@ -1,6 +1,6 @@
 import React from 'react'
 import Img from 'gatsby-image'
-import { graphql, Link, StaticQuery } from 'gatsby'
+import { graphql, StaticQuery } from 'gatsby'
 
 const WhatIsDistributedSQL = (props) => (
   <StaticQuery query={graphql`
