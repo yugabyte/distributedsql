@@ -69,8 +69,8 @@ const Banner = ({ title, showPresents, showCaptionBar, hideSecondary }) => (
                 </ul>
                 <div className="cta-bar">
                   {!hideSecondary && (
-                    <a href="https://www.eventbrite.com/e/distributed-sql-summit-2021-tickets-167058688033" target="_blank" rel="noopener noreferrer" className="btn-rounded secondary">
-                        Register Now
+                    <a href="https://konf.co/event/kqDlnzxJ/distributed-sql-summit-2021" target="_blank" rel="noopener noreferrer" className="btn-rounded secondary">
+                        Join DSS Live
                     </a>
                   )}
                 </div>
