@@ -69,8 +69,8 @@ const Banner = ({ title, showPresents, showCaptionBar, hideSecondary }) => (
                 </ul>
                 <div className="cta-bar">
                   {!hideSecondary && (
-                    <a href="https://konf.co/event/kqDlnzxJ/distributed-sql-summit-2021" target="_blank" rel="noopener noreferrer" className="btn-rounded secondary">
-                        Join DSS Live
+                    <a href="https://www.yugabyte.com/dss-2021-on-demand/" target="_blank" rel="noopener noreferrer" className="btn-rounded secondary">
+                        View DSS on Demand
                     </a>
                   )}
                 </div>
