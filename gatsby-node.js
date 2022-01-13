@@ -1,6 +1,6 @@
-const path = require('path')
-const conferenceData = require('./src/data/conferenceData')
-const speakerData = require('./src/data/data.json')
+// const path = require('path');
+// const conferenceData = require('./src/data/conferenceData');
+// const speakerData = require('./src/data/data.json');
 
 exports.onCreateWebpackConfig = async ({ actions }) => {
   var webpackCustomConfig = null
@@ -14,10 +14,11 @@ exports.onCreateWebpackConfig = async ({ actions }) => {
   })
 }
 
+/*
 exports.createPages = async ({ graphql, actions }) => {
-  const { createPage, createNode } = actions
-  // const speakers = JSON.parse( JSON.stringify(speakerData) )
-  const sessionPageTemplate = path.resolve("src/page-templates/session.js")
+  const { createPage, createNode } = actions;
+  // const speakers = JSON.parse( JSON.stringify(speakerData) );
+  const sessionPageTemplate = path.resolve('src/page-templates/session.js');
   // conferenceData.forEach(confDaySessions => confDaySessions.forEach(talk => {
   //   try {
   //     createPage({
@@ -32,3 +33,4 @@ exports.createPages = async ({ graphql, actions }) => {
   //   }
   // }));
 }
+*/

@@ -6,19 +6,18 @@
 
 /* Section/Article */
 
-section, article {
-	&.special {
+section, article{
+	&.special{
 		text-align: center;
 	}
 }
-
-.removePaddBottom {
+.removePaddBottom{
 	padding-bottom: 0 !important;
 }
-.removeMarBottom {
+.removeMarBottom{
 	margin-bottom: 0 !important;
 }
-.pinkCircle {
+.pinkCircle{
 	width: 40px;
 	height: 40px;
 	background-color: #e535ab;
@@ -26,7 +25,7 @@ section, article {
 	display: inline-block;
 	margin-right: 8px;
 }
-.pinkCircleSmall {
+.pinkCircleSmall{
 	width: 20px;
 	height: 20px;
 	background-color: #FF6E42;
@@ -34,9 +33,34 @@ section, article {
 	display: inline-block;
 	margin-right: 8px;
 }
+.code-conduct-bannner{
+	#banner	.inner{
+		padding:70px 0  !important;
 
-header {
-	&.major {
+		header.major{
+			margin: 0 !important;
+		}
+		@include breakpoint(small){
+			&.major{
+				h1{
+					font-size: 46px;
+				}
+			}
+		}
+	}
+}
+#code-conduct-description{
+	padding-top:1px;
+	.description{
+		letter-spacing: 0px;
+		font-size: 18px;
+		font-weight: normal;
+		line-height: 28px;
+		color: #141920;
+	}
+}
+header{
+	&.major{
 		width: -moz-max-content;
 		width: -webkit-max-content;
 		width: -ms-max-content;
@@ -44,21 +68,21 @@ header {
 		max-width: 100%;
 		margin-bottom: 30px;
 
-		h2 {
+		h2{
 			font-weight: 400;
 			font-size: 60px;
 			color: #000041;
 			margin: 0;
 		}
 
-		aside {
+		aside{
 			border-left: 1.5px solid #FF6E42;
 			padding-left: 15px;
 			font-style: italic;
 			color: #141920;
 		}
 
-		> p {
+		> p{
 			// font-size: 0.7em;
 			// font-weight: _font(weight-bold);
 			// letter-spacing: _font(letter-spacing-alt);
@@ -66,51 +90,70 @@ header {
 			// text-transform: uppercase;
 		}
 
-		body.is-ie & {
-			> :first-child {
-				&:after {
+		body.is-ie &{
+			> :first-child{
+				&:after{
 					max-width: 9em;
 				}
 			}
 
-			> h1 {
-				&:after {
+			> h1{
+				&:after{
 					max-width: 100% !important;
 				}
 			}
 		}
 	}
 
-	@include breakpoint(small) {
-		&.major {
-			> p {
-				br {
+	@include breakpoint(small){
+		&.major{
+			> p{
+				br{
 					display: none;
 				}
 			}
 		}
 	}
 }
-
-#conf-description {
+#conf-description{
 	padding: 0 0 1em;
 
-	.description {
+	.description{
 		color: #141920;
-		font-size: 22px;
+		font-size: 18px;
+		line-height: 28px;
 		font-weight: 400;
 		display: flex;
 		align-items: center;
 
-		> div {
+		> div{
 			max-width: 630px;
-			margin-right: auto;
+			//margin-right: auto;
 		}
-		strong {
+		> .left-area{
+			width: 567px;
+		}
+		> .right-area{
+			width: 326px;
+			margin-left: auto;
+			ul{
+				padding-left: 20px;
+				li{
+					padding-left: 0;
+				}
+			}
+			.accent{
+				padding: 0 20px;
+				font-weight: bold;
+				letter-spacing: 0.18px;
+				color: #FF6E42;
+			}
+		}
+		strong{
 			color: #141920;
 		}
 
-		.learn-btn {
+		.learn-btn{
 			width: 235px;
 			height: 75px;
 			text-align: center;
@@ -123,8 +166,8 @@ header {
 			background: #FFF;
 			display: inline-block;
 			font-family: Source Sans Pro, sans-serif;
-			cursor: pointer;			
-    		background-size: 200% 100%;
+			cursor: pointer;
+			background-size: 200% 100%;
 			background-image: linear-gradient(to left, $BUTTON_PRIMARY_ACCENT, $BUTTON_SECONDARY_ACCENT 50%, #fff 50%);
 			-webkit-transition: all 0.5s ease;
 			-webkit-transition-property: background-position, color;
@@ -134,7 +177,7 @@ header {
 			transition-property: background-position, color;
 			margin-left: 30px;
 
-			&:hover {				
+			&:hover{
 				background-position: -99% 0;
 				color: #FFF !important;
 			}
@@ -142,10 +185,17 @@ header {
 	}
 
 	@media screen and (max-width: 780px) {
-		.description {
-			flex-direction: column;	
-			
-			.learn-btn {
+		.description{
+			flex-direction: column;
+			> .right-area{
+				max-width: 100%;
+				margin-left: 0;
+			}
+			> .left-area{
+				max-width: 100%;
+				margin-left: 0;
+			}
+			.learn-btn{
 				width: 250px;
 				height: 68px;
 				font-size: 20px;
@@ -155,91 +205,90 @@ header {
 		}
 	}
 }
-
 /* Landing page speaker section */
-#schedule {
+#schedule{
 	background-color: #ffffff;
 	text-align: center;
 
-	header.major {
+	header.major{
 		margin: 50px auto;
 
-		h4 {
+		h4{
 			color: #000041;
 			font-size: 30px;
 			font-weight: 600;
 
-			span {
+			span{
 				margin: 0 20px;
 			}
 		}
 	}
 
-	> .inner {
+	> .inner{
 		max-width: 1440px !important;
 	}
 
-	input[type="text"]:focus {
+	input[type="text"]:focus{
 		border-color: unset;
 		box-shadow: unset;
 	}
 
-	.date-filter {
+	.date-filter{
 		max-width: 290px;
 		margin: 0 auto 30px;
 		display: none;
 	}
 
-	.day-agenda {
+	.day-agenda{
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
 		list-style: none;
 		padding: 0;
 
-		> li {
+		> li{
 			padding: 0;
-			
-			.card-list {			
+
+			.card-list{
 				padding: 0 25px;
 				height: calc(100% - 165px);
 			}
 		}
 
-		> li:not(:last-child) {
-			.card-list {
+		> li:not(:last-child){
+			.card-list{
 				border-right: 2px solid #595959;
-			}    		
+			}
 		}
 
 		@media screen and (max-width: 1380px) {
-			> li:not(:last-child) {
-				.card-list {
+			> li:not(:last-child){
+				.card-list{
 					border-right: unset;
-				}    		
+				}
 			}
-			> li:first-child {
-				.card-list {
+			> li:first-child{
+				.card-list{
 					border-right: 2px solid #595959;
 				}
 			}
 		}
 
 		@media screen and (max-width: 1040px) {
-			> li:first-child {
-				.card-list {
+			> li:first-child{
+				.card-list{
 					border-right: unset
 				}
 			}
 		}
-		  
-		.column-header {
+
+		.column-header{
 			display: flex;
 			align-items: flex-end;
 			margin: 15px 0 30px;
 			justify-content: center;
 
-			.calendar-date {
+			.calendar-date{
 				color: #FF6E42;
 				font-size: 28px;
 				font-weight: 400;
@@ -247,14 +296,14 @@ header {
 				opacity: 0.75;
 				scroll-margin-top: 80px;
 
-				strong {
+				strong{
 					font-size: 70px;
 					font-weight: 600;
 					color: #FF6E42;
 				}
 			}
-			
-			.event-name {
+
+			.event-name{
 				color: #000041;
 				font-size: 25px;
 				font-weight: 400;
@@ -263,8 +312,8 @@ header {
 				margin-bottom: 2px;
 			}
 		}
-		
-		.event-card {
+
+		.event-card{
 			background: #F2F3F8;
 			border-radius: 20px;
 			padding: 35px 30px;
@@ -275,14 +324,14 @@ header {
 			text-align: left;
 			width: 415px;
 
-			.event-time {
+			.event-time{
 				border-left: 2px solid #FF6E42;
 				padding: 0 0 0 15px;
 				line-height: 1;
 				margin-bottom: 30px;
 			}
 
-			.talk-title {
+			.talk-title{
 				color: #141920;
 				font-size: inherit;
 				font-weight: 600;
@@ -291,17 +340,17 @@ header {
 				font-size: 25px;
 			}
 
-			a > .talk-title:hover {
+			a > .talk-title:hover{
 				color: #FF6E42;
 			}
 
-			.actions {
+			.actions{
 				width: 100%;
 				display: flex;
 				align-items: center;
 				justify-content: flex-end;
 
-				.info-btn {
+				.info-btn{
 					text-align: center;
 					font: italic normal bold 25px/32px Times New Roman;
 					letter-spacing: 0px;
@@ -309,24 +358,24 @@ header {
 					border: 1px solid #bcbcbe;
 					border-radius: 50%;
 					height: 34px;
-    				width: 36px;
+					width: 36px;
 					background: #FFFFFF;
 					display: inline-block;
 					cursor: pointer;
 
-					&:hover {
+					&:hover{
 						border: 1px solid #2B59C3;
 					}
 				}
 
-				svg.icon {
+				svg.icon{
 					width: 35px;
 					height: 35px;
 					cursor: pointer;
 					margin-left: 15px;
 					fill: #555b5b;
 
-					&:hover {
+					&:hover{
 						fill: #2B59C3;
 					}
 				}
@@ -334,18 +383,18 @@ header {
 		}
 	}
 }
-
-@include breakpoint(medium) {
-	#schedule {
-		.date-filter {
+@include breakpoint(medium){
+	#schedule{
+		.date-filter{
 			display: block;
 		}
 	}
 }
-
-@include breakpoint(small) {
-	#conf-description .description > div {
+@include breakpoint(small){
+	#conf-description .description > div{
 		font-size: 16px;
 		padding-top: 20px;
 	}
 }
+
+

@@ -1,0 +1,385 @@
+/* Who Should Attend */
+.attend{
+    background: #FFFFFF;
+    text-align: center;
+    padding: 71px 0;
+    margin: 0;
+
+    .separator{
+        margin: 62px auto 23px;
+    }
+
+    .inner{
+        padding: 0 !important;
+    }
+    header{
+        margin: 0 auto 0px;
+
+        h2{
+            color: #000041;
+            font-size: 60px;
+            line-height: 68px;
+            font-weight: 400;
+            margin: 0 0 23px 0;
+            letter-spacing: 0px;
+
+        }
+    }
+
+    &__content{
+        display: flex;
+        text-align: left;
+        max-width: 1024px;
+        margin: 0 auto;
+        justify-content: space-between;
+
+        > div{
+            margin: 0 0px;
+            flex: 1 0 33%;
+            max-width: calc(33.3% - 20px);
+        }
+
+        ul{
+            padding-left: 15px;
+            list-style: disc;
+        }
+
+        h3{
+            color: #FF6E42;
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0;
+            line-height: 28px;
+            letter-spacing: 0.18px;
+            padding-left: 15px;
+        }
+
+        li, p{
+            font-size: 18px;
+            line-height: 28px;
+            font-weight: 400;
+            letter-spacing: 0;
+            color: #141920;
+            padding: 0;
+            position: relative;
+        }
+
+        @media screen and (min-width: 850px) {
+            ul{
+                list-style: none;
+            }
+
+            li::before{
+                content: '·';
+                position: absolute;
+                left: -15px;
+                font-weight: 700;
+                font-size: 24px;
+            }
+        }
+
+    }
+
+    &__caption{
+        max-width: 729px;
+        margin: 23px auto 38px;
+        font-size: 22px;
+        padding: 0px;
+        color: #000041;
+        font-weight: normal;
+        letter-spacing: 0px;
+        line-height: 32px;
+
+        strong{
+            font-weight: 600;
+        }
+    }
+
+    &__archive{
+        margin-bottom: 28px;
+
+        .btn-rounded{
+            padding: 10px 45px 12px;
+            font-size: 1.36em;
+            font-weight: 700;
+        }
+    }
+}
+@include breakpoint(large){
+    .attend__content{
+        max-width: 980px;
+        margin-bottom: 12px;
+    }
+}
+@include breakpoint(medium){
+    .attend__content{
+        max-width: 780px;
+        width: 100%;
+        margin-bottom: 12px;
+
+        > div{
+            flex: unset;
+            margin: 0 0 ;
+            max-width: 100%;
+            padding-right: 15px;
+        }
+    }
+}
+@include breakpoint(small){
+    header.major{
+        // margin: 30px auto;
+
+        h2{
+            font-size: 48px;
+        }
+    }
+    .attend{
+        padding: 50px 0;
+
+        header{
+            margin: 0 auto 15px;
+
+            h2{
+                font-size: 36px;
+            }
+        }
+        &__content{
+            flex-direction: column;
+        }
+
+        &__caption{
+            max-width: unset;
+            width: 100%;
+            padding: 0 30px;
+            font-size: 18px;
+        }
+    }
+}
+@include breakpoint(xsmall){
+    .attend{
+        header, .attend__content{
+            li, p{
+                font-size: 16px;
+            }
+        }
+    }
+    header.major{
+        h2{
+            font-size: 36px;
+        }
+    }
+}
+#register-form{
+    min-height: 500px;
+    position: relative;
+    background: #fff;
+    padding-bottom: 55px;
+
+    .register--aside{
+        background: transparent linear-gradient(142deg, $SECONDARY_ACCENT 0%, $PRIMARY_ACCENT 100%) 0% 0% no-repeat padding-box;
+        width: 600px;
+        margin-top: -250px;
+        padding: 40px 65px 55px;
+
+        #form{
+            margin: 0;
+        }
+
+        .external-link{
+            color: #FFFFFF;
+            font-weight: 500;
+            font-size: 21px;
+            text-decoration: underline;
+        }
+        input{
+            background: $LIGHT_ORANGE_BG;
+            border-radius: 7px;
+            color: #141920;
+            width: 100%;
+            margin-top: 46px;
+            border: none;
+            font-weight: 400;
+            font-size: 22px;
+            height: 70px;
+            font-size: 18px;
+            padding: 10px 30px;
+
+            &::-webkit-input-placeholder{
+                color: #141920;
+
+            }
+            &::-moz-placeholder{
+                color: #141920;
+            }
+            &:-ms-input-placeholder{
+                color: #141920;
+            }
+            &:-moz-placeholder{
+                color: #141920;
+            }
+        }
+
+        button[type="submit"]{
+            margin-top: 50px;
+
+            &.btn-rounded{
+                font-size: 1.2em;
+                font-weight: 600;
+                padding: 8px 40px;
+            }
+        }
+
+        &.confirmation{
+            color: #FFFFFF;
+            padding: 96px 93px 60px;
+            width: 700px;
+
+            svg{
+                fill: #FFFFFF;
+            }
+
+            .thank-you-note{
+                color: inherit;
+                font-size: 30px;
+                font-weight: 500;
+                margin-bottom: 10px;
+            }
+
+            h2{
+                color: inherit;
+                font-size: 70px;
+                font-weight: 500;
+                line-height: 1.1;
+            }
+
+            .reminder{
+                color: inherit;
+                font-size: 30px;
+                font-weight: 400;
+                margin: 40px 0 15px;
+            }
+
+            .event{
+                border-radius: 7px;
+                background: $LIGHT_ORANGE_BG;
+                padding: 21px 30px 24px;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+
+                .event-details{
+                    color: #141920;
+
+                    &:hover{
+                        color: #F75821;
+                    }
+                    small{
+                        font-weight: 700;
+                        font-size: 18px;
+                    }
+
+                    .event-title{
+                        font-size: 22px;
+                        font-weight: 400;
+                    }
+                }
+
+                @keyframes fadeIntoView{
+                    0%{
+                        opacity: 0;
+                    }
+                    100%{
+                        opacity: 1;
+                    }
+                }
+
+                .calendar-icon{
+                    color: #030443;
+                    margin-left: auto;
+                    background: #FFFFFF;
+                    border-radius: 50%;
+                    width: 50px;
+                    height: 50px;
+                    padding: 5px 14px;
+                    font-size: 23px;
+
+                    > *{
+                        transition: opacity 2s ease-in-out all;
+                    }
+                }
+            }
+
+            .social-media{
+                justify-content: left;
+                display: flex;
+                font-size: 28px;
+
+                li{
+                    padding: 0 0.5em 0 0;
+                }
+            }
+        }
+    }
+
+    @include breakpoint(medium){
+        .register--aside{
+            margin-top: -186px;
+        }
+    }
+
+    @include breakpoint(small){
+        .register--aside, .register--aside.confirmation{
+            margin-top: 50px;
+            width: 100%;
+
+            h2{
+                font-size: 48px;
+            }
+        }
+    }
+
+    @include breakpoint(xsmall){
+        .register--aside{
+            padding: 50px 36px;
+
+            input{
+                height: 46px;
+                padding: 10px 22px;
+                margin-bottom: 30px;
+                font-size: 14px;
+            }
+        }
+
+        .register--aside.confirmation{
+            padding: 60px 30px 60px;
+            width: 100%;
+
+            .thank-you-note{
+                font-size: 23px;
+            }
+
+            h2{
+                font-size: 32px;
+                line-height: 1.4;
+            }
+
+            .reminder{
+                font-size: 21px;
+                margin: 30px 0 15px;
+            }
+
+            .event{
+                padding: 21px 24px 24px;
+
+                .event-details{
+                    small{
+                        font-size: 14px;
+                    }
+                    .event-title{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

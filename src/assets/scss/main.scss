@@ -74,18 +74,22 @@ body {
 			@include padding(4em, 0);
 			margin: 0 auto;
 			max-width: _size(inner);
+			padding: 86px 0  75px ;
 			&.wide{
 				max-width: 65em;
 			}
 			width: calc(100% - 6em);
 
+			@include breakpoint(large) {
+				padding: 60px 0;
+				width: calc(100% - 4em);
+			}
 			@include breakpoint(small) {
-				@include padding(1em, 0);
+				//@include padding(1em, 0);
 				width: calc(100% - 3em);
 			}
 		}
 	}
-
 // Base.
 
 	@import 'base/page';
@@ -111,11 +115,11 @@ body {
 
 	@import 'layout/header';
 	@import 'layout/banner';
-	@import 'layout/topics';
+	@import 'layout/attend';
 	@import 'layout/workshop';
 	@import 'layout/main';
 	@import 'layout/contact';
 	@import 'layout/footer';
 	@import 'layout/wrapper';
 	@import 'layout/menu';
-	@import 'layout/footer_banner';
+	@import 'layout/distributedsql';

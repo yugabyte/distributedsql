@@ -1,6 +1,6 @@
 const path = require(`path`)
 var productionPlugins = []
-if(process.env.GATSBY_STAGE && process.env.GATSBY_STAGE==='production') {
+if (process.env.GATSBY_STAGE && process.env.GATSBY_STAGE === 'production') {
   productionPlugins.push(
     {
       resolve: `gatsby-plugin-google-gtag`,
@@ -57,7 +57,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: path.join(__dirname, `src`,`assets`, `images`),
+        path: path.join(__dirname, `src`, `assets`, `images`),
       },
     },
     `gatsby-transformer-sharp`,
@@ -71,7 +71,7 @@ module.exports = {
         background_color: '#FF6E42',
         theme_color: '#FF6E42',
         display: 'standalone',
-        icon: 'static/Icon.png', // This path is relative to the root of the site.
+        icon: 'static/dss-asia-logo.svg', // This path is relative to the root of the site.
       },
     },
     'gatsby-plugin-sass',

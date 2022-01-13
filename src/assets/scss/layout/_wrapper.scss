@@ -12,7 +12,7 @@
 			'-webkit-filter #{_duration(menu)} ease',
 			'opacity 0.375s ease-out'
 		));
-		padding-top: 5em;
+		padding-top: 74px;
 		display: flex;
 		flex-flow: column;
 
@@ -29,6 +29,6 @@
 		}
 
 		@include breakpoint(small) {
-			padding-top: 2.75em;
+			padding-top: 74px;
 		}
 	}
