@@ -4,7 +4,7 @@ import Layout from '../components/layout';
 import HeaderBanner from '../components/banner/PageHeader';
 import Description from '../components/CodeConductDescription';
 
-class HomeIndex extends React.Component {
+class CodeConduct extends React.Component {
   render() {
     return (
       <Layout>
@@ -33,4 +33,4 @@ class HomeIndex extends React.Component {
   }
 }
 
-export default HomeIndex
+export default CodeConduct;

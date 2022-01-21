@@ -83,9 +83,9 @@ const Banner = ({ title, showPresents, showCaptionBar }) => (
                         </li>
                       </ul>
                       <div className="cta-bar">
-                        {/* {<Link to="#" className="btn-rounded">
+                        {<Link to="https://www.eventbrite.com/e/252327376977" className="btn-rounded">
                           Register
-                        </Link>} */}
+                        </Link>}
                       </div>
                     </div>
                   </div>

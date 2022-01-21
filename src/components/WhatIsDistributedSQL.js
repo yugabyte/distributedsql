@@ -91,12 +91,12 @@ const WhatIsDistributedSQL = (props) => (
                     Distributed SQL databases deliver strong consistency and ACID transactions with single-digit millisecond latency. These databases are increasingly powering a new generation of always-on, highly available, hyper-scalable applications and microservices.
                   </p>
 
-                  {/* {<div className="actions">
+                  {<div className="actions">
                     <h4>Ready to join us?</h4>
-                    <Link to="#" className="btn-rounded">
+                    <Link to="https://www.eventbrite.com/e/252327376977" className="btn-rounded">
                       Register
                     </Link>
-                  </div>} */}
+                  </div>}
                 </div>
               </div>
             </div>
@@ -107,4 +107,4 @@ const WhatIsDistributedSQL = (props) => (
   />
 )
 
-export default WhatIsDistributedSQL
+export default WhatIsDistributedSQL;
