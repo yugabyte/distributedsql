@@ -6,20 +6,20 @@
 
 /* Footer */
 
-#footer {
+#footer{
 	background-color: #F9FAFC;
 	color: _palette(bg);
-	@include breakpoint(small) {
+	@include breakpoint(small){
 		.links{
 			display: none;
 		}
 	}
-	.copyright {
+	.copyright{
 		font-size: 18px;
 		list-style: none;
 		padding-left: 0;
 
-		li {
+		li{
 			border-left: solid 1px _palette(border);
 			color: _palette(fg-light);
 			display: inline-block;
@@ -27,7 +27,7 @@
 			margin-left: 1em;
 			padding-left: 1em;
 
-			&:first-child {
+			&:first-child{
 				border-left: 0;
 				margin-left: 0;
 				padding-left: 0;
@@ -35,129 +35,143 @@
 		}
 	}
 
-	.inner {
-		.icons {
+	.inner{
+		.icons{
 			margin-top: 0.8em;
 		}
 	}
 
-	.container.inner {
+	.container.inner{
 		padding: 64px 0;
 		display: flex;
 
-		> div {
+		> div{
 			padding: 0 45px;
 		}
 
-		.logo {
+		.logo{
 			margin-right: 45px;
 		}
 	}
 
-	.logo {
-		img {
+	.logo{
+		img{
 			vertical-align: middle;
 		}
 	}
 
-	.content {
+	.content{
 		border-left: 1px solid #000041;
 
-		.icon {
+		.icon{
 			color: #342a66;
-			font-size: 24px;
+			font-size: 28px;
 
-			svg {
+			svg{
 				fill: #342a66;
-			}			
+			}
+		}
+		.icon.slack svg{
+			font-size: 24px;
+			fill: #fff;
+			background: #342a66;
+			padding: 2px 4px;
+			border-radius: 3px;
+		}
+		.icon.linkedin{
+			background: #342a66;
+			border-radius: 3px;
+			font-size: 19px;
+			padding: 0px 4px;
+			color: #fff;
 		}
 
 		align-items: center;
 		align-content: center;
 		display: flex;
 
-		.actions {
+		.actions{
 			margin-bottom: 0;
 
-			li {
+			li{
 				padding: 0 8px;
 			}
 		}
 	}
 
-	.legal {
+	.legal{
 		color: #332A66;
 		display: inline-flex;
 		align-items: center;
+		font-weight: normal;
 
-		.support-links {
+		.support-links{
 			list-style: none;
 			margin: 0 0 0 30px;
 			padding: 0;
 			display: flex;
 
-			> li {
+			> li{
 				padding: 10px 8px;
 				font-size: 18px;
-			}			
+			}
 		}
 	}
 }
-
-#footer.dark {
+#footer.dark{
 	background: #000041;
-	
-	.content {
+
+	.content{
 		border-left: 1px solid #FFF;
-		
-		.icon {
+
+		.icon{
 			color: #FFFFFF;
 
-			svg {
+			svg{
 				fill: #FFFFFF;
 			}
-		}		
+
+		}
+
 	}
-	.legal {
+	.legal{
 		color: #FFFFFF;
 	}
 }
-
-@include breakpoint(small) {
-	#footer, #footer.dark {
-		.container.inner {
+@include breakpoint(small){
+	#footer, #footer.dark{
+		.container.inner{
 			display: block;
 			text-align: center;
 
-			.logo {
+			.logo{
 				margin-bottom: 20px;
 			}
 
-			> .content {
+			> .content{
 				padding: 10px 0 30px;
 			}
 		}
 
-		.content {
+		.content{
 			border-left: none;
 			margin: 0 auto;
 			width: fit-content;
 		}
 	}
 }
-
-@include breakpoint(xsmall) {
-	#footer {
-		.container.inner {
-			.logo {
+@include breakpoint(xsmall){
+	#footer{
+		.container.inner{
+			.logo{
 				margin-right: 0;
 			}
 		}
 
-		.legal {
+		.legal{
 			display: block;
 
-			.support-links {
+			.support-links{
 				justify-content: center;
 				margin: 15px 0 0;
 			}

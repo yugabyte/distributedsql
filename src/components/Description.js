@@ -1,16 +1,42 @@
-import React from 'react'
+import React from 'react';
 
 const Description = () => (
   <section id="conf-description">
     <div className="inner">
       <div className="description">
-        <div>
-          <strong>Join us</strong> for Distributed SQL Summit Asia, the event that brings together thought leaders, database builders, and application developers to discuss how to leverage distributed SQL systems to build applications and services in the cloud.
+        <div className="left-area">
+          <p>
+            Developers, operators, and architects drive business by delivering always-on, highly available applications and services. Companies have embraced the cloud, Kubernetes, and microservices to accelerate their digital transformation.
+          </p>
+          <p>
+            It is time to ensure your database is also cloud-native-ready.
+          </p>
+          <p>
+            Our upcoming Distributed SQL Summit (DSS) Asia brings together database builders, ops, architects, and thought leaders for two days of learning, networking, and inspiration.
+          </p>
         </div>
-        <button onClick={() => document.getElementById('topics-section').scrollIntoView({behavior: "smooth"})} className="learn-btn">Why attend?</button>
+
+        <div className="right-area">
+          <div className="accent">By attending DSS Asia remotely you can:</div>
+
+          <ul>
+            <li>
+              Hear from distributed SQL practitioners and experts
+            </li>
+            <li>
+              Attend hands-on workshops to experience distributed SQL firsthand in real-time
+            </li>
+            <li>
+              Meet peers and colleagues virtually
+            </li>
+            <li>
+              Have fun and bag some exclusive swag!
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
 );
 
-export default Description
+export default Description;

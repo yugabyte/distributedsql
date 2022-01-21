@@ -1,0 +1,153 @@
+#distributedsql-section{
+    text-align: center;
+    background: #EEF1FA;
+    //padding: 70px 0;
+
+    .container{
+        //max-width: 1080px;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    .distributedsql-text{
+        max-width: 633px;
+        padding: 0;
+        text-align: left;
+        margin-left: auto;
+        h2{
+            font-size: 60px;
+            line-height: 68px;
+            font-weight: normal;
+            color: #000041;
+            margin-bottom: 10px;
+        }
+
+        .content{
+            color: #141920;
+            font-size: 18px;
+            line-height: 28px;
+            font-weight: 400;
+            letter-spacing: 0;
+
+            .learn-more{
+                padding-left: 4px;
+                font-weight: 600;
+                cursor: pointer;
+
+                &:after{
+                    content: "\f0da";
+                    font-family: 'FontAwesome';
+                    font-weight: 900;
+                    color: #FF6E42;
+                    margin-left: 4px;
+                }
+            }
+
+            .learn-more:hover:after{
+                margin-left: 8px;
+            }
+        }
+
+        .actions{
+            padding-top: 20px;
+            display: flex;
+            align-items: center;
+
+            > h4{
+                color: #141920;
+                font-size: 22px;
+                line-height: 32px;
+                font-weight: 600;
+                margin-right: 30px;
+                margin-bottom: 0px;
+            }
+        }
+    }
+
+    .value-props{
+        display: flex;
+        flex: 0 1 312px;
+        flex-wrap: wrap;
+        height: 100%;
+        padding-top: 24px;
+        margin-right: 64px;
+        justify-content: space-between;
+
+        .value-props__item{
+            flex: 1 0 50%;
+            text-align: center;
+            margin-bottom: 30px;
+            max-width: 120px;
+
+            .icon{
+                width: 102px;
+                height: 102px;
+                margin: 0 auto;
+            }
+
+            h4{
+                color: #141920;
+                font-size: 16px;
+                font-weight: 600;
+                margin-top: 15px;
+                line-height: 20px;
+                letter-spacing: 0.64px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 980px) {
+        .actions{
+            li{
+                padding: 0 10px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    @include breakpoint(small){
+        .container{
+            display: block;
+        }
+        .value-props{
+            justify-content: space-evenly;
+            margin: 0 auto;
+
+            .value-props__item{
+                flex: 1 1 150px;
+
+                .icon{
+                    width: 72px;
+                    height: 72px;
+                }
+            }
+        }
+        .distributedsql-text{
+            margin: 0 auto;
+            max-width: 100%;
+
+            h1{
+                font-size: 48px;
+            }
+
+            .actions{
+                flex-flow: column;
+                gap:20px;
+                text-align: center;
+            }
+
+            .content{
+                font-size: 18px;
+            }
+        }
+    }
+
+    @include breakpoint(xsmall){
+        .distributedsql-text{
+            h1{
+                font-size: 36px;
+                text-align: center;
+            }
+        }
+    }
+}

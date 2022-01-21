@@ -1,94 +1,110 @@
-import React from 'react'
-import Img from 'gatsby-image'
-import { graphql, Link, StaticQuery } from 'gatsby'
+import React from 'react';
+import Img from 'gatsby-image';
+import { graphql, Link, StaticQuery } from 'gatsby';
 
 const WhatIsDistributedSQL = (props) => (
-  <StaticQuery query={graphql`
-     query {
+  <StaticQuery query={
+    graphql`
+      query {
        FooterImage: file(relativePath: { eq: "FooterImage.png" }) {
          childImageSharp {
            fluid(quality: 90, maxWidth: 4160) {
              ...GatsbyImageSharpFluid_withWebp
            }
          }
-       },
-       SQLImage: file(relativePath: { eq: "YB-SQLTransactions.png" }) {
+      },
+      SQLImage: file(relativePath: { eq: "distributedsql/sql-transactions.png" }) {
         childImageSharp {
           fluid(quality: 100, maxWidth: 4160) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
-       },
-       ResilienceImage: file(relativePath: { eq: "YB-UltraResilience.png" }) {
+      },
+      ResilienceImage: file(relativePath: { eq: "distributedsql/ultra-resilience.png" }) {
         childImageSharp {
           fluid(quality: 100, maxWidth: 1920) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
-       },
-       ScalabilityImage: file(relativePath: { eq: "YB-MassiveScalability.png" }) {
+      },
+      ScalabilityImage: file(relativePath: { eq: "distributedsql/scalability.png" }) {
         childImageSharp {
           fluid(quality: 100, maxWidth: 1920) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
-       },
-       GeoDistributionImage: file(relativePath: { eq: "YB-GeoDistribution.png" }) {
+      },
+      GeoDistributionImage: file(relativePath: { eq: "distributedsql/geo-distribution.png" }) {
         childImageSharp {
           fluid(quality: 100, maxWidth: 1920) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
-       },
+      },
      }
    `}
-    render={data => {
-      const sqlImage = data.SQLImage.childImageSharp.fluid;
-      const resilienceImage = data.ResilienceImage.childImageSharp.fluid;
-      const scalabilityImage = data.ScalabilityImage.childImageSharp.fluid;
-      const geodistributeionImage = data.GeoDistributionImage.childImageSharp.fluid;
-      return (
-        <section id="footer-banner">
-          <div className="container">
-            <div className="value-props">
-              <div className="value-props__item">
-                <Img fluid={sqlImage} alt="SQL And Transactions" className="icon" />
-                <h4>SQL AND<br />TRANSACTIONS</h4>
+    render={
+      data => {
+        const sqlImage = data.SQLImage.childImageSharp.fluid;
+        const resilienceImage = data.ResilienceImage.childImageSharp.fluid;
+        const scalabilityImage = data.ScalabilityImage.childImageSharp.fluid;
+        const geodistributeionImage = data.GeoDistributionImage.childImageSharp.fluid;
+        return (
+          <section id="distributedsql-section">
+            <div className="inner container">
+              <div className="value-props">
+                <div className="value-props__item">
+                  <Img fluid={sqlImage} alt="SQL And Transactions" className="icon" />
+                  <h4>
+                    SQL AND<br />TRANSACTIONS
+                  </h4>
+                </div>
+                <div className="value-props__item">
+                  <Img fluid={resilienceImage} alt="ULTRA RESILIENCE" className="icon" />
+                  <h4>
+                    ULTRA<br />RESILIENCE
+                  </h4>
+                </div>
+                <div className="value-props__item">
+                  <Img fluid={scalabilityImage} alt="MASSIVE SCALABILITY" className="icon" />
+                  <h4>MASSIVE<br />SCALABILITY</h4>
+                </div>
+                <div className="value-props__item">
+                  <Img fluid={geodistributeionImage} alt="GEO DISTRIBUTED" className="icon" />
+                  <h4>
+                    GEO<br />DISTRIBUTED
+                  </h4>
+                </div>
               </div>
-              <div className="value-props__item">
-                <Img fluid={resilienceImage} alt="ULTRA RESILIENCE" className="icon" />
-                <h4>ULTRA<br />RESILIENCE</h4>
-              </div>
-              <div className="value-props__item">
-                <Img fluid={scalabilityImage} alt="MASSIVE SCALABILITY" className="icon" />
-                <h4>MASSIVE<br />SCALABILITY</h4>
-              </div>
-              <div className="value-props__item">
-                <Img fluid={geodistributeionImage} alt="GEO DISTRIBUTED" className="icon" />
-                <h4>GEO<br />DISTRIBUTED</h4>
-              </div>
-            </div>
-            <div className="distributedsql-text">
-                <h1>What is Distributed SQL?</h1>
+              <div className="distributedsql-text">
+                <h2>What is Distributed SQL?</h2>
                 <div className="content">
                   <p>
-                    Distributed SQL databases (sometimes called NewSQL) are relational databases that elastically scale horizontally, while distributing data over multiple datacenters — even globally. Distributed SQL databases deliver strong consistency and ACID transactions with single-digit millisecond latency. These databases are increasingly powering a new generation of always-on, multicloud, resilient microservices.
-                    <a className="learn-more" href="https://blog.yugabyte.com/what-is-distributed-sql/">Learn more about Distributed SQL</a>
+                    Distributed SQL databases are relational databases that distribute data over multiple compute instances (each instance a node in a database cluster) and offer a SQL-compatible distributed query layer.
                   </p>
-                  {/* <div className="actions">
+
+                  <p>
+                    Distributed SQL databases are highly resilient, massively scalable, and can be geo-distributed across availability zones, regions, and often cloud providers.
+                  </p>
+
+                  <p>
+                    Distributed SQL databases deliver strong consistency and ACID transactions with single-digit millisecond latency. These databases are increasingly powering a new generation of always-on, highly available, hyper-scalable applications and microservices.
+                  </p>
+
+                  {<div className="actions">
                     <h4>Ready to join us?</h4>
-                    <Link to="/register" className="btn-rounded">
+                    <Link to="https://www.eventbrite.com/e/252327376977" className="btn-rounded">
                       Register
-                    </Link>                    
-                  </div> */}
+                    </Link>
+                  </div>}
                 </div>
+              </div>
             </div>
-          </div>
-         </section>
-      )
+          </section>
+        )
+      }
     }
-    }
-   />
+  />
 )
 
-export default WhatIsDistributedSQL
+export default WhatIsDistributedSQL;

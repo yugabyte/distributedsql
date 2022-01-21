@@ -7,7 +7,7 @@
 
   header {
       margin: 0 auto 40px;
-      
+
       h2 {
           color: #000041;
           font-size: 60px;
@@ -16,7 +16,7 @@
       }
   }
 
-  &__content { 
+  &__content {
       display: flex;
       text-align: left;
       max-width: 1024px;
@@ -25,8 +25,8 @@
 
       > div {
           margin: 0 30px;
-          flex: 1 0 48%;
-          max-width: 450px;
+          flex: 1 0 33%;
+          max-width: calc(33.3% - 30px);
       }
 
       ul {
@@ -62,7 +62,7 @@
               font-size: 24px;
           }
       }
-      
+
   }
 
   &__caption {
@@ -90,14 +90,14 @@
 }
 
 @include breakpoint(large) {
-  .topics__content { 
+  .topics__content {
       max-width: 980px;
       margin-bottom: 12px;
   }
 }
 
 @include breakpoint(medium) {
-  .topics__content { 
+  .topics__content {
       max-width: 780px;
       width: 100%;
       margin-bottom: 12px;
@@ -127,7 +127,7 @@
               font-size: 36px;
           }
       }
-      &__content { 
+      &__content {
           flex-direction: column;
       }
 
@@ -189,7 +189,7 @@
           height: 70px;
           font-size: 18px;
           padding: 10px 30px;
-          
+
           &::-webkit-input-placeholder {
               color: #141920;
 
@@ -252,7 +252,7 @@
               display: flex;
               align-items: center;
               cursor: pointer;
-              
+
               .event-details {
                   color: #141920;
 
@@ -266,8 +266,8 @@
 
                   .event-title {
                       font-size: 22px;
-                      font-weight: 400; 
-                  }   
+                      font-weight: 400;
+                  }
               }
 
               @keyframes fadeIntoView {
@@ -278,8 +278,8 @@
                     opacity: 1;
                   }
               }
-                
-                
+
+
               .calendar-icon {
                   color: #030443;
                   margin-left: auto;
@@ -289,7 +289,7 @@
                   height: 50px;
                   padding: 5px 14px;
                   font-size: 23px;
-                  
+
                   > * {
                       transition: opacity 2s ease-in-out all;
                   }
@@ -322,7 +322,7 @@
       h2 {
         font-size: 48px;
       }
-    }        
+    }
   }
 
   @include breakpoint(xsmall) {
@@ -358,7 +358,7 @@
       .event {
         padding: 21px 24px 24px;
 
-        .event-details {                
+        .event-details {
           small {
             font-size: 14px;
           }
