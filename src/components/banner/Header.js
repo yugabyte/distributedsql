@@ -68,7 +68,7 @@ const Banner = ({ title, showPresents, showCaptionBar }) => (
                         <li>
                           <div>
                             <h3>
-                              March 1, 2022<br />
+                              March 30, 2022<br />
                               <span>Conference Day</span>
                             </h3>
                           </div>
@@ -76,7 +76,7 @@ const Banner = ({ title, showPresents, showCaptionBar }) => (
                         <li>
                           <div>
                             <h3>
-                              March 2, 2022<br />
+                              March 31, 2022<br />
                               <span>Workshop Day</span>
                             </h3>
                           </div>
