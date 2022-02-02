@@ -22,7 +22,7 @@ class HomeIndex extends React.Component {
             { name: 'og:description', content: 'Join us for Distributed SQL Summit Asia, a free online conference to push the boundaries of cloud native RDBMS forward.' },
             { name: 'twitter:card', content: 'summary_large_image' },
             { name: 'twitter:description', content: 'Join us for Distributed SQL Summit Asia, a free online conference to push the boundaries of cloud native RDBMS forward.' },
-            { name: 'twitter:image', content: 'https://asia.distributedsql.org/OGImage.png' },
+            { name: 'twitter:image', content: 'https://asia.distributedsql.org/dss-asia-2022.png' },
             { name: 'twitter:site', content: '@yugabyte' },
             { name: 'twitter:creator', content: '@yugabyte' }
           ]}>

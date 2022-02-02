@@ -3,3 +3,9 @@
   to = "https://archive.distributedsql.org/2019/:splat"
   status = 200
   force = true
+
+[[redirects]]
+  from = "/OGImage.png"
+  to = "/dss-asia-2022.png"
+  status = 200
+  force = true
