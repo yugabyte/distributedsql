@@ -5,8 +5,7 @@ import BackgroundImage from 'gatsby-background-image';
 import ConferenceIcon from '../../assets/icons/event-white.svg';
 import { graphql, Link, StaticQuery } from 'gatsby';
 
-
-const Banner = ({ title, showPresents, showCaptionBar }) => (
+const DayLondonHeader = ({ title, showPresents, showCaptionBar }) => (
   <StaticQuery query={graphql`
     query {
       desktopBannerImage: file(relativePath: { eq: "banner/dss-summit-day-london.png" }) {
@@ -31,14 +30,13 @@ const Banner = ({ title, showPresents, showCaptionBar }) => (
           data.desktopBannerImage.childImageSharp.fluid,
         ];
         return (
-          <section>
+          <section className="day-london-conference">
             <BackgroundImage Tag="div" fluid={sources} id="banner">
               <div className="inner">
                 <header className="major">
-                  <div className="area">
+                  <div className="logo-area">
                     <img src={LogoDSSBanner} alt="DSS Day London" />
-                    <h1>Distributed SQL Summit Day – London</h1>
-
+                    <h1>{title}</h1>
                     {showPresents &&
                       <div className="presents">
                         <span className="text">PRESENTED BY</span>
@@ -50,33 +48,23 @@ const Banner = ({ title, showPresents, showCaptionBar }) => (
                         </a>
                       </div>
                     }
+                  </div>
+                  <div className="schedule-area">
+                    <ul className="details">
+                      <li className="data-time">
+                        March 08, 2022<br />
 
-                    <div className="container">
-                      <ul className="details">
-                        <li>
-                          <div>
-                            <h3>
-                              March 08, 2022<br />
-                              <span>13:00 - 18:30 </span>
-                            </h3>
-                          </div>
-                        </li>
-                        <li>
-                          <div>
-                            <h3>
-                              Code.Node 10 South Place,<br />
-                              <span> London EC2M 7EB</span>
-                            </h3>
-                          </div>
-                        </li>
-                        <li>
-                          <div className="cta-bar">
-                            {<Link to="https://www.eventbrite.com/e/252327376977" className="btn-rounded">
-                              Register
-                            </Link>}
-                          </div>
-                        </li>
-                      </ul>
+                        <span>13:00 - 18:30 </span>
+                      </li>
+                      <li className="location">
+                        Code.Node 10 South Place,<br />
+                        <span> London EC2M 7EB</span>
+                      </li>
+                    </ul>
+                    <div className="cta-bar">
+                      {<Link to="https://www.eventbrite.com/e/252327376977" className="btn-rounded">
+                        Register
+                      </Link>}
                     </div>
                   </div>
                 </header>
@@ -94,4 +82,4 @@ const Banner = ({ title, showPresents, showCaptionBar }) => (
   />
 )
 
-export default Banner;
+export default DayLondonHeader;

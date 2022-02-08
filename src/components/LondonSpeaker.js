@@ -1,23 +1,34 @@
 import React from 'react';
+import Img from 'gatsby-image';
+import { useStaticQuery, graphql } from 'gatsby';
+
+// import { graphql, Link, StaticQuery } from 'gatsby';
 
 const LondonSpeaker = (props) => {
+  // const data = useStaticQuery(graphql`
+  //   query {
+  //     file(relativePath: { eq: "${props.picture}" }) {
+  //       childImageSharp {
+  //         fluid {
+  //           ...GatsbyImageSharpFluid_withWebp
+  //         }
+  //       }
+  //     }
+  //   }
+  // `);
+
+  // const imgPath = require('../../assets/images/');
+  // console.log(imgPath)
+
   return (
-    <div className={props.size ? `speaker ${props.size}` : "speaker"}>
-      <div className={props.orientation === 'landscape' ? "profile horizontal" : "profile"} key={props.speakerId} id={props.speakerId}>
-        <div className="speakerImage">
-          <img src={`/static/${props.speakerPicture}.png`} alt={`${props.speakerName} picture`} style={{ border: `3px solid ${props.borderColor}` }} />
-        </div>
-        <div className="speakerProfile">
-          <div className="profileWrapper">
-            <div className="profileName">
-              {props.speakerName}
-            </div>
-          </div>
-          <div className="profileBio">
-            {props.speakerPosition},<br />
-            <span className="company">{props.speakerCompany}</span>
-          </div>
-        </div>
+    <div className="speaker">
+      <div className="head">
+        {/* <Img fluid={data.file.childImageSharp.fluid} alt={props.name} title={props.name} /> */}
+      </div>
+      <div class="author-detail">
+        <b>{props.name}</b>
+        {props.position},<br />
+        <b>{props.company}</b>
       </div>
     </div>
   );

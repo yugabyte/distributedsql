@@ -2,9 +2,8 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import Layout from '../components/layout';
 import HeaderBanner from '../components/banner/DayLondonHeader';
-import Description from '../components/DescriptionDayLondon';
+import Description from '../components/DayLondonDescription';
 import Speaker from '../components/LondonSpeaker';
-// import WhoShouldAttend from '../components/WhoShouldAttend';
 import FooterBanner from '../components/banner/DayLondonFooter';
 
 const speakersData = require('../data/speakersData.json');
@@ -28,26 +27,31 @@ class DayLondon extends React.Component {
           ]}>
         </Helmet>
         <HeaderBanner
-          title="Distributed SQL Summit Asia"
+          title="Distributed SQL Summit Day – London"
           showPresents
           showCaptionBar
         />
         <Description />
 
-        {
-          // console.log('speakerData', speakersData)
-          speakersData.map((speakerData) => {
-            // console.log('single Daata', key, speakerData)
-            return <Speaker {...speakerData} />
-          })
-        }
+        <div class="speakers-section">
+          <div class="container">
+            <h2>Meet the Speakers</h2>
+            <div class="speakers-area">
+              {
+                speakersData.map((speakerData) => {
+                  return <Speaker {...speakerData} />
+                })
+              }
+            </div>
+          </div>
+        </div>
 
         <FooterBanner
           title="Have any questions?"
           btnText="Contact Us"
           btnLink="https://www.yugabyte.com/contact/"
         />
-      </Layout>
+      </Layout >
     )
   }
 }
