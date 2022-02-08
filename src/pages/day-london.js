@@ -3,7 +3,11 @@ import Helmet from 'react-helmet';
 import Layout from '../components/layout';
 import HeaderBanner from '../components/banner/DayLondonHeader';
 import Description from '../components/DescriptionDayLondon';
+import Speaker from '../components/LondonSpeaker';
+// import WhoShouldAttend from '../components/WhoShouldAttend';
 import FooterBanner from '../components/banner/DayLondonFooter';
+
+const speakersData = require('../data/speakersData.json');
 
 class DayLondon extends React.Component {
   render() {
@@ -29,6 +33,15 @@ class DayLondon extends React.Component {
           showCaptionBar
         />
         <Description />
+
+        {
+          // console.log('speakerData', speakersData)
+          speakersData.map((speakerData) => {
+            // console.log('single Daata', key, speakerData)
+            return <Speaker {...speakerData} />
+          })
+        }
+
         <FooterBanner
           title="Have any questions?"
           btnText="Contact Us"
