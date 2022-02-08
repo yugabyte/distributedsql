@@ -12,8 +12,6 @@ class CodeConduct extends React.Component {
           title="Code of Conduct"
           meta={[
             { name: 'description', content: 'Code of Conduct for Distributed SQL Summit Asia, a free online conference to push the boundaries of cloud native RDBMS forward.' },
-            { name: 'keywords', content: 'Distributed SQL, Postgres, YugaByte, database, asia' },
-            { name: 'google-site-verification', content: 'IrJBdGcrNYjaVXTiMFpMckF5pC2MsY9x6nt8TgMtmGE' },
             { name: 'og:locale', content: 'en_US' },
             { name: 'og:title', content: 'Code of Conduct for Distributed SQL Summit Asia' },
             { name: 'og:description', content: 'Code of Conduct for Distributed SQL Summit Asia, a free online conference to push the boundaries of cloud native RDBMS forward.' },
