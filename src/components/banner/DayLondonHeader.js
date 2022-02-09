@@ -3,6 +3,8 @@ import LogoSmall from '../../assets/images/yb-light-logo.svg';
 import LogoDSSBanner from '../../assets/images/banner/dss-summit-day-london-logo.png';
 import BackgroundImage from 'gatsby-background-image';
 import ConferenceIcon from '../../assets/icons/event-white.svg';
+import calenderIcon from '../../assets/icons/calendar.svg';
+import mapIcon from '../../assets/icons/map-icon-orange.png';
 import { graphql, Link, StaticQuery } from 'gatsby';
 
 const DayLondonHeader = ({ title, showPresents, showCaptionBar }) => (
@@ -30,7 +32,7 @@ const DayLondonHeader = ({ title, showPresents, showCaptionBar }) => (
           data.desktopBannerImage.childImageSharp.fluid,
         ];
         return (
-          <section className="day-london-conference">
+          <section className="day-london-conference" id="day-london-hero">
             <BackgroundImage Tag="div" fluid={sources} id="banner">
               <div className="inner">
                 <header className="major">
@@ -39,7 +41,7 @@ const DayLondonHeader = ({ title, showPresents, showCaptionBar }) => (
                     <h1>{title}</h1>
                     {showPresents &&
                       <div className="presents">
-                        <span className="text">PRESENTED BY</span>
+                        <span className="text">presented by</span>
                         <a href="https://yugabyte.com/">
                           <img style={{
                             width: '150px',
@@ -52,12 +54,13 @@ const DayLondonHeader = ({ title, showPresents, showCaptionBar }) => (
                   <div className="schedule-area">
                     <ul className="details">
                       <li className="data-time">
-                        March 08, 2022<br />
-
+                          <img className="icon" src={calenderIcon} alt="Calender" />
+                          March 08, 2022<br />
                         <span>13:00 - 18:30 </span>
                       </li>
                       <li className="location">
-                        Code.Node 10 South Place,<br />
+                          <img className="icon" src={mapIcon} alt="Location Icon" />
+                          Code.Node <span>10 South Place,</span><br />
                         <span> London EC2M 7EB</span>
                       </li>
                     </ul>

@@ -1,0 +1,74 @@
+[
+  {
+    "start": "12:00",
+    "speaker": "Welcome Panel",
+    "session": "Doors Open; Coffee/Tea; Distribute customer swag",
+    "message": ""
+  },
+  {
+    "start": "13:00",
+    "speaker": "Dai Clegg",
+    "session": "Willkommen! And bienvenue! Welcome!",
+    "message": ""
+  },
+  {
+    "start": "13:15",
+    "speaker": "Martin Gaffney",
+    "session": "Introduction",
+    "message": ""
+  },
+  {
+    "start": "13:30",
+    "speaker": "David Walker",
+    "session": "What’s a Distributed Database?",
+    "message": ""
+  },
+  {
+    "start": "14:00",
+    "speaker": "David Walker",
+    "session": "Go home with Yugabyte today!",
+    "message": ""
+  },
+  {
+    "start": "14:15",
+    "speaker": "Karl Funk",
+    "session": "Session 1: &lt;&lt;missing title&gt;&gt;",
+    "message": "Live demonstration showing a Banking Application with a central database for ledger management. We will show how the central database can survive an Availability Zone or even a Region failure. We then extend the use case to include a Fraud detection system that processes near real time transactions from the Banking Application database."
+  },
+  {
+    "start": "15:00",
+    "speaker": "Break",
+    "session": "Coffee/Tea",
+    "message": ""
+  },
+  {
+    "start": "15:30",
+    "speaker": "Hüseyin Demir",
+    "session": "Deploying Yugabyte At Trendyol",
+    "message": ""
+  },
+  {
+    "start": "16:00",
+    "speaker": "Dave Roberts Doug Hadfield",
+    "session": "Session 2: Stopping the sky falling in? Building and operating clusters for resilience",
+    "message": ""
+  },
+  {
+    "start": "16:45",
+    "speaker": "Break",
+    "session": "Coffee/Tea",
+    "message": ""
+  },
+  {
+    "start": "17:00",
+    "speaker": "Dai Clegg David Walker Alan Caldera",
+    "session": "A Q&A Panel Session For Technologists",
+    "message": ""
+  },
+  {
+    "start": "18:00",
+    "speaker": "Drinks & Food",
+    "session": "Beer &amp; Pizza Plug-in to our engineers, Play with the technology whilst you enjoy a drink and a snack",
+    "message": ""
+  }
+]

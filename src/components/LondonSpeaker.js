@@ -1,6 +1,8 @@
 import React from 'react';
-import Img from 'gatsby-image';
-import { useStaticQuery, graphql } from 'gatsby';
+import lianghongHeadshot from '../assets/icons/lianghong-headshot.png';
+// import Img from 'gatsby-image';
+
+// import { useStaticQuery, graphql } from 'gatsby';
 
 // import { graphql, Link, StaticQuery } from 'gatsby';
 
@@ -21,11 +23,12 @@ const LondonSpeaker = (props) => {
   // console.log(imgPath)
 
   return (
-    <div className="speaker">
+    <div className="speakers-box">
       <div className="head">
+        <img src={lianghongHeadshot} alt="" />
         {/* <Img fluid={data.file.childImageSharp.fluid} alt={props.name} title={props.name} /> */}
       </div>
-      <div class="author-detail">
+      <div className="author-name">
         <b>{props.name}</b>
         {props.position},<br />
         <b>{props.company}</b>

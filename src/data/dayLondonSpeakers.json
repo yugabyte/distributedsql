@@ -1,0 +1,88 @@
+[
+  {
+    "picture": "JoeBeda",
+    "name": "Joe Beda",
+    "id": "joe-beda",
+    "position": "Principal Engineer",
+    "company": "VMware",
+    "type": "speaker"
+  },
+  {
+    "picture": "LianghongXu",
+    "name": "Lianghong Xu",
+    "id": "lianghong-xu",
+    "position": "Engineering Manager, Storage and Caching Team",
+    "company": "Pinterest",
+    "type": "speaker"
+  },
+  {
+    "picture": "MehrdadNurolahzade",
+    "name": "Mehrdad Nurolahzade",
+    "id": "mehrdad-nurolahzade",
+    "position": "Platform Engineer",
+    "company": "Twitter",
+    "type": "speaker"
+  },
+  {
+    "picture": "KarthikRanganathan",
+    "name": "Karthik Ranganathan",
+    "id": "karthik-ranganathan",
+    "position": "CTO and Co-Founder",
+    "company": "Yugabyte",
+    "type": "speaker"
+  },{
+  "picture": "JoeBeda",
+  "name": "Joe Beda",
+  "id": "joe-beda",
+  "position": "Principal Engineer",
+  "company": "VMware",
+  "type": "speaker"
+},
+  {
+    "picture": "LianghongXu",
+    "name": "Lianghong Xu",
+    "id": "lianghong-xu",
+    "position": "Engineering Manager, Storage and Caching Team",
+    "company": "Pinterest",
+    "type": "speaker"
+  },
+  {
+    "picture": "MehrdadNurolahzade",
+    "name": "Mehrdad Nurolahzade",
+    "id": "mehrdad-nurolahzade",
+    "position": "Platform Engineer",
+    "company": "Twitter",
+    "type": "speaker"
+  },
+  {
+    "picture": "KarthikRanganathan",
+    "name": "Karthik Ranganathan",
+    "id": "karthik-ranganathan",
+    "position": "CTO and Co-Founder",
+    "company": "Yugabyte",
+    "type": "speaker"
+  },{
+  "picture": "JoeBeda",
+  "name": "Joe Beda",
+  "id": "joe-beda",
+  "position": "Principal Engineer",
+  "company": "VMware",
+  "type": "speaker"
+},
+  {
+    "picture": "LianghongXu",
+    "name": "Lianghong Xu",
+    "id": "lianghong-xu",
+    "position": "Engineering Manager, Storage and Caching Team",
+    "company": "Pinterest",
+    "type": "speaker"
+  },
+  {
+    "picture": "MehrdadNurolahzade",
+    "name": "Mehrdad Nurolahzade",
+    "id": "mehrdad-nurolahzade",
+    "position": "Platform Engineer",
+    "company": "Twitter",
+    "type": "speaker"
+  }
+]

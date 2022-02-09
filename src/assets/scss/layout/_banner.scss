@@ -5,6 +5,10 @@
 ///
 
 /* Banner */
+html{
+    scroll-behavior: smooth;
+
+}
 .homeBanner{
     width: 100%;
     height: 100%;
@@ -377,6 +381,103 @@
         margin-right: 26px;
     }
 }
+#day-london-hero{
+    .banner-caption-bar{
+        width   :847px;
+        padding :23px 33px 23px 63px;
+        img{
+            margin-right :20px;
+            max-width    :100%;
+        }
+    }
+    img{
+        max-width :100%;
+    }
+    #banner{
+        .presents{
+            text-align    :center;
+            margin-bottom :50px;
+            margin-top    :0;
+            > .text{
+                font-style: italic;
+                font-weight :600;
+                line-height :32px;
+                letter-spacing: 0.54px;
+
+            }
+        }
+        > .inner header{
+            display :block;
+        }
+        > .inner .details li{
+            letter-spacing :0px;
+            color          :#fff;
+            font-size      :24px;
+            font-weight    :600;
+            line-height    :32px;
+            padding        :0 30px 0 35px;
+            display        :block !important;
+            span{
+                font-weight :normal;
+            }
+        }
+        > .inner .details li.location .icon,
+        > .inner .details li.data-time .icon{
+            display    :inline-block;
+            content    :"";
+            width      :23px;
+            position   :absolute;
+            left       :0;
+            height     :auto;
+            top        :4px;
+        }
+        > .inner .details li:not(:last-child):after{
+            display :none;
+        }
+        h1{
+            text-align     :center;
+            font           :normal normal normal 22px/28px Source Sans Pro;
+            letter-spacing :0.22px;
+            color          :#fff;
+            margin-top :22px    ;
+        }
+        > .inner .btn-rounded{
+            margin :0;
+            padding: 5.3px 40px;
+            text-align: center;
+            transition: all .3s linear;
+            border: 0;
+            line-height: inherit;
+            font-size: 30px;
+            font-weight: bold;
+            background: #FF6E42 !important;
+            border-radius: 7px;
+
+            &:hover{
+                background: #FF6E42 !important;
+                border :0;
+                transform: scale(1.04);
+            }
+        }
+
+        > .inner .cta-bar .btn-rounded:first-child{
+            margin      :0;
+            margin-left :15px;
+        }
+    }
+    .logo-area{
+        width  :367px;
+        margin :0 auto;
+    }
+
+    .schedule-area{
+        display         :flex;
+        justify-content :center;
+        max-width       :847px;
+        margin          :0 auto 60px;
+    }
+}
+
 @media screen and (max-width: 1400px) {
     .banner-caption-bar{
         padding: 23px 50px;

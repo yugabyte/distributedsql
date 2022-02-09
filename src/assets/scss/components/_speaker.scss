@@ -1,94 +1,274 @@
-.speaker {  	
-    .profile {
-        text-align: center;
+.london-speakers{
+  background :#eef1fa;
+  padding    :65px 0 27px;
+  font-weight :normal;
 
-        .speakerImage {
-            margin: 0 auto;
-             
-            img {
-                width: inherit;
-                height: inherit;
-                object-fit: cover;
-                object-position: top center;
-                border-radius: 50%;
-            }
-        }
+  .container{
+	max-width :1176px;
+	margin    :0 auto;
+  }
+  h2{
+	font-size      :60px;
+	line-height    :68px;
+	text-align     :center;
+	letter-spacing :0px;
+	color: #000041;
+	margin: 0 0 50px;
+	font-weight    :normal;
+  }
+  .speakers-area{
+	display         :flex;
+	flex-flow       :row wrap;
+	justify-content :center;
 
-        .speakerProfile {						
-            .profileName {
-                font-weight: 600;
-                font-size: inherit;
-                color: #141920;				
-            }
-            					
-            .profileBio {
-                font-size: inherit;
-                font-weight: 400;
-                line-height: 1.45;
-                color: #141920;
-                
-                .company {
-                    font-weight: 900;
-                    color: #141920;
-                }
-            }
-        }
-    }
+	.speakers-box{
+	  width         :293px;
+	  padding       :0 10px;
+	  display       :flex;
+	  flex-flow     :column;
+	  text-align    :center;
+	  margin-bottom :60px;
+	  //margin-right  :26px;
+	  //margin-right  :9px;
 
-    .profile.horizontal {
-        display: flex;
-        .speakerImage {
-            margin: 0;
-        }
-        .speakerProfile {
-            margin-left: 1em;
-            text-align: left;
-        }
-    }
-
-    &.small {
-        .profile {
-			.speakerImage {
-                width: 4.5em;
-				height: 4.5em;
-            }
-
-            .profileBio {
-                .company {
-                    font-weight: 400;
-                }
-            }
-        }
-    }		
-}
-
-
-@media (min-width: 1070px) {
-	.speaker {
-	    margin-right: 0.6em;
-        margin-bottom: 0.85em;
-        
-        .profile {
-            .speakerImage {
-                width: 7.6em;
-                height: 7.6em;
-            }
-        }
-	}
-}
-
-@media screen and (max-width: 1070px) {
-	.speaker {
-		margin-right: 15px;
-		margin-left: 15px;
-		margin-bottom: 40px;
-		.profile
-		{
-			.speakerImage
-			{
-				width: 128px;
-				height: 128px;
-			}
+	  .head{
+		width      :165px;
+		height     :165px;
+		padding    :5px;
+		margin     :0 auto 16px;
+		transition :all 300ms linear;
+		> img{
+		  border-radius :50%;
+		  max-width     :100%;
+		  border        :3px solid rgba(34, 165, 242, 0.80);
+		  object-fit    :cover;
+		  height        :100%;
+		  width         :100%;
+		  border        :3px solid rgba(34, 165, 242, 0.80);
 		}
+	  }
+	  .author-name b{
+		display :block;
+		color   :inherit;
+	  }
+	  .author-name{
+		font-size      :22px;
+		line-height    :32px;
+		color          :#141920;
+		letter-spacing :0px;
+		font-weight    :normal;
+	  }
+	  &:nth-child(4n){
+		margin-right :0;
+	  }
+	  &:nth-child(4n - 1) .head > img{
+		border-color :#713cd5;
+	  }
+	  &:nth-child(4n - 2) .head > img{
+		border-color :#ff6e42;
+	  }
+	  &:nth-child(4n) .head > img{
+		border-color :#b93d62
+	  }
+	  &:hover .head{
+		transform :scale(1.18);
+	  }
 	}
+  }
+}
+.london-agenda{
+  background  :#fff;
+  padding     :65px 0 87px;
+  font-family :Source Sans Pro, sans-serif;
+  font-weight :normal;
+  h2{
+	font-size      :60px;
+	line-height    :68px;
+	text-align     :center;
+	letter-spacing :0px;
+	font-weight    :normal;
+	color          :#000041;
+	margin         :0 0 50px;
+  }
+  .container{
+	margin    :0 auto;
+	max-width :1072px;
+  }
+  .agenda-row.title-row{
+	font-weight :600;
+  }
+  .agenda-row{
+	display  :flex;
+	flex     :1 auto;
+	padding  :16px 0 20px 50px;
+	position :relative;
+	.col{
+	  color: #141920;
+	}
+	.col-1{
+	  width        :128px;
+	  margin-right :30px;
+	  font-weight  :600;
+
+	}
+	.col-2{
+	  width        :216px;
+	  margin-right :52px;
+	  font-weight  :600;
+	}
+	.col-3 b{
+	  display :block;
+	}
+	.col-3{
+	  width        :527px;
+	  margin-right :52px;
+	}
+	.col-4{
+	  width :52px;
+	}
+	&:not(:last-child):after{
+	  content    :'';
+	  display    :block;
+	  position   :absolute;
+	  bottom     :0;
+	  height     :4px;
+	  background :transparent linear-gradient(270deg, #9c7bde 0%, #4bb4f3 100%) 0% 0% no-repeat padding-box;
+	  width      :100%;
+	  left       :0;
+	}
+	.col-info{
+
+	  .message-box{
+		position     :relative;
+		display      :inline-block;
+		padding-left :10px;
+		.message{
+		  display :none;
+		}
+		.info{
+		  width           :26px;
+		  height          :26px;
+		  background      :#eef1fa 0% 0% no-repeat padding-box;
+		  text-align      :left;
+		  font-family     :Palatino;
+		  font-size       :20px;
+		  line-height     :32px;
+		  font-style      :italic;
+		  color           :#141920;
+		  display         :flex;
+		  align-items     :center;
+		  justify-content :center;
+		  border-radius   :50%;
+
+		}
+		.message{
+		  width       :562px;
+		  position    :absolute;
+		  background  :#fff;
+		  border      :1px solid #707070;
+		  padding     :27px 26px 27px 37px;
+		  text-align  :left;
+		  font-size   :18px;
+		  line-height :26px;
+		  right       :calc(100% - 10px);
+		  top         :calc(100% - 0px);
+		  z-index     :1;
+		  color       :#141920;
+
+		}
+	  }
+	}
+	&:not(:hover) .message{
+	  display :none;
+	}
+  }
+}
+.speaker{
+  .profile{
+	text-align :center;
+
+	.speakerImage{
+	  margin :0 auto;
+
+	  img{
+		width           :inherit;
+		height          :inherit;
+		object-fit      :cover;
+		object-position :top center;
+		border-radius   :50%;
+	  }
+	}
+
+	.speakerProfile{
+	  .profileName{
+		font-weight :600;
+		font-size   :inherit;
+		color       :#141920;
+	  }
+
+	  .profileBio{
+		font-size   :inherit;
+		font-weight :400;
+		line-height :1.45;
+		color       :#141920;
+
+		.company{
+		  font-weight :900;
+		  color       :#141920;
+		}
+	  }
+	}
+  }
+
+  .profile.horizontal{
+	display :flex;
+	.speakerImage{
+	  margin :0;
+	}
+	.speakerProfile{
+	  margin-left :1em;
+	  text-align  :left;
+	}
+  }
+
+  &.small{
+	.profile{
+	  .speakerImage{
+		width  :4.5em;
+		height :4.5em;
+	  }
+
+	  .profileBio{
+		.company{
+		  font-weight :400;
+		}
+	  }
+	}
+  }
+}
+@media (min-width :1070px){
+  .speaker{
+	margin-right  :0.6em;
+	margin-bottom :0.85em;
+
+	.profile{
+	  .speakerImage{
+		width  :7.6em;
+		height :7.6em;
+	  }
+	}
+  }
+}
+@media screen and (max-width :1070px){
+  .speaker{
+	margin-right  :15px;
+	margin-left   :15px;
+	margin-bottom :40px;
+	.profile{
+	  .speakerImage{
+		width  :128px;
+		height :128px;
+	  }
+	}
+  }
 }
