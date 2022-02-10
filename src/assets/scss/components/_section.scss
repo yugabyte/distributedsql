@@ -227,14 +227,18 @@ header {
   .inner {
     width: 700px !important;
     max-width: 100%;
-    text-align: center;
+    text-align: left;
     padding: 0 !important;
 
     p {
-      text-align: center;
+      text-align: left;
       font: normal normal normal 18px/28px Source Sans Pro;
       letter-spacing: 0;
       color: #141920;
+
+      b {
+        color: #141920;
+      }
     }
   }
 

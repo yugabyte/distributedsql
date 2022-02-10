@@ -207,7 +207,10 @@
 
   .agenda-row.title-row {
     font-weight: 600;
-  }
+    .col {
+      font-weight: 600;
+    }
+    }
 
   .agenda-row {
     display: flex;
@@ -217,18 +220,24 @@
 
     .col {
       color: #141920;
+      letter-spacing: 0px;
+      font-size :22px;
+      line-height :32px;
+      font-weight :normal;
     }
 
     .col-1 {
       width: 128px;
       margin-right: 30px;
       font-weight: 600;
+      font-size :25px;
     }
 
     .col-2 {
       width: 216px;
       margin-right: 52px;
       font-weight: 600;
+      font-size :25px;
     }
 
     .col-3 b {
@@ -238,7 +247,7 @@
 
     .col-3 {
       width: 527px;
-      margin-right: 52px;
+      margin-right: 17px;
     }
 
     .col-4 {
@@ -278,7 +287,10 @@
           justify-content: center;
           border-radius: 50%;
         }
-
+        .info:not(:hover) + .message {
+          opacity: 0;
+          transition: opacity 500ms 1s ease-in !important;
+        }
         .message {
           width: 562px;
           position: absolute;
@@ -294,13 +306,11 @@
           color: #141920;
           transition: opacity 500ms 0s  ease-in;
         }
+
       }
     }
 
-    &:not(:hover) .message {
-      opacity: 0;
-      transition: opacity 500ms 1s ease-in !important;
-    }
+
   }
 
   //1280
@@ -320,14 +330,21 @@
   @include breakpoint(xsmall) {
     .agenda-row {
       padding: 10px 5px 14px 5px;
+.col{
+  font-size :17px;
+  line-height :normal;
 
+}
       .col-1 {
         margin-right: 10px;
         width: 42px;
+        font-size :17px;
+
       }
 
       .col-2 {
         margin-right: 10px;
+        font-size :17px;
       }
 
       .col-3 {

@@ -42,7 +42,7 @@ const DayLondonHeader = ({ title, showPresents, showCaptionBar }) => (
                     {showPresents &&
                       <div className="presents">
                         <span className="text">presented by</span>
-                        <a href="https://yugabyte.com/">
+                        <a href="https://yugabyte.com/" title="Yugabyte">
                           <img style={{
                             width: '150px',
                             objectFit: 'contain'
@@ -60,7 +60,8 @@ const DayLondonHeader = ({ title, showPresents, showCaptionBar }) => (
                       </li>
                       <li className="location">
                         <img className="icon" src={mapIcon} alt="Location Icon" />
-                        Code.Node <span>10 South Place,</span><br />
+                        <a href="https://www.codenode.live/" target="_blank" rel="noopener" title="Code.Node">Code.Node</a><br />
+                        <span>10 South Place,</span><br />
                         <span> London EC2M 7EB</span>
                       </li>
                     </ul>
@@ -75,7 +76,7 @@ const DayLondonHeader = ({ title, showPresents, showCaptionBar }) => (
             </BackgroundImage>
             {showCaptionBar &&
               <div className="banner-caption-bar">
-                <img src={ConferenceIcon} alt="Conference icon" /> We are excited to announce Yugabyte’s first London in-person event.
+                <img src={ConferenceIcon} alt="Conference icon" /> We are excited to announce Yugabyte’s first London in-person event!
               </div>
             }
           </section>

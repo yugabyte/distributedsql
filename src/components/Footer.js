@@ -18,7 +18,7 @@ const Footer = ({ dark, socialIcons }) => (
               </a>
             </li>
             <li>
-              <a rel="noopener" href="https://www.yugabyte.com/slack" className="icon alt slack">
+              <a rel="noopener" href="https://communityinviter.com/apps/yugabyte-db/register" className="icon alt slack">
                 <SlackLogo style={{ width: '24px', height: '24px', marginTop: '10px' }} />
               </a>
             </li>
