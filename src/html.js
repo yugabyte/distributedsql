@@ -8,16 +8,13 @@ export default class HTML extends React.Component {
         <head>
           <meta charSet="utf-8" />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-          <meta prefix="og: http://ogp.me/ns#" property="og:type" content="website" />
-          <meta prefix="og: http://ogp.me/ns#" property="og:image" content="https://asia.distributedsql.org/dss-asia-2022.png" />
+          <meta property="og:type" content="website" />
 
           <meta
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
           {this.props.headComponents}
-          {/* <script src="https://player.vimeo.com/api/player.js"></script> */}
-
         </head>
         <body {...this.props.bodyAttributes}>
           {this.props.preBodyComponents}

@@ -40,7 +40,7 @@ const Confirmation = () => {
     result.then(() => {
       updateSigninStatus(window.gapi.auth2.getAuthInstance().isSignedIn.get());
     });
-  }  
+  }
 
   const addToCalendar = () => {
     var request = window.gapi.client.calendar.events.insert({
@@ -93,7 +93,7 @@ const Confirmation = () => {
       <div className="inner">
         <aside className="register--aside confirmation">
             <div className="thank-you-note">Thank you for registering!</div>
-            <h2>Check your email for confirmation.</h2>            
+            <h2>Check your email for confirmation.</h2>
             <div className="event" onClick={handleCalendarClick}>
               <div className="event-details">
                 {!eventAdded &&

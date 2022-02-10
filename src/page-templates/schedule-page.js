@@ -1,6 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import Layout from '../components/layout';
+// import Layout from '../components/layout';
 import Banner from '../components/banner/Header';
 import EventSchedule from '../components/EventSchedule';
 import ContactBanner from '../components/banner/Footer';

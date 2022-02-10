@@ -1,6 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import Layout from '../components/layout'
+// import Layout from '../components/layout'
 import Speaker from '../components/Speaker'
 import ContactBanner from '../components/ContactBanner'
 import Img from "gatsby-image"
@@ -29,10 +29,10 @@ const SessionPage = (props) => {
             <header style={{
               width: '100%',
               minHeight: '300px',
-            }} className="major workshopDetails">              
+            }} className="major workshopDetails">
               {video &&
                 <div className="video-container">
-                  <iframe src={`${video}?title=0&byline=0&portrait=0`} width="733" height="419" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>                  
+                  <iframe src={`${video}?title=0&byline=0&portrait=0`} width="733" height="419" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
                   {transcription &&
                     <section className="transcript">
                       <h3>Transcript</h3>
@@ -40,7 +40,7 @@ const SessionPage = (props) => {
                         {transcription}
                       </div>
                     </section>
-                  }                 
+                  }
                 </div>
               }
               <div className="session-info">
@@ -49,7 +49,7 @@ const SessionPage = (props) => {
                 </div>
                 <h3>{talk}</h3>
                 {talkSpeakers.map(speakerData => (
-                  <Speaker                    
+                  <Speaker
                     speakerPosition={speakerData.speakerPosition}
                     size={"small"}
                     orientation="landscape"
@@ -59,7 +59,7 @@ const SessionPage = (props) => {
                     speakerCompany={speakerData.speakerCompany}
                   />
                 ))}
-                <p dangerouslySetInnerHTML={{__html: description}}></p>
+                <p dangerouslySetInnerHTML={{ __html: description }}></p>
               </div>
             </header>
             <p>&lt; <Link to="/schedule">Back to Schedule page</Link></p>
@@ -180,7 +180,7 @@ export const queryProfilePictures = graphql`
           ...GatsbyImageSharpFluid
         }
       }
-    }   
+    }
     KarthikRanganathan1: file(relativePath: { eq: "KarthikRanganathan.png" }) {
       childImageSharp {
         fluid(maxWidth: 500) {

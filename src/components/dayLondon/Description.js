@@ -12,11 +12,11 @@ const Description = () => (
       <p>
         Our London Distributed SQL Day (DSS) will bring together database builders, architects, and thought leaders for a lively afternoon of discussion, insight, and inspiration. The event will be followed by a drinks reception, giving you the opportunity to network.
       </p>
-        <div className="registernew-and-agenda">
-            <h4>Register now to join us</h4>
-            <span className="seprator"></span>
-            <a href="#agenda" className="view-agenda">View agenda</a>
-        </div>
+      <div className="registernew-and-agenda">
+        <h4>Register now to join us</h4>
+        <span className="seprator"></span>
+        <a href="#agenda" className="view-agenda">View agenda</a>
+      </div>
     </div>
   </section>
 );

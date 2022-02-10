@@ -1,11 +1,11 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import Layout from '../components/layout';
-import HeaderBanner from '../components/banner/Header';
-import Description from '../components/Description';
-import WhatIsDistributedSQL from '../components/WhatIsDistributedSQL';
-import WhoShouldAttend from '../components/WhoShouldAttend';
-import FooterBanner from '../components/banner/Footer';
+import Layout from '../components/Layout';
+import HeaderBanner from '../components/index/HeaderBanner';
+import Description from '../components/index/Description';
+import WhatIsDistributedSQL from '../components/index/WhatIsDistributedSQL';
+import WhoShouldAttend from '../components/index/WhoShouldAttend';
+import FooterBanner from '../components/FooterBanner';
 
 class HomeIndex extends React.Component {
   render() {
@@ -19,9 +19,12 @@ class HomeIndex extends React.Component {
             { name: 'og:locale', content: 'en_US' },
             { name: 'og:title', content: 'Distributed SQL Summit Asia' },
             { name: 'og:description', content: 'Join us for Distributed SQL Summit Asia, a free online conference to push the boundaries of cloud native RDBMS forward.' },
+            { name: 'og:image', content: 'https://asia.distributedsql.org/dss-asia-2022.png' },
+            { name: 'og:image:secure_url', content: 'https://asia.distributedsql.org/dss-asia-2022.png' },
             { name: 'twitter:card', content: 'summary_large_image' },
             { name: 'twitter:description', content: 'Join us for Distributed SQL Summit Asia, a free online conference to push the boundaries of cloud native RDBMS forward.' },
             { name: 'twitter:image', content: 'https://asia.distributedsql.org/dss-asia-2022.png' },
+            { name: 'twitter:image:secure_url', content: 'https://asia.distributedsql.org/dss-asia-2022.png' },
             { name: 'twitter:site', content: '@yugabyte' },
             { name: 'twitter:creator', content: '@yugabyte' }
           ]}>

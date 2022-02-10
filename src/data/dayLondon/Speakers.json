@@ -1,6 +1,6 @@
 [
   {
-    "picture": "JoeBeda",
+    "picture": "lianghong-headshot.png",
     "name": "Joe Beda",
     "id": "joe-beda",
     "position": "Principal Engineer",
@@ -8,7 +8,7 @@
     "type": "speaker"
   },
   {
-    "picture": "LianghongXu",
+    "picture": "lianghong-headshot.png",
     "name": "Lianghong Xu",
     "id": "lianghong-xu",
     "position": "Engineering Manager, Storage and Caching Team",
@@ -16,7 +16,7 @@
     "type": "speaker"
   },
   {
-    "picture": "MehrdadNurolahzade",
+    "picture": "lianghong-headshot.png",
     "name": "Mehrdad Nurolahzade",
     "id": "mehrdad-nurolahzade",
     "position": "Platform Engineer",
@@ -24,22 +24,23 @@
     "type": "speaker"
   },
   {
-    "picture": "KarthikRanganathan",
+    "picture": "lianghong-headshot.png",
     "name": "Karthik Ranganathan",
     "id": "karthik-ranganathan",
     "position": "CTO and Co-Founder",
     "company": "Yugabyte",
     "type": "speaker"
-  },{
-  "picture": "JoeBeda",
-  "name": "Joe Beda",
-  "id": "joe-beda",
-  "position": "Principal Engineer",
-  "company": "VMware",
-  "type": "speaker"
-},
+  },
   {
-    "picture": "LianghongXu",
+    "picture": "lianghong-headshot.png",
+    "name": "Joe Beda",
+    "id": "joe-beda",
+    "position": "Principal Engineer",
+    "company": "VMware",
+    "type": "speaker"
+  },
+  {
+    "picture": "lianghong-headshot.png",
     "name": "Lianghong Xu",
     "id": "lianghong-xu",
     "position": "Engineering Manager, Storage and Caching Team",
@@ -47,7 +48,7 @@
     "type": "speaker"
   },
   {
-    "picture": "MehrdadNurolahzade",
+    "picture": "lianghong-headshot.png",
     "name": "Mehrdad Nurolahzade",
     "id": "mehrdad-nurolahzade",
     "position": "Platform Engineer",
@@ -55,22 +56,23 @@
     "type": "speaker"
   },
   {
-    "picture": "KarthikRanganathan",
+    "picture": "lianghong-headshot.png",
     "name": "Karthik Ranganathan",
     "id": "karthik-ranganathan",
     "position": "CTO and Co-Founder",
     "company": "Yugabyte",
     "type": "speaker"
-  },{
-  "picture": "JoeBeda",
-  "name": "Joe Beda",
-  "id": "joe-beda",
-  "position": "Principal Engineer",
-  "company": "VMware",
-  "type": "speaker"
-},
+  },
   {
-    "picture": "LianghongXu",
+    "picture": "lianghong-headshot.png",
+    "name": "Joe Beda",
+    "id": "joe-beda",
+    "position": "Principal Engineer",
+    "company": "VMware",
+    "type": "speaker"
+  },
+  {
+    "picture": "lianghong-headshot.png",
     "name": "Lianghong Xu",
     "id": "lianghong-xu",
     "position": "Engineering Manager, Storage and Caching Team",
@@ -78,7 +80,7 @@
     "type": "speaker"
   },
   {
-    "picture": "MehrdadNurolahzade",
+    "picture": "lianghong-headshot.png",
     "name": "Mehrdad Nurolahzade",
     "id": "mehrdad-nurolahzade",
     "position": "Platform Engineer",

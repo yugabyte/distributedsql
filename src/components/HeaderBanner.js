@@ -1,8 +1,7 @@
 import React from 'react';
 import BackgroundImage from 'gatsby-background-image';
-import ConferenceIcon from '../../assets/images/conference-icon.svg';
+import ConferenceIcon from '../assets/images/conference-icon.svg';
 import { graphql, StaticQuery } from 'gatsby';
-
 
 const PageBanner = ({ title, showCaptionBar }) => (
   <StaticQuery query={graphql`

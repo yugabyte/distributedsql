@@ -1,35 +1,38 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import Layout from '../components/layout';
-import HeaderBanner from '../components/banner/DayLondonHeader';
-import Description from '../components/DayLondonDescription';
-import Speaker from '../components/LondonSpeaker';
-import Agenda from '../components/LondonAgenda';
-import FooterBanner from '../components/banner/DayLondonFooter';
+import Layout from '../components/dayLondon/Layout';
+import HeaderBanner from '../components/dayLondon/HeaderBanner';
+import Description from '../components/dayLondon/Description';
+import Speaker from '../components/dayLondon/Speaker';
+import Agenda from '../components/dayLondon/Agenda';
+import FooterBanner from '../components/dayLondon/FooterBanner';
 
-const speakersData = require('../data/dayLondonSpeakers.json');
-const agendasData = require('../data/dayLondonAgenda.json');
+const speakersData = require('../data/dayLondon/Speakers.json');
+const agendasData = require('../data/dayLondon/Agenda.json');
 
 class DayLondon extends React.Component {
   render() {
     return (
       <Layout>
         <Helmet
-          title='DSS Day London'
+          title='Distributed SQL Summit Day – London'
           meta={[
             { name: 'description', content: 'Join us on Distributed SQL Summit Day - London.' },
             { name: 'og:locale', content: 'en_US' },
-            { name: 'og:title', content: 'Distributed SQL Summit Asia' },
+            { name: 'og:title', content: 'Distributed SQL Summit Day - London' },
             { name: 'og:description', content: 'Join us on Distributed SQL Summit Day - London.' },
+            { name: 'og:image', content: 'https://asia.distributedsql.org/dss-summit-day-london.png' },
+            { name: 'og:image:secure_url', content: 'https://asia.distributedsql.org/dss-summit-day-london.png' },
             { name: 'twitter:card', content: 'summary_large_image' },
             { name: 'twitter:description', content: 'Join us on Distributed SQL Summit Day - London.' },
             { name: 'twitter:image', content: 'https://asia.distributedsql.org/dss-summit-day-london.png' },
+            { name: 'twitter:image:secure_url', content: 'https://asia.distributedsql.org/dss-summit-day-london.png' },
             { name: 'twitter:site', content: '@yugabyte' },
             { name: 'twitter:creator', content: '@yugabyte' }
           ]}>
         </Helmet>
         <HeaderBanner
-          title="Distributed SQL Summit Day – London"
+          title='Distributed SQL Summit Day – London'
           showPresents
           showCaptionBar
         />

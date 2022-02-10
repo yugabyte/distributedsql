@@ -83,10 +83,12 @@ body {
 			@include breakpoint(large) {
 				padding: 60px 0;
 				width: calc(100% - 4em);
+			  max-width :calc(100% - 30px);
 			}
 			@include breakpoint(small) {
 				//@include padding(1em, 0);
 				width: calc(100% - 3em);
+			  max-width :calc(100% - 30px);
 			}
 		}
 	}

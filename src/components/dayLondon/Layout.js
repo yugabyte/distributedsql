@@ -1,10 +1,10 @@
 import React from 'react';
-import '../assets/scss/main.scss';
+import '../../assets/scss/main.scss';
 import Header from './Header';
-import ScrollTopButton from './ScrollTopButton';
-import Footer from './Footer';
+import ScrollTopButton from '../ScrollTopButton';
+import Footer from '../Footer';
 
-class Layout extends React.Component {
+class DayLondonLayout extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -15,14 +15,13 @@ class Layout extends React.Component {
   }
 
   handleToggleMenu() {
-    alert('menu')
     this.setState({
       isMenuVisible: !this.state.isMenuVisible
     })
   }
 
   render() {
-    const { children, footerSettings = {} } = this.props
+    const { children, footerSettings = {} } = this.props;
     const { darkTheme, showSocialIcons = true } = footerSettings;
     return (
       <div className={`body ${this.state.isMenuVisible ? 'is-menu-visible' : ''}`}>
@@ -37,4 +36,4 @@ class Layout extends React.Component {
   }
 }
 
-export default Layout;
+export default DayLondonLayout;
