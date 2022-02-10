@@ -71,7 +71,7 @@ class DayLondon extends React.Component {
         </div>
 
         <FooterBanner
-          title="Have any questions?"
+          title="Any questions?"
           btnText="Contact Us"
           btnLink="https://www.yugabyte.com/contact/"
         />
