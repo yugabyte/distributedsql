@@ -6,161 +6,177 @@
 
 /* Footer */
 
-#footer {
-	background-color: #F9FAFC;
-	color: _palette(bg);
-	@include breakpoint(small) {
-		.links{
-			display: none;
-		}
+#footer{
+  background-color :#f9fafc;
+  color            :_palette(bg);
+  @include breakpoint(small){
+	.links{
+	  display :none;
 	}
-	.copyright {
-		font-size: 18px;
-		list-style: none;
-		padding-left: 0;
+  }
+  .copyright{
+	font-size    :18px;
+	list-style   :none;
+	padding-left :0;
 
-		li {
-			border-left: solid 1px _palette(border);
-			color: _palette(fg-light);
-			display: inline-block;
-			line-height: 1;
-			margin-left: 1em;
-			padding-left: 1em;
+	li{
+	  border-left  :solid 1px _palette(border);
+	  color        :_palette(fg-light);
+	  display      :inline-block;
+	  line-height  :1;
+	  margin-left  :1em;
+	  padding-left :1em;
 
-			&:first-child {
-				border-left: 0;
-				margin-left: 0;
-				padding-left: 0;
-			}
-		}
+	  &:first-child{
+		border-left  :0;
+		margin-left  :0;
+		padding-left :0;
+	  }
 	}
+  }
 
-	.inner {
-		.icons {
-			margin-top: 0.8em;
-		}
+
+  .inner{
+	.icons{
+	  margin-top :0.8em;
 	}
+  }
 
-	.container.inner {
-		padding: 64px 0;
-		display: flex;
+  .container.inner{
+	padding :64px 0;
+	display :flex;
 
-		> div {
-			padding: 0 45px;
-		}
-
-		.logo {
-			margin-right: 45px;
-		}
+	> div{
+	  padding :0 45px;
 	}
 
-	.logo {
-		img {
-			vertical-align: middle;
-		}
+	.logo{
+	  margin-right :45px;
+	}
+  }
+
+  .logo{
+	img{
+	  vertical-align :middle;
+	}
+  }
+
+  .content{
+	border-left   :1px solid #000041;
+
+	.icon{
+	  color     :#342a66;
+      font-size: 28px;
+
+	  svg{
+		fill :#342a66;
+	  }
 	}
 
-	.content {
-		border-left: 1px solid #000041;
+    .icon.slack svg {
+      font-size: 24px;
+      fill: #fff;
+      background: #342a66;
+      padding: 2px 4px;
+      border-radius: 3px;
+    }
 
-		.icon {
-			color: #342a66;
-			font-size: 24px;
+    .icon.linkedin {
+      background: #342a66;
+      border-radius: 3px;
+      font-size: 19px;
+      padding: 0 4px;
+      color: #fff;
+    }
 
-			svg {
-				fill: #342a66;
-			}			
-		}
+	align-items   :center;
+	align-content :center;
+	display       :flex;
 
-		align-items: center;
-		align-content: center;
-		display: flex;
+	.actions{
+	  margin-bottom :0;
 
-		.actions {
-			margin-bottom: 0;
-
-			li {
-				padding: 0 8px;
-			}
-		}
+	  li{
+		padding :0 8px;
+	  }
 	}
+  }
 
-	.legal {
-		color: #332A66;
-		display: inline-flex;
-		align-items: center;
+  .legal{
+	color       :#332a66;
+	display     :inline-flex;
+	align-items :center;
+    font-weight: normal;
 
-		.support-links {
-			list-style: none;
-			margin: 0 0 0 30px;
-			padding: 0;
-			display: flex;
+	.support-links{
+	  list-style :none;
+	  margin     :0 0 0 30px;
+	  padding    :0;
+	  display    :flex;
 
-			> li {
-				padding: 10px 8px;
-				font-size: 18px;
-			}			
-		}
+	  > li{
+		padding   :10px 8px;
+		font-size :18px;
+	  }
 	}
+  }
+}
+#footer.dark{
+  background :#000041;
+
+  .content{
+	border-left :1px solid #fff;
+
+	.icon{
+	  color :#fff;
+
+	  svg{
+		fill :#fff;
+	  }
+	}
+  }
+  .legal{
+	color :#fff;
+  }
 }
 
-#footer.dark {
-	background: #000041;
-	
-	.content {
-		border-left: 1px solid #FFF;
-		
-		.icon {
-			color: #FFFFFF;
+@include breakpoint(medium) {
+  #footer, #footer.dark{
+	.container.inner{
+	  display    :block;
+	  text-align :center;
 
-			svg {
-				fill: #FFFFFF;
-			}
-		}		
+	  .logo{
+		margin-bottom :20px;
+	  }
+
+	  > .content{
+		padding :10px 0 30px;
+	  }
 	}
-	.legal {
-		color: #FFFFFF;
+
+	.content{
+	  border-left :none;
+	  margin      :0 auto;
+	  width       :fit-content;
 	}
+  }
 }
-
-@include breakpoint(small) {
-	#footer, #footer.dark {
-		.container.inner {
-			display: block;
-			text-align: center;
-
-			.logo {
-				margin-bottom: 20px;
-			}
-
-			> .content {
-				padding: 10px 0 30px;
-			}
-		}
-
-		.content {
-			border-left: none;
-			margin: 0 auto;
-			width: fit-content;
-		}
+@include breakpoint(xsmall){
+  #footer{
+	.container.inner{
+	  .logo{
+		margin-right :0;
+	  }
 	}
-}
 
-@include breakpoint(xsmall) {
-	#footer {
-		.container.inner {
-			.logo {
-				margin-right: 0;
-			}
-		}
+	.legal{
+	  display :block;
 
-		.legal {
-			display: block;
-
-			.support-links {
-				justify-content: center;
-				margin: 15px 0 0;
-			}
-		}
+	  .support-links{
+		justify-content :center;
+		margin          :15px 0 0;
+	  }
 	}
+  }
 }

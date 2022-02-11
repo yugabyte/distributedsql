@@ -74,14 +74,21 @@ body {
 			@include padding(4em, 0);
 			margin: 0 auto;
 			max-width: _size(inner);
+			padding: 86px 0  75px ;
 			&.wide{
 				max-width: 65em;
 			}
 			width: calc(100% - 6em);
 
+			@include breakpoint(large) {
+				padding: 60px 0;
+				width: calc(100% - 4em);
+			  max-width :calc(100% - 30px);
+			}
 			@include breakpoint(small) {
-				@include padding(1em, 0);
+				//@include padding(1em, 0);
 				width: calc(100% - 3em);
+			  max-width :calc(100% - 30px);
 			}
 		}
 	}
@@ -90,6 +97,7 @@ body {
 
 	@import 'base/page';
 	@import 'base/typography';
+	@import 'base/colors';
 
 // Component.
 

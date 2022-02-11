@@ -1,0 +1,74 @@
+[
+  {
+    "picture": "dai-clegg.png",
+    "name": "Dai Clegg",
+    "id": "dai-clegg",
+    "position": "Product Marketing Specialist ",
+    "company": "Yugabyte",
+    "type": "speaker"
+  },
+  {
+    "picture": "martin-gaffney.png",
+    "name": "Martin Gaffney",
+    "id": "martin-gaffney",
+    "position": "AVP EMEA",
+    "company": "Yugabyte",
+    "type": "speaker"
+  },
+  {
+    "picture": "david-walker.png",
+    "name": "David Walker",
+    "id": "david-walker",
+    "position": "Field CTO EMEA",
+    "company": "Yugabyte",
+    "type": "speaker"
+  },
+  {
+    "picture": "karl-funk.jpeg",
+    "name": "Karl Funk",
+    "id": "karthik-ranganathan",
+    "position": "Customer Success - Advanced Technical Services",
+    "company": "Yugabyte",
+    "type": "speaker"
+  },
+  {
+    "picture": "huseyin-demir.jpeg",
+    "name": "Hüseyin Demir",
+    "id": "karl-funk",
+    "position": "Senior Database Platform Engineer",
+    "company": "Trendyol",
+    "type": "speaker"
+  },
+  {
+    "picture": "default.jpeg",
+    "name": "Dave Roberts",
+    "id": "lianghong-xu",
+    "position": "",
+    "company": "Yugabyte",
+    "type": "speaker"
+  },
+  {
+    "picture": "doug-hadfield.jpeg",
+    "name": "Doug Hadfield",
+    "id": "doug-hadfield",
+    "position": "Senior Advanced Technologist - EMEA",
+    "company": "Yugabyte",
+    "type": "speaker"
+  },
+  {
+    "picture": "alan-caldera.jpeg",
+    "name": "Alan Caldera",
+    "id": "alan-caldera",
+    "position": "Distinguished Engineer",
+    "company": "Yugabyte",
+    "type": "speaker"
+  },
+  {
+    "picture": "mete-guray.jpeg",
+    "name": "Mete Guray",
+    "id": "mete-guray",
+    "position": "Technology Product Manager",
+    "company": "Trendyol",
+    "type": "speaker"
+  }
+]

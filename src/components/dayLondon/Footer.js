@@ -1,7 +1,7 @@
 import React from 'react';
-import YBLogo from '../assets/images/yb-dark-logo.svg';
-import YBLogoLight from '../assets/images/yb-light-logo.svg';
-import SlackLogo from '../assets/images/svg/slack.svg';
+import YBLogo from '../../assets/images/logo/yb-dark.svg';
+import YBLogoLight from '../../assets/images/logo/yb-light.svg';
+import SlackLogo from '../../assets/images/svg/slack.svg';
 
 const Footer = ({ dark, socialIcons }) => (
   <footer id="footer" className={dark ? "dark" : ""}>
@@ -36,7 +36,7 @@ const Footer = ({ dark, socialIcons }) => (
         </div>
       }
       <div className="legal">
-        <div className="copyright">© Yugabyte, Inc. 2021</div>
+        <div className="copyright">© Yugabyte, Inc. 2022</div>
         <ul className="support-links">
           <li><a href="https://www.yugabyte.com/support-policy/">Terms</a></li>
           <li>|</li>
