@@ -2,12 +2,12 @@
   {
     "start": "13:00",
     "speaker": "",
-    "session": "Doors Open"
+    "session": "Doors open"
   },
   {
     "start": "13:30",
     "speaker": "Dai Clegg",
-    "session": "<b>Willkommen! And bienvenue! Welcome!</b>"
+    "session": "<b>Willkommen! Bienvenue! Welcome!</b>"
   },
   {
     "start": "13:40",
@@ -27,7 +27,7 @@
   {
     "start": "14:45",
     "speaker": "Karl Funk",
-    "session": "<b>Non Stop Transactions in the face of disaster.</b>"
+    "session": "<b>Non Stop Transactions in the face of disaster</b>"
   },
   {
     "start": "15:30",
@@ -37,7 +37,7 @@
   {
     "start": "15:45",
     "speaker": "Hüseyin Demir",
-    "session": "<b>Deploying Yugabyte At Trendyol</b>"
+    "session": "<b>Deploying Yugabyte at Trendyol</b>"
   },
   {
     "start": "16:15",
@@ -52,7 +52,7 @@
   {
     "start": "17:15",
     "speaker": "Dai Clegg<br>David Walker<br>Alan Caldera",
-    "session": "<b>A Q&A Panel Session For Technologists</b>"
+    "session": "<b>A Q&A panel session for technologists</b>"
   },
   {
     "start": "18:00",
