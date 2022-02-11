@@ -6,8 +6,7 @@ const LondonAgenda = (props) => {
       <div className="col col-1 col-start">
         {props.start}
       </div>
-      <div className="col col-2 col-speaker">
-        {props.speaker}
+      <div className="col col-2 col-speaker" dangerouslySetInnerHTML={{ __html: props.speaker }}>
       </div>
       <div className="col col-3 col-session" dangerouslySetInnerHTML={{ __html: props.session }}
       ></div>

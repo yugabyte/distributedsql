@@ -1,63 +1,62 @@
 [
   {
-    "start": "12:00",
-    "speaker": "Welcome Panel",
-    "session": "Doors Open; Coffee/Tea; Distribute customer swag"
+    "start": "13:00",
+    "speaker": "",
+    "session": "Doors Open"
   },
   {
-    "start": "13:00",
+    "start": "13:30",
     "speaker": "Dai Clegg",
     "session": "<b>Willkommen! And bienvenue! Welcome!</b>"
   },
   {
-    "start": "13:15",
+    "start": "13:40",
     "speaker": "Martin Gaffney",
-    "session": "Introduction"
-  },
-  {
-    "start": "13:30",
-    "speaker": "David Walker",
-    "session": "<b>What’s a Distributed Database?</b>"
+    "session": "Introductions"
   },
   {
     "start": "14:00",
     "speaker": "David Walker",
+    "session": "<b>What is a Distributed Database?</b>"
+  },
+  {
+    "start": "14:30",
+    "speaker": "David Walker",
     "session": "<b>Go home with Yugabyte today!</b>"
   },
   {
-    "start": "14:15",
+    "start": "14:45",
     "speaker": "Karl Funk",
-    "session": "<b>Session 1: &lt;&lt;missing title&gt;&gt;</b>",
-    "message": "Live demonstration showing a Banking Application with a central database for ledger management. We will show how the central database can survive an Availability Zone or even a Region failure. We then extend the use case to include a Fraud detection system that processes near real time transactions from the Banking Application database."
+    "session": "<b>Non Stop Transactions in the face of disaster.</b>"
   },
   {
-    "start": "15:00",
+    "start": "15:30",
     "speaker": "Break",
     "session": "Coffee/Tea"
   },
   {
-    "start": "15:30",
+    "start": "15:45",
     "speaker": "Hüseyin Demir",
     "session": "<b>Deploying Yugabyte At Trendyol</b>"
   },
   {
-    "start": "16:00",
-    "speaker": "Dave Roberts Doug Hadfield",
-    "session": "<b>Session 2: Stopping the sky falling in? Building and operating clusters for resilience</b>"
+    "start": "16:15",
+    "speaker": "Dave Roberts<br>Doug Hadfield",
+    "session": "<b>Stopping the sky falling in? Building and operating clusters for resilience</b>"
   },
   {
-    "start": "16:45",
+    "start": "17:00",
     "speaker": "Break",
     "session": "Coffee/Tea"
   },
   {
-    "start": "17:00",
-    "speaker": "Dai Clegg David Walker Alan Caldera",
+    "start": "13:00",
+    "speaker": "Dai Clegg<br>David Walker<br>Alan Caldera",
     "session": "<b>A Q&A Panel Session For Technologists</b>"
   },
   {
     "start": "18:00",
     "speaker": "Drinks & Food",
-    "session": "<b>Beer &amp; Pizza</b><br> Plug-in to our engineers, Play with the technology whilst you enjoy a drink and a snack"
+    "session": "<b>Beer &amp; Pizza</b><br>Plug-in to our engineers, Play with the technology whilst you enjoy a drink and a snack"
   }
 ]

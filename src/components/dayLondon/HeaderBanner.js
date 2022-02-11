@@ -66,7 +66,7 @@ const DayLondonHeader = ({ title, showPresents, showCaptionBar }) => (
                       </li>
                     </ul>
                     <div className="cta-bar">
-                      {<Link to="https://www.eventbrite.com/e/252327376977" className="btn-rounded">
+                      {<Link to="https://www.eventbrite.com/e/distributed-sql-day-london-tickets-260672597757" className="btn-rounded">
                         Register
                       </Link>}
                     </div>

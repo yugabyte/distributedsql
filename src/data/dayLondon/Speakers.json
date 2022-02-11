@@ -1,90 +1,74 @@
 [
   {
-    "picture": "lianghong-headshot.png",
-    "name": "Joe Beda",
-    "id": "joe-beda",
-    "position": "Principal Engineer",
-    "company": "VMware",
+    "picture": "dai-clegg.png",
+    "name": "Dai Clegg",
+    "id": "dai-clegg",
+    "position": "Product Marketing Specialist ",
+    "company": "Yugabyte",
     "type": "speaker"
   },
   {
-    "picture": "lianghong-headshot.png",
-    "name": "Lianghong Xu",
-    "id": "lianghong-xu",
-    "position": "Engineering Manager, Storage and Caching Team",
-    "company": "Pinterest",
+    "picture": "martin-gaffney.png",
+    "name": "Martin Gaffney",
+    "id": "martin-gaffney",
+    "position": "AVP EMEA",
+    "company": "Yugabyte",
     "type": "speaker"
   },
   {
-    "picture": "lianghong-headshot.png",
-    "name": "Mehrdad Nurolahzade",
-    "id": "mehrdad-nurolahzade",
-    "position": "Platform Engineer",
-    "company": "Twitter",
-    "type": "speaker"
-  },
-  {
-    "picture": "lianghong-headshot.png",
-    "name": "Karthik Ranganathan",
-    "id": "karthik-ranganathan",
-    "position": "CTO and Co-Founder",
+    "picture": "david-walker.png",
+    "name": "David Walker",
+    "id": "david-walker",
+    "position": "Field CTO EMEA",
     "company": "Yugabyte",
     "type": "speaker"
   },
   {
     "picture": "lianghong-headshot.png",
-    "name": "Joe Beda",
-    "id": "joe-beda",
-    "position": "Principal Engineer",
-    "company": "VMware",
-    "type": "speaker"
-  },
-  {
-    "picture": "lianghong-headshot.png",
-    "name": "Lianghong Xu",
-    "id": "lianghong-xu",
-    "position": "Engineering Manager, Storage and Caching Team",
-    "company": "Pinterest",
-    "type": "speaker"
-  },
-  {
-    "picture": "lianghong-headshot.png",
-    "name": "Mehrdad Nurolahzade",
-    "id": "mehrdad-nurolahzade",
-    "position": "Platform Engineer",
-    "company": "Twitter",
-    "type": "speaker"
-  },
-  {
-    "picture": "lianghong-headshot.png",
-    "name": "Karthik Ranganathan",
+    "name": "Karl Funk",
     "id": "karthik-ranganathan",
-    "position": "CTO and Co-Founder",
+    "position": "Customer Success - Advanced Technical Services",
     "company": "Yugabyte",
     "type": "speaker"
   },
   {
-    "picture": "lianghong-headshot.png",
-    "name": "Joe Beda",
-    "id": "joe-beda",
-    "position": "Principal Engineer",
-    "company": "VMware",
+    "picture": "karl-funk.jpeg",
+    "name": "Hüseyin Demir",
+    "id": "karl-funk",
+    "position": "Senior Database Platform Engineer",
+    "company": "Trendyol",
     "type": "speaker"
   },
   {
-    "picture": "lianghong-headshot.png",
-    "name": "Lianghong Xu",
+    "picture": "default.jpeg",
+    "name": "Dave Roberts",
     "id": "lianghong-xu",
-    "position": "Engineering Manager, Storage and Caching Team",
-    "company": "Pinterest",
+    "position": "",
+    "company": "Yugabyte",
     "type": "speaker"
   },
   {
-    "picture": "lianghong-headshot.png",
-    "name": "Mehrdad Nurolahzade",
-    "id": "mehrdad-nurolahzade",
-    "position": "Platform Engineer",
-    "company": "Twitter",
+    "picture": "doug-hadfield.jpeg",
+    "name": "Doug Hadfield",
+    "id": "doug-hadfield",
+    "position": "Senior Advanced Technologist - EMEA",
+    "company": "Yugabyte",
+    "type": "speaker"
+  },
+  {
+    "picture": "alan-caldera.jpeg",
+    "name": "Alan Caldera",
+    "id": "alan-caldera",
+    "position": "Distinguished Engineer",
+    "company": "Yugabyte",
+    "type": "speaker"
+  },
+  {
+    "picture": "mete-guray.jpeg",
+    "name": "Mete Guray",
+    "id": "mete-guray",
+    "position": "Technology Product Manager",
+    "company": "Trendyol",
     "type": "speaker"
   }
 ]
