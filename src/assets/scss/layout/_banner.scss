@@ -4,11 +4,11 @@
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
 
+/* Banner */
 html {
   scroll-behavior: smooth;
 }
 
-/* Banner */
 .homeBanner {
   width: 100%;
   height: 100%;
@@ -35,7 +35,6 @@ html {
   background-size: cover;
   border-bottom: 0 !important;
   cursor: default;
-  // margin-bottom: -6.25em;
   position: relative;
   z-index: 10;
 
@@ -45,83 +44,19 @@ html {
     width: 100% !important;
   }
 
-  .banner-caption-bar {
-    background: transparent linear-gradient(259deg, #9c7bde 0%, #4bb4f3 100%) 0% 0% no-repeat padding-box;
-    border-radius: 60px;
-    margin: 0 auto -112px;
-    color: #fff;
-    font-size: 22px;
-    font-weight: 500;
-    padding: 26px 55px;
-    display: flex;
-    width: fit-content;
-    justify-content: center;
-    align-items: center;
-
-    img {
-      width: 54px;
-      height: 42px;
-      margin-right: 26px;
-    }
-  }
-
-  @media screen and (max-width: 1400px) {
-    .banner-caption-bar {
-      padding: 26px 50px;
-
-      img {
-        margin-right: 18px;
-      }
-    }
-  }
-
-  @media screen and (max-width: 850px) {
-    .banner-caption-bar {
-      padding: 18px 40px;
-      font-size: 18px;
-      margin: 0 auto -94px;
-
-      img {
-        margin-right: 14px;
-      }
-    }
-  }
-
-  @media screen and (max-width: 737px) {
-    .banner-caption-bar {
-      margin: 0 auto -82px;
-    }
-
-    .container {
-      margin-top: 50px;
-    }
-  }
-
-  @media screen and (max-width: 544px) {
-    .banner-caption-bar {
-      margin: 0 auto -78px;
-      font-size: 16px;
-
-      img {
-        margin-right: 8px;
-        width: 36px;
-      }
-    }
-  }
-
   .presents {
     color: _palette(bg);
     font-size: 16px;
     font-family: _font(family);
     font-weight: _font(weight-bold-semi);
     z-index: 10000;
-    padding: 1.5em 0 0;
-    margin-bottom: 50px;
+    padding: 0.2em 0 0;
+    margin: 15px 0 40px;
 
     > .text {
       margin-right: 10px;
       vertical-align: top;
-      font-weight: 300;
+      font-weight: normal;
       color: #ff6e42;
       font-size: 18px;
       letter-spacing: 0.9px;
@@ -172,9 +107,10 @@ html {
   }
 
   h1 {
-    font-size: 60px;
+    font-size: 53px;
+    line-height: 65px;
     font-family: _font(family);
-    font-weight: _font(weight-bold);
+    font-weight: 600;
     color: _palette(bg);
   }
 
@@ -213,11 +149,12 @@ html {
 
     header {
       width: auto;
-      margin-bottom: 0;
+      text-align: left;
+      margin-bottom: 30px;
 
       > h1 {
         width: 800px;
-        margin: 0 auto;
+        margin: 0;
         font-size: 90px;
         line-height: 1.2;
         font-weight: 400;
@@ -229,29 +166,23 @@ html {
       margin: 0;
       display: flex;
       list-style: none;
-      justify-content: center;
+      justify-content: left;
 
       li {
-        padding: 0 30px;
         position: relative;
         display: flex;
         align-items: center;
+        padding-right: 30px;
       }
 
-      li:not(:last-child)::after {
-        content: '';
-        background: #fff;
-        position: absolute;
-        width: 1px;
-        display: block;
-        height: 82%;
-        top: 11%;
-        right: 0;
+      li:not(:first-child) {
+        padding-left: 30px;
       }
+
     }
 
     .btn-rounded {
-      margin: 30px 0;
+      margin: 36px 0;
     }
 
     .cta-bar {
@@ -296,7 +227,7 @@ html {
 
         .btn-rounded,
         .btn-rounded:first-child {
-          margin: 0 auto 50px;
+          margin: 0 auto 20px;
         }
       }
     }
@@ -391,6 +322,68 @@ html {
   }
 }
 
+.banner-caption-bar {
+  background: transparent linear-gradient(259deg, $SECONDARY_ACCENT 0%, $PRIMARY_ACCENT 100%) 0% 0% no-repeat padding-box;
+  margin: 0 auto;
+  color: #fff;
+  padding: 23px 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: normal normal 600 22px/32px Source Sans Pro;
+  letter-spacing: 0;
+  position: relative;
+  z-index: 10;
+  border-radius: 11px;
+  margin-top: -44px;
+  width: 977px;
+  max-width: calc(100% - 40px);
+
+  img {
+    width: 54px;
+    height: 42px;
+    margin-right: 26px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .banner-caption-bar {
+    padding: 23px 50px;
+
+    img {
+      margin-right: 18px;
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .banner-caption-bar {
+    padding: 18px 40px;
+    font-size: 18px;
+
+    img {
+      margin-right: 14px;
+    }
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .banner-caption-bar {
+    top: -45px;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  .banner-caption-bar {
+    padding: 18px 20px;
+
+    img {
+      margin-right: 10px;
+      width: 36px;
+    }
+  }
+}
+
 #register-banner {
   @include vendor('align-items', 'center');
   @include vendor('display', 'flex');
@@ -445,13 +438,32 @@ html {
     }
 
     .details {
+      padding: 0;
+      margin: 35px 0;
+      display: flex;
       list-style: none;
-      border-left: 1.5px solid #ff6e42;
-      margin: 50px 0 70px;
+      justify-content: left;
 
-      > li {
-        line-height: 1.2;
-        margin-bottom: 15px;
+      li {
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 0 30px 0 0;
+      }
+
+      li:not(:first-child) {
+        padding-left: 30px;
+      }
+
+      li:not(:last-child)::after {
+        content: '';
+        background: $WHITE_BG;
+        position: absolute;
+        width: 1px;
+        display: block;
+        height: 82%;
+        top: 11%;
+        right: 0;
       }
     }
   }
@@ -472,6 +484,13 @@ html {
       font-size: 28px;
       margin: 0;
 
+      span {
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 32px;
+        font-style: italic;
+      }
+
       .accent {
         color: #ff6e42;
         font-size: inherit;
@@ -485,7 +504,7 @@ html {
   }
 }
 
-#contact-banner {
+#footer-banner {
   padding: 0 0 20px;
   background: #322965;
 
@@ -503,8 +522,9 @@ html {
       text-align: center;
       font-size: 60px;
       font-weight: 400;
-      margin-bottom: 5px;
       color: inherit;
+      line-height: 68px;
+      margin-bottom: 35px;
     }
 
     h4 {
@@ -530,7 +550,8 @@ html {
   #banner {
     > .inner {
       margin: 0 auto !important;
-      max-width: 75% !important;
+      max-width: 977px !important;
+      padding: 105px 0 65px !important;
 
       .datedisplay {
         top: -35px;
@@ -593,11 +614,14 @@ html {
 
     > .inner {
       max-width: 90% !important;
+      padding: 60px 0 60px !important;
 
       header > h1 {
         font-size: 48px;
         width: 100%;
       }
+
+
 
       .details {
         li {
@@ -632,12 +656,26 @@ html {
     .presents {
       padding-top: 1em;
       margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .left-area {
+      text-align: center;
+
+      .hasTag {
+        text-align: center !important;
+      }
+
+      img {
+        max-width: 100%;
+      }
     }
 
     h1 {
       padding-top: 5px;
       line-height: normal;
       font-size: 2.5em;
+      text-align: center;
     }
 
     h2 {
@@ -685,6 +723,12 @@ html {
           }
         }
       }
+
+      .details {
+        li {
+          padding: 0 !important;
+        }
+      }
     }
   }
 
@@ -692,7 +736,7 @@ html {
     margin: 0 0 50px 15px;
   }
 
-  #contact-banner {
+  #footer-banner {
     padding: 40px 0;
 
     .content {
@@ -895,6 +939,154 @@ html {
           font-size: 18px;
         }
       }
+    }
+  }
+}
+
+#day-london-hero {
+  .banner-caption-bar {
+    width: 847px;
+    padding: 23px 33px 23px 63px;
+    font-weight: normal;
+
+    img {
+      margin-right: 20px;
+      max-width: 100%;
+    }
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  #banner {
+    .presents {
+      text-align: center;
+      margin-bottom: 50px;
+      margin-top: 0;
+
+      > .text {
+        font-style: italic;
+        font-weight: 600;
+        line-height: 32px;
+        letter-spacing: 0.54px;
+      }
+    }
+
+    > .inner header {
+      display: block;
+    }
+
+    > .inner .details li {
+      letter-spacing: 0;
+      color: #fff;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 32px;
+      padding: 0 30px 0 35px;
+      display: block !important;
+
+      span {
+        font-weight: normal;
+      }
+    }
+
+    > .inner .details li.location .icon,
+    > .inner .details li.data-time .icon {
+      display: inline-block;
+      content: "";
+      width: 23px;
+      position: absolute;
+      left: 0;
+      height: auto;
+      top: 4px;
+    }
+
+    > .inner .details li:not(:last-child)::after {
+      display: none;
+    }
+
+    h1 {
+      text-align: center;
+      font: normal normal normal 22px/28px Source Sans Pro;
+      letter-spacing: 0.22px;
+      color: #fff;
+      margin-top: 22px;
+    }
+
+    > .inner .btn-rounded {
+      margin: 0;
+      padding: 5.3px 40px;
+      text-align: center;
+      transition: all 0.3s linear;
+      border: 0;
+      line-height: inherit;
+      font-size: 30px;
+      font-weight: bold;
+      background: #ff6e42 !important;
+      border-radius: 7px;
+
+      &:hover {
+        background: #ff6e42 !important;
+        border: 0;
+        transform: scale(1.04);
+      }
+    }
+
+    > .inner .cta-bar .btn-rounded:first-child {
+      margin: 0;
+      margin-left: 15px;
+    }
+  }
+
+  .logo-area {
+    width: 367px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .schedule-area {
+    display: flex;
+    justify-content: center;
+    max-width: 847px;
+    margin: 0 auto 60px;
+  }
+
+  //1280
+  @include breakpoint(large) {
+    #banner {
+      > .inner .details li br {
+        display: none;
+      }
+    }
+  }
+  //980
+  @include breakpoint(medium) {
+    #banner {
+      .schedule-area {
+        flex-flow: column;
+        align-items: center;
+        width: 367px;
+        max-width: 100%;
+      }
+
+      > .inner .details li {
+        margin-bottom: 40px;
+        padding: 0 0 0 35px !important;
+      }
+
+      > .inner .details {
+        flex-flow: column;
+        //align-items :center;
+        text-align: left;
+      }
+    }
+  }
+  //768
+  @include breakpoint(small) {
+    .banner-caption-bar {
+      padding: 20px;
+      line-height: normal;
     }
   }
 }

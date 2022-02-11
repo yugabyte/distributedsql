@@ -1,6 +1,6 @@
-import React from 'react'
-import YBLogo from '../../assets/images/yb-dark-logo.svg';
-import YBLogoLight from '../../assets/images/yb-light-logo.svg';
+import React from 'react';
+import YBLogo from '../../assets/images/logo/yb-dark.svg';
+import YBLogoLight from '../../assets/images/logo/yb-light.svg';
 import SlackLogo from '../../assets/images/svg/slack.svg';
 
 const Footer = ({ dark, socialIcons }) => (
@@ -47,4 +47,4 @@ const Footer = ({ dark, socialIcons }) => (
   </footer>
 )
 
-export default Footer
+export default Footer;
