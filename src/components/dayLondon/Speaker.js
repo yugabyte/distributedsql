@@ -8,7 +8,11 @@ const LondonSpeaker = (props) => {
       </div>
       <div className="author-name">
         <b>{props.name}</b>
-        {props.position},<br />
+        {props.position &&
+          <span>
+            {props.position}, <br />
+          </span>
+        }
         <b>{props.company}</b>
       </div>
     </div>
