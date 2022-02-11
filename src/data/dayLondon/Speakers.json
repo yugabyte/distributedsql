@@ -1,0 +1,90 @@
+[
+  {
+    "picture": "lianghong-headshot.png",
+    "name": "Joe Beda",
+    "id": "joe-beda",
+    "position": "Principal Engineer",
+    "company": "VMware",
+    "type": "speaker"
+  },
+  {
+    "picture": "lianghong-headshot.png",
+    "name": "Lianghong Xu",
+    "id": "lianghong-xu",
+    "position": "Engineering Manager, Storage and Caching Team",
+    "company": "Pinterest",
+    "type": "speaker"
+  },
+  {
+    "picture": "lianghong-headshot.png",
+    "name": "Mehrdad Nurolahzade",
+    "id": "mehrdad-nurolahzade",
+    "position": "Platform Engineer",
+    "company": "Twitter",
+    "type": "speaker"
+  },
+  {
+    "picture": "lianghong-headshot.png",
+    "name": "Karthik Ranganathan",
+    "id": "karthik-ranganathan",
+    "position": "CTO and Co-Founder",
+    "company": "Yugabyte",
+    "type": "speaker"
+  },
+  {
+    "picture": "lianghong-headshot.png",
+    "name": "Joe Beda",
+    "id": "joe-beda",
+    "position": "Principal Engineer",
+    "company": "VMware",
+    "type": "speaker"
+  },
+  {
+    "picture": "lianghong-headshot.png",
+    "name": "Lianghong Xu",
+    "id": "lianghong-xu",
+    "position": "Engineering Manager, Storage and Caching Team",
+    "company": "Pinterest",
+    "type": "speaker"
+  },
+  {
+    "picture": "lianghong-headshot.png",
+    "name": "Mehrdad Nurolahzade",
+    "id": "mehrdad-nurolahzade",
+    "position": "Platform Engineer",
+    "company": "Twitter",
+    "type": "speaker"
+  },
+  {
+    "picture": "lianghong-headshot.png",
+    "name": "Karthik Ranganathan",
+    "id": "karthik-ranganathan",
+    "position": "CTO and Co-Founder",
+    "company": "Yugabyte",
+    "type": "speaker"
+  },
+  {
+    "picture": "lianghong-headshot.png",
+    "name": "Joe Beda",
+    "id": "joe-beda",
+    "position": "Principal Engineer",
+    "company": "VMware",
+    "type": "speaker"
+  },
+  {
+    "picture": "lianghong-headshot.png",
+    "name": "Lianghong Xu",
+    "id": "lianghong-xu",
+    "position": "Engineering Manager, Storage and Caching Team",
+    "company": "Pinterest",
+    "type": "speaker"
+  },
+  {
+    "picture": "lianghong-headshot.png",
+    "name": "Mehrdad Nurolahzade",
+    "id": "mehrdad-nurolahzade",
+    "position": "Platform Engineer",
+    "company": "Twitter",
+    "type": "speaker"
+  }
+]
