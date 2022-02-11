@@ -19,7 +19,7 @@ const ContactBanner = ({ title, description, btnText, btnLink }) => (
         data.desktopFooterImage.childImageSharp.fluid
       ];
       return (
-        <BackgroundImage Tag="section" fluid={sources} id="footer-banner">
+        <BackgroundImage Tag="section" fluid={sources} id="contact-banner">
           <div className="inner">
             <div className="content organized-by">
               <h2 className="header">{title}</h2>
