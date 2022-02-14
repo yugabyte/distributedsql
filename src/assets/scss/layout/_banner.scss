@@ -21,7 +21,7 @@
   text-align: center;
   @include vendor('align-items', 'center');
   @include vendor('display', 'flex');
-  @include padding(0em, 0, (0em, 0, 0, 0));
+  @include padding(0, 0, (0, 0, 0, 0));
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -377,7 +377,7 @@
 #register-banner {
   @include vendor('align-items', 'center');
   @include vendor('display', 'flex');
-  @include padding(0em, 0, (0em, 0, 0, 0));
+  @include padding(0, 0, (0, 0, 0, 0));
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -540,7 +540,7 @@
   #banner.major
   {
     min-height: 32em;
-    padding: 3em 0 0em 0;
+    padding: 3em 0 0 0;
 
   }
   #banner {
@@ -604,7 +604,7 @@
     // height: 30em;
     min-height: 30em;
     max-height: none;
-    padding: 5em 0 0em 0;
+    padding: 5em 0 0 0;
   }
   #banner {
     .presents
@@ -862,10 +862,6 @@
   }
 }
 
-
-html{
-  scroll-behavior :smooth;
-}
 #day-london-hero{
   #banner{
     text-align            :center;
@@ -1395,17 +1391,12 @@ html{
     margin          :0 auto 60px;
   }
 
-  //1280
-  @include breakpoint(large){
-    #banner{
-      > .inner .details li br{
-        display :none;
-      }
-    }
-  }
   //980
   @include breakpoint(medium){
     #banner{
+      > .inner{
+        max-width :calc(100% - 30px) !important;
+      }
       .schedule-area{
         flex-flow   :column;
         align-items :center;
@@ -1431,5 +1422,10 @@ html{
       padding     :20px;
       line-height :normal;
     }
+  }
+}
+@media screen and (min-width :737px){
+  html{
+	scroll-behavior :smooth;
   }
 }
