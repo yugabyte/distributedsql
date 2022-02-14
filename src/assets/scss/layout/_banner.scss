@@ -862,10 +862,6 @@
   }
 }
 
-
-html{
-  scroll-behavior :smooth;
-}
 #day-london-hero{
   #banner{
     text-align            :center;
@@ -1395,17 +1391,12 @@ html{
     margin          :0 auto 60px;
   }
 
-  //1280
-  @include breakpoint(large){
-    #banner{
-      > .inner .details li br{
-        display :none;
-      }
-    }
-  }
   //980
   @include breakpoint(medium){
     #banner{
+      > .inner{
+        max-width :calc(100% - 30px) !important;
+      }
       .schedule-area{
         flex-flow   :column;
         align-items :center;
@@ -1431,5 +1422,10 @@ html{
       padding     :20px;
       line-height :normal;
     }
+  }
+}
+@media screen and (min-width :737px){
+  html{
+	scroll-behavior :smooth;
   }
 }
