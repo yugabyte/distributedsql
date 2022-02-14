@@ -60,8 +60,8 @@ const DayLondonHeader = ({ title, showPresents, showCaptionBar }) => (
                       </li>
                       <li className="location">
                         <img className="icon" src={mapIcon} alt="Location Icon" />
-                        <a href="https://www.codenode.live/" target="_blank" rel="noopener" title="Code.Node">Code.Node</a><br />
-                        <span>10 South Place,</span><br />
+                        <a href="https://www.codenode.live/" target="_blank" rel="noopener" title="Code.Node">Code.Node </a><br />
+                        <span> 10 South Place,</span><br />
                         <span> London EC2M 7EB</span>
                       </li>
                     </ul>
