@@ -27,7 +27,8 @@
   {
     "start": "14:45",
     "speaker": "Karl Funk",
-    "session": "<b>Non-stop transactions in the face of disaster</b>"
+    "session": "<b>Non-stop transactions in the face of disaster</b>",
+    "message": "Live demonstration showing a Banking Application with a central database for ledger management. We will show how the central database can survive an Availability Zone or even a Region failure. We then extend the use case to include an Edge Computing use case."
   },
   {
     "start": "15:30",
@@ -42,7 +43,8 @@
   {
     "start": "16:15",
     "speaker": "Dave Roberts<br>Doug Hadfield",
-    "session": "<b>Stopping the sky falling in? Building and operating clusters for resilience</b>"
+    "session": "<b>Stopping the sky falling in? Building and operating clusters for resilience</b>",
+    "message": "A live demonstration of building (Day 1) and operating (Day 2) clusters in the cloud that are  designed for resilience and ease of operation"
   },
   {
     "start": "17:00",
@@ -52,7 +54,8 @@
   {
     "start": "17:15",
     "speaker": "Dai Clegg<br>David Walker<br>Alan Caldera",
-    "session": "<b>A Q&A panel session for technologists</b>"
+    "session": "<b>A Q&A panel session for technologists</b>",
+    "message": "In this session we'll bring to the stage our key technical speakers of the day together with company senior management for a moderated Q &A session that will be driven by live questions from the audience."
   },
   {
     "start": "18:00",
