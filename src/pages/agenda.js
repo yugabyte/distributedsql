@@ -4,7 +4,7 @@ import Layout from '../components/layout';
 import HeaderBanner from '../components/banner/PageHeader';
 import FooterBanner from '../components/banner/Footer';
 
-class CodeConduct extends React.Component {
+class Agenda extends React.Component {
   componentDidMount() {
     const script = document.createElement("script");
     script.src = "//dssasia2022.sched.com/js/embed.js";
@@ -46,4 +46,4 @@ class CodeConduct extends React.Component {
   }
 }
 
-export default CodeConduct;
+export default Agenda;
