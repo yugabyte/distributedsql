@@ -68,16 +68,14 @@ const Banner = ({ title, showPresents, showCaptionBar }) => (
                         <li>
                           <div>
                             <h3>
-                              March 30, 2022<br />
-                              <span>Conference Day</span>
+                              March 30, 2022
                             </h3>
                           </div>
                         </li>
                         <li>
                           <div>
                             <h3>
-                              March 31, 2022<br />
-                              <span>Workshop Day</span>
+                              March 31, 2022
                             </h3>
                           </div>
                         </li>
