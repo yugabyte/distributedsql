@@ -12,9 +12,9 @@ const Header = () => (
         <img src={Logoyugabytedb} className="yogabyte-logo" alt="YugaByte DB Logo" />
       </div>
     </Link>
-    {/* <nav>
-      <Link to="/schedule">Schedule</Link>
-    </nav> */}
+    <nav>
+      <Link to="/agenda/">Agenda</Link>
+    </nav>
   </header>
 )
 

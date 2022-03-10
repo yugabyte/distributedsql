@@ -39,7 +39,7 @@ class HomeIndex extends React.Component {
           title="Have a talk to propose?"
           description="Or questions about the Distributed SQL Virtual Summit?"
           btnText="Contact Us"
-          btnLink="https://yugabyte.com/contact-us"
+          btnLink="https://www.yugabyte.com/contact/"
         />
       </Layout>
     )
