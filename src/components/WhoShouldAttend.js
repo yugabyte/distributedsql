@@ -65,7 +65,7 @@ const WhoShouldAttend = () => (
       <strong>Relevant for:</strong> DBA’s, developers, DevOps engineers, architects, business leaders, and anyone with an interest in Distributed SQL.
     </p>
     <div className="attend__archive">
-      <a href="/code-conduct" className="btn-rounded">
+      <a href="/code-conduct/" className="btn-rounded">
         DSS Code of Conduct
       </a>
     </div>
