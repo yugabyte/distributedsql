@@ -2,7 +2,7 @@
   {
     "start": "13:00",
     "speaker": "",
-    "session": "Doors open"
+    "session": "Doors Open; Coffee/Tea; Distribute customer swag"
   },
   {
     "start": "13:30",
@@ -11,23 +11,18 @@
   },
   {
     "start": "13:40",
-    "speaker": "Martin Gaffney",
-    "session": "Introductions"
+    "speaker": "David Walker",
+    "session": "<b>What is a Distributed Database? - Take one home today</b>"
   },
   {
     "start": "14:00",
-    "speaker": "David Walker",
-    "session": "<b>What is a Distributed Database?</b>"
-  },
-  {
-    "start": "14:30",
-    "speaker": "David Walker",
-    "session": "<b>Go home with Yugabyte today!</b>"
+    "speaker": "Franck Pachot",
+    "session": "<b>Anatomy of a distributed SQL database</b>"
   },
   {
     "start": "14:45",
     "speaker": "Karl Funk",
-    "session": "<b>Non-stop transactions in the face of disaster</b>",
+    "session": "<b>Session 1: Non Stop Transactions in the face of disaster</b>",
     "message": "Live demonstration showing a Banking Application with a central database for ledger management. We will show how the central database can survive an Availability Zone or even a Region failure. We then extend the use case to include an Edge Computing use case."
   },
   {
@@ -41,25 +36,26 @@
     "session": "<b>Deploying Yugabyte at Trendyol</b>"
   },
   {
-    "start": "16:15",
+    "start": "16:00",
     "speaker": "Dave Roberts<br>Doug Hadfield",
-    "session": "<b>Stopping the sky falling in? Building and operating clusters for resilience</b>",
-    "message": "A live demonstration of building (Day 1) and operating (Day 2) clusters in the cloud that are  designed for resilience and ease of operation"
+    "session": "<b>Session 2: Stopping the sky falling in? Building and operating clusters for resilience</b>",
+    "message": "Live demonstration showing how to build a distributed database"
   },
   {
-    "start": "17:00",
-    "speaker": "Break",
-    "session": "Coffee/Tea"
+    "start": "16:45",
+    "speaker": "David Walker",
+    "session": "Closing Remarks"
   },
   {
-    "start": "17:15",
-    "speaker": "Dai Clegg<br>David Walker<br>Alan Caldera",
-    "session": "<b>A Q&A panel session for technologists</b>",
-    "message": "In this session we'll bring to the stage our key technical speakers of the day together with company senior management for a moderated Q &A session that will be driven by live questions from the audience."
+    "start": "16:50",
+    "speaker": "Drinks & Food",
+    "session": "<b>Meet The Team for Beer & Pizza</b>",
+    "message": "Plug-in to our engineers, Play with the technology whilst you enjoy a drink and a snack"
   },
   {
     "start": "18:00",
-    "speaker": "Drinks & Food",
-    "session": "<b>Beer &amp; Pizza</b><br>Plug-in to our engineers, Play with the technology whilst you enjoy a drink and a snack"
+    "speaker": "",
+    "session": "<b>Venue closes</b>",
+    "message": "We will be continuing in a bar near by"
   }
 ]

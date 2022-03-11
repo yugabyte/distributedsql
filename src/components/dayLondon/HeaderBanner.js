@@ -56,7 +56,7 @@ const DayLondonHeader = ({ title, showPresents, showCaptionBar }) => (
                       <li className="data-time">
                         <img className="icon" src={calenderIcon} alt="Calender" />
                         March 08, 2022 <br />
-                        <span> 13:00 - 18:30 </span>
+                        <span> 13:00 - 18:00 </span>
                       </li>
                       <li className="location">
                         <img className="icon" src={mapIcon} alt="Location Icon" />
