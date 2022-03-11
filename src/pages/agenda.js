@@ -16,15 +16,15 @@ class Agenda extends React.Component {
     return (
       <Layout>
         <Helmet
-          title="Agenda for Distributed SQL Summit Asia"
+          title='Agenda for Distributed SQL Summit Asia'
           meta={[
-            { name: 'description', content: 'Agenda for Distributed SQL Summit Asia, a free online conference to push the boundaries of cloud native RDBMS forward.' },
-            { name: 'keywords', content: 'Distributed SQL, Postgres, YugaByte, database, asia' },
+            { name: 'description', content: 'Discover sessions by leading distributed SQL experts and register for hands-on practical workshops at DSS Asia (March 30-31, 2022)' },
             { name: 'og:locale', content: 'en_US' },
             { name: 'og:title', content: 'Agenda for Distributed SQL Summit Asia' },
-            { name: 'og:description', content: 'Agenda for Distributed SQL Summit Asia, a free online conference to push the boundaries of cloud native RDBMS forward.' },
+            { name: 'og:description', content: 'Discover sessions by leading distributed SQL experts and register for hands-on practical workshops at DSS Asia (March 30-31, 2022).' },
             { name: 'twitter:card', content: 'summary_large_image' },
-            { name: 'twitter:description', content: 'Agenda for Distributed SQL Summit Asia, a free online conference to push the boundaries of cloud native RDBMS forward.' },
+            { name: 'twitter:title', content: 'Agenda for Distributed SQL Summit Asia' },
+            { name: 'twitter:description', content: 'Discover sessions by leading distributed SQL experts and register for hands-on practical workshops at DSS Asia (March 30-31, 2022)' },
             { name: 'twitter:image', content: 'https://asia.distributedsql.org/dss-asia-2022.png' },
             { name: 'twitter:site', content: '@yugabyte' },
             { name: 'twitter:creator', content: '@yugabyte' }
@@ -34,7 +34,9 @@ class Agenda extends React.Component {
           title="Agenda"
         />
         <div style={{ padding: '30px 0px 15px' }}>
-          <a id="sched-embed" href="//dssasia2022.sched.com/">View the Distributed SQL Summit Asia 2022 schedule &amp; directory.</a>
+          <a id="sched-embed" href="//dssasia2022.sched.com/" title="View the Distributed SQL Summit Asia 2022 schedule" target="_blank" rel="noopener">
+            View the Distributed SQL Summit Asia 2022 schedule &amp; directory.
+          </a>
         </div>
         <FooterBanner
           title="Any questions?"
