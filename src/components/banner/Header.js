@@ -7,7 +7,7 @@ import { graphql, Link, StaticQuery } from 'gatsby';
 
 
 const Banner = ({ title, showPresents, showCaptionBar }) => (
-  <StaticQuery query={graphql`
+	<StaticQuery query={graphql`
     query {
       desktopBannerImage: file(relativePath: { eq: "banner/dss-asia-homepage-banner.png" }) {
         childImageSharp {
@@ -32,74 +32,74 @@ const Banner = ({ title, showPresents, showCaptionBar }) => (
        }
      }
    `}
-    render={
-      data => {
-        const sources = [
-          data.mobileBannerImage.childImageSharp.fluid,
-          {
-            ...data.desktopBannerImage.childImageSharp.fluid,
-            media: `(min-width: 701px)`,
-          },
-        ];
-        return (
-          <section>
-            <BackgroundImage Tag="div" fluid={sources} id="banner">
-              <div className="inner">
-                <header className="major">
-                  <div className="left-area">
-                    <img src={LogoDSSBanner} alt="DSS" />
-                    <div className="hasTag"><span>#</span>distributedsqlsummit <span>#</span>DSSAsia <span>#</span>distributedsql</div>
-                  </div>
-                  <div className="right-area">
-                    <h1>Go Cloud Native.<br />Embrace Distributed SQL</h1>
-                    {showPresents &&
-                      <div className="presents">
-                        <span className="text">PRESENTED BY</span>
-                        <a href="https://yugabyte.com/">
-                          <img style={{
-                            width: '150px',
-                            objectFit: 'contain'
-                          }} src={LogoSmall} alt="YugaByte" />
-                        </a>
-                      </div>
-                    }
-                    <div className="container">
-                      <ul className="details">
-                        <li>
-                          <div>
-                            <h3>
-                              March 30, 2022
-                            </h3>
-                          </div>
-                        </li>
-                        <li>
-                          <div>
-                            <h3>
-                              March 31, 2022
-                            </h3>
-                          </div>
-                        </li>
-                      </ul>
-                      <div className="cta-bar">
-                        {<Link to="https://www.eventbrite.com/e/252327376977" className="btn-rounded">
-                          Register
-                        </Link>}
-                      </div>
-                    </div>
-                  </div>
-                </header>
-              </div>
-            </BackgroundImage>
-            {showCaptionBar &&
-              <div className="banner-caption-bar">
-                <img src={ConferenceIcon} alt="Conference icon" /> A free online conference to push the boundaries of cloud native RDBMS forward.
-              </div>
-            }
-          </section>
-        )
-      }
-    }
-  />
+		render={
+			data => {
+				const sources = [
+					data.mobileBannerImage.childImageSharp.fluid,
+					{
+						...data.desktopBannerImage.childImageSharp.fluid,
+						media: `(min-width: 701px)`,
+					},
+				];
+				return (
+					<section>
+						<BackgroundImage Tag="div" fluid={sources} id="banner">
+							<div className="inner">
+								<header className="major">
+									<div className="left-area">
+										<img src={LogoDSSBanner} alt="DSS" />
+										<div className="hasTag"><span>#</span>distributedsqlsummit <span>#</span>DSSAsia <span>#</span>distributedsql</div>
+									</div>
+									<div className="right-area">
+										<h1>Go Cloud Native.<br />Embrace Distributed SQL</h1>
+										{showPresents &&
+											<div className="presents">
+												<span className="text">PRESENTED BY</span>
+												<a href="https://yugabyte.com/">
+													<img style={{
+														width: '150px',
+														objectFit: 'contain'
+													}} src={LogoSmall} alt="YugaByte" />
+												</a>
+											</div>
+										}
+										<div className="container">
+											<ul className="details">
+												<li>
+													<div>
+														<h3>
+															March 30, 2022
+														</h3>
+													</div>
+												</li>
+												<li>
+													<div>
+														<h3>
+															March 31, 2022
+														</h3>
+													</div>
+												</li>
+											</ul>
+											<div className="cta-bar">
+												{<Link to="#" className="btn-rounded" title="View DSS Asia 2022 on Demand">
+													View DSS Asia 2022 on Demand
+												</Link>}
+											</div>
+										</div>
+									</div>
+								</header>
+							</div>
+						</BackgroundImage>
+						{showCaptionBar &&
+							<div className="banner-caption-bar">
+								<img src={ConferenceIcon} alt="Conference icon" /> A free online conference to push the boundaries of cloud native RDBMS forward.
+							</div>
+						}
+					</section>
+				)
+			}
+		}
+	/>
 )
 
 export default Banner;
