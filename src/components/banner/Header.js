@@ -81,8 +81,14 @@ const Banner = ({ title, showPresents, showCaptionBar }) => (
                         </li>
                       </ul>
                       <div className="cta-bar">
-                        {<Link to="https://www.eventbrite.com/e/252327376977" className="btn-rounded">
-                          Register
+                        {<Link
+                          to="https://www.yugabyte.com/dss-asia-2022-on-demand/"
+                          className="btn-rounded"
+                          title="View DSS Asia 2022 on Demand"
+                          target="_blank"
+                          rel="noopener"
+                        >
+                          View DSS Asia 2022 on Demand
                         </Link>}
                       </div>
                     </div>
