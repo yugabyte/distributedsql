@@ -25,7 +25,7 @@ class Agenda extends React.Component {
             { name: 'twitter:card', content: 'summary_large_image' },
             { name: 'twitter:title', content: 'Agenda for Distributed SQL Summit Asia' },
             { name: 'twitter:description', content: 'Discover sessions by leading distributed SQL experts and register for hands-on practical workshops at DSS Asia (March 30-31, 2022)' },
-            { name: 'twitter:image', content: 'https://asia.distributedsql.org/dss-asia-2022.png' },
+            { name: 'twitter:image', content: 'https://asia.distributedsql.org/dss-asia-2022-on-demand.jpg' },
             { name: 'twitter:site', content: '@yugabyte' },
             { name: 'twitter:creator', content: '@yugabyte' }
           ]}>
