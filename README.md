@@ -7,7 +7,7 @@
 # Distributed SQL Summit 2021
 *Hosted by Yugabyte*
 
-Join us for the third annual Distributed SQL Summit, the event that brings together thought leaders, database builders, and application developers to discuss how to leverage distributed SQL systems to build applications and services in the cloud.
+Join us for the third annual [Distributed SQL Summit](https://www.distributedsql.org/), the event that brings together thought leaders, database builders, and application developers to discuss how to leverage [distributed SQL](https://www.yugabyte.com/tech/distributed-sql/) systems to build applications and services in the cloud.
 
 ### Pre-Requisite
 Make sure to clear cache/public folder
